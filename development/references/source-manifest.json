@@ -1,0 +1,28 @@
+{
+  "revision": "2026-10-09",
+  "original_supplied_sources": [
+    {
+      "filename": "01-EHS_BLS025w-Chemical-Laboratory-Safety_-Resource-Guide.pdf",
+      "bytes": 114338,
+      "sha256": "8334da13b740ba9a4db86c266e5f53c20655b045827cba3b38b2cddf77bb232e"
+    },
+    {
+      "filename": "02-PPML_safety_guide.pdf",
+      "bytes": 10851238,
+      "sha256": "c93d4a4c03e766c0ec79b7095247958dabb708d992ee4a3990aa28f6f3f25a39"
+    }
+  ],
+  "repository_copies": [
+    {
+      "path": "references/lab/PPML_safety_guide-optimized.pdf",
+      "bytes": 1334963,
+      "sha256": "400c1eaa6e414faab7457cfb18163e87eb602d187ca8bceb23966c1d3221093d"
+    },
+    {
+      "path": "references/lab/chemical-laboratory-safety-resources.pdf",
+      "bytes": 114338,
+      "sha256": "8334da13b740ba9a4db86c266e5f53c20655b045827cba3b38b2cddf77bb232e"
+    }
+  ],
+  "ppml_transfer_note": "Ghostscript screen optimization; all 105 pages retained; images downsampled; compare original source hash for archival identity."
+}

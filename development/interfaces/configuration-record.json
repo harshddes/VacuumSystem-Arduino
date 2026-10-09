@@ -1,0 +1,37 @@
+{
+  "document_revision": "2026-10-09",
+  "status": "PLANNING RECORD ONLY — NOT A RUNNABLE CONTROLLER CONFIGURATION",
+  "board": "Arduino Uno R3",
+  "pressure_internal_unit": "Torr",
+  "equipment": {
+    "cryo_pump_reported": "Cryo-Torr 8",
+    "compressor_reported": "CTI 8200",
+    "roughing_pump_reported": "Agilent IDP-15",
+    "gauge_reported": "InstruTech IGM402YFD",
+    "gauge_firmware_verified": null,
+    "gate_model_verified": null,
+    "cryo_temperature_readout_verified": null
+  },
+  "limits_requiring_measured_or_oem_supported_values": {
+    "connected_chamber_volume_liters": null,
+    "cryo_pressure_enter_torr": null,
+    "cryo_pressure_trip_torr": null,
+    "cryo_ready_temperature_kelvin": null,
+    "cryo_temperature_trip_kelvin": null,
+    "pressure_max_age_ms": null,
+    "gate_open_timeout_ms": null,
+    "gate_close_timeout_ms": null,
+    "actuation_min_pressure": null,
+    "actuation_pressure_unit": null,
+    "roughdown_timeout_ms": null,
+    "vent_complete_pressure_torr": null,
+    "vent_timeout_ms": null
+  },
+  "review_record": {
+    "wiring_revision": null,
+    "firmware_commit": null,
+    "reviewer": null,
+    "date": null,
+    "supporting_evidence_paths": []
+  }
+}

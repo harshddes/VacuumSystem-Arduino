@@ -1,0 +1,18 @@
+tag,function,source_model,source_terminal,electrical_type,voltage_current,input_output_interface,controller_assignment,normal_state,fault_state,proof_method,status
+PI-101,chamber pressure,IGM402YFD,RS485 connector firmware match pending,isolated RS485,20-28V gauge supply separate,DFR0627 plus DFR0845 candidate,A4/A5 proposed I2C,valid fresh numeric pressure,invalid stale inhibits high vacuum,compare Hornet and disconnect bus,UNVERIFIED
+TI-101,cryo cold-ready,temperature readout unknown,TBD,TBD,TBD,TBD,TBD,cold and ready,not ready inhibits cryo,actual temperature/status loss,UNVERIFIED
+ZS-101C,cryo closed,gate unknown,TBD,TBD,TBD,conditioned field input,TBD,closed proof,true only when physically closed,end switch measurement,UNVERIFIED
+ZS-101O,cryo open,gate unknown,TBD,TBD,TBD,conditioned field input,TBD,open proof,contradiction or timeout faults,end switch measurement,UNVERIFIED
+YV-101,cryo pilot open-close,pilot unknown,TBD,TBD,TBD,rated driver with independent inhibit,TBD,TBD,TBD,power gas and output-loss tests,UNVERIFIED
+ZS-102C,rough closed,valve unknown,TBD,TBD,TBD,conditioned field input,TBD,closed proof,missing proof inhibits vent,end switch measurement,UNVERIFIED
+ZS-102O,rough open,valve unknown,TBD,TBD,TBD,conditioned field input,TBD,open proof,contradiction or timeout faults,end switch measurement,UNVERIFIED
+YV-102,rough pilot open-close,pilot unknown,TBD,TBD,TBD,rated driver with independent inhibit,TBD,TBD,TBD,power gas and output-loss tests,UNVERIFIED
+ZS-103C,vent closed,valve unknown,TBD,TBD,TBD,conditioned field input,TBD,closed proof,missing proof inhibits pump opening,end switch measurement,UNVERIFIED
+ZS-103O,vent open,valve unknown,TBD,TBD,TBD,conditioned field input,TBD,open proof,contradiction or timeout faults,end switch measurement,UNVERIFIED
+YV-103,vent pilot open-close,pilot unknown,TBD,TBD,TBD,rated driver with independent inhibit,TBD,TBD,TBD,power gas and output-loss tests,UNVERIFIED
+PS-101,actuation supply adequate,pressure switch unknown,TBD,TBD,TBD,conditioned field input,TBD,adequate pressure,low pressure inhibits opening,regulated supply test,UNVERIFIED
+P-102-READY,roughing ready,IDP-15,TBD,TBD,TBD,conditioned field input,TBD,ready running,not ready inhibits roughing,actual pump status test,UNVERIFIED
+IG-OFF,hot filaments off,IGM402YFD,TBD firmware ownership must match,TBD,TBD,qualified control and status interface,TBD,proven off,unknown inhibits vent,command and actual status comparison,UNVERIFIED
+OPEN-ENABLE,independent opening inhibit,supervisor circuit TBD,TBD,TBD,TBD,independent physical enable,TBD,enabled only when healthy,inhibits opening; close service preserved,MCU I2C brownout and failed-output tests,UNVERIFIED
+HS-MODE,MANUAL-OFF-AUTO,panel selector TBD,TBD,dry contact if verified,low voltage request interface,conditioned input,TBD,one valid mode,OFF or invalid inhibits opening,continuity matrix,UNVERIFIED
+HS-STOP,CLOSE-STOP,panel control TBD,TBD,TBD,TBD,qualified close-priority path,TBD,no close request,close priority,override open request test,UNVERIFIED
