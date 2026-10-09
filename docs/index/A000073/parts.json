@@ -1,0 +1,1010 @@
+[
+  {
+    "refdes": "ICSP",
+    "library": "SmartPrj",
+    "deviceset": "PINHD-2X3",
+    "device": "",
+    "technology": "",
+    "value": "3x2 M",
+    "package": "2X03"
+  },
+  {
+    "refdes": "P+1",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "GND1",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "P+2",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "P+3",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "GND2",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND3",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "C2",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "GND7",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "PC1",
+    "library": "rcl",
+    "deviceset": "CPOL-EU",
+    "device": "D",
+    "technology": "",
+    "value": "47u",
+    "package": "PANASONIC_D"
+  },
+  {
+    "refdes": "PC2",
+    "library": "rcl",
+    "deviceset": "CPOL-EU",
+    "device": "D",
+    "technology": "",
+    "value": "47u",
+    "package": "PANASONIC_D"
+  },
+  {
+    "refdes": "GND9",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND10",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND12",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND19",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "ON",
+    "library": "led",
+    "deviceset": "LED",
+    "device": "CHIP-LED0805",
+    "technology": "",
+    "value": "GREEN",
+    "package": "CHIP-LED0805"
+  },
+  {
+    "refdes": "GND14",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "P+5",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "RX",
+    "library": "led",
+    "deviceset": "LED",
+    "device": "CHIP-LED0805",
+    "technology": "",
+    "value": "YELLOW",
+    "package": "CHIP-LED0805"
+  },
+  {
+    "refdes": "TX",
+    "library": "led",
+    "deviceset": "LED",
+    "device": "CHIP-LED0805",
+    "technology": "",
+    "value": "YELLOW",
+    "package": "CHIP-LED0805"
+  },
+  {
+    "refdes": "D1",
+    "library": "diode",
+    "deviceset": "DIODE-",
+    "device": "SMB",
+    "technology": "",
+    "value": "M7",
+    "package": "SMB"
+  },
+  {
+    "refdes": "X1",
+    "library": "SmartPrj",
+    "deviceset": "POWERSUPPLY_DC21MM",
+    "device": "X",
+    "technology": "",
+    "value": "",
+    "package": "POWERSUPPLY_DC-21MM"
+  },
+  {
+    "refdes": "FD1",
+    "library": "Arduino-utility",
+    "deviceset": "FIDUCIAL",
+    "device": "-1.5MM",
+    "technology": "",
+    "value": "DNP",
+    "package": "FD-1-1.5"
+  },
+  {
+    "refdes": "FD2",
+    "library": "Arduino-utility",
+    "deviceset": "FIDUCIAL",
+    "device": "-1.5MM",
+    "technology": "",
+    "value": "DNP",
+    "package": "FD-1-1.5"
+  },
+  {
+    "refdes": "FD3",
+    "library": "Arduino-utility",
+    "deviceset": "FIDUCIAL",
+    "device": "-1.5MM",
+    "technology": "",
+    "value": "DNP",
+    "package": "FD-1-1.5"
+  },
+  {
+    "refdes": "X2",
+    "library": "SmartPrj",
+    "deviceset": "PN61729",
+    "device": "",
+    "technology": "",
+    "value": "USB-B_TH",
+    "package": "PN61729"
+  },
+  {
+    "refdes": "GND11",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "U1",
+    "library": "linear",
+    "deviceset": "MC33269ST*",
+    "device": "",
+    "technology": "-3.3T3",
+    "value": "NCP1117ST50T3G",
+    "package": "SOT223"
+  },
+  {
+    "refdes": "C4",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "GND13",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "F1",
+    "library": "rcl",
+    "deviceset": "L-EU",
+    "device": "L1812",
+    "technology": "",
+    "value": "MF-MSMF050-2 500mA",
+    "package": "L1812"
+  },
+  {
+    "refdes": "P+6",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "P+7",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "C7",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "GND16",
+    "library": "supply1",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": ""
+  },
+  {
+    "refdes": "L",
+    "library": "led",
+    "deviceset": "LED",
+    "device": "CHIP-LED0805",
+    "technology": "",
+    "value": "YELLOW",
+    "package": "CHIP-LED0805"
+  },
+  {
+    "refdes": "GND17",
+    "library": "supply1",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": ""
+  },
+  {
+    "refdes": "T1",
+    "library": "zetex",
+    "deviceset": "PMOSSOT23",
+    "device": "",
+    "technology": "",
+    "value": "FDN340P",
+    "package": "SOT-23"
+  },
+  {
+    "refdes": "P+8",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "GND20",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND18",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "P+9",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "C1",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "P+10",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "U3",
+    "library": "Arduino-ucs&SoCs",
+    "deviceset": "ATMEGA16U2",
+    "device": "",
+    "technology": "",
+    "value": "16U2",
+    "package": "ATMEL_QFN32"
+  },
+  {
+    "refdes": "GND21",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "C5",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "ICSP1",
+    "library": "SmartPrj",
+    "deviceset": "PINHD-2X3",
+    "device": "",
+    "technology": "",
+    "value": "3x2 M",
+    "package": "2X03"
+  },
+  {
+    "refdes": "P+11",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "GND22",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "GND23",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "Z1",
+    "library": "varistor",
+    "deviceset": "VARISTOR",
+    "device": "CN0603",
+    "technology": "",
+    "value": "CG0603MLC-05E",
+    "package": "CT/CN0603"
+  },
+  {
+    "refdes": "Z2",
+    "library": "varistor",
+    "deviceset": "VARISTOR",
+    "device": "CN0603",
+    "technology": "",
+    "value": "CG0603MLC-05E",
+    "package": "CT/CN0603"
+  },
+  {
+    "refdes": "GROUND",
+    "library": "jumper",
+    "deviceset": "SJ",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "SJ"
+  },
+  {
+    "refdes": "L1",
+    "library": "wuerth-elektronik",
+    "deviceset": "WE-CBF",
+    "device": "_0805",
+    "technology": "",
+    "value": "BLM21",
+    "package": "0805"
+  },
+  {
+    "refdes": "RESET-EN",
+    "library": "jumper",
+    "deviceset": "SJ",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "SJ"
+  },
+  {
+    "refdes": "R2",
+    "library": "SmartPrj",
+    "deviceset": "R-EU_",
+    "device": "R0603",
+    "technology": "",
+    "value": "1M",
+    "package": "R0603-ROUND"
+  },
+  {
+    "refdes": "RN2",
+    "library": "resistor-dil",
+    "deviceset": "4R-N",
+    "device": "CAY16",
+    "technology": "",
+    "value": "1K",
+    "package": "CAY16"
+  },
+  {
+    "refdes": "GND4",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "RN1",
+    "library": "resistor-dil",
+    "deviceset": "4R-N",
+    "device": "CAY16",
+    "technology": "",
+    "value": "10K",
+    "package": "CAY16"
+  },
+  {
+    "refdes": "C6",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "100n",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "C8",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "1u",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "RN4",
+    "library": "resistor-dil",
+    "deviceset": "4R-N",
+    "device": "CAY16",
+    "technology": "",
+    "value": "1K",
+    "package": "CAY16"
+  },
+  {
+    "refdes": "RN3",
+    "library": "resistor-dil",
+    "deviceset": "4R-N",
+    "device": "CAY16",
+    "technology": "",
+    "value": "22R",
+    "package": "CAY16"
+  },
+  {
+    "refdes": "C3",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "1u",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "R1",
+    "library": "SmartPrj",
+    "deviceset": "R-EU_",
+    "device": "R0603",
+    "technology": "",
+    "value": "1M",
+    "package": "R0603-ROUND"
+  },
+  {
+    "refdes": "C9",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "22p",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "C11",
+    "library": "SmartPrj",
+    "deviceset": "C-EU",
+    "device": "0603-RND",
+    "technology": "",
+    "value": "22p",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "GND8",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "JP2",
+    "library": "SmartPrj",
+    "deviceset": "PINHD-2X2",
+    "device": "",
+    "technology": "",
+    "value": "2x2 M-NM",
+    "package": "2X02"
+  },
+  {
+    "refdes": "GND15",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "U5",
+    "library": "linear",
+    "deviceset": "LMV358?*",
+    "device": "MM",
+    "technology": "X",
+    "value": "LMV358IDGKR",
+    "package": "MSOP08"
+  },
+  {
+    "refdes": "RESET",
+    "library": "SmartPrj",
+    "deviceset": "TS42",
+    "device": "",
+    "technology": "",
+    "value": "TS42031-160R-TR-7260",
+    "package": "TS42"
+  },
+  {
+    "refdes": "Y2",
+    "library": "SmartPrj",
+    "deviceset": "RESONATOR",
+    "device": "MU",
+    "technology": "",
+    "value": "CSTCE16M0V53-R0 16MHZ",
+    "package": "RESONATOR"
+  },
+  {
+    "refdes": "U2",
+    "library": "SmartPrj",
+    "deviceset": "LP2985-XXDBVR",
+    "device": "",
+    "technology": "33",
+    "value": "LP2985-33DBVR",
+    "package": "SOT23-DBV"
+  },
+  {
+    "refdes": "D2",
+    "library": "diode",
+    "deviceset": "DIODE-",
+    "device": "MINIMELF",
+    "technology": "",
+    "value": "CD1206-S01575",
+    "package": "MINIMELF"
+  },
+  {
+    "refdes": "D3",
+    "library": "diode",
+    "deviceset": "DIODE-",
+    "device": "MINIMELF",
+    "technology": "",
+    "value": "CD1206-S01575",
+    "package": "MINIMELF"
+  },
+  {
+    "refdes": "Y1",
+    "library": "SmartPrj",
+    "deviceset": "XTAL/S",
+    "device": "",
+    "technology": "",
+    "value": "16MHz",
+    "package": "QS"
+  },
+  {
+    "refdes": "ORIGIN",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_ONL",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_RX",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_TX",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_TXL",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_RXL",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_DTR",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_USBVCC",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_VUCAP",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_MISO2",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_RESET2",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_MOSI2",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_SCK2",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_USH",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_GATE",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_LCMD",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_LL",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "TP_CMP",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "U4",
+    "library": "SmartPrj",
+    "deviceset": "ATMEGAXX8",
+    "device": "-MUR",
+    "technology": "",
+    "value": "ATMEGA328P-MU",
+    "package": "MLF32"
+  },
+  {
+    "refdes": "TP_5V1",
+    "library": "SmartPrj",
+    "deviceset": "TP_SP",
+    "device": "",
+    "technology": "",
+    "value": "",
+    "package": "TP-SP"
+  },
+  {
+    "refdes": "L2",
+    "library": "Induttanze",
+    "deviceset": "0715_CV201210-100K",
+    "device": "",
+    "technology": "",
+    "value": "10uH",
+    "package": "0805"
+  },
+  {
+    "refdes": "C10",
+    "library": "Condensatori",
+    "deviceset": "0015_100NF_0603",
+    "device": "",
+    "technology": "",
+    "value": "100nF",
+    "package": "C0603-ROUND"
+  },
+  {
+    "refdes": "P+12",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "GND24",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "J1",
+    "library": "Arduino-connectors",
+    "deviceset": "PINHD-1X14",
+    "device": "-CUSTOM",
+    "technology": "",
+    "value": "-",
+    "package": "1X14-CUSTOM"
+  },
+  {
+    "refdes": "P+13",
+    "library": "Arduino-supply",
+    "deviceset": "+5V",
+    "device": "",
+    "technology": "",
+    "value": "+5V",
+    "package": ""
+  },
+  {
+    "refdes": "+3V1",
+    "library": "Arduino-supply",
+    "deviceset": "+3V3",
+    "device": "",
+    "technology": "",
+    "value": "+3V3",
+    "package": ""
+  },
+  {
+    "refdes": "+3V2",
+    "library": "Arduino-supply",
+    "deviceset": "+3V3",
+    "device": "",
+    "technology": "",
+    "value": "+3V3",
+    "package": ""
+  },
+  {
+    "refdes": "GND6",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "VIN1",
+    "library": "Arduino-supply",
+    "deviceset": "VIN",
+    "device": "",
+    "technology": "",
+    "value": "VIN",
+    "package": ""
+  },
+  {
+    "refdes": "VIN2",
+    "library": "Arduino-supply",
+    "deviceset": "VIN",
+    "device": "",
+    "technology": "",
+    "value": "VIN",
+    "package": ""
+  },
+  {
+    "refdes": "J2",
+    "library": "Arduino-connectors",
+    "deviceset": "PINHD-1X18",
+    "device": "",
+    "technology": "",
+    "value": "-",
+    "package": "1X18-CUSTOM"
+  },
+  {
+    "refdes": "GND5",
+    "library": "Arduino-supply",
+    "deviceset": "GND",
+    "device": "",
+    "technology": "",
+    "value": "GND",
+    "package": ""
+  },
+  {
+    "refdes": "FRAME1",
+    "library": "Arduino-utility",
+    "deviceset": "A3-FRAME",
+    "device": "-STANDARD",
+    "technology": "",
+    "value": "DNP",
+    "package": "FRAME"
+  }
+]

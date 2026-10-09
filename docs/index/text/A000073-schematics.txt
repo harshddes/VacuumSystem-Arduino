@@ -1,0 +1,1016 @@
+===== A000073-schematics.pdf PAGE 1 =====
+
+                                                         1                                                                                                                                        2                                                                                                                                         3                                                                         4                                                                                                                                                                     5                                                                                        6                               7                                                                                            8
+           VIN                                                                                                                                                            +5V
+                                                                                                                                                                                                                                                                                                                                                                            pas 1    2       7 pas 1
+
+
+
+
+                                                                                                                                                             pwr 0
+          8 passup1 0
+
+
+
+
+                                                                                                                                                                          sup 0
+                                                                                                                                                                                                                                                                                                                                                                                    RN3B 22R
+                           RN1A 10K
+
+
+
+
+                                                                                                                                                             8
+
+
+
+
+                                                                                                                                                                                                  pas 1
+                                                                                                                                                                                                                                                                                                                                                                                     3       6 pas 1
+
+
+
+
+                                                                                                                                                                     V+
+                                                      TP_CMP                                                                                                                                                                                                                                                                                                                pas 1
+
+                                                                                                                                                                                                                  C1                                                                                  TP_LCMD                                                                       RN3C 22R
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 +5V
+                                                                                                                              TP_GATE                                                                            100n
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          A5/SCL pas180
+                                                         pas 0
+           2 paspas1 1 1
+
+
+
+
+                                                                                                                                                                     V-
+                                                                                                                                                                                                                                                                                                                                           X1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     +3V3
+
+
+
+
+                                                                                                                                                             4
+                                                   CMP                                                                                                                                                                                                                        L13                                                                                                                                                                               U1                                                                                                                                                                                                                                                                                                        A4/SDA pas170
+
+
+
+
+                                                                                                                                                                                                  pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                      8 pas 1 pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  sup 0
+A                                                                                                                                                                                                                                                                                                                                          POWERSUPPLY_DC21MMX
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              A
+
+
+
+
+                                                                                                                                                                          sup 0
+                                                                           3                       U5A                                                                                                                                                                                                                                                                                                                                                          NCP1117ST50T3G                                                                         +5V                                                                                                                                                                                                                AREF pas160
+
+
+
+
+                                                                                                                                    pas 0
+
+
+
+
+                                                                                                                                                             pwr 0
+                                                                    in 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             TP_5V1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                J1                VIN
+      7 RN1B
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         GND
+                                                                                                      1 out 0                                                                                                                                                                                                                                                           3                                         VIN in 0 3                                                                   4 pas 0                                                                                                                                                                                                                                                                                                                                            15
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          sup 0
+                                                                                                                                                                                                                                                                                                                                                                             pwr 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                sup
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 00
+                                                                                                                                                                                                                                                                                                                                                                    3                                                                                             IN OUT                                                                                                  +5V
+                                                     +3V3 in 0 2                                                                                                          GND                                                                                                                                                                                                                                                                                                                  2 pas 0                                                                                                                                                                                                                                         1pas 0                     SCK                                                                     14
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sup 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                1
+
+
+
+                                                                                                                                                                                                                                                                                                                                                            2
+                                                                                                                                                                                                                                                                                          1K
+                                                                                                                                                                                                                                               U5B                                                                                                                                              D1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                             RN2A
+                                                                                                   LMV358IDGKR                                                             SCK                                    5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            2pas 0                     MISO                                                                    13
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  sup 0
+                                                                                                                                                                                                          in 0                                                                                                                TP_LL                                                  pas 0      pas 0                                                                                                                                                                                                                                                                                                                                                                                                                                           pas 0
+
+
+
+
+                                                                                                                               GATE_CMD
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                        pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas 1
+    10K
+
+
+
+
+                                                                                                                                                                                                                                                          7 out 0                                                                                                                               M7                                                                                                                                                                                                                                                                                                                                             3pas 0 RESET               MOSI                                                                    12
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+                   10
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                             1
+
+
+
+                                                                                                                                                                                                                                                                                                                                                           2
+                 sup
+
+
+
+
+                                                                                                                                                                                                                  6                                                                                                                                                 PWRIN                       PC1                                                                                                                                             PC2 C2                                                                                                                                                                                         4pas 0                     SS                                                                      11
+
+
+
+
+                                                                                                                                                                                                                                                                                                      1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  1
+                                                                                                                                                                                                          in 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                        +
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  +
+               pas
+
+
+
+
+                                                                                                                                                                                                                                                                                                                      YELLOW
+                                                                                                                                                                                                                                                                                                              10
+                                                                                                                                                                                                                                                                                                            pas
+                                                                                                                                                                                                                                               LMV358IDGKR                                                                                                                                      47u                                                                                                                                             47u 100n                                                                                                                                                                                       5pas 0                     IO9                                                                     10
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      in 0
+                                                                                                                                                                                                                                                                                                                                                pwr 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                            pwr 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                          pas
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  GND
+         GND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6passup0 0                 IO8                                                                       9
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                            00
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       00
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 10
+                                                                                                                                                                                                                                                                                                                                                                                                          sup
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     sup
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               sup
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               7pas 0                     IO7                                                                       8
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                        pas
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   pas
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas
+                                                                                                                                                                                                                                                                                                                                                sup 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               8pas 0                     IO6                                                                       7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                      L
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                              00
+                                                                                                                                                                                                                                                                                                            sup
+                                                                                                                                                                                                                                                                                                                                                                                                        GND                                                       GND                                                             GND                                                       GND                                                                                                                                                9pas 0 A0                  IO5                                                                       6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                          pas
+                                                                                           pas 0
+
+
+
+
+                                                                                                                              +5V                                                                                                                                                                                            +3V3            GND                                                                                                                                                                                                                                                                                                                                                                                               10
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0 A1                  IO4                                                                       5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+                                                                                                                                                                                                                                                                                                      GND                                                                                                                                                                                                                                                                                                                                                                                                                                      11
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0 A2                  IO3                                                                       4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+                                                      USBVCC                                         +5V                                                                                                                  1                                                                   5 +3V3                                                                                                                                                                                       +5V                                                                                                                                                                                                                                                 12
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0 A3                  IO2                                                                       3
+                                                                                                                                    sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                    1 0
+                                                          pas 0                                      pas 0                                                                                                       in 0                                                                           pas 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           pas 0
+                                                                                                                                                                                                                                   IN                        OUT
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                passup
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               13
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0 A4/SDA              IO1                                                                       2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            GREEN
+                                                                                    T1
+                                                                               FDN340P
+
+
+
+
+                                                                                                                                                                                                                          3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    14
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0 A5/SCL              IO0                                                                       1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               sup 0
+                                                                                                                                                                                                                 in 0
+                                                                                                                                                                                                                                   ON/OFF                                                                                                 C3                                                                                                                                                                                                   ON                                                                                                                                                                                                                                                                                               pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      GND
+                                                                                                                                                                                                                                                                                                                                           1u                                                                                                                                            pas 1         4                          5 paspas0 1                                  pas
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             sup 00
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Arduino SA Trademarks cannot be used without owner's formal permission
+                                                                                                                                                                                                             pwr 0        2
+                                                                                                                                                                                                                                   GND NC/FB
+                                                                                                                                                                                                                                                                                              4 pas 0                                                                                                                                                                                                  RN4D 1K                                                                                                                                                                                                                                                                                                                              J2
+                                                                                                                                                                                  sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                    10
+                                                                                                                                                                                                                                                                                                                                  sup
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         pas 1         3                          6 pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                pas
+B                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             B
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. Arduino SA DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       RN4C 1K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   pas 0
+                                                                                                                                                                                  GND                                                                                                                                         GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                            4pas 0
+                                                                                                                                                                                                                                                                                                                                                                                                                            2pas 0
+                                                                                                     TP_MISO2 TP_RESET2
+                                                                                                                                                                                                                 +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                 2x2 M-NM
+                                                                                                                                                                                                                                                                                         TP_MOSI2 TP_SCK2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          REGARDING PRODUCTS, INCLUDING BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 TP_ONL
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        sup 0
+                                                                                                          pas 0
+
+
+
+
+                                                                                                                                             pas 0
+
+
+
+
+                                                                                                                                                                                                                  sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   5 pwr 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2 pas 2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   1 pas 2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          these for future definition and shall have no responsibility whatsoever for conflicts or incompatibilities arising from future changes to them.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                JP2
+                                                                                                                                                             ICSP1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    RESET
+                                                                                                                                                                                                                                                                                                                                                                                                                            3
+                                                                                                                                                                                                                                                                                                                                                                                                                            1
+                                                                                                                                                                                                                                                                                              pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                               pas 0
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          pas 0
+                                                                                                                  MISO2                                            1
+                                                                                                                                                               pas 0                          2pas 0                                                                                                                                                                                                                                                                                                                                                                                                                                                    GND                              +5V
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ICSP
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 RESET
+                                                                                                                    SCK2                                           3
+                                                                                                                                                               pas 0                          4pas 0                          MOSI2
+                                                                                                                                                                                                                                                                              CD1206-S01575
+                                                                                                                                                                                                                                      3 pas 1
+
+
+
+
+                                                                                                                    RESET2                                         5                          6pas 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                1       2pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             sup 0
+                                                                                                                                                               pas 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pas 0
+                                                                                                                                                                                                                                                              pas 0
+                                                                                                                                                                                                                                 6 RN1C
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    3       4pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pas 1 3
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               TS42031-160R-TR-7260
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          The product information on the Web Site or Materials is subject to change without notice. Do not finalize a design with this info
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+                                                                                                                                                                                                                  sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Arduino SA may make changes to specifications and product descriptions at any time, without notice. The Customer must not
+                                                                                                                                                                                                                                                      D3
+
+
+
+
+                                                                                                                                                             3x2 M                                                                                                                                                                                                                                                                                                                                               RESET-EN                                                                                                                                           5       6pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              100n
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          rely on the absence or characteristics of any features or instructions marked "reserved" or "undefined." Arduino SA reserves
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                pas 0
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             1      2 pas +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         C4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 pas 1                    1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 CD1206-S01575
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sup 0 pas 1
+                                                                                                                                                                                                                                                                                                                   U3
+                                                                                                                                                                                                                               10K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               GND
+                                                                                                                                                                                                                 GND                                                                                                                                                                                                                                                                                                                                                                                                                                            3x2 M                GND                                                AREF
+                                                                                                                                                                                                                                                              pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   100n
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          RN1D 10K
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       sup
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     pas 10          pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas 0
+                                                                                                                                                                                                                                                                                                                                                                                             21 io 0 PB7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      C5
+                                                                                                                                                                                                                                       pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        5
+                                                                                                                                                                                                                                                                                                                                   (PCINT7/OC0A/OC1C)PB7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             D2
+                                                                                                                                                                                                                                                                                                                                                                                             20 io 0 PB6                                                                      pas 1                         pas 1
+                                                                                                                                                                                                                                                                                                                                                (PCINT6)PB6
+                                                                                                                                                                                                                 RESET2                                                       in 0            24                                                                                             19 io 0 PB5
+                                                                                            F1                                                                                                                                                                                                                          RESET(PC1/DW)           (PCINT5)PB5
+                                                                                                                                                                                                                                                                                                                                                                                             18 io 0 PB4                                                                                                                                                                                                                                 U4
+    USB-B_TH                                                                                      USBVCC
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        4
+                                                                                  pas 1            pas 1
+                                                                                                                                                                                                   22p 22p
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                             (T1/PCINT4)PB4
+                                                                                                                                                                                                                                                1 pas 1
+
+
+                                                                                                                                                                                                                                                                      pas 1
+                                                                                                                                                                                                       C11
+
+
+
+
+                                                                                                                                                                                                                              XT2                                                                                                                                                            17 ioMISO2                                                                                              RESETio 0 29                                                                                                                                                                                    17 io 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pas 1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                         DTR
+                                      X2                                                    MF-MSMF050-2 500mA                                                                              pas 1                             pas 1
+                                                                                                                                                                                                                                                                                                                                     (PD0/MISO/PCINT3)PB3
+                                                                                                                                                                                                                                                                                                                                                                                                   0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         PC6(/RESET)        PB5(SCK)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           pas 1
+                                                                                                                                                                                                                                16MHz
+
+
+                                                                                                                                                                                                                                                             Y1
+
+
+
+
+                                                                                                                                                                                                                                                                              io 0             2                                                                                             16 ioMOSI2
+                                                                                                                                                                                                                                                                                                                                                                                                   0                                                                              CSTCE16M0V53-R0 16MHZ                                                                                                                                                                                              16 io 0
+                                                                                                   22R RN3A                                                                                                                                                                                                             XTAL2(PC0)    (PDI/MOSI/PCINT2)PB2                                                                                                                        GND                                                                                                                                                                      PB4(MISO)
+C                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             C
+                                                                                                                                                                                     GND
+
+
+
+
+                                           1 io 0     XUSB                                       pas 1 8  1 pas 1                                                                                         sup 0                                             R1                                                                                                                               15 ioSCK2
+                                                                                                                                                                                                                                                                                                                                                                                                   0                                                                                       XTAL2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           pas 0                                                                                                                                                                                                     15 io 0
+                                                                                                                                                                                                                                                                                                                                          (SCLK/PCINT1)PB1                                                                                                                                                                                                                                                                                             PB3(MOSI/OC2)
+                                                                                                                                                                                                   C9
+
+
+
+
+                                           2 io 0                                                                                                                                                                                                           1M                                 1                                                                                             14 io 0                                                                                                                                                                                                                                                                                                 14 io 0
+                              USB
+
+
+
+
+                                                                                                   D-                                                                RD-                                                                                                      io 0
+                                                                                                                                                                                                                                                                                                                        XTAL1               (SS/PCINT0)PB0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     pas 0           R2                                                                                                                                                 PB2(SS/OC1B)                                                                    SS
+                                           3 io 0                                                  D+                                                                                                                         XT1                                                        XT1                                                                                                                                                                                                        1M          8                                                                                                                                                                                    13 io 0                            IO9
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       sup 0
+                                                                                                                                                                                                                                                2
+
+
+
+
+                                                                                                                                                                                            pas 1                             pas 1                                                                                                                                                                                                                                                        pas 0          io 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         PB7(XTAL2/TOSC2) PB1(OC1A)
+                            P$2
+                            P$1
+
+
+
+
+                                           4 io 0                                                                      5 RN3D
+                                                                                                                     22R    4 RD+                                                                                                                                                                                                                                                                                                                                                                               7                                                                                                                                                                                    12 io 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           XTAL1                                                                                                                                                                                                                                        IO8
+                                                                                          CG0603MLC-05E
+
+
+
+                                                                                                                    CG0603MLC-05E
+
+
+
+
+                                                                                                                                                                                                                                                  pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                      pas 1
+
+
+
+
+                                                                                                                   pas 1      pas 1                                                                                                                                                                                                                                                                                                                                                                       io 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         PB6(XTAL1/TOSC1)    PB0(ICP)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                 4 pas 1
+                                                                                                                                                                                                                                                                                              32                                                                                             22 io 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           pas 1
+                                                                                                                                                                                                                                                                                                                                                                                                                            USB boot En
+                                                                                                                                                                                                                                                                        pwr 0
+                                                                                                                                                                                                                                                                                                                        AVCC                            (INT4/ICP1/CLK0)PC7
+                                                                                pas 1
+
+
+
+
+                                                                                                          pas 1
+
+
+
+
+                                                                                                                                                                                                                                            +5V                                                                                                                                                                                                                                            +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                            5 RN2D
+                                                                                                                                                                                                                                                                                                                                                                                             23 io 0                                                                                                                               L2                                                                    io 0 20
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      AREF                                                                                           28 io 0                            A5/SCL
+                                                                                                                                                                                                                                                                                                                                                          (OC1A/PCINT8)PC6                                                                                                                                                                                                                                                               AREF                      PC5(ADC5/SCL)
+                              P$2
+                           io P$1
+
+
+
+
+                                                                 UGND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                             25 io 0                                                                                                          pas 1                                                       pas 1                                       io 0 18                                                                        27 io 0                            A4/SDA
+                                                                                                                                                                                                                                                                                                                                                          (PCINT9/OC1B)PC5                                                                                                                                                                                                                                                               AVCC                      PC4(ADC4/SDA)
+                                                                                                                                                                                                                                                                                               4                                                                                             26 io 0                                                                                                                                                                                                                  io 0 21                                                                        26 io 0                            A3
+                            io 0
+
+                              0
+
+
+
+
+                                                                                                                                                                                                                                                  sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               sup 0
+                                                                                                                                                                                                                                                                        pwr 0
+                                                                                                                                                                                                                                                                                                                        VCC                                    (PCINT10)PC4                                                                                                                                                        10uH                                                                                                  AGND                          PC3(ADC3)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  pas 1 sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    pas 1
+                                                                           Z1
+
+
+
+                                                                                             Z2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                           1K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   TP_DTR
+                                           TP_USH                                                                                                                                         TP_USBVCC                                TP_VUCAP                             pwr 0                  3                                                                                             5 io 0                                                                           pas 0                                                                                                                                                                                                                  25 io 0                            A2
+                                                                                                                                                                                                                                                                                                                        GND                               (AIN2/PCINT11)PC2                                                                                                                                                                                                                                                                                            PC2(ADC2)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   C10                                                                                                                                 PC1(ADC1)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     24 io 0                            A1
+                                                                                                                                                                                                                                                                                                                                                                                             13 io 0                                              GND                                                                                                                          +5V                                               3                                                                   23 io 0                            A0
+                                                                                pas 1
+
+
+
+
+                                                                                                          pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      io 0
+                                                                                                                                                                                                                                                                                                                                           (CTS/HWB/AIN6/TO/INT7)PD7                                                                                                                                                                                                                                                                     GND                           PC0(ADC0)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    pas 1 sup 0
+                                                                                                                                                                                                                              TP_VUCAP pas 0 27                                                                                                                                              12 io 0                                                                                                                                100nF                                                                                        5
+                                           pas 0
+
+
+
+
+                                                                                                                                                                                          pas 0
+
+
+
+
+                                                                                                                                                                                                                                       pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      io 0
+                                                                                                                                                                                                                                                                                                                        UCAP                      (RTS/AIN5/INT6)PD6                                                                                                                                                                                                                                                                     GND
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       01
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     pas
+                                                   USHIELD                                                                                                                                                                    USBVCC pwr 0 31                                                                           UVCC                   (XCK/AIN4/PCINT12)PD5
+                                                                                                                                                                                                                                                                                                                                                                                             11 io 0 TXLED                                                                            TP_TXL                                                                                                                          io 0       4
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         VCC                              PD7(AIN1)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     11 io 0                            IO7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   sup
+                                                                                                                                    pas 1
+
+
+
+
+                                                                                                                                                                                                                              RD-        io 0 30
+                                                                                                                                                                                                                                                                                                                        D-                              (INT5/AIN3)PD4
+                                                                                                                                                                                                                                                                                                                                                                                             10 io 0 RXLED                                                                                                       GND +5V                                                                                              io 0       6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         VCC                              PD6(AIN0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     10 io 0                            IO6
+                                                                                pas 1
+
+
+
+
+                                                                                                                                                     pas 1
+
+
+
+
+                                                                                                                                                                                                                              RD+        io 0 29                                                                                                                                             9 ioM8RXD                                                                                                                                                                                                                                                                                               9 io 0                             IO5
+                                                                                                           100n                                                                                                                                                                                                         D+                             (TXD1/INT3)PD3
+                                                                                                                                                                                                                                                                                                                                                                                                   0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  1K                                                                                                                                                                        PD5(T1)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   6 RN2C
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       sup 0
+                                                                                                                                                                                                                              UGND     pwr 0 28                                                                                                                                              8 ioM8TXD                                                                                                  3 pas 1                                                                                                                                                                                      2 io 0                             IO4
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sup 0
+                                                                                                             C7                                                                                                                                                                                                                                                                                                                                                                                                                                                             C6
+                                                                                        BLM21
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                   0                                                   pas 0                              0 1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      paspas
+                                                                                                                                                                                                                                                                                                                        UGND                     (RXD1/AIN1/INT2)PD2                                                                                                                                                                                                                                                                                                    PD4(XCK/T0)
+                                                                                                                                                                                                                                                                                                                                                                                             7 io 0                                                                                                                                                                                                                                                                                                  1 io 0                             IO3
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   pas 1
+                                                                                                                                                                                                                                                                                                                                                        (AIN0/INT1)PD1                                                                                                TX                                                                                                    100n                                                                                          PD3(INT1)
+                                                                                                                                        10
+                                                                                                                                      sup
+
+
+
+
+                                                                                                                                                                      C8                                                       2                          1 pas 1 pwrEXP                                                                                                                     6 io 0                                                                   YELLOW
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                          TP_RXL                                                                                                GNDio 0 22                                                                                                           32 io 0                            IO2
+                                                                           L1
+
+
+
+
+                                                                                                                                                                                                                    pas 1                                            0
+                                                                                                                                                                                                                                                                                                                        PAD                           (OC0B/INT0)PD0                                                                                                                                                                                                                                                                     ADC7                             PD2(INT0)
+                                                                                                                                    pas
+
+
+
+
+                                                                                                                                                                                                                                                              sup 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                19                                                                   31 io 0                            IO1
+                                                                                                                                                     pas 1
+
+
+
+
+                                                                                                                                                                      1u                                           GROUND
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      io 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ADC6                             PD1(TXD)
+                                                                                                                              GND                                                                                                                                                                                  16U2                                                                                                                                                                                                                                                                                                                                                                              30 io 0                            IO0
+                                                                                pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            RN2B                                                                                                                                                          PD0(RXD)
+D                                                                                                                                                                                                                                                           GND                                                                                                                                                                                                                                        7                          2 pas 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     D
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       pas 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       pas 0                              0 1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      paspas
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            1K                                                                                                                        ATMEGA328P-MU
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      RX                                                                                                                                                                      1K RN4B
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      YELLOW                                                                                                                                                       M8RXD pas 1 7    2 pas 1
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     8 RN4A
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    1K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  This file is licensed under : CC-SA-BY-NC
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   M8TXD        pas 1     1 pas 1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        pas 0
+                                                                                                                                                                                                                                   ORIGIN
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      TP_RX                         TP_TX
+                                                                                                                                                                                                                                       pas 0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          PARTICULAR PURPOSE
+E                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             E
+
+
+
+
+                                                         1                                                                                                                                        2                                                                                                                                         3                                                                         4                                                                                                                                                                     5                                                                                        6                               7                                                                                            8
+
+===== A000073-schematics.pdf PAGE 2 =====
+
+This project's hardware is licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+ License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/deed.en

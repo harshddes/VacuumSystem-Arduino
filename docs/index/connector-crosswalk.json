@@ -1,0 +1,1113 @@
+{
+  "source": "docs/index/text/A000066-datasheet.txt",
+  "disagreement_count": 0,
+  "rows": [
+    {
+      "connector": "JANALOG",
+      "pin": 1,
+      "function": "NC",
+      "type": "NC",
+      "description": "Not connected",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 1,
+      "eagle_net": null,
+      "eagle_chip": [],
+      "arduino_name": "NC",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 1,
+      "function": "NC",
+      "type": "NC",
+      "description": "Not connected",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 1,
+      "eagle_net": null,
+      "eagle_chip": [],
+      "arduino_name": "NC",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 2,
+      "function": "IOREF",
+      "type": "IOREF",
+      "description": "Reference for digital logic V - connected to 5V",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 2,
+      "eagle_net": "+5V",
+      "eagle_chip": [
+        "U3.VCC pad 4 = ATMEGA16U2-MU(R)",
+        "U3.AVCC pad 32 = ATMEGA16U2-MU(R)",
+        "ZU4.VCC pad 7"
+      ],
+      "arduino_name": "IOREF",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 2,
+      "function": "IOREF",
+      "type": "IOREF",
+      "description": "Reference for digital logic V - connected to 5V",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 2,
+      "eagle_net": "+5V",
+      "eagle_chip": [
+        "U3.VCC pad 4 = 16U2",
+        "U3.AVCC pad 32 = 16U2",
+        "U4.VCC@1 pad 4 = ATMEGA328P-MU",
+        "U4.VCC@2 pad 6 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "IOREF",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 3,
+      "function": "Reset",
+      "type": "Reset",
+      "description": "Reset",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 3,
+      "eagle_net": "RESET",
+      "eagle_chip": [
+        "ZU4.RESET pad 1"
+      ],
+      "arduino_name": "Reset",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 3,
+      "function": "Reset",
+      "type": "Reset",
+      "description": "Reset",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 3,
+      "eagle_net": "RESET",
+      "eagle_chip": [
+        "U4.PC6(/RESET) pad 29 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "Reset",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 4,
+      "function": "+3V3",
+      "type": "Power",
+      "description": "+3V3 Power Rail",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 4,
+      "eagle_net": "+3V3",
+      "eagle_chip": [],
+      "arduino_name": "+3V3",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 4,
+      "function": "+3V3",
+      "type": "Power",
+      "description": "+3V3 Power Rail",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 4,
+      "eagle_net": "+3V3",
+      "eagle_chip": [],
+      "arduino_name": "+3V3",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 5,
+      "function": "+5V",
+      "type": "Power",
+      "description": "+5V Power Rail",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 5,
+      "eagle_net": "+5V",
+      "eagle_chip": [
+        "U3.VCC pad 4 = ATMEGA16U2-MU(R)",
+        "U3.AVCC pad 32 = ATMEGA16U2-MU(R)",
+        "ZU4.VCC pad 7"
+      ],
+      "arduino_name": "+5V",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 5,
+      "function": "+5V",
+      "type": "Power",
+      "description": "+5V Power Rail",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 5,
+      "eagle_net": "+5V",
+      "eagle_chip": [
+        "U3.VCC pad 4 = 16U2",
+        "U3.AVCC pad 32 = 16U2",
+        "U4.VCC@1 pad 4 = ATMEGA328P-MU",
+        "U4.VCC@2 pad 6 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "+5V",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 6,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 6,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "ZU4.GND pad 8",
+        "ZU4.AGND pad 22",
+        "U3.GND pad 3 = ATMEGA16U2-MU(R)",
+        "U3.PAD pad 33 = ATMEGA16U2-MU(R)"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 6,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 6,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "U4.GND@1 pad 3 = ATMEGA328P-MU",
+        "U4.GND@2 pad 5 = ATMEGA328P-MU",
+        "U4.AGND pad 21 = ATMEGA328P-MU",
+        "U3.GND pad 3 = 16U2",
+        "U3.PAD pad EXP = 16U2"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 7,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 7,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "ZU4.GND pad 8",
+        "ZU4.AGND pad 22",
+        "U3.GND pad 3 = ATMEGA16U2-MU(R)",
+        "U3.PAD pad 33 = ATMEGA16U2-MU(R)"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 7,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 7,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "U4.GND@1 pad 3 = ATMEGA328P-MU",
+        "U4.GND@2 pad 5 = ATMEGA328P-MU",
+        "U4.AGND pad 21 = ATMEGA328P-MU",
+        "U3.GND pad 3 = 16U2",
+        "U3.PAD pad EXP = 16U2"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 8,
+      "function": "VIN",
+      "type": "Power",
+      "description": "Voltage Input",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "POWER",
+      "eagle_pin": 8,
+      "eagle_net": "VIN",
+      "eagle_chip": [],
+      "arduino_name": "VIN",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 8,
+      "function": "VIN",
+      "type": "Power",
+      "description": "Voltage Input",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 8,
+      "eagle_net": "VIN",
+      "eagle_chip": [],
+      "arduino_name": "VIN",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 9,
+      "function": "A0",
+      "type": "Analog/GPIO",
+      "description": "Analog input 0 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 1,
+      "eagle_net": "AD0",
+      "eagle_chip": [
+        "ZU4.(ADC0)PC0) pad 23"
+      ],
+      "arduino_name": "A0",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 9,
+      "function": "A0",
+      "type": "Analog/GPIO",
+      "description": "Analog input 0 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 9,
+      "eagle_net": "A0",
+      "eagle_chip": [
+        "U4.PC0(ADC0) pad 23 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A0",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 10,
+      "function": "A1",
+      "type": "Analog/GPIO",
+      "description": "Analog input 1 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 2,
+      "eagle_net": "AD1",
+      "eagle_chip": [
+        "ZU4.(ADC1)PC1 pad 24"
+      ],
+      "arduino_name": "A1",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 10,
+      "function": "A1",
+      "type": "Analog/GPIO",
+      "description": "Analog input 1 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 10,
+      "eagle_net": "A1",
+      "eagle_chip": [
+        "U4.PC1(ADC1) pad 24 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A1",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 11,
+      "function": "A2",
+      "type": "Analog/GPIO",
+      "description": "Analog input 2 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 3,
+      "eagle_net": "AD2",
+      "eagle_chip": [
+        "ZU4.(ADC2)PC2 pad 25"
+      ],
+      "arduino_name": "A2",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 11,
+      "function": "A2",
+      "type": "Analog/GPIO",
+      "description": "Analog input 2 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 11,
+      "eagle_net": "A2",
+      "eagle_chip": [
+        "U4.PC2(ADC2) pad 25 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A2",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 12,
+      "function": "A3",
+      "type": "Analog/GPIO",
+      "description": "Analog input 3 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 4,
+      "eagle_net": "AD3",
+      "eagle_chip": [
+        "ZU4.(ADC3)PC3 pad 26"
+      ],
+      "arduino_name": "A3",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 12,
+      "function": "A3",
+      "type": "Analog/GPIO",
+      "description": "Analog input 3 /GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 12,
+      "eagle_net": "A3",
+      "eagle_chip": [
+        "U4.PC3(ADC3) pad 26 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A3",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 13,
+      "function": "A4/SDA",
+      "type": "Analog input/I2C",
+      "description": "Analog input 4/I2C Data line",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 5,
+      "eagle_net": "AD4/SDA",
+      "eagle_chip": [
+        "ZU4.(ADC4)PC4 pad 27"
+      ],
+      "arduino_name": "A4",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 13,
+      "function": "A4/SDA",
+      "type": "Analog input/I2C",
+      "description": "Analog input 4/I2C Data line",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 13,
+      "eagle_net": "A4/SDA",
+      "eagle_chip": [
+        "U4.PC4(ADC4/SDA) pad 27 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A4",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 14,
+      "function": "A5/SCL",
+      "type": "Analog input/I2C",
+      "description": "Analog input 5/I2C Clock line",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "AD",
+      "eagle_pin": 6,
+      "eagle_net": "AD5/SCL",
+      "eagle_chip": [
+        "ZU4.(ADC5)PC5 pad 28"
+      ],
+      "arduino_name": "A5",
+      "agrees": true
+    },
+    {
+      "connector": "JANALOG",
+      "pin": 14,
+      "function": "A5/SCL",
+      "type": "Analog input/I2C",
+      "description": "Analog input 5/I2C Clock line",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J1",
+      "eagle_pin": 14,
+      "eagle_net": "A5/SCL",
+      "eagle_chip": [
+        "U4.PC5(ADC5/SCL) pad 28 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A5",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 1,
+      "function": "D0",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 0/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 1,
+      "eagle_net": "IO0",
+      "eagle_chip": [
+        "ZU4.(RXD)PD0 pad 2"
+      ],
+      "arduino_name": "D0",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 1,
+      "function": "D0",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 0/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 1,
+      "eagle_net": "IO0",
+      "eagle_chip": [
+        "U4.PD0(RXD) pad 30 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D0",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 2,
+      "function": "D1",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 1/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 2,
+      "eagle_net": "IO1",
+      "eagle_chip": [
+        "ZU4.(TXD)PD1 pad 3"
+      ],
+      "arduino_name": "D1",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 2,
+      "function": "D1",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 1/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 2,
+      "eagle_net": "IO1",
+      "eagle_chip": [
+        "U4.PD1(TXD) pad 31 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D1",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 3,
+      "function": "D2",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 2/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 3,
+      "eagle_net": "IO2",
+      "eagle_chip": [
+        "ZU4.(INT0)PD2 pad 4"
+      ],
+      "arduino_name": "D2",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 3,
+      "function": "D2",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 2/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 3,
+      "eagle_net": "IO2",
+      "eagle_chip": [
+        "U4.PD2(INT0) pad 32 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D2",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 4,
+      "function": "D3",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 3/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 4,
+      "eagle_net": "IO3",
+      "eagle_chip": [
+        "ZU4.(INT1)PD3 pad 5"
+      ],
+      "arduino_name": "D3",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 4,
+      "function": "D3",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 3/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 4,
+      "eagle_net": "IO3",
+      "eagle_chip": [
+        "U4.PD3(INT1) pad 1 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D3",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 5,
+      "function": "D4",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 4/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 5,
+      "eagle_net": "IO4",
+      "eagle_chip": [
+        "ZU4.(T0)PD4 pad 6"
+      ],
+      "arduino_name": "D4",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 5,
+      "function": "D4",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 4/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 5,
+      "eagle_net": "IO4",
+      "eagle_chip": [
+        "U4.PD4(XCK/T0) pad 2 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D4",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 6,
+      "function": "D5",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 5/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 6,
+      "eagle_net": "IO5",
+      "eagle_chip": [
+        "ZU4.(T1)PD5 pad 11"
+      ],
+      "arduino_name": "D5",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 6,
+      "function": "D5",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 5/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 6,
+      "eagle_net": "IO5",
+      "eagle_chip": [
+        "U4.PD5(T1) pad 9 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D5",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 7,
+      "function": "D6",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 6/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 7,
+      "eagle_net": "IO6",
+      "eagle_chip": [
+        "ZU4.(AIN0)PD6 pad 12"
+      ],
+      "arduino_name": "D6",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 7,
+      "function": "D6",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 6/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 7,
+      "eagle_net": "IO6",
+      "eagle_chip": [
+        "U4.PD6(AIN0) pad 10 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D6",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 8,
+      "function": "D7",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 7/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOL",
+      "eagle_pin": 8,
+      "eagle_net": "IO7",
+      "eagle_chip": [
+        "ZU4.(AIN1)PD7 pad 13"
+      ],
+      "arduino_name": "D7",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 8,
+      "function": "D7",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 7/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 8,
+      "eagle_net": "IO7",
+      "eagle_chip": [
+        "U4.PD7(AIN1) pad 11 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D7",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 9,
+      "function": "D8",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 8/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 1,
+      "eagle_net": "IO8",
+      "eagle_chip": [
+        "ZU4.(ICP)PB0 pad 14"
+      ],
+      "arduino_name": "D8",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 9,
+      "function": "D8",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 8/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 9,
+      "eagle_net": "IO8",
+      "eagle_chip": [
+        "U4.PB0(ICP) pad 12 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D8",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 10,
+      "function": "D9",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 9/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 2,
+      "eagle_net": "IO9",
+      "eagle_chip": [
+        "ZU4.(OC1)PB1 pad 15"
+      ],
+      "arduino_name": "D9",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 10,
+      "function": "D9",
+      "type": "Digital/GPIO",
+      "description": "Digital pin 9/GPIO",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 10,
+      "eagle_net": "IO9",
+      "eagle_chip": [
+        "U4.PB1(OC1A) pad 13 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D9",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 11,
+      "function": "SS",
+      "type": "Digital",
+      "description": "SPI Chip Select",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 3,
+      "eagle_net": "SS",
+      "eagle_chip": [
+        "ZU4.(SS)PB2 pad 16"
+      ],
+      "arduino_name": "D10",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 11,
+      "function": "SS",
+      "type": "Digital",
+      "description": "SPI Chip Select",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 11,
+      "eagle_net": "SS",
+      "eagle_chip": [
+        "U4.PB2(SS/OC1B) pad 14 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D10",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 12,
+      "function": "MOSI",
+      "type": "Digital",
+      "description": "SPI1 Main Out Secondary In",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 4,
+      "eagle_net": "MOSI",
+      "eagle_chip": [
+        "ZU4.(MOSI)PB3 pad 17"
+      ],
+      "arduino_name": "D11",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 12,
+      "function": "MOSI",
+      "type": "Digital",
+      "description": "SPI1 Main Out Secondary In",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 12,
+      "eagle_net": "MOSI",
+      "eagle_chip": [
+        "U4.PB3(MOSI/OC2) pad 15 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D11",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 13,
+      "function": "MISO",
+      "type": "Digital",
+      "description": "SPI Main In Secondary Out",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 5,
+      "eagle_net": "MISO",
+      "eagle_chip": [
+        "ZU4.(MISO)PB4 pad 18"
+      ],
+      "arduino_name": "D12",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 13,
+      "function": "MISO",
+      "type": "Digital",
+      "description": "SPI Main In Secondary Out",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 13,
+      "eagle_net": "MISO",
+      "eagle_chip": [
+        "U4.PB4(MISO) pad 16 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D12",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 14,
+      "function": "SCK",
+      "type": "Digital",
+      "description": "SPI serial clock output",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 6,
+      "eagle_net": "SCK",
+      "eagle_chip": [
+        "ZU4.(SCK)PB5 pad 19"
+      ],
+      "arduino_name": "D13",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 14,
+      "function": "SCK",
+      "type": "Digital",
+      "description": "SPI serial clock output",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 14,
+      "eagle_net": "SCK",
+      "eagle_chip": [
+        "U4.PB5(SCK) pad 17 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "D13",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 15,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 7,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "ZU4.GND pad 8",
+        "ZU4.AGND pad 22",
+        "U3.GND pad 3 = ATMEGA16U2-MU(R)",
+        "U3.PAD pad 33 = ATMEGA16U2-MU(R)"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 15,
+      "function": "GND",
+      "type": "Power",
+      "description": "Ground",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 15,
+      "eagle_net": "GND",
+      "eagle_chip": [
+        "U4.GND@1 pad 3 = ATMEGA328P-MU",
+        "U4.GND@2 pad 5 = ATMEGA328P-MU",
+        "U4.AGND pad 21 = ATMEGA328P-MU",
+        "U3.GND pad 3 = 16U2",
+        "U3.PAD pad EXP = 16U2"
+      ],
+      "arduino_name": "GND",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 16,
+      "function": "AREF",
+      "type": "Digital",
+      "description": "Analog reference voltage",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 8,
+      "eagle_net": "AREF",
+      "eagle_chip": [
+        "ZU4.AREF pad 21"
+      ],
+      "arduino_name": "AREF",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 16,
+      "function": "AREF",
+      "type": "Digital",
+      "description": "Analog reference voltage",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 16,
+      "eagle_net": "AREF",
+      "eagle_chip": [
+        "U4.AREF pad 20 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "AREF",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 17,
+      "function": "A4/SD4",
+      "type": "Digital",
+      "description": "Analog input 4/I2C Data line (duplicated)",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 9,
+      "eagle_net": "AD4/SDA",
+      "eagle_chip": [
+        "ZU4.(ADC4)PC4 pad 27"
+      ],
+      "arduino_name": "A4/SD4",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 17,
+      "function": "A4/SD4",
+      "type": "Digital",
+      "description": "Analog input 4/I2C Data line (duplicated)",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 17,
+      "eagle_net": "A4/SDA",
+      "eagle_chip": [
+        "U4.PC4(ADC4/SDA) pad 27 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A4/SD4",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 18,
+      "function": "A5/SD5",
+      "type": "Digital",
+      "description": "Analog input 5/I2C Clock line (duplicated)",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000066",
+      "eagle_refdes": "IOH",
+      "eagle_pin": 10,
+      "eagle_net": "AD5/SCL",
+      "eagle_chip": [
+        "ZU4.(ADC5)PC5 pad 28"
+      ],
+      "arduino_name": "A5/SD5",
+      "agrees": true
+    },
+    {
+      "connector": "JDIGITAL",
+      "pin": 18,
+      "function": "A5/SD5",
+      "type": "Digital",
+      "description": "Analog input 5/I2C Clock line (duplicated)",
+      "source": "A000066-datasheet.pdf PAGE 11",
+      "sku": "A000073",
+      "eagle_refdes": "J2",
+      "eagle_pin": 18,
+      "eagle_net": "A5/SCL",
+      "eagle_chip": [
+        "U4.PC5(ADC5/SCL) pad 28 = ATMEGA328P-MU"
+      ],
+      "arduino_name": "A5/SD5",
+      "agrees": true
+    }
+  ]
+}

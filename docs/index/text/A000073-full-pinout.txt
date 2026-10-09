@@ -1,0 +1,240 @@
+===== A000073-full-pinout.pdf PAGE 1 =====
+
+                                                                                                                                                        ST ORE .ARDUIN O.C C /UN O-RE V3 -SM D
+
+
+
+
+                                                                                                                     D19/SCL      PC5   SCL
+                                                                                                                     D18/SDA      PC4   SDA
+                                                                                                                       AREF
+                                                                                                                       GND
+                                                                NC
+                                                                                                                        D13       PB5   SCK
+                                                            IOREF
+                                                                                                                        D12       PB4   CIPO
+                                                     PC6    RESET
+                                                                                                                       ~D11       PB3   COPI
+                                                            +3V3
+                                                                                                                       ~D10       PB2    SS
+                                                                +5V
+                                                                                                                        ~D9       PB1
+                                                                GND
+                                                                                                                         D8       PB0
+                                                                GND
+                                                                VIN                                                      D7       PD7
+                                                                                                                       ~D6        PD6
+                                           ADC [0]   PC0   A0 A0D14                                                    ~D5        PD5
+                                           ADC [1]   PC1   A1 A1D15                                                      D4       PD4
+                                           ADC [2]   PC2   A2 A2D16                                                    ~D3        PD3
+                                           ADC [3]   PC3   A3    D17                                                     D2       PD2
+                                           ADC [4]   PC4   A4    D18                                                  D1/TX       PD1
+                                           ADC [5]   PC5   A5 A5D19                                                   D0/RX       PD0
+
+
+                                                                                                                LED_BUILTIN       PB5
+                                                                                                                   TX LED         PD5
+                                                                                                                   RX LED         PD4
+
+
+                                                                                                                    Power
+
+
+
+
+                                                                                                                                                                        Last update: 17/06/2020
+G r ound         Digital Pi n                                          MAXIMUM current per I/O     V I N 6-20 V input to the board.
+                                                                       pin is 20mA
+P o wer          Analog Pin
+                                                                                                   NOTE: CIPO/COPI have previously
+                                                                       MAXIMUM current per +3.3V
+                                                                                                   been referred to as MISO/MOSI
+LED              Other Pin                                             pin is 50mA
+
+I n ternal Pin   Microcontr o l l e r ’ s P o r t                                                                                                    This work is licensed under the Creative Commons
+                                                                                                                                               Attribution-ShareAlike 4.0 International License. To view
+                                                                                                                                                    a copy of this license, visit http://creativecommons.
+S W D Pin        Default                                                                                                                             org/licenses/by-sa/4.0/ or send a letter to Creative
+                                                                                                                                               Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+===== A000073-full-pinout.pdf PAGE 2 =====
+
+                                                                                                                                                                                              ST ORE .ARDUIN O.C C /UN O-RE V3 -SM D
+
+
+
+
+                                                                                                                                 D19/SCL      PC5   SCL    ADC [5]   SCL                                    PCINT [13]
+
+
+
+
+                                                                                                                                                                            I2C
+                                                                                                                                 D18/SDA      PC4   SDA    ADC [4]   SDA                                    PCINT [12]
+                                                                                                                                   AREF
+                                                                                                                                   GND
+                                                                            NC
+                                                                                                                                    D13       PB5   SCK              SCK                                     PCINT [5]
+                                                                        IOREF
+                                                                                                                                    D12       PB4   CIPO             CIPO                                    PCINT [4]
+
+
+
+
+                                                                                                                                                                            SPI
+                 PCINT [14]      RESET                           PC6    RESET
+                                                                                                                                   ~D11       PB3   COPI             COPI            OC2A                    PCINT [3]
+                                                                           +3V3
+                                                                                                                                   ~D10       PB2    SS               SS             OC1B                    PCINT [2]
+                                                                            +5V
+                                                                                                                                    ~D9       PB1                                    OC1A                    PCINT [1]
+                                                                            GND
+                                                                                                                                     D8       PB0                                  CLKO/ICP1                 PCINT [0]
+                                                                            GND
+                                                                            VIN                                                      D7       PD7          AIN [1]                                          PCINT [23]
+                                                                                                                                   ~D6        PD6          AIN [0]                   OC0A                   PCINT [22]
+                 PCINT [8]                  ADC [0]    ADC [0]   PC0   A0 A0D14                                                    ~D5        PD5                                   OC0B/T1                 PCINT [21]
+                 PCINT [9]                  ADC [1]    ADC [1]   PC1   A1 A1D15                                                      D4       PD4                                   T0/XCK                  PCINT [20]
+                 PCINT [10]                 ADC [2]    ADC [2]   PC2   A2 A2D16                                                    ~D3        PD3                                    OC2B            PCINT [19] /INT [1]
+                 PCINT [11]                 ADC [3]    ADC [3]   PC3   A3    D17                                                     D2       PD2                                                    PCINT [18] /INT [0]
+                 PCINT [12]       SDA       ADC [4]    ADC [4]   PC4   A4    D18                                                  D1/TX       PD1                    TXD                                    PCINT [17]
+
+
+
+
+                                                                                                                                                                            UART
+                 PCINT [13]       SCL       ADC [5]    ADC [5]   PC5   A5 A5D19                                                   D0/RX       PD0                    RXD                                    PCINT [16]
+
+
+                                                                                                                            LED_BUILTIN       PB5
+                                                                                                                               TX LED         PD5
+                                                                                                                               RX LED         PD4
+
+
+                                                                                                                                Power
+
+
+
+
+                                                                                                                                                                                                              Last update: 17/06/2020
+G r ound                     Digital Pi n                          Analog          MAXIMUM current per I/O     V I N 6-20 V input to the board.
+                                                                                   pin is 20mA
+P o wer                      Analog Pin                            Communication
+                                                                                                               NOTE: CIPO/COPI have previously
+                                                                                   MAXIMUM current per +3.3V
+                                                                                                               been referred to as MISO/MOSI
+LED                          Other Pin                             Timer           pin is 50mA
+
+I n ternal Pin               Microcontr o l l e r ’ s P o r t      Interrupt                                                                                                               This work is licensed under the Creative Commons
+                                                                                                                                                                                     Attribution-ShareAlike 4.0 International License. To view
+                                                                                                                                                                                          a copy of this license, visit http://creativecommons.
+S W D Pin                    Default                               Sercom                                                                                                                  org/licenses/by-sa/4.0/ or send a letter to Creative
+                                                                                                                                                                                     Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+===== A000073-full-pinout.pdf PAGE 3 =====
+
+                                                                                                                                                                                                  ST ORE .ARDUIN O.C C /UN O-RE V3 -SM D
+
+
+
+
+                                                                                                                                                          ATMEGA16U2
+                                                                                                                                                  GND        UCAP
+                                                                                                                                                  VBUS      UVCP
+                                                                                                                                                 USB D-       D-
+                                                                                                                                                 USB D+       D+
+                                                                                                                                                  GND       UGND
+
+
+
+                                                             ATM E G A 1 6 U2
+                                                    ICSP-1       PB3
+                                                    ICSP-4         PB2
+                                                    ICSP-3         PB1
+                                                                                                                   6         5          ICSP1             ATMEGA16U2
+                                                    RESET          PD7
+                                                                                                                   4         3            1       CIPO       SCK
+                                                    TX LED         PD5
+                                                                                                                   2         1             2      +5V
+                                                    RX LED         PD4
+                                                                                                                                           3      SCK        CIPO
+                 INT[24]    TCA0/WO0     AIN[0]      PD0           PD3
+                                                                                                                                           4      COPI       UPDI
+                 INT[25]    TCA0/WO1     AIN[1]      PD1           PD2
+                                                                                                                                           5     RESET
+                                                    ICSP-5         PC1
+                                                                                                                                           6      GND
+
+
+
+
+                                                                                ATMEGA328P
+
+
+
+
+                                                                                                                                         ICSP
+                                                                                                                                           1      CIPO       PB4       CIPO          PCINT[4]
+                                                                                                                                           2      +5V
+                                                                                                                                           3      SCK        PB5       SCK           PCINT[5]
+                                                                                                                                           4      COPI       PB3       COPI   OC2A   PCINT[3]
+                                                                                              5   3   1
+                                                                                                                                           5     RESET
+                                                                                                                                           6      GND
+
+                                                                                              6   4   2
+
+
+
+
+                                                                                                                                                                                                                  Last update: 17/06/2020
+G r ound         Digital Pi n                              Analog                      MAXIMUM current per I/O         V I N 6-20 V input to the board.
+                                                                                       pin is 20mA
+P o wer          Analog Pin                                Communication
+                                                                                                                       NOTE: CIPO/COPI have previously
+                                                                                       MAXIMUM current per +3.3V
+                                                                                                                       been referred to as MISO/MOSI
+LED              Other Pin                                 Timer                       pin is 50mA
+
+I n ternal Pin   Microcontr o l l e r ’ s P o r t          Interrupt                                                                                                                           This work is licensed under the Creative Commons
+                                                                                                                                                                                         Attribution-ShareAlike 4.0 International License. To view
+                                                                                                                                                                                              a copy of this license, visit http://creativecommons.
+S W D Pin        Default                                   Sercom                                                                                                                              org/licenses/by-sa/4.0/ or send a letter to Creative
+                                                                                                                                                                                         Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+===== A000073-full-pinout.pdf PAGE 4 =====
+
+                                                                                                                                                                                               ST ORE .ARDUIN O.C C /UN O-RE V3 -SM D
+
+
+
+
+                                                                                         6-20 V
+
+
+
+
+                                                                                       ATM E G A 1 6 U2 JP2
+                                                                                           PB4           1
+                                                                                           PB6          2                                  2       4
+                                                                                           PB5          3                                  1       3
+                                                                                           PB7          4
+
+
+                 C u t th e s o l de r j u mpe r to di s a ble a uto- r eset   RESET    RESET_EN
+
+
+
+
+                                                                                                                                                                                                               Last update: 17/06/2020
+G r ound                              Digital Pi n                                        SJ Pin                       MAXIMUM current per I/O     V I N 6-20 V input to the board.
+                                                                                          Making a short circuit       pin is 20mA
+P o wer                               Analog Pin                                          using the s older jumper
+                                                                                          allows only the f unction   MAXIMUM current per +3.3V
+LED                                   Other Pin                                           in the SJ Pin cells.         pin is 50mA
+
+I n ternal Pin                        Microcontr o l l e r ’ s P o r t                                                                                                                      This work is licensed under the Creative Commons
+                                                                                                                                                                                      Attribution-ShareAlike 4.0 International License. To view
+                                                                                                                                                                                           a copy of this license, visit http://creativecommons.
+S W D Pin                             Default                                                                                                                                               org/licenses/by-sa/4.0/ or send a letter to Creative
+                                                                                                                                                                                      Commons, PO Box 1866, Mountain View, CA 94042, USA.

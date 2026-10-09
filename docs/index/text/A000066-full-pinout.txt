@@ -1,0 +1,250 @@
+===== A000066-full-pinout.pdf PAGE 1 =====
+
+                                                                                                                                      Micro     I2C
+                                                                                                                            D19/SCL   PC5        SCL
+                                                                                                                            D18/SDA   PC4       SDA
+                                                                                                                             AREF
+                                                                                                                              GND                           SPI
+                                                               NC
+                                                                                                                              D13     PB5                   SCK
+                                                  Micro    IOREF
+                                                                                                                              D12     PB4                   CIPO
+                                                  PC6      RESET
+                                                                                                                             ~D11     PB3                   COPI
+                                                          +3V3
+                                                                                                                             ~D10     PB2                    SS
+                                                          +5V
+                                                                                                                              ~D9     PB1
+                                                               GND
+                                                                                                                               D8     PB0
+                                                               GND
+                                                          VIN                         ATMEGA328P                               D7     PD7
+
+                                       Analog                                                                                 ~D6     PD6
+                                      ADC [0]     PC0     A0 A0D14                                                            ~D5     PD5
+                                      ADC [1]     PC1     A1 A1D15                                                             D4     PD4
+                                      ADC [2]     PC2     A2 A2D16                                                            ~D3     PD3
+                                      ADC [3]     PC3     A3    D17                                                            D2     PD2
+                                      ADC [4]     PC4     A4    D18                                                          D1/TX    PD1
+                                      ADC [5]     PC5     A5 A5D19                                                           D0/RX    PD0
+
+
+                                                                                                                        LED_BUILTIN   PB5
+                                                                                                   TOP VIEW               TX LED      PD5
+                                                                                                                          RX LED      PD4
+
+
+                                                                                                                           Power
+
+
+
+
+Legend:                                                                                                                               MAXIMUM current per
+                                                                                                                                      I/O pin is 20mA
+  Power    Power Input    GPIO Digital External                       I2C             Default                 LED
+                                                                                                                                      MAXIMUM current per
+                                                                                                                                      +3.3V pin is 50mA
+           Power Output   Analog External                             SPI             Default                 RGB LED
+                                                                                                                                      VIN 6-20V input to the board     SKU code: A000066
+  Ground                  Main Part                                   UART/USART      Default                 Other                                                    Full Pinout - Page 1 of 5
+                                                                                                                                                                       Last update: 6 Oct, 2022
+
+                          Secondary Part                              Other SERIAL Communication                                      CIPO/COPI have previously been
+                                                                                                                                      referred to as MISO/MOSI                                This work is licensed under
+                                                                                                                                                                                              the Creative Commons
+                          Internal Component                          Analog          Default                                                                                                 Attribution-ShareAlike 4.0
+                                                                                                                                                                                              International License. To view a
+                                                                                                                                                                                              copy of this license, visit http://
+                                                                                                                                                                                              creativecommons.org/licenses/
+                          Other Pins (Reset, System                   PWM/Timer                                                                                                               by-sa/4.0/ or send a letter to
+                                                                                                                                                                                              Creative Commons, PO Box 1866,
+                          Control, Debugging)                                                                                                                                                 Mountain View, CA 94042, USA.
+
+===== A000066-full-pinout.pdf PAGE 2 =====
+
+                              WARNING!
+
+
+               Advan ced Section
+The following information is for advanced use only and
+ m a y n o t b e o f fi c i a l l y s u p p o r t e d b y A r d u i n o s o f t w a r e
+
+===== A000066-full-pinout.pdf PAGE 3 =====
+
+                                                                                                                                             Micro     I2C         SPI      UART        Interrupt         Analog
+                                                                                                                                   D19/SCL   PC5        SCL                            PCINT [13]        ADC [5]
+                                                                                                                                   D18/SDA   PC4       SDA                             PCINT [12]        ADC [4]
+                                                                                                                                    AREF
+                                                                                                                                     GND
+                                                                      NC
+                                                                                                                                     D13     PB5                   SCK                 PCINT [5]
+                           Interrupt    I2C              Micro    IOREF
+                                                                                                                                     D12     PB4                   CIPO                PCINT [4]                             Timer
+                          PCINT [14]   RESET             PC6      RESET
+                                                                                                                                    ~D11     PB3                   COPI                PCINT [3]                             OC2A
+                                                                 +3V3
+                                                                                                                                    ~D10     PB2                    SS                 PCINT [2]                             OC1B
+                                                                 +5V
+                                                                                                                                     ~D9     PB1                                       PCINT [1]                             OC1A
+                                                                      GND
+                                                                                                                                      D8     PB0                                       PCINT [0]                        CLKO/ICP1
+                                                                      GND
+                                                                 VIN                         ATMEGA328P                               D7     PD7                                       PCINT [23]        AIN [1]
+
+                                                Analog                                                                               ~D6     PD6                                       PCINT [22]        AIN [0]             OC0A
+                          PCINT [8]            ADC [0]   PC0     A0 A0D14                                                            ~D5     PD5                                       PCINT [21]                         OC0B/T1
+                          PCINT [9]            ADC [1]   PC1     A1 A1D15                                                             D4     PD4                                       PCINT [20]                          T0/XCK
+                          PCINT [10]           ADC [2]   PC2     A2 A2D16                                                            ~D3     PD3                                   PCINT [19] /INT [1]                       OC2B
+                          PCINT [11]           ADC [3]   PC3     A3    D17                                                            D2     PD2                                   PCINT [18] /INT [0]
+                          PCINT [12]    SDA    ADC [4]   PC4     A4    D18                                                          D1/TX    PD1                            TXD        PCINT [17]
+                          PCINT [13]    SCL    ADC [5]   PC5     A5 A5D19                                                           D0/RX    PD0                            RXD        PCINT [16]
+
+
+
+                                                                                                                               LED_BUILTIN   PB5
+                                                                                                          TOP VIEW
+                                                                                                                                 TX LED      PD5
+                                                                                                                                 RX LED      PD4
+
+
+                                                                                                                                  Power
+
+
+
+
+Legend:                                                                                                                                      MAXIMUM current per
+                                                                                                                                             I/O pin is 20mA
+  Power    Power Input           GPIO Digital External                       I2C             Default                 LED
+                                                                                                                                             MAXIMUM current per
+                                                                                                                                             +3.3V pin is 50mA
+           Power Output          Analog External                             SPI             Default                 RGB LED
+                                                                                                                                             VIN 6-20V input to the board           SKU code: A000066
+  Ground                         Main Part                                   UART/USART      Default                 Other                                                          Full Pinout - Page 3 of 5
+                                                                                                                                                                                    Last update: 6 Oct, 2022
+
+                                 Secondary Part                              Other SERIAL Communication                                      CIPO/COPI have previously been
+                                                                                                                                             referred to as MISO/MOSI                                       This work is licensed under
+                                                                                                                                                                                                            the Creative Commons
+                                 Internal Component                          Analog          Default                                                                                                        Attribution-ShareAlike 4.0
+                                                                                                                                                                                                            International License. To view a
+                                                                                                                                                                                                            copy of this license, visit http://
+                                                                                                                                                                                                            creativecommons.org/licenses/
+                                 Other Pins (Reset, System                   PWM/Timer                                                                                                                      by-sa/4.0/ or send a letter to
+                                                                                                                                                                                                            Creative Commons, PO Box 1866,
+                                 Control, Debugging)                                                                                                                                                        Mountain View, CA 94042, USA.
+
+===== A000066-full-pinout.pdf PAGE 4 =====
+
+                                                                                                                                                                          ATMEGA16U2
+                                                                                                                                                                  GND        UCAP
+                                                                                                                                                                   VBUS     UVCC
+                                                                                                                                                                 USB D-       D-
+                                                                                                                                                                 USB D+       D+
+                                                                                                                                                                  GND       UGND
+
+
+
+                                                                  M ic r o   ATM E G A 1 6 U2
+                                                                 ICSP-1          PB3
+                                                                 ICSP-4           PB2
+                                                                 ICSP-3           PB1
+                                                                                                                                                     6   5       ICSP1    ATMEGA16U2
+                                                                  RESET           PD7
+                                                                                                                                                     4   3   1   CIPO        SCK
+                                                                 TX LED           PD5
+                                                                                                                                                     2   1   2     +5V
+                            T i me r    Ana log   I nter r upt   RX LED           PD4
+                                                                                                                                                             3    SCK        CIPO
+                          TCA0/WO0     AIN[0]     INT[24]          PD0            PD3
+                                                                                                                                                             4    COPI       UPDI
+                          TCA0/WO1     AIN[1]     INT[25]          PD1            PD2
+                                                                                                                                                             5   RESET
+                                                                 ICSP-5           PC1
+                                                                                                                                                             6    GND
+
+
+
+
+                                                                                                                                                                  ICSP      Micro       SPI   Interrupt
+                                                                                                                                                             1    CIPO       PB4       CIPO   PCINT[4]
+                                                                                                                                                             2     +5V
+                                                                                                                                                             3    SCK        PB5       SCK    PCINT[5]      Timer
+                                                                                                                                                             4    COPI       PB3       COPI   PCINT[3]      OC2A
+                                                                                                                               5   3   1
+                                                                                                                                                             5   RESET
+                                                                                                                                                             6    GND
+
+                                                                                                                               6   4   2
+
+
+                                                                                                                             TOP VIEW
+
+
+
+
+Legend:                                                                                                                                                             MAXIMUM current per
+                                                                                                                                                                    I/O pin is 20mA
+  Power    Power Input             GPIO Digital External                                        I2C             Default                    LED
+                                                                                                                                                                    MAXIMUM current per
+                                                                                                                                                                    +3.3V pin is 50mA
+           Power Output            Analog External                                              SPI             Default                    RGB LED
+                                                                                                                                                                    VIN 6-20V input to the board          SKU code: A000066
+  Ground                           Main Part                                                    UART/USART      Default                    Other                                                          Full Pinout - Page 4 of 5
+                                                                                                                                                                                                          Last update: 6 Oct, 2022
+
+                                   Secondary Part                                               Other SERIAL Communication                                          CIPO/COPI have previously been
+                                                                                                                                                                    referred to as MISO/MOSI                                     This work is licensed under
+                                                                                                                                                                                                                                 the Creative Commons
+                                   Internal Component                                           Analog          Default                                                                                                          Attribution-ShareAlike 4.0
+                                                                                                                                                                                                                                 International License. To view a
+                                                                                                                                                                                                                                 copy of this license, visit http://
+                                                                                                                                                                                                                                 creativecommons.org/licenses/
+                                   Other Pins (Reset, System                                    PWM/Timer                                                                                                                        by-sa/4.0/ or send a letter to
+                                                                                                                                                                                                                                 Creative Commons, PO Box 1866,
+                                   Control, Debugging)                                                                                                                                                                           Mountain View, CA 94042, USA.
+
+===== A000066-full-pinout.pdf PAGE 5 =====
+
+                                                         6-20 V
+
+
+
+
+                                                         ATM E G A 1 6 U2
+                                                             PB4            1
+                                                              PB6           2                        2   4
+                                                              PB5           3                        1   3
+                                                              PB7           4
+
+                            C u t the solder jumper
+                                                            RESET
+                             to disa ble a uto- r eset
+
+
+
+
+                                                                                          TOP VIEW
+
+
+
+
+Legend:                                                                                                      MAXIMUM current per
+                                                                                                             I/O pin is 20mA
+  Power    Power Input    GPIO Digital External                                 LED
+                                                                                                             MAXIMUM current per
+                                                                                                             +3.3V pin is 50mA
+           Power Output   Analog External                                       RGB LED
+                                                                                                             VIN 6-20V input to the board     SKU code: A000066
+  Ground                  Main Part                                             Other                                                         Full Pinout - Page 5 of 5
+                                                                                                                                              Last update: 6 Oct, 2022
+
+                          Secondary Part                                                                     CIPO/COPI have previously been
+                                                                                                             referred to as MISO/MOSI                                This work is licensed under
+                                                                                                                                                                     the Creative Commons
+                          Internal Component                                                                                                                         Attribution-ShareAlike 4.0
+                                                                                                                                                                     International License. To view a
+                                                                                                                                                                     copy of this license, visit http://
+                                                                                                                                                                     creativecommons.org/licenses/
+                          Other Pins (Reset, System                                                                                                                  by-sa/4.0/ or send a letter to
+                                                                                                                                                                     Creative Commons, PO Box 1866,
+                          Control, Debugging)                                                                                                                        Mountain View, CA 94042, USA.

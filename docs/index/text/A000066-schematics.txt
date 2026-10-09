@@ -1,0 +1,533 @@
+===== A000066-schematics.pdf PAGE 1 =====
+
+                           1                                                                           2                                                                                    3                                                             4                                                                                                     5                                                                       6                                                  7                                                                       8
+
+
+
+
+A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           A
+
+                                                                                                                            VIN
+
+
+
+
+                                                                                                                                                    RN1A 10K
+                                                                                                                                                                                   TP_CMP
+
+
+
+
+                                                                                                                                           8
+                                                                               +5V                                                                                                                                                                                                                             TP_LCMD
+                                                                                                                                                                                                                   TP_GATE                                                                                                                                                                            TP_PWRIN     TP_VIN
+
+
+
+
+                                                                                                                                           1
+                                                                                                                                                                                                                                                                                                                                              X1
+                                                                                                                                                                              CMP                                                                                                                     L13                                     POWERSUPPLY_DC21MMX                                                                       U1
+                                                                           8
+                                                                                                                                                                                            3             U5A                                                                                                                                                                                                                           NCP1117ST50T3G                  +5V    TP_5VTP_5V1
+
+
+
+
+                                                                                                                                           7 RN1B
+                                                                                                            C1                                                                                               1                                                                                                                                                                           3                               VIN        3                4
+
+
+
+
+                                                                                                                                                2
+                                                                                                                                                                                                                                                                                                                                                                          3                                                                 IN OUT                       +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  REGARDING PRODUCTS, INCLUDING BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE
+                                                                                                           100n                                                                 +3V3        2                                                                                                                                                                                                                                                        2
+
+
+
+
+                                                                                                                                                                                                                                                                                                               8
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                   1
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                    2
+                                                                                                                                                                                                                                                                                                           1K
+                                                                                                                                                                                                                                                                                U5B                                                                                                                         D1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                 RN2A
+                                                                                                                                                                                                          LMV358IDGKR                     SCK   5                                                                                    TP_LL
+
+
+
+
+                                                                                                                                                                                                                    GATE_CMD
+                                                                           4
+
+
+
+
+                                                                                                                                         10K
+                                                                                                                                                                                                                                                                                         7                                                                                                                  M7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                 1
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                    2
+                                                                                                                                                                                                                                                6                                                                                                                           PWRIN                           PC1                                                       PC2 C2
+
+
+
+
+                                                                                                                                                                                                                                                                                                               1
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                            1
+                                                                                                                                                                                                                                                                                                                                                                                                                    +
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  +
+                                                                                                                                                                                                                                                                                                                          YELLOW
+                                                                                                                                                                                                                                                                                LMV358IDGKR                                                                                                                 47u                                                       47u 100n
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Arduino SA Trademarks cannot be used without owner's formal permission
+                                                                               GND                                                         GND
+
+B                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           B
+
+
+
+
+                                                                                                                                                                                                                                                                                                                          L
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. Arduino SA DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED,
+                                                                                                                                                                                                                                                                                                                                     TP_3V3                                                                        GND                      GND                   GND          GND
+                                                                                                                                                                                                                   +5V                                                                                                                           GND
+                                                                                                                                                                                                                                                                                                               GND
+                                                                                                                                                                                   USBVCC                    +5V                                         1                                                 5 +3V3                                                                                                                                    +5V
+                                                                                                                                                                                                                                                                         IN                    OUT
+                                                                                                                                                                                                                                                                                                                                                           +5V                                           POWER                                                        GREEN
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    these for future definition and shall have no responsibility whatsoever for conflicts or incompatibilities arising from future changes to them.
+                                                                                                                                                                                                FDN340P
+                                                                                                                                                                                                     T1
+                                                                                                                                                                                                                                                         3                                                                                   C3     TP_RESET
+                                                                                                                                                                                                                                                                         ON/OFF                                                                                                                                                                                          ON
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 GND
+                                                                                                                                                                                                                                                                                                                                              1u                                                           1                                             4        5
+                                                                                                                                                                                                                                                         2                                                 4                                                                                               2                                             RN4D 1K
+                                                                                                                                                                                                                                                                         GND NC/FB
+                                                                                                                                                                                                                                                                                                                                                                            RESET                          3                                             3        6
+
+
+                           Arduino(TM) UNO Rev3
+                                                                                                                                                                                                                                                                                                                                                                            +3V3                           4                                             RN4C 1K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    The product information on the Web Site or Materials is subject to change without notice. Do not finalize a design with this info
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Arduino SA may make changes to specifications and product descriptions at any time, without notice. The Customer must not
+                                                                                                                                                                                                                                          GND                                                                                        GND                                                                   5
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    rely on the absence or characteristics of any features or instructions marked "reserved" or "undefined." Arduino SA reserves
+                                                                                                                                                                                                                                                                                                                                                                                                           6
+                                                                                                                                                                                                                                                                                                                                                                                                           7
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               TP_ONL
+                                                                                                                                                                                                                                                                                                                                                                                          VIN              8
+
+
+
+
+                                                                                                                                                                                                                                TP_PB6 TP_PB7
+                                                    TP_MISO2 TP_RESET2
+
+
+
+
+                                                                                                                                                                                                                                                    2x2 M - NM
+                                                                                                                                                                                                                                                                 4
+                                                                                                                                                                                                                                                                 2
+                                                                                                              +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                TP_PB4 TP_PB5
+                                                                                                                                                                    TP_MOSI2 TP_SCK2                                                                                                                                                                                  GND                                8x1F-H8.5
+                                                                                                                                                                                                                                                                                                                                                                                                                                                         GND
+
+
+
+
+                                                                                                                                                                                                                                                                                         JP2
+                                                                               ICSP1
+
+
+
+
+                                                                                                                                                                                                                                                                 3
+                                                                                                                                                                                                                                                                 1
+                                                                                                                                                                                                                                                                                                                                                                                                                                            +5V
+C                                                        MISO2                   1                   2                                                                                                                                                                                                                                                                                                      GND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             C
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                         5
+                                                                                                                                                                                                                                                                                                                                                         2
+                                                                                                                                                                                                                                                                                                                                                         1
+                                                                                                                                                                                                                                                                                                                                                                                                              ICSP                                           C4
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                        RESET
+                                                           SCK2                  3                   4               MOSI2
+                                                                                                                                                         CD1206-S01575
+
+
+
+
+                                                           RESET2                5                   6                                                                                                                                                                                                                                                                                                               1         2
+                                                                                                                                                                                                                                                                                                                                                                                                                                                             100n              10x1F-H8.5
+                                                                                                                        6 RN1C
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                     3         4
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                            4
+                                                                                                                                                                                                                                                                                                                                                            3
+
+                                                                                                                                                                                                                                                                                                                                                                      TS42031-160R-TR-7260
+                                                                                                                             3
+
+                                                                                                                                 D3
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              TP_SCL
+                                                                               3x2 M                                                                                                                                                                                                                                              RESET-EN                                                                           5         6                                         AD5/SCL 10   SCL
+                                                                                                                                                                                                                                                                                                                                         +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        TP_SDA
+                                                                                                                                                                                                                                                                                                                                1    2                                                                                                                                   AD4/SDA 9    SDA
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                        CD1206-S01575
+                                                                                                                                                                              U3                                                                                                                                                                                                                                                                               AREF
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    TP_AREF
+                                                                                                                      10K
+
+
+
+
+                                                                                                              GND                                                                                                                                                                                                                                                                                                 3x2 M                 GND                                            8
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 100n
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                     RN1D 10K
+                                                                                                                                                                                                                                         21 PB7                                                                                                                                                                                                                GND                     7
+
+
+
+
+                                                                                                                                                                                                                                                                                                          C5
+                   TP_D-   TP_D+   TP_XUSB
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                 5
+                                                                                                                                                                                          (PCINT7/OC0A/OC1C)PB7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              TP_9TP_11TP_13
+                                                                                                                                                                                                                                                                                                                                                        D2
+                                                                                                                                                                                                                                         20 PB6                                                                                                                                                                                                                         SCK            6
+                                                                                                                                                                                                        (PCINT6)PB6                                                                                                                                                                                                                                                                                13
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        TP_8TP_10TP_12
+                                                                                                              RESET2                                                     24                                                              19 PB5                                                                                                                                                                                                                         MISO           5
+                                           F1                                                                                                                                  RESET(PC1/DW)            (PCINT5)PB5
+                                                                                                                                                                                                                                         18 PB4                                                                                                                                                 ZU4                                                                                    4           12
+    USB-B_TH                                    USBVCC                                                                                                                                                                                                                                                                                                                                                                                                                  MOSI
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                 4
+                                                                                                                                                                                                                                                                                                                                        TP_XT2
+                                                                                                           22p 22p
+
+
+
+
+                                                                                                                                                                                                     (T1/PCINT4)PB4                                                                                                                                                                                                                                                                                11
+                                                                                                               C11
+
+
+
+
+                                                                                                                     XT2                                                                                                                 17 MISO2                                                                                                           RESET                      1                                           19                                     SS           3
+
+
+
+
+                                                                                                                                                                                                                                                                                                DTR
+          X2                               MF-MSMF050-2 500mA                                                                                                                                (PD0/MISO/PCINT3)PB3                                                                                                                                                                                RESET            (SCK)PB5                                                                         10
+                                                                                                                                            Y1
+                                                                                                                       16MHz
+
+
+
+
+                                                                                                                                                                          2                                                              16 MOSI2                                                                                                                                                                                  18                                                  2
+                                                                                                                                 1
+
+
+
+
+                                                 22R                                                                                                                           XTAL2(PC0)     (PDI/MOSI/PCINT2)PB2                                                                                                                                                                                               (MISO)PB4
+                                                   8 RN3A                                                                                                                                                                                                                                                GND                                                                                                                                                                                       9
+                                                                                       TP_XT4 TP_XT3 GND
+
+
+
+
+               1        XUSB                            1                                                                                R1                                                                                              15 SCK2                                                                                            XTAL2                                                                                  17                                                  1
+                                                                                                                                                                                                  (SCLK/PCINT1)PB1                                                                                                                                                                                               (MOSI)PB3
+                                                                                                           C9
+
+
+
+
+               2                                                                                                                         1M                               1                                                              14                                                                                                                                         10                                             16                                                              8
+        USB
+
+
+
+
+                                               D-                              RD-                                                                                             XTAL1                (SS/PCINT0)PB0                                                                                                                                         R2                                    XTAL2              (SS)PB2                   SS
+               3                               D+                                                                    XT1                                            XT1                                                                                                                                                                                    1M                                                                      15         IO9                                 IOH
+                                                                                                                                 2
+
+
+
+
+                                                                                                                                                                                                                                                                                                      TP_XT1
+                                                                                                                                                                                                                                                                                                                                                                                                                  (OC1)PB1
+       P$2
+       P$1
+
+
+
+
+               4                                              5 RN3D
+                                                            22R    4                                                                                                                                                                                                                                                                     9                                                                                         14                                             6x1F-H8.5
+                                                                               RD+                                                                                                                                                                                                                                       XTAL1                                                                                                                IO8
+                                         CG0603MLC-05E
+
+
+
+                                                           CG0603MLC-05E
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                 XTAL1             (ICP)PB0
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              TP_A1TP_A3TP_A5
+                                                                                                                                                                         32                                                              22                                                                       CSTCE16M0V53-R0 16MHZ                                                                                                                                                6
+                                                                                                                                                                                                                                                                 USB boot En
+                                                                                                                               +5V                                             AVCC                       (INT4/ICP1/CLK0)PC7                                                   5 RN2D
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        TP_A0TP_A2TP_A4
+                                                                                                                                                                                                                                         23                                          4
+                                                                                                                                                                                                                                                                                                                   +5V             AREF 21                                                                                         28         AD5/SCL                                  5                                                                2     7
+                                                                                                                                                                                                            (OC1A/PCINT8)PC6                                                                                                                                                                     AREF           (ADC5)PC5
+       P$2
+       P$1
+
+
+
+
+                                                                                                                                                                                                                                         25                                                                                       AVCC 20                                                                                          27                                                  4
+                           UGND
+
+
+
+
+                                                                                                                                                                                                            (PCINT9/OC1B)PC5                                                                                           L2 10uH                                                                   AVCC           (ADC4)PC4                     AD4/SDA                                                                                                RN3B 22R
+D                                                                                                                                                                         4
+                                                                                                                                                                               VCC                               (PCINT10)PC4
+                                                                                                                                                                                                                                         26                                                                                                                                         22
+                                                                                                                                                                                                                                                                                                                                                                                                 AGND           (ADC3)PC3
+                                                                                                                                                                                                                                                                                                                                                                                                                                   26         AD3                                      3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    D
+                                  Z1
+
+
+
+                                            Z2
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                +5V
+                                                                                                                                                                                                                                                                               1K
+
+
+
+
+                                                                                                                                                                                                                                                                                                                TP_DTR
+               TP_USH                                                                    TP_USBVCC                       TP_VUCAP                                         3                                                              5                                                                                                                                                                                         25         AD2                                      2                                                                3     6
+                                                                                                                                                                               GND                          (AIN2/PCINT11)PC2                                                                                                                                                                                   (ADC2)PC2
+                                                                                                                                                                                                                                                                                                                                                                                       7                                           24         AD1                                      1                                                             RN3C 22R
+                                                                                                                                                                                                                                                                                                                                                                                                 VCC            (ADC1)PC1
+                                                                                                                                                                                            (CTS/HWB/AIN6/TO/INT7)PD7
+                                                                                                                                                                                                                                         13                                     GND                                                    C10                                             8
+                                                                                                                                                                                                                                                                                                                                                                                                 GND           (ADC0)PC0)
+                                                                                                                                                                                                                                                                                                                                                                                                                                   23         AD0
+                                                                                                                     TP_VUCAP                                            27
+                                                                                                                                                                               UCAP                (RTS/AIN5/INT6)PD6
+                                                                                                                                                                                                                                         12                                                                                          100n                                                                                                                                         AD
+                   USHIELD                                                                                           USBVCC                                              31                                                              11 TXLED                                                         TP_TXL                                            C6                                                                     13         IO7                                 8x1F-H8.5
+                                                                                                                                                                               UVCC             (XCK/AIN4/PCINT12)PD5                                                                                                                                                                                            (AIN1)PD7
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              TP_1 TP_3 TP_5 TP_7
+                                                                                                                     RD-                                                 30                                                              10 RXLED                                                                                                           100n                                                                   12         IO6                                      8
+                                                                                                                                                                               D-                        (INT5/AIN3)PD4                                                                                                                                                                                          (AIN0)PD6                                                                     7
+
+
+
+                                                                                                                                                                                                                                                                                                                                                   +5V
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        TP_0 TP_2 TP_4 TP_6
+                                                         100n                                                        RD+                                                 29                                                              9 M8RXD                                                                                                                                                                                   11         IO5                                      7
+                                                                                                                                                                               D+                       (TXD1/INT3)PD3                                                                                          1K                                                                                                  (T1)PD5
+                                                           C7                                                        UGND                                                28                                                              8 M8TXD                                                                 6 RN2C
+                                                                                                                                                                                                                                                                                                                      3                                               GND                                                          6          IO4                                      6       6
+                                       BLM21
+
+
+
+
+                                                                                                                                                                               UGND               (RXD1/AIN1/INT2)PD2                                                                                                                                                                                               (T0)PD4                                                                    5
+                                                                                                                                                                                                                                         7                                                                                                                                                                                         5          IO3                                      5
+                                                                                                                     2               1                                   33
+                                                                                                                                                                                                         (AIN0/INT1)PD1
+                                                                                                                                                                                                                                         6
+                                                                                                                                                                                                                                                                                               TX                                                                                                                (INT1)PD3
+                                                                                                                                                                                                                                                                                                                                                                                                                                   4                                                   4       4
+                                                    TP_UGND                     C8                                                                                                                                                                                                             YELLOW
+                                                                                                                                                                                                                                                                                                    TP_RXL                                                                                                                                    IO2
+                                  L1
+
+
+
+
+                                                                                                                                                                               PAD                     (OC0B/INT0)PD0                                                                                                                                                                                            (INT0)PD2                                                                     3
+                                                                                1u                                                                                                                                                                                                                                                                                                                                                 3          IO1                                      3
+                                                                                                               GROUND                                                                                                                                                                                                                                                                                             (TXD)PD1                                                                     2
+                                                                     GND                                                                                                      ATMEGA16U2-MU(R)                                                                                                                                  RN2B                                                                                               2          IO0                                      2
+                                                                                                                                                                                                                                                                                                                                                                                                                 (RXD)PD0                                                                      1
+                                                                                                                                           GND                                                                                                                                                                          7               2                                                                                                                                              1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               0
+                                                                                                                                                                                                                                                                                                                                                                                                ATMEGA328P-PU
+                                                                                                                                                                                                                                                                                               RX                               1K                                                                                                                                                IOL
+                                                                                                                                                                                                                                                                                                                                                                                                             7 RN4B
+                                                                                                                                                                                                                                                                                                                                                                                                            1K    2
+                                                                                                                                                                                                                                                                                               YELLOW                                                                                     M8RXD
+                                                                                                                                                                    GND_TP GND_TP1
+                                                                                                                                                                                                                                                                                                                                                                                                             8 RN4A
+                                                                                                                                                                                                                                                                                                                                                                                                            1K    1
+                                                                                                                                                                                                                                                                                                                                                                                          M8TXD
+
+E                                                                                                                        ORIGIN                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             E
+                                                                                                                                                                                                                                                                                                                                                           TP_RX           TP_TX
+                                                                                                                                                                    GND
+
+
+
+
+                           1                                                                           2                                                                                    3                                                             4                                                                                                     5                                                                       6                                                  7                                                                       8
+
+===== A000066-schematics.pdf PAGE 2 =====
+
+This project's hardware is licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+ License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/deed.en

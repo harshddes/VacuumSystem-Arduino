@@ -1,0 +1,615 @@
+{
+  "worker_ports": [
+    {
+      "port": "ADC6",
+      "A000066_net": null,
+      "A000073_net": null,
+      "present_on": [
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": false,
+      "class": "package_pin"
+    },
+    {
+      "port": "ADC7",
+      "A000066_net": null,
+      "A000073_net": null,
+      "present_on": [
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": false,
+      "class": "package_pin"
+    },
+    {
+      "port": "AGND",
+      "A000066_net": "GND",
+      "A000073_net": "GND",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "AREF",
+      "A000066_net": "AREF",
+      "A000073_net": "AREF",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "AVCC",
+      "A000066_net": "AVCC",
+      "A000073_net": "N$4",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "GND",
+      "A000066_net": "GND",
+      "A000073_net": "GND",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB0",
+      "A000066_net": "IO8",
+      "A000073_net": "IO8",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB1",
+      "A000066_net": "IO9",
+      "A000073_net": "IO9",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB2",
+      "A000066_net": "SS",
+      "A000073_net": "SS",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB3",
+      "A000066_net": "MOSI",
+      "A000073_net": "MOSI",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB4",
+      "A000066_net": "MISO",
+      "A000073_net": "MISO",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PB5",
+      "A000066_net": "SCK",
+      "A000073_net": "SCK",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PC0",
+      "A000066_net": "AD0",
+      "A000073_net": "A0",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PC1",
+      "A000066_net": "AD1",
+      "A000073_net": "A1",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PC2",
+      "A000066_net": "AD2",
+      "A000073_net": "A2",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PC3",
+      "A000066_net": "AD3",
+      "A000073_net": "A3",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PC4",
+      "A000066_net": "AD4/SDA",
+      "A000073_net": "A4/SDA",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PC5",
+      "A000066_net": "AD5/SCL",
+      "A000073_net": "A5/SCL",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": false,
+      "same_signal": true,
+      "class": "label_only"
+    },
+    {
+      "port": "PD0",
+      "A000066_net": "IO0",
+      "A000073_net": "IO0",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD1",
+      "A000066_net": "IO1",
+      "A000073_net": "IO1",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD2",
+      "A000066_net": "IO2",
+      "A000073_net": "IO2",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD3",
+      "A000066_net": "IO3",
+      "A000073_net": "IO3",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD4",
+      "A000066_net": "IO4",
+      "A000073_net": "IO4",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD5",
+      "A000066_net": "IO5",
+      "A000073_net": "IO5",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD6",
+      "A000066_net": "IO6",
+      "A000073_net": "IO6",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "PD7",
+      "A000066_net": "IO7",
+      "A000073_net": "IO7",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "RESET",
+      "A000066_net": "RESET",
+      "A000073_net": "RESET",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "VCC",
+      "A000066_net": "+5V",
+      "A000073_net": "+5V",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "XTAL1",
+      "A000066_net": "XTAL1",
+      "A000073_net": "XTAL1",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    },
+    {
+      "port": "XTAL2",
+      "A000066_net": "XTAL2",
+      "A000073_net": "XTAL2",
+      "present_on": [
+        "A000066",
+        "A000073"
+      ],
+      "same_net_label": true,
+      "same_signal": true,
+      "class": "match"
+    }
+  ],
+  "shared_refdes_value_deltas": [
+    {
+      "refdes": "C10",
+      "A000066": "100n",
+      "A000073": "100nF"
+    },
+    {
+      "refdes": "FD1",
+      "A000066": "",
+      "A000073": "DNP"
+    },
+    {
+      "refdes": "FD2",
+      "A000066": "",
+      "A000073": "DNP"
+    },
+    {
+      "refdes": "FD3",
+      "A000066": "",
+      "A000073": "DNP"
+    },
+    {
+      "refdes": "GND1",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND10",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND11",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND12",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND13",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND14",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND15",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND18",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND19",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND2",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND20",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND21",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND22",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND23",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND3",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND4",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND5",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND6",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND7",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND8",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "GND9",
+      "A000066": "",
+      "A000073": "GND"
+    },
+    {
+      "refdes": "JP2",
+      "A000066": "2x2 M - NM",
+      "A000073": "2x2 M-NM"
+    },
+    {
+      "refdes": "P+1",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+10",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+11",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+12",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+2",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+3",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+5",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+6",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+7",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+8",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "P+9",
+      "A000066": "",
+      "A000073": "+5V"
+    },
+    {
+      "refdes": "U3",
+      "A000066": "ATMEGA16U2-MU(R)",
+      "A000073": "16U2"
+    }
+  ],
+  "refdes_only_on_A000066": [
+    "AD",
+    "GND_TP",
+    "GND_TP1",
+    "IOH",
+    "IOL",
+    "P+4",
+    "POWER",
+    "TP_0",
+    "TP_1",
+    "TP_10",
+    "TP_11",
+    "TP_12",
+    "TP_13",
+    "TP_2",
+    "TP_3",
+    "TP_3V3",
+    "TP_4",
+    "TP_5",
+    "TP_5V",
+    "TP_6",
+    "TP_7",
+    "TP_8",
+    "TP_9",
+    "TP_A0",
+    "TP_A1",
+    "TP_A2",
+    "TP_A3",
+    "TP_A4",
+    "TP_A5",
+    "TP_AREF",
+    "TP_D+",
+    "TP_D-",
+    "TP_PB4",
+    "TP_PB5",
+    "TP_PB6",
+    "TP_PB7",
+    "TP_PWRIN",
+    "TP_RESET",
+    "TP_SCL",
+    "TP_SDA",
+    "TP_UGND",
+    "TP_VIN",
+    "TP_XT1",
+    "TP_XT2",
+    "TP_XT3",
+    "TP_XT4",
+    "TP_XUSB",
+    "ZU4"
+  ],
+  "refdes_only_on_A000073": [
+    "+3V1",
+    "+3V2",
+    "GND24",
+    "J1",
+    "J2",
+    "P+13",
+    "U4",
+    "VIN1",
+    "VIN2"
+  ]
+}

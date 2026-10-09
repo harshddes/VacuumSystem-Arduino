@@ -1,0 +1,72 @@
+[
+  {
+    "file": "docs/uno-r3-dip-A000066/A000066-datasheet.pdf",
+    "sha256": "47b9728fe6e7b356c15368dd77297e65ddb621634fc06247faeda8588b483fd2",
+    "pages": 27,
+    "extracted_pages": 27,
+    "outline_entries": 0,
+    "outline_file": "docs/index/outline/A000066-datasheet.json",
+    "text_file": "docs/index/text/A000066-datasheet.txt",
+    "text_chars": 37866
+  },
+  {
+    "file": "docs/uno-r3-dip-A000066/A000066-full-pinout.pdf",
+    "sha256": "088b4d7d776abf443cb050c31875221aa5fc7f0533470b33e035c249cf240007",
+    "pages": 5,
+    "extracted_pages": 5,
+    "outline_entries": 0,
+    "outline_file": "docs/index/outline/A000066-full-pinout.json",
+    "text_file": "docs/index/text/A000066-full-pinout.txt",
+    "text_chars": 29824
+  },
+  {
+    "file": "docs/uno-r3-dip-A000066/A000066-schematics.pdf",
+    "sha256": "2c1041200352485393108e03c5117a07d4ea03954654485526c2c56cd01f7a42",
+    "pages": 2,
+    "extracted_pages": 2,
+    "outline_entries": 0,
+    "outline_file": "docs/index/outline/A000066-schematics.json",
+    "text_file": "docs/index/text/A000066-schematics.txt",
+    "text_chars": 86781
+  },
+  {
+    "file": "docs/uno-r3-smd-A000073/A000073-full-pinout.pdf",
+    "sha256": "9b5b545b7e932b3dcc7aa6a2883c38b78c0c04bbdd3f78b9e4da8a6f5068955e",
+    "pages": 4,
+    "extracted_pages": 4,
+    "outline_entries": 0,
+    "outline_file": "docs/index/outline/A000073-full-pinout.json",
+    "text_file": "docs/index/text/A000073-full-pinout.txt",
+    "text_chars": 23722
+  },
+  {
+    "file": "docs/uno-r3-smd-A000073/A000073-schematics.pdf",
+    "sha256": "1dc20ba73cf61a3e1390aef586cbe28d685ac890c8e0036cfe8ef2a192a51cef",
+    "pages": 2,
+    "extracted_pages": 2,
+    "outline_entries": 0,
+    "outline_file": "docs/index/outline/A000073-schematics.json",
+    "text_file": "docs/index/text/A000073-schematics.txt",
+    "text_chars": 188253
+  },
+  {
+    "file": "docs/chips/ATmega328P-complete-DS40002061B.pdf",
+    "sha256": "b9b9d83cda56a95d999ea8d54fe5a540748ae9020e5e7ae19b913d384ba9320e",
+    "pages": 653,
+    "extracted_pages": 653,
+    "outline_entries": 776,
+    "outline_file": "docs/index/outline/ATmega328P-complete-DS40002061B.json",
+    "text_file": "docs/index/text/ATmega328P-complete-DS40002061B.txt",
+    "text_chars": 2014026
+  },
+  {
+    "file": "docs/chips/ATmega16U2-complete-doc7799.pdf",
+    "sha256": "182d44b3834632028e2258ee410b3ad33ee89c692695b6dc3e68cbdd08a5d03a",
+    "pages": 310,
+    "extracted_pages": 310,
+    "outline_entries": 498,
+    "outline_file": "docs/index/outline/ATmega16U2-complete-doc7799.json",
+    "text_file": "docs/index/text/ATmega16U2-complete-doc7799.txt",
+    "text_chars": 1132576
+  }
+]

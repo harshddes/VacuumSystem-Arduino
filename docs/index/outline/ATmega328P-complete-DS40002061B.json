@@ -1,0 +1,3882 @@
+[
+  {
+    "depth": 0,
+    "title": "Features",
+    "page": 1
+  },
+  {
+    "depth": 0,
+    "title": "megaAVR\u00ae Data Sheet",
+    "page": 1
+  },
+  {
+    "depth": 0,
+    "title": "Introduction",
+    "page": 1
+  },
+  {
+    "depth": 0,
+    "title": "Table of Contents",
+    "page": 3
+  },
+  {
+    "depth": 0,
+    "title": "1. Pin Configurations",
+    "page": 12
+  },
+  {
+    "depth": 1,
+    "title": "1.1 Pin Descriptions",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.1 VCC",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.2 GND",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.3 Port B (PB7:0) XTAL1/XTAL2/TOSC1/TOSC2",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.4 Port C (PC5:0)",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.5 PC6/RESET",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.6 Port D (PD7:0)",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "1.1.7 AVCC",
+    "page": 14
+  },
+  {
+    "depth": 2,
+    "title": "1.1.8 AREF",
+    "page": 14
+  },
+  {
+    "depth": 2,
+    "title": "1.1.9 ADC7:6 (TQFP and VQFN Package Only)",
+    "page": 14
+  },
+  {
+    "depth": 0,
+    "title": "2. Overview",
+    "page": 15
+  },
+  {
+    "depth": 1,
+    "title": "2.1 Block Diagram",
+    "page": 15
+  },
+  {
+    "depth": 1,
+    "title": "2.2 Comparison Between Processors",
+    "page": 16
+  },
+  {
+    "depth": 0,
+    "title": "3. Resources",
+    "page": 17
+  },
+  {
+    "depth": 0,
+    "title": "4. Data Retention",
+    "page": 17
+  },
+  {
+    "depth": 0,
+    "title": "5. About Code Examples",
+    "page": 17
+  },
+  {
+    "depth": 0,
+    "title": "6. Capacitive Touch Sensing",
+    "page": 17
+  },
+  {
+    "depth": 0,
+    "title": "7. AVR CPU Core",
+    "page": 18
+  },
+  {
+    "depth": 1,
+    "title": "7.1 Overview",
+    "page": 18
+  },
+  {
+    "depth": 1,
+    "title": "7.2 ALU \u2013 Arithmetic Logic Unit",
+    "page": 19
+  },
+  {
+    "depth": 1,
+    "title": "7.3 Status Register",
+    "page": 19
+  },
+  {
+    "depth": 2,
+    "title": "7.3.1 SREG \u2013 AVR Status Register",
+    "page": 20
+  },
+  {
+    "depth": 1,
+    "title": "7.4 General Purpose Register File",
+    "page": 20
+  },
+  {
+    "depth": 2,
+    "title": "7.4.1 The X-register, Y-register, and Z-register",
+    "page": 21
+  },
+  {
+    "depth": 1,
+    "title": "7.5 Stack Pointer",
+    "page": 22
+  },
+  {
+    "depth": 2,
+    "title": "7.5.1 SPH and SPL \u2013 Stack Pointer High and Stack Pointer Low Register",
+    "page": 22
+  },
+  {
+    "depth": 1,
+    "title": "7.6 Instruction Execution Timing",
+    "page": 23
+  },
+  {
+    "depth": 1,
+    "title": "7.7 Reset and Interrupt Handling",
+    "page": 23
+  },
+  {
+    "depth": 2,
+    "title": "7.7.1 Interrupt Response Time",
+    "page": 25
+  },
+  {
+    "depth": 0,
+    "title": "8. AVR Memories",
+    "page": 26
+  },
+  {
+    "depth": 1,
+    "title": "8.1 Overview",
+    "page": 26
+  },
+  {
+    "depth": 1,
+    "title": "8.2 In-System Reprogrammable Flash Program Memory",
+    "page": 26
+  },
+  {
+    "depth": 1,
+    "title": "8.3 SRAM Data Memory",
+    "page": 28
+  },
+  {
+    "depth": 2,
+    "title": "8.3.1 Data Memory Access Times",
+    "page": 29
+  },
+  {
+    "depth": 1,
+    "title": "8.4 EEPROM Data Memory",
+    "page": 29
+  },
+  {
+    "depth": 2,
+    "title": "8.4.1 EEPROM Read/Write Access",
+    "page": 29
+  },
+  {
+    "depth": 2,
+    "title": "8.4.2 Preventing EEPROM Corruption",
+    "page": 30
+  },
+  {
+    "depth": 1,
+    "title": "8.5 I/O Memory",
+    "page": 30
+  },
+  {
+    "depth": 2,
+    "title": "8.5.1 General Purpose I/O Registers",
+    "page": 30
+  },
+  {
+    "depth": 1,
+    "title": "8.6 Register Description",
+    "page": 31
+  },
+  {
+    "depth": 2,
+    "title": "8.6.1 EEARH and EEARL \u2013 The EEPROM Address Register",
+    "page": 31
+  },
+  {
+    "depth": 2,
+    "title": "8.6.2 EEDR \u2013 The EEPROM Data Register",
+    "page": 31
+  },
+  {
+    "depth": 2,
+    "title": "8.6.3 EECR \u2013 The EEPROM Control Register",
+    "page": 31
+  },
+  {
+    "depth": 2,
+    "title": "8.6.4 GPIOR2 \u2013 General Purpose I/O Register 2",
+    "page": 35
+  },
+  {
+    "depth": 2,
+    "title": "8.6.5 GPIOR1 \u2013 General Purpose I/O Register 1",
+    "page": 35
+  },
+  {
+    "depth": 2,
+    "title": "8.6.6 GPIOR0 \u2013 General Purpose I/O Register 0",
+    "page": 35
+  },
+  {
+    "depth": 0,
+    "title": "9. System Clock and Clock Options",
+    "page": 36
+  },
+  {
+    "depth": 1,
+    "title": "9.1 Clock Systems and their Distribution",
+    "page": 36
+  },
+  {
+    "depth": 2,
+    "title": "9.1.1 CPU Clock \u2013 clkCPU",
+    "page": 36
+  },
+  {
+    "depth": 2,
+    "title": "9.1.2 I/O Clock \u2013 clkI/O",
+    "page": 36
+  },
+  {
+    "depth": 2,
+    "title": "9.1.3 Flash Clock \u2013 clkFLASH",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "9.1.4 Asynchronous Timer Clock \u2013 clkASY",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "9.1.5 ADC Clock \u2013 clkADC",
+    "page": 37
+  },
+  {
+    "depth": 1,
+    "title": "9.2 Clock Sources",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "9.2.1 Default Clock Source",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "9.2.2 Clock Startup Sequence",
+    "page": 37
+  },
+  {
+    "depth": 1,
+    "title": "9.3 Low Power Crystal Oscillator",
+    "page": 38
+  },
+  {
+    "depth": 1,
+    "title": "9.4 Full Swing Crystal Oscillator",
+    "page": 39
+  },
+  {
+    "depth": 1,
+    "title": "9.5 Low Frequency Crystal Oscillator",
+    "page": 42
+  },
+  {
+    "depth": 1,
+    "title": "9.6 Calibrated Internal RC Oscillator",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.7 128kHz Internal Oscillator",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.8 External Clock",
+    "page": 44
+  },
+  {
+    "depth": 1,
+    "title": "9.9 Clock Output Buffer",
+    "page": 45
+  },
+  {
+    "depth": 1,
+    "title": "9.10 Timer/Counter Oscillator",
+    "page": 45
+  },
+  {
+    "depth": 1,
+    "title": "9.11 System Clock Prescaler",
+    "page": 45
+  },
+  {
+    "depth": 1,
+    "title": "9.12 Register Description",
+    "page": 46
+  },
+  {
+    "depth": 2,
+    "title": "9.12.1 OSCCAL \u2013 Oscillator Calibration Register",
+    "page": 46
+  },
+  {
+    "depth": 2,
+    "title": "9.12.2 CLKPR \u2013 Clock Prescale Register",
+    "page": 46
+  },
+  {
+    "depth": 0,
+    "title": "10. Power Management and Sleep Modes",
+    "page": 48
+  },
+  {
+    "depth": 1,
+    "title": "10.1 Sleep Modes",
+    "page": 48
+  },
+  {
+    "depth": 1,
+    "title": "10.2 BOD Disable(1)",
+    "page": 49
+  },
+  {
+    "depth": 1,
+    "title": "10.3 Idle Mode",
+    "page": 49
+  },
+  {
+    "depth": 1,
+    "title": "10.4 ADC Noise Reduction Mode",
+    "page": 49
+  },
+  {
+    "depth": 1,
+    "title": "10.5 Power-down Mode",
+    "page": 49
+  },
+  {
+    "depth": 1,
+    "title": "10.6 Power-save Mode",
+    "page": 50
+  },
+  {
+    "depth": 1,
+    "title": "10.7 Standby Mode",
+    "page": 50
+  },
+  {
+    "depth": 1,
+    "title": "10.8 Extended Standby Mode",
+    "page": 51
+  },
+  {
+    "depth": 1,
+    "title": "10.9 Power Reduction Register",
+    "page": 51
+  },
+  {
+    "depth": 1,
+    "title": "10.10 Minimizing Power Consumption",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.10.1 Analog to Digital Converter",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.10.2 Analog Comparator",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.10.3 Brown-out Detector",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.10.4 Internal Voltage Reference",
+    "page": 52
+  },
+  {
+    "depth": 2,
+    "title": "10.10.5 Watchdog Timer",
+    "page": 52
+  },
+  {
+    "depth": 2,
+    "title": "10.10.6 Port Pins",
+    "page": 52
+  },
+  {
+    "depth": 2,
+    "title": "10.10.7 On-chip Debug System",
+    "page": 52
+  },
+  {
+    "depth": 1,
+    "title": "10.11 Register Description",
+    "page": 53
+  },
+  {
+    "depth": 2,
+    "title": "10.11.1 SMCR \u2013 Sleep Mode Control Register",
+    "page": 53
+  },
+  {
+    "depth": 2,
+    "title": "10.11.2 MCUCR \u2013 MCU Control Register",
+    "page": 54
+  },
+  {
+    "depth": 2,
+    "title": "10.11.3 PRR \u2013 Power Reduction Register",
+    "page": 54
+  },
+  {
+    "depth": 0,
+    "title": "11. System Control and Reset",
+    "page": 56
+  },
+  {
+    "depth": 1,
+    "title": "11.1 Resetting the AVR",
+    "page": 56
+  },
+  {
+    "depth": 1,
+    "title": "11.2 Reset Sources",
+    "page": 56
+  },
+  {
+    "depth": 1,
+    "title": "11.3 Power-on Reset",
+    "page": 57
+  },
+  {
+    "depth": 1,
+    "title": "11.4 External Reset",
+    "page": 58
+  },
+  {
+    "depth": 1,
+    "title": "11.5 Brown-out Detection",
+    "page": 58
+  },
+  {
+    "depth": 1,
+    "title": "11.6 Watchdog System Reset",
+    "page": 59
+  },
+  {
+    "depth": 1,
+    "title": "11.7 Internal Voltage Reference",
+    "page": 59
+  },
+  {
+    "depth": 2,
+    "title": "11.7.1 Voltage Reference Enable Signals and Start-up Time",
+    "page": 59
+  },
+  {
+    "depth": 1,
+    "title": "11.8 Watchdog Timer",
+    "page": 60
+  },
+  {
+    "depth": 2,
+    "title": "11.8.1 Features",
+    "page": 60
+  },
+  {
+    "depth": 2,
+    "title": "11.8.2 Overview",
+    "page": 60
+  },
+  {
+    "depth": 1,
+    "title": "11.9 Register Description",
+    "page": 63
+  },
+  {
+    "depth": 2,
+    "title": "11.9.1 MCUSR \u2013 MCU Status Register",
+    "page": 63
+  },
+  {
+    "depth": 2,
+    "title": "11.9.2 WDTCSR \u2013 Watchdog Timer Control Register",
+    "page": 63
+  },
+  {
+    "depth": 0,
+    "title": "12. Interrupts",
+    "page": 66
+  },
+  {
+    "depth": 1,
+    "title": "12.1 Interrupt Vectors in ATmega48A and ATmega48PA",
+    "page": 66
+  },
+  {
+    "depth": 1,
+    "title": "12.2 Interrupt Vectors in ATmega88A and ATmega88PA",
+    "page": 68
+  },
+  {
+    "depth": 1,
+    "title": "12.3 Interrupt Vectors in ATmega168A and ATmega168PA",
+    "page": 71
+  },
+  {
+    "depth": 1,
+    "title": "12.4 Interrupt Vectors in ATmega328 and ATmega328P",
+    "page": 74
+  },
+  {
+    "depth": 1,
+    "title": "12.5 Register Description",
+    "page": 77
+  },
+  {
+    "depth": 2,
+    "title": "12.5.1 Moving Interrupts Between Application and Boot Space, ATmega88A/88PA, ATmega168A/168PA and ATmega328/328P",
+    "page": 77
+  },
+  {
+    "depth": 0,
+    "title": "13. External Interrupts",
+    "page": 79
+  },
+  {
+    "depth": 1,
+    "title": "13.1 Pin Change Interrupt Timing",
+    "page": 79
+  },
+  {
+    "depth": 1,
+    "title": "13.2 Register Description",
+    "page": 80
+  },
+  {
+    "depth": 2,
+    "title": "13.2.1 EICRA \u2013 External Interrupt Control Register A",
+    "page": 80
+  },
+  {
+    "depth": 2,
+    "title": "13.2.2 EIMSK \u2013 External Interrupt Mask Register",
+    "page": 81
+  },
+  {
+    "depth": 2,
+    "title": "13.2.3 EIFR \u2013 External Interrupt Flag Register",
+    "page": 81
+  },
+  {
+    "depth": 2,
+    "title": "13.2.4 PCICR \u2013 Pin Change Interrupt Control Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "13.2.5 PCIFR \u2013 Pin Change Interrupt Flag Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "13.2.6 PCMSK2 \u2013 Pin Change Mask Register 2",
+    "page": 83
+  },
+  {
+    "depth": 2,
+    "title": "13.2.7 PCMSK1 \u2013 Pin Change Mask Register 1",
+    "page": 83
+  },
+  {
+    "depth": 2,
+    "title": "13.2.8 PCMSK0 \u2013 Pin Change Mask Register 0",
+    "page": 83
+  },
+  {
+    "depth": 0,
+    "title": "14. I/O-Ports",
+    "page": 84
+  },
+  {
+    "depth": 1,
+    "title": "14.1 Overview",
+    "page": 84
+  },
+  {
+    "depth": 1,
+    "title": "14.2 Ports as General Digital I/O",
+    "page": 85
+  },
+  {
+    "depth": 2,
+    "title": "14.2.1 Configuring the Pin",
+    "page": 85
+  },
+  {
+    "depth": 2,
+    "title": "14.2.2 Toggling the Pin",
+    "page": 85
+  },
+  {
+    "depth": 2,
+    "title": "14.2.3 Switching Between Input and Output",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "14.2.4 Reading the Pin Value",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "14.2.5 Digital Input Enable and Sleep Modes",
+    "page": 88
+  },
+  {
+    "depth": 2,
+    "title": "14.2.6 Unconnected Pins",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.3 Alternate Port Functions",
+    "page": 89
+  },
+  {
+    "depth": 2,
+    "title": "14.3.1 Alternate Functions of Port B",
+    "page": 91
+  },
+  {
+    "depth": 2,
+    "title": "14.3.2 Alternate Functions of Port C",
+    "page": 94
+  },
+  {
+    "depth": 2,
+    "title": "14.3.3 Alternate Functions of Port D",
+    "page": 97
+  },
+  {
+    "depth": 1,
+    "title": "14.4 Register Description",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.1 MCUCR \u2013 MCU Control Register",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.2 PORTB \u2013 The Port B Data Register",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.3 DDRB \u2013 The Port B Data Direction Register",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.4 PINB \u2013 The Port B Input Pins Address(1)",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.5 PORTC \u2013 The Port C Data Register",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.6 DDRC \u2013 The Port C Data Direction Register",
+    "page": 100
+  },
+  {
+    "depth": 2,
+    "title": "14.4.7 PINC \u2013 The Port C Input Pins Address(1)",
+    "page": 101
+  },
+  {
+    "depth": 2,
+    "title": "14.4.8 PORTD \u2013 The Port D Data Register",
+    "page": 101
+  },
+  {
+    "depth": 2,
+    "title": "14.4.9 DDRD \u2013 The Port D Data Direction Register",
+    "page": 101
+  },
+  {
+    "depth": 2,
+    "title": "14.4.10 PIND \u2013 The Port D Input Pins Address(1)",
+    "page": 101
+  },
+  {
+    "depth": 0,
+    "title": "15. 8-bit Timer/Counter0 with PWM",
+    "page": 102
+  },
+  {
+    "depth": 1,
+    "title": "15.1 Features",
+    "page": 102
+  },
+  {
+    "depth": 1,
+    "title": "15.2 Overview",
+    "page": 102
+  },
+  {
+    "depth": 2,
+    "title": "15.2.1 Definitions",
+    "page": 103
+  },
+  {
+    "depth": 2,
+    "title": "15.2.2 Registers",
+    "page": 103
+  },
+  {
+    "depth": 1,
+    "title": "15.3 Timer/Counter Clock Sources",
+    "page": 103
+  },
+  {
+    "depth": 1,
+    "title": "15.4 Counter Unit",
+    "page": 103
+  },
+  {
+    "depth": 1,
+    "title": "15.5 Output Compare Unit",
+    "page": 104
+  },
+  {
+    "depth": 2,
+    "title": "15.5.1 Force Output Compare",
+    "page": 105
+  },
+  {
+    "depth": 2,
+    "title": "15.5.2 Compare Match Blocking by TCNT0 Write",
+    "page": 105
+  },
+  {
+    "depth": 2,
+    "title": "15.5.3 Using the Output Compare Unit",
+    "page": 105
+  },
+  {
+    "depth": 1,
+    "title": "15.6 Compare Match Output Unit",
+    "page": 106
+  },
+  {
+    "depth": 2,
+    "title": "15.6.1 Compare Output Mode and Waveform Generation",
+    "page": 106
+  },
+  {
+    "depth": 1,
+    "title": "15.7 Modes of Operation",
+    "page": 107
+  },
+  {
+    "depth": 2,
+    "title": "15.7.1 Normal Mode",
+    "page": 107
+  },
+  {
+    "depth": 2,
+    "title": "15.7.2 Clear Timer on Compare Match (CTC) Mode",
+    "page": 107
+  },
+  {
+    "depth": 2,
+    "title": "15.7.3 Fast PWM Mode",
+    "page": 108
+  },
+  {
+    "depth": 2,
+    "title": "15.7.4 Phase Correct PWM Mode",
+    "page": 109
+  },
+  {
+    "depth": 1,
+    "title": "15.8 Timer/Counter Timing Diagrams",
+    "page": 111
+  },
+  {
+    "depth": 1,
+    "title": "15.9 Register Description",
+    "page": 113
+  },
+  {
+    "depth": 2,
+    "title": "15.9.1 TCCR0A \u2013 Timer/Counter Control Register A",
+    "page": 113
+  },
+  {
+    "depth": 2,
+    "title": "15.9.2 TCCR0B \u2013 Timer/Counter Control Register B",
+    "page": 116
+  },
+  {
+    "depth": 2,
+    "title": "15.9.3 TCNT0 \u2013 Timer/Counter Register",
+    "page": 117
+  },
+  {
+    "depth": 2,
+    "title": "15.9.4 OCR0A \u2013 Output Compare Register A",
+    "page": 117
+  },
+  {
+    "depth": 2,
+    "title": "15.9.5 OCR0B \u2013 Output Compare Register B",
+    "page": 117
+  },
+  {
+    "depth": 2,
+    "title": "15.9.6 TIMSK0 \u2013 Timer/Counter Interrupt Mask Register",
+    "page": 118
+  },
+  {
+    "depth": 2,
+    "title": "15.9.7 TIFR0 \u2013 Timer/Counter 0 Interrupt Flag Register",
+    "page": 118
+  },
+  {
+    "depth": 0,
+    "title": "16. 16-bit Timer/Counter1 with PWM",
+    "page": 120
+  },
+  {
+    "depth": 1,
+    "title": "16.1 Features",
+    "page": 120
+  },
+  {
+    "depth": 1,
+    "title": "16.2 Overview",
+    "page": 120
+  },
+  {
+    "depth": 2,
+    "title": "16.2.1 Registers",
+    "page": 121
+  },
+  {
+    "depth": 2,
+    "title": "16.2.2 Definitions",
+    "page": 122
+  },
+  {
+    "depth": 1,
+    "title": "16.3 Accessing 16-bit Registers",
+    "page": 122
+  },
+  {
+    "depth": 2,
+    "title": "16.3.1 Reusing the Temporary High Byte Register",
+    "page": 125
+  },
+  {
+    "depth": 1,
+    "title": "16.4 Timer/Counter Clock Sources",
+    "page": 125
+  },
+  {
+    "depth": 1,
+    "title": "16.5 Counter Unit",
+    "page": 125
+  },
+  {
+    "depth": 1,
+    "title": "16.6 Input Capture Unit",
+    "page": 126
+  },
+  {
+    "depth": 2,
+    "title": "16.6.1 Input Capture Trigger Source",
+    "page": 127
+  },
+  {
+    "depth": 2,
+    "title": "16.6.2 Noise Canceler",
+    "page": 128
+  },
+  {
+    "depth": 2,
+    "title": "16.6.3 Using the Input Capture Unit",
+    "page": 128
+  },
+  {
+    "depth": 1,
+    "title": "16.7 Output Compare Units",
+    "page": 128
+  },
+  {
+    "depth": 2,
+    "title": "16.7.1 Force Output Compare",
+    "page": 129
+  },
+  {
+    "depth": 2,
+    "title": "16.7.2 Compare Match Blocking by TCNT1 Write",
+    "page": 129
+  },
+  {
+    "depth": 2,
+    "title": "16.7.3 Using the Output Compare Unit",
+    "page": 130
+  },
+  {
+    "depth": 1,
+    "title": "16.8 Compare Match Output Unit",
+    "page": 130
+  },
+  {
+    "depth": 2,
+    "title": "16.8.1 Compare Output Mode and Waveform Generation",
+    "page": 131
+  },
+  {
+    "depth": 1,
+    "title": "16.9 Modes of Operation",
+    "page": 131
+  },
+  {
+    "depth": 2,
+    "title": "16.9.1 Normal Mode",
+    "page": 131
+  },
+  {
+    "depth": 2,
+    "title": "16.9.2 Clear Timer on Compare Match (CTC) Mode",
+    "page": 131
+  },
+  {
+    "depth": 2,
+    "title": "16.9.3 Fast PWM Mode",
+    "page": 132
+  },
+  {
+    "depth": 2,
+    "title": "16.9.4 Phase Correct PWM Mode",
+    "page": 134
+  },
+  {
+    "depth": 2,
+    "title": "16.9.5 Phase and Frequency Correct PWM Mode",
+    "page": 136
+  },
+  {
+    "depth": 1,
+    "title": "16.10 Timer/Counter Timing Diagrams",
+    "page": 138
+  },
+  {
+    "depth": 1,
+    "title": "16.11 Register Description",
+    "page": 140
+  },
+  {
+    "depth": 2,
+    "title": "16.11.1 TCCR1A \u2013 Timer/Counter1 Control Register A",
+    "page": 140
+  },
+  {
+    "depth": 2,
+    "title": "16.11.2 TCCR1B \u2013 Timer/Counter1 Control Register B",
+    "page": 142
+  },
+  {
+    "depth": 2,
+    "title": "16.11.3 TCCR1C \u2013 Timer/Counter1 Control Register C",
+    "page": 143
+  },
+  {
+    "depth": 2,
+    "title": "16.11.4 TCNT1H and TCNT1L \u2013 Timer/Counter1",
+    "page": 143
+  },
+  {
+    "depth": 2,
+    "title": "16.11.5 OCR1AH and OCR1AL \u2013 Output Compare Register 1 A",
+    "page": 144
+  },
+  {
+    "depth": 2,
+    "title": "16.11.6 OCR1BH and OCR1BL \u2013 Output Compare Register 1 B",
+    "page": 144
+  },
+  {
+    "depth": 2,
+    "title": "16.11.7 ICR1H and ICR1L \u2013 Input Capture Register 1",
+    "page": 144
+  },
+  {
+    "depth": 2,
+    "title": "16.11.8 TIMSK1 \u2013 Timer/Counter1 Interrupt Mask Register",
+    "page": 144
+  },
+  {
+    "depth": 2,
+    "title": "16.11.9 TIFR1 \u2013 Timer/Counter1 Interrupt Flag Register",
+    "page": 145
+  },
+  {
+    "depth": 0,
+    "title": "17. Timer/Counter0 and Timer/Counter1 Prescalers",
+    "page": 147
+  },
+  {
+    "depth": 1,
+    "title": "17.1 Internal Clock Source",
+    "page": 147
+  },
+  {
+    "depth": 1,
+    "title": "17.2 Prescaler Reset",
+    "page": 147
+  },
+  {
+    "depth": 1,
+    "title": "17.3 External Clock Source",
+    "page": 147
+  },
+  {
+    "depth": 1,
+    "title": "17.4 Register Description",
+    "page": 149
+  },
+  {
+    "depth": 2,
+    "title": "17.4.1 GTCCR \u2013 General Timer/Counter Control Register",
+    "page": 149
+  },
+  {
+    "depth": 0,
+    "title": "18. 8-bit Timer/Counter2 with PWM and Asynchronous Operation",
+    "page": 150
+  },
+  {
+    "depth": 1,
+    "title": "18.1 Features",
+    "page": 150
+  },
+  {
+    "depth": 1,
+    "title": "18.2 Overview",
+    "page": 150
+  },
+  {
+    "depth": 2,
+    "title": "18.2.1 Registers",
+    "page": 150
+  },
+  {
+    "depth": 2,
+    "title": "18.2.2 Definitions",
+    "page": 151
+  },
+  {
+    "depth": 1,
+    "title": "18.3 Timer/Counter Clock Sources",
+    "page": 151
+  },
+  {
+    "depth": 1,
+    "title": "18.4 Counter Unit",
+    "page": 151
+  },
+  {
+    "depth": 1,
+    "title": "18.5 Output Compare Unit",
+    "page": 152
+  },
+  {
+    "depth": 2,
+    "title": "18.5.1 Force Output Compare",
+    "page": 153
+  },
+  {
+    "depth": 2,
+    "title": "18.5.2 Compare Match Blocking by TCNT2 Write",
+    "page": 153
+  },
+  {
+    "depth": 2,
+    "title": "18.5.3 Using the Output Compare Unit",
+    "page": 153
+  },
+  {
+    "depth": 1,
+    "title": "18.6 Compare Match Output Unit",
+    "page": 154
+  },
+  {
+    "depth": 2,
+    "title": "18.6.1 Compare Output Mode and Waveform Generation",
+    "page": 154
+  },
+  {
+    "depth": 1,
+    "title": "18.7 Modes of Operation",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.7.1 Normal Mode",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.7.2 Clear Timer on Compare Match (CTC) Mode",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.7.3 Fast PWM Mode",
+    "page": 156
+  },
+  {
+    "depth": 2,
+    "title": "18.7.4 Phase Correct PWM Mode",
+    "page": 157
+  },
+  {
+    "depth": 1,
+    "title": "18.8 Timer/Counter Timing Diagrams",
+    "page": 159
+  },
+  {
+    "depth": 1,
+    "title": "18.9 Asynchronous Operation of Timer/Counter2",
+    "page": 160
+  },
+  {
+    "depth": 1,
+    "title": "18.10 Timer/Counter Prescaler",
+    "page": 161
+  },
+  {
+    "depth": 1,
+    "title": "18.11 Register Description",
+    "page": 162
+  },
+  {
+    "depth": 2,
+    "title": "18.11.1 TCCR2A \u2013 Timer/Counter Control Register A",
+    "page": 162
+  },
+  {
+    "depth": 2,
+    "title": "18.11.2 TCCR2B \u2013 Timer/Counter Control Register B",
+    "page": 165
+  },
+  {
+    "depth": 2,
+    "title": "18.11.3 TCNT2 \u2013 Timer/Counter Register",
+    "page": 166
+  },
+  {
+    "depth": 2,
+    "title": "18.11.4 OCR2A \u2013 Output Compare Register A",
+    "page": 166
+  },
+  {
+    "depth": 2,
+    "title": "18.11.5 OCR2B \u2013 Output Compare Register B",
+    "page": 166
+  },
+  {
+    "depth": 2,
+    "title": "18.11.6 TIMSK2 \u2013 Timer/Counter2 Interrupt Mask Register",
+    "page": 166
+  },
+  {
+    "depth": 2,
+    "title": "18.11.7 TIFR2 \u2013 Timer/Counter2 Interrupt Flag Register",
+    "page": 167
+  },
+  {
+    "depth": 2,
+    "title": "18.11.8 ASSR \u2013 Asynchronous Status Register",
+    "page": 167
+  },
+  {
+    "depth": 2,
+    "title": "18.11.9 GTCCR \u2013 General Timer/Counter Control Register",
+    "page": 168
+  },
+  {
+    "depth": 0,
+    "title": "19. SPI \u2013 Serial Peripheral Interface",
+    "page": 169
+  },
+  {
+    "depth": 1,
+    "title": "19.1 Features",
+    "page": 169
+  },
+  {
+    "depth": 1,
+    "title": "19.2 Overview",
+    "page": 169
+  },
+  {
+    "depth": 1,
+    "title": "19.3 SS Pin Functionality",
+    "page": 174
+  },
+  {
+    "depth": 2,
+    "title": "19.3.1 Slave Mode",
+    "page": 174
+  },
+  {
+    "depth": 2,
+    "title": "19.3.2 Master Mode",
+    "page": 174
+  },
+  {
+    "depth": 1,
+    "title": "19.4 Data Modes",
+    "page": 174
+  },
+  {
+    "depth": 1,
+    "title": "19.5 Register Description",
+    "page": 176
+  },
+  {
+    "depth": 2,
+    "title": "19.5.1 SPCR \u2013 SPI Control Register",
+    "page": 176
+  },
+  {
+    "depth": 2,
+    "title": "19.5.2 SPSR \u2013 SPI Status Register",
+    "page": 177
+  },
+  {
+    "depth": 2,
+    "title": "19.5.3 SPDR \u2013 SPI Data Register",
+    "page": 178
+  },
+  {
+    "depth": 0,
+    "title": "20. USART0",
+    "page": 179
+  },
+  {
+    "depth": 1,
+    "title": "20.1 Features",
+    "page": 179
+  },
+  {
+    "depth": 1,
+    "title": "20.2 Overview",
+    "page": 179
+  },
+  {
+    "depth": 1,
+    "title": "20.3 Clock Generation",
+    "page": 180
+  },
+  {
+    "depth": 2,
+    "title": "20.3.1 Internal Clock Generation \u2013 The Baud Rate Generator",
+    "page": 181
+  },
+  {
+    "depth": 2,
+    "title": "20.3.2 Double Speed Operation (U2Xn)",
+    "page": 182
+  },
+  {
+    "depth": 2,
+    "title": "20.3.3 External Clock",
+    "page": 182
+  },
+  {
+    "depth": 2,
+    "title": "20.3.4 Synchronous Clock Operation",
+    "page": 183
+  },
+  {
+    "depth": 1,
+    "title": "20.4 Frame Formats",
+    "page": 183
+  },
+  {
+    "depth": 2,
+    "title": "20.4.1 Parity Bit Calculation",
+    "page": 184
+  },
+  {
+    "depth": 1,
+    "title": "20.5 USART Initialization",
+    "page": 184
+  },
+  {
+    "depth": 1,
+    "title": "20.6 Data Transmission \u2013 The USART Transmitter",
+    "page": 185
+  },
+  {
+    "depth": 2,
+    "title": "20.6.1 Sending Frames with 5 to 8 Data Bit",
+    "page": 186
+  },
+  {
+    "depth": 2,
+    "title": "20.6.2 Sending Frames with 9 Data Bit",
+    "page": 186
+  },
+  {
+    "depth": 2,
+    "title": "20.6.3 Transmitter Flags and Interrupts",
+    "page": 187
+  },
+  {
+    "depth": 2,
+    "title": "20.6.4 Parity Generator",
+    "page": 188
+  },
+  {
+    "depth": 2,
+    "title": "20.6.5 Disabling the Transmitter",
+    "page": 188
+  },
+  {
+    "depth": 1,
+    "title": "20.7 Data Reception \u2013 The USART Receiver",
+    "page": 188
+  },
+  {
+    "depth": 2,
+    "title": "20.7.1 Receiving Frames with 5 to 8 Data Bits",
+    "page": 188
+  },
+  {
+    "depth": 2,
+    "title": "20.7.2 Receiving Frames with 9 Data Bits",
+    "page": 189
+  },
+  {
+    "depth": 2,
+    "title": "20.7.3 Receive Compete Flag and Interrupt",
+    "page": 190
+  },
+  {
+    "depth": 2,
+    "title": "20.7.4 Receiver Error Flags",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.7.5 Parity Checker",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.7.6 Disabling the Receiver",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.7.7 Flushing the Receive Buffer",
+    "page": 192
+  },
+  {
+    "depth": 1,
+    "title": "20.8 Asynchronous Data Reception",
+    "page": 192
+  },
+  {
+    "depth": 2,
+    "title": "20.8.1 Asynchronous Clock Recovery",
+    "page": 192
+  },
+  {
+    "depth": 2,
+    "title": "20.8.2 Asynchronous Data Recovery",
+    "page": 193
+  },
+  {
+    "depth": 2,
+    "title": "20.8.3 Asynchronous Operational Range",
+    "page": 194
+  },
+  {
+    "depth": 1,
+    "title": "20.9 Multi-processor Communication Mode",
+    "page": 195
+  },
+  {
+    "depth": 2,
+    "title": "20.9.1 Using MPCMn",
+    "page": 195
+  },
+  {
+    "depth": 1,
+    "title": "20.10 Examples of Baud Rate Setting",
+    "page": 196
+  },
+  {
+    "depth": 1,
+    "title": "20.11 Register Description",
+    "page": 200
+  },
+  {
+    "depth": 2,
+    "title": "20.11.1 UDRn \u2013 USART I/O Data Register n",
+    "page": 200
+  },
+  {
+    "depth": 2,
+    "title": "20.11.2 UCSRnA \u2013 USART Control and Status Register n A",
+    "page": 200
+  },
+  {
+    "depth": 2,
+    "title": "20.11.3 UCSRnB \u2013 USART Control and Status Register n B",
+    "page": 201
+  },
+  {
+    "depth": 2,
+    "title": "20.11.4 UCSRnC \u2013 USART Control and Status Register n C",
+    "page": 202
+  },
+  {
+    "depth": 2,
+    "title": "20.11.5 UBRRnL and UBRRnH \u2013 USART Baud Rate Registers",
+    "page": 204
+  },
+  {
+    "depth": 0,
+    "title": "21. USART in SPI Mode",
+    "page": 205
+  },
+  {
+    "depth": 1,
+    "title": "21.1 Features",
+    "page": 205
+  },
+  {
+    "depth": 1,
+    "title": "21.2 Overview",
+    "page": 205
+  },
+  {
+    "depth": 1,
+    "title": "21.3 Clock Generation",
+    "page": 205
+  },
+  {
+    "depth": 1,
+    "title": "21.4 SPI Data Modes and Timing",
+    "page": 206
+  },
+  {
+    "depth": 1,
+    "title": "21.5 Frame Formats",
+    "page": 206
+  },
+  {
+    "depth": 2,
+    "title": "21.5.1 USART MSPIM Initialization",
+    "page": 207
+  },
+  {
+    "depth": 1,
+    "title": "21.6 Data Transfer",
+    "page": 209
+  },
+  {
+    "depth": 2,
+    "title": "21.6.1 Transmitter and Receiver Flags and Interrupts",
+    "page": 210
+  },
+  {
+    "depth": 2,
+    "title": "21.6.2 Disabling the Transmitter or Receiver",
+    "page": 210
+  },
+  {
+    "depth": 1,
+    "title": "21.7 AVR USART MSPIM vs. AVR SPI",
+    "page": 211
+  },
+  {
+    "depth": 1,
+    "title": "21.8 Register Description",
+    "page": 212
+  },
+  {
+    "depth": 2,
+    "title": "21.8.1 UDRn \u2013 USART MSPIM I/O Data Register",
+    "page": 212
+  },
+  {
+    "depth": 2,
+    "title": "21.8.2 UCSRnA \u2013 USART MSPIM Control and Status Register n A",
+    "page": 212
+  },
+  {
+    "depth": 2,
+    "title": "21.8.3 UCSRnB \u2013 USART MSPIM Control and Status Register n B",
+    "page": 212
+  },
+  {
+    "depth": 2,
+    "title": "21.8.4 UCSRnC \u2013 USART MSPIM Control and Status Register n C",
+    "page": 213
+  },
+  {
+    "depth": 2,
+    "title": "21.8.5 USART MSPIM Baud Rate Registers \u2013 UBRRnL and UBRRnH",
+    "page": 214
+  },
+  {
+    "depth": 0,
+    "title": "22. 2-wire Serial Interface",
+    "page": 215
+  },
+  {
+    "depth": 1,
+    "title": "22.1 Features",
+    "page": 215
+  },
+  {
+    "depth": 1,
+    "title": "22.2 2-wire Serial Interface Bus Definition",
+    "page": 215
+  },
+  {
+    "depth": 2,
+    "title": "22.2.1 TWI Terminology",
+    "page": 216
+  },
+  {
+    "depth": 2,
+    "title": "22.2.2 Electrical Interconnection",
+    "page": 216
+  },
+  {
+    "depth": 1,
+    "title": "22.3 Data Transfer and Frame Format",
+    "page": 216
+  },
+  {
+    "depth": 2,
+    "title": "22.3.1 Transferring Bits",
+    "page": 216
+  },
+  {
+    "depth": 2,
+    "title": "22.3.2 START and STOP Conditions",
+    "page": 217
+  },
+  {
+    "depth": 2,
+    "title": "22.3.3 Address Packet Format",
+    "page": 217
+  },
+  {
+    "depth": 2,
+    "title": "22.3.4 Data Packet Format",
+    "page": 218
+  },
+  {
+    "depth": 2,
+    "title": "22.3.5 Combining Address and Data Packets into a Transmission",
+    "page": 218
+  },
+  {
+    "depth": 1,
+    "title": "22.4 Multi-master Bus Systems, Arbitration and Synchronization",
+    "page": 219
+  },
+  {
+    "depth": 1,
+    "title": "22.5 Overview of the TWI Module",
+    "page": 221
+  },
+  {
+    "depth": 2,
+    "title": "22.5.1 SCL and SDA Pins",
+    "page": 221
+  },
+  {
+    "depth": 2,
+    "title": "22.5.2 Bit Rate Generator Unit",
+    "page": 221
+  },
+  {
+    "depth": 2,
+    "title": "22.5.3 Bus Interface Unit",
+    "page": 222
+  },
+  {
+    "depth": 2,
+    "title": "22.5.4 Address Match Unit",
+    "page": 222
+  },
+  {
+    "depth": 2,
+    "title": "22.5.5 Control Unit",
+    "page": 222
+  },
+  {
+    "depth": 1,
+    "title": "22.6 Using the TWI",
+    "page": 223
+  },
+  {
+    "depth": 1,
+    "title": "22.7 Transmission Modes",
+    "page": 225
+  },
+  {
+    "depth": 2,
+    "title": "22.7.1 Master Transmitter Mode",
+    "page": 226
+  },
+  {
+    "depth": 2,
+    "title": "22.7.2 Master Receiver Mode",
+    "page": 229
+  },
+  {
+    "depth": 2,
+    "title": "22.7.3 Slave Receiver Mode",
+    "page": 231
+  },
+  {
+    "depth": 2,
+    "title": "22.7.4 Slave Transmitter Mode",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "22.7.5 Miscellaneous States",
+    "page": 237
+  },
+  {
+    "depth": 2,
+    "title": "22.7.6 Combining Several TWI Modes",
+    "page": 237
+  },
+  {
+    "depth": 1,
+    "title": "22.8 Multi-master Systems and Arbitration",
+    "page": 238
+  },
+  {
+    "depth": 1,
+    "title": "22.9 Register Description",
+    "page": 239
+  },
+  {
+    "depth": 2,
+    "title": "22.9.1 TWBR \u2013 TWI Bit Rate Register",
+    "page": 239
+  },
+  {
+    "depth": 2,
+    "title": "22.9.2 TWCR \u2013 TWI Control Register",
+    "page": 239
+  },
+  {
+    "depth": 2,
+    "title": "22.9.3 TWSR \u2013 TWI Status Register",
+    "page": 240
+  },
+  {
+    "depth": 2,
+    "title": "22.9.4 TWDR \u2013 TWI Data Register",
+    "page": 241
+  },
+  {
+    "depth": 2,
+    "title": "22.9.5 TWAR \u2013 TWI (Slave) Address Register",
+    "page": 241
+  },
+  {
+    "depth": 2,
+    "title": "22.9.6 TWAMR \u2013 TWI (Slave) Address Mask Register",
+    "page": 242
+  },
+  {
+    "depth": 0,
+    "title": "23. Analog Comparator",
+    "page": 243
+  },
+  {
+    "depth": 1,
+    "title": "23.1 Overview",
+    "page": 243
+  },
+  {
+    "depth": 1,
+    "title": "23.2 Analog Comparator Multiplexed Input",
+    "page": 243
+  },
+  {
+    "depth": 1,
+    "title": "23.3 Register Description",
+    "page": 244
+  },
+  {
+    "depth": 2,
+    "title": "23.3.1 ADCSRB \u2013 ADC Control and Status Register B",
+    "page": 244
+  },
+  {
+    "depth": 2,
+    "title": "23.3.2 ACSR \u2013 Analog Comparator Control and Status Register",
+    "page": 244
+  },
+  {
+    "depth": 2,
+    "title": "23.3.3 DIDR1 \u2013 Digital Input Disable Register 1",
+    "page": 245
+  },
+  {
+    "depth": 0,
+    "title": "24. Analog-to-Digital Converter",
+    "page": 246
+  },
+  {
+    "depth": 1,
+    "title": "24.1 Features",
+    "page": 246
+  },
+  {
+    "depth": 1,
+    "title": "24.2 Overview",
+    "page": 246
+  },
+  {
+    "depth": 1,
+    "title": "24.3 Starting a Conversion",
+    "page": 248
+  },
+  {
+    "depth": 1,
+    "title": "24.4 Prescaling and Conversion Timing",
+    "page": 249
+  },
+  {
+    "depth": 1,
+    "title": "24.5 Changing Channel or Reference Selection",
+    "page": 251
+  },
+  {
+    "depth": 2,
+    "title": "24.5.1 ADC Input Channels",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "24.5.2 ADC Voltage Reference",
+    "page": 252
+  },
+  {
+    "depth": 1,
+    "title": "24.6 ADC Noise Canceler",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "24.6.1 Analog Input Circuitry",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "24.6.2 Analog Noise Canceling Techniques",
+    "page": 253
+  },
+  {
+    "depth": 2,
+    "title": "24.6.3 ADC Accuracy Definitions",
+    "page": 254
+  },
+  {
+    "depth": 1,
+    "title": "24.7 ADC Conversion Result",
+    "page": 256
+  },
+  {
+    "depth": 1,
+    "title": "24.8 Temperature Measurement",
+    "page": 256
+  },
+  {
+    "depth": 1,
+    "title": "24.9 Register Description",
+    "page": 257
+  },
+  {
+    "depth": 2,
+    "title": "24.9.1 ADMUX \u2013 ADC Multiplexer Selection Register",
+    "page": 257
+  },
+  {
+    "depth": 2,
+    "title": "24.9.2 ADCSRA \u2013 ADC Control and Status Register A",
+    "page": 258
+  },
+  {
+    "depth": 2,
+    "title": "24.9.3 ADCL and ADCH \u2013 The ADC Data Register",
+    "page": 259
+  },
+  {
+    "depth": 3,
+    "title": "24.9.3.1 ADLAR = 0",
+    "page": 259
+  },
+  {
+    "depth": 3,
+    "title": "24.9.3.2 ADLAR = 1",
+    "page": 259
+  },
+  {
+    "depth": 2,
+    "title": "24.9.4 ADCSRB \u2013 ADC Control and Status Register B",
+    "page": 260
+  },
+  {
+    "depth": 2,
+    "title": "24.9.5 DIDR0 \u2013 Digital Input Disable Register 0",
+    "page": 260
+  },
+  {
+    "depth": 0,
+    "title": "25. debugWIRE On-chip Debug System",
+    "page": 262
+  },
+  {
+    "depth": 1,
+    "title": "25.1 Features",
+    "page": 262
+  },
+  {
+    "depth": 1,
+    "title": "25.2 Overview",
+    "page": 262
+  },
+  {
+    "depth": 1,
+    "title": "25.3 Physical Interface",
+    "page": 262
+  },
+  {
+    "depth": 1,
+    "title": "25.4 Software Break Points",
+    "page": 263
+  },
+  {
+    "depth": 1,
+    "title": "25.5 Limitations of debugWIRE",
+    "page": 263
+  },
+  {
+    "depth": 1,
+    "title": "25.6 Register Description",
+    "page": 263
+  },
+  {
+    "depth": 2,
+    "title": "25.6.1 DWDR \u2013 debugWire Data Register",
+    "page": 263
+  },
+  {
+    "depth": 0,
+    "title": "26. Self-Programming the Flash, ATmega 48A/48PA",
+    "page": 264
+  },
+  {
+    "depth": 1,
+    "title": "26.1 Overview",
+    "page": 264
+  },
+  {
+    "depth": 2,
+    "title": "26.1.1 Performing Page Erase by SPM",
+    "page": 264
+  },
+  {
+    "depth": 2,
+    "title": "26.1.2 Filling the Temporary Buffer (Page Loading)",
+    "page": 264
+  },
+  {
+    "depth": 2,
+    "title": "26.1.3 Performing a Page Write",
+    "page": 265
+  },
+  {
+    "depth": 1,
+    "title": "26.2 Addressing the Flash During Self-Programming",
+    "page": 265
+  },
+  {
+    "depth": 2,
+    "title": "26.2.1 EEPROM Write Prevents Writing to SPMCSR",
+    "page": 265
+  },
+  {
+    "depth": 2,
+    "title": "26.2.2 Reading the Fuse and Lock Bits from Software",
+    "page": 266
+  },
+  {
+    "depth": 2,
+    "title": "26.2.3 Preventing Flash Corruption",
+    "page": 267
+  },
+  {
+    "depth": 2,
+    "title": "26.2.4 Programming Time for Flash when Using SPM",
+    "page": 267
+  },
+  {
+    "depth": 2,
+    "title": "26.2.5 Simple Assembly Code Example for a Boot Loader",
+    "page": 268
+  },
+  {
+    "depth": 1,
+    "title": "26.3 Register Description",
+    "page": 270
+  },
+  {
+    "depth": 2,
+    "title": "26.3.1 SPMCSR \u2013 Store Program Memory Control and Status Register",
+    "page": 270
+  },
+  {
+    "depth": 0,
+    "title": "27. Boot Loader Support \u2013 Read-While-Write Self-Programming",
+    "page": 272
+  },
+  {
+    "depth": 1,
+    "title": "27.1 Features",
+    "page": 272
+  },
+  {
+    "depth": 1,
+    "title": "27.2 Overview",
+    "page": 272
+  },
+  {
+    "depth": 1,
+    "title": "27.3 Application and Boot Loader Flash Sections",
+    "page": 272
+  },
+  {
+    "depth": 2,
+    "title": "27.3.1 Application Section",
+    "page": 272
+  },
+  {
+    "depth": 2,
+    "title": "27.3.2 BLS \u2013 Boot Loader Section",
+    "page": 272
+  },
+  {
+    "depth": 1,
+    "title": "27.4 Read-While-Write and No Read-While-Write Flash Sections",
+    "page": 273
+  },
+  {
+    "depth": 2,
+    "title": "27.4.1 RWW \u2013 Read-While-Write Section",
+    "page": 273
+  },
+  {
+    "depth": 2,
+    "title": "27.4.2 NRWW \u2013 No Read-While-Write Section",
+    "page": 273
+  },
+  {
+    "depth": 1,
+    "title": "27.5 Boot Loader Lock Bits",
+    "page": 275
+  },
+  {
+    "depth": 1,
+    "title": "27.6 Entering the Boot Loader Program",
+    "page": 276
+  },
+  {
+    "depth": 1,
+    "title": "27.7 Addressing the Flash During Self-Programming",
+    "page": 277
+  },
+  {
+    "depth": 1,
+    "title": "27.8 Self-Programming the Flash",
+    "page": 278
+  },
+  {
+    "depth": 2,
+    "title": "27.8.1 Performing Page Erase by SPM",
+    "page": 278
+  },
+  {
+    "depth": 2,
+    "title": "27.8.2 Filling the Temporary Buffer (Page Loading)",
+    "page": 278
+  },
+  {
+    "depth": 2,
+    "title": "27.8.3 Performing a Page Write",
+    "page": 278
+  },
+  {
+    "depth": 2,
+    "title": "27.8.4 Using the SPM Interrupt",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.5 Consideration While Updating BLS",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.6 Prevent Reading the RWW Section During Self-Programming",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.7 Setting the Boot Loader Lock Bits by SPM",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.8 EEPROM Write Prevents Writing to SPMCSR",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.9 Reading the Fuse and Lock Bits from Software",
+    "page": 279
+  },
+  {
+    "depth": 2,
+    "title": "27.8.10 Reading the Signature Row from Software",
+    "page": 280
+  },
+  {
+    "depth": 2,
+    "title": "27.8.11 Preventing Flash Corruption",
+    "page": 281
+  },
+  {
+    "depth": 2,
+    "title": "27.8.12 Programming Time for Flash when Using SPM",
+    "page": 281
+  },
+  {
+    "depth": 2,
+    "title": "27.8.13 Simple Assembly Code Example for a Boot Loader",
+    "page": 281
+  },
+  {
+    "depth": 2,
+    "title": "27.8.14 ATmega88A and ATmega88PA Boot Loader Parameters",
+    "page": 284
+  },
+  {
+    "depth": 2,
+    "title": "27.8.15 ATmega168A and ATmega168PA Boot Loader Parameters",
+    "page": 285
+  },
+  {
+    "depth": 2,
+    "title": "27.8.16 ATmega328 and ATmega328P Boot Loader Parameters",
+    "page": 286
+  },
+  {
+    "depth": 1,
+    "title": "27.9 Register Description",
+    "page": 287
+  },
+  {
+    "depth": 2,
+    "title": "27.9.1 SPMCSR \u2013 Store Program Memory Control and Status Register",
+    "page": 287
+  },
+  {
+    "depth": 0,
+    "title": "28. Memory Programming",
+    "page": 289
+  },
+  {
+    "depth": 1,
+    "title": "28.1 Program And Data Memory Lock Bits",
+    "page": 289
+  },
+  {
+    "depth": 1,
+    "title": "28.2 Fuse Bits",
+    "page": 290
+  },
+  {
+    "depth": 2,
+    "title": "28.2.1 Latching of Fuses",
+    "page": 293
+  },
+  {
+    "depth": 1,
+    "title": "28.3 Signature Bytes",
+    "page": 293
+  },
+  {
+    "depth": 1,
+    "title": "28.4 Calibration Byte",
+    "page": 293
+  },
+  {
+    "depth": 1,
+    "title": "28.5 Page Size",
+    "page": 294
+  },
+  {
+    "depth": 1,
+    "title": "28.6 Parallel Programming Parameters, Pin Mapping, and Commands",
+    "page": 294
+  },
+  {
+    "depth": 2,
+    "title": "28.6.1 Signal Names",
+    "page": 294
+  },
+  {
+    "depth": 1,
+    "title": "28.7 Parallel Programming",
+    "page": 296
+  },
+  {
+    "depth": 2,
+    "title": "28.7.1 Enter Programming Mode",
+    "page": 296
+  },
+  {
+    "depth": 2,
+    "title": "28.7.2 Considerations for Efficient Programming",
+    "page": 297
+  },
+  {
+    "depth": 2,
+    "title": "28.7.3 Chip Erase",
+    "page": 297
+  },
+  {
+    "depth": 2,
+    "title": "28.7.4 Programming the Flash",
+    "page": 297
+  },
+  {
+    "depth": 2,
+    "title": "28.7.5 Programming the EEPROM",
+    "page": 299
+  },
+  {
+    "depth": 2,
+    "title": "28.7.6 Reading the Flash",
+    "page": 300
+  },
+  {
+    "depth": 2,
+    "title": "28.7.7 Reading the EEPROM",
+    "page": 300
+  },
+  {
+    "depth": 2,
+    "title": "28.7.8 Programming the Fuse Low Bits",
+    "page": 301
+  },
+  {
+    "depth": 2,
+    "title": "28.7.9 Programming the Fuse High Bits",
+    "page": 301
+  },
+  {
+    "depth": 2,
+    "title": "28.7.10 Programming the Extended Fuse Bits",
+    "page": 301
+  },
+  {
+    "depth": 2,
+    "title": "28.7.11 Programming the Lock Bits",
+    "page": 302
+  },
+  {
+    "depth": 2,
+    "title": "28.7.12 Reading the Fuse and Lock Bits",
+    "page": 302
+  },
+  {
+    "depth": 2,
+    "title": "28.7.13 Reading the Signature Bytes",
+    "page": 302
+  },
+  {
+    "depth": 2,
+    "title": "28.7.14 Reading the Calibration Byte",
+    "page": 303
+  },
+  {
+    "depth": 2,
+    "title": "28.7.15 Parallel Programming Characteristics",
+    "page": 303
+  },
+  {
+    "depth": 1,
+    "title": "28.8 Serial Downloading",
+    "page": 303
+  },
+  {
+    "depth": 2,
+    "title": "28.8.1 Serial Programming Pin Mapping",
+    "page": 304
+  },
+  {
+    "depth": 2,
+    "title": "28.8.2 Serial Programming Algorithm",
+    "page": 304
+  },
+  {
+    "depth": 2,
+    "title": "28.8.3 Serial Programming Instruction set",
+    "page": 305
+  },
+  {
+    "depth": 2,
+    "title": "28.8.4 SPI Serial Programming Characteristics",
+    "page": 307
+  },
+  {
+    "depth": 0,
+    "title": "29. Electrical Characteristics \u2013 (TA = -40\u00b0C to 85\u00b0C)",
+    "page": 308
+  },
+  {
+    "depth": 1,
+    "title": "29.1 Absolute Maximum Ratings*",
+    "page": 308
+  },
+  {
+    "depth": 1,
+    "title": "29.2 DC Characteristics",
+    "page": 308
+  },
+  {
+    "depth": 2,
+    "title": "29.2.1 ATmega48A DC Characteristics",
+    "page": 308
+  },
+  {
+    "depth": 2,
+    "title": "29.2.2 ATmega48PA DC Characteristics \u2013 Current Consumption",
+    "page": 309
+  },
+  {
+    "depth": 2,
+    "title": "29.2.3 ATmega88A DC Characteristics",
+    "page": 309
+  },
+  {
+    "depth": 2,
+    "title": "29.2.4 ATmega88PA DC Characteristics",
+    "page": 310
+  },
+  {
+    "depth": 2,
+    "title": "29.2.5 ATmega168A DC Characteristics",
+    "page": 310
+  },
+  {
+    "depth": 2,
+    "title": "29.2.6 ATmega168PA DC Characteristics",
+    "page": 311
+  },
+  {
+    "depth": 2,
+    "title": "29.2.7 ATmega328 DC Characteristics",
+    "page": 311
+  },
+  {
+    "depth": 2,
+    "title": "29.2.8 ATmega328P DC Characteristics",
+    "page": 312
+  },
+  {
+    "depth": 1,
+    "title": "29.3 Speed Grades",
+    "page": 312
+  },
+  {
+    "depth": 1,
+    "title": "29.4 Clock Characteristics",
+    "page": 313
+  },
+  {
+    "depth": 2,
+    "title": "29.4.1 Calibrated Internal RC Oscillator Accuracy",
+    "page": 313
+  },
+  {
+    "depth": 2,
+    "title": "29.4.2 External Clock Drive Waveforms",
+    "page": 313
+  },
+  {
+    "depth": 2,
+    "title": "29.4.3 External Clock Drive",
+    "page": 313
+  },
+  {
+    "depth": 1,
+    "title": "29.5 System and Reset Characteristics",
+    "page": 314
+  },
+  {
+    "depth": 1,
+    "title": "29.6 SPI Timing Characteristics",
+    "page": 315
+  },
+  {
+    "depth": 1,
+    "title": "29.7 Two-wire Serial Interface Characteristics",
+    "page": 317
+  },
+  {
+    "depth": 1,
+    "title": "29.8 ADC Characteristics",
+    "page": 319
+  },
+  {
+    "depth": 1,
+    "title": "29.9 Parallel Programming Characteristics",
+    "page": 320
+  },
+  {
+    "depth": 0,
+    "title": "30. Electrical Characteristics (TA = -40\u00b0C to 105\u00b0C)",
+    "page": 322
+  },
+  {
+    "depth": 1,
+    "title": "30.1 Absolute Maximum Ratings*",
+    "page": 322
+  },
+  {
+    "depth": 1,
+    "title": "30.2 DC Characteristics",
+    "page": 322
+  },
+  {
+    "depth": 2,
+    "title": "30.2.1 ATmega48PA DC Characteristics \u2013 Current Consumption",
+    "page": 324
+  },
+  {
+    "depth": 2,
+    "title": "30.2.2 ATmega88PA DC Characteristics \u2013 Current Consumption",
+    "page": 324
+  },
+  {
+    "depth": 2,
+    "title": "30.2.3 ATmega168PA DC Characteristics \u2013 Current Consumption",
+    "page": 325
+  },
+  {
+    "depth": 2,
+    "title": "30.2.4 ATmega328P DC Characteristics \u2013 Current Consumption",
+    "page": 325
+  },
+  {
+    "depth": 0,
+    "title": "31. Typical Characteristics \u2013 (TA = -40\u00b0C to 85\u00b0C)",
+    "page": 326
+  },
+  {
+    "depth": 1,
+    "title": "31.1 ATmega48A Typical Characteristics",
+    "page": 327
+  },
+  {
+    "depth": 2,
+    "title": "31.1.1 Active Supply Current",
+    "page": 327
+  },
+  {
+    "depth": 2,
+    "title": "31.1.2 Idle Supply Current",
+    "page": 329
+  },
+  {
+    "depth": 2,
+    "title": "31.1.3 ATmega48A: Supply Current of IO Modules",
+    "page": 332
+  },
+  {
+    "depth": 3,
+    "title": "31.1.3.1 Example",
+    "page": 332
+  },
+  {
+    "depth": 2,
+    "title": "31.1.4 Power-down Supply Current",
+    "page": 333
+  },
+  {
+    "depth": 2,
+    "title": "31.1.5 Power-save Supply Current",
+    "page": 334
+  },
+  {
+    "depth": 2,
+    "title": "31.1.6 Standby Supply Current",
+    "page": 334
+  },
+  {
+    "depth": 2,
+    "title": "31.1.7 Pin Pull-Up",
+    "page": 335
+  },
+  {
+    "depth": 2,
+    "title": "31.1.8 Pin Driver Strength",
+    "page": 338
+  },
+  {
+    "depth": 2,
+    "title": "31.1.9 Pin Threshold and Hysteresis",
+    "page": 340
+  },
+  {
+    "depth": 2,
+    "title": "31.1.10 BOD Threshold",
+    "page": 343
+  },
+  {
+    "depth": 2,
+    "title": "31.1.11 Internal Oscillator Speed",
+    "page": 345
+  },
+  {
+    "depth": 2,
+    "title": "31.1.12 Current Consumption of Peripheral Units",
+    "page": 347
+  },
+  {
+    "depth": 2,
+    "title": "31.1.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 350
+  },
+  {
+    "depth": 1,
+    "title": "31.2 ATmega48PA Typical Characteristics",
+    "page": 352
+  },
+  {
+    "depth": 2,
+    "title": "31.2.1 Active Supply Current",
+    "page": 352
+  },
+  {
+    "depth": 2,
+    "title": "31.2.2 Idle Supply Current",
+    "page": 354
+  },
+  {
+    "depth": 2,
+    "title": "31.2.3 ATmega48PA: Supply Current of IO Modules",
+    "page": 357
+  },
+  {
+    "depth": 3,
+    "title": "31.2.3.1 Example",
+    "page": 357
+  },
+  {
+    "depth": 2,
+    "title": "31.2.4 Power-down Supply Current",
+    "page": 358
+  },
+  {
+    "depth": 2,
+    "title": "31.2.5 Power-save Supply Current",
+    "page": 359
+  },
+  {
+    "depth": 2,
+    "title": "31.2.6 Standby Supply Current",
+    "page": 359
+  },
+  {
+    "depth": 2,
+    "title": "31.2.7 Pin Pull-Up",
+    "page": 360
+  },
+  {
+    "depth": 2,
+    "title": "31.2.8 Pin Driver Strength",
+    "page": 363
+  },
+  {
+    "depth": 2,
+    "title": "31.2.9 Pin Threshold and Hysteresis",
+    "page": 365
+  },
+  {
+    "depth": 2,
+    "title": "31.2.10 BOD Threshold",
+    "page": 368
+  },
+  {
+    "depth": 2,
+    "title": "31.2.11 Internal Oscillator Speed",
+    "page": 370
+  },
+  {
+    "depth": 2,
+    "title": "31.2.12 Current Consumption of Peripheral Units",
+    "page": 372
+  },
+  {
+    "depth": 2,
+    "title": "31.2.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 375
+  },
+  {
+    "depth": 1,
+    "title": "31.3 ATmega88A Typical Characteristics",
+    "page": 377
+  },
+  {
+    "depth": 2,
+    "title": "31.3.1 Active Supply Current",
+    "page": 377
+  },
+  {
+    "depth": 2,
+    "title": "31.3.2 Idle Supply Current",
+    "page": 379
+  },
+  {
+    "depth": 2,
+    "title": "31.3.3 ATmega88A: Supply Current of IO Modules",
+    "page": 382
+  },
+  {
+    "depth": 3,
+    "title": "31.3.3.1 Example",
+    "page": 382
+  },
+  {
+    "depth": 2,
+    "title": "31.3.4 Power-down Supply Current",
+    "page": 383
+  },
+  {
+    "depth": 2,
+    "title": "31.3.5 Power-save Supply Current",
+    "page": 384
+  },
+  {
+    "depth": 2,
+    "title": "31.3.6 Standby Supply Current",
+    "page": 384
+  },
+  {
+    "depth": 2,
+    "title": "31.3.7 Pin Pull-Up",
+    "page": 385
+  },
+  {
+    "depth": 2,
+    "title": "31.3.8 Pin Driver Strength",
+    "page": 388
+  },
+  {
+    "depth": 2,
+    "title": "31.3.9 Pin Threshold and Hysteresis",
+    "page": 390
+  },
+  {
+    "depth": 2,
+    "title": "31.3.10 BOD Threshold",
+    "page": 393
+  },
+  {
+    "depth": 2,
+    "title": "31.3.11 Internal Oscillator Speed",
+    "page": 395
+  },
+  {
+    "depth": 2,
+    "title": "31.3.12 Current Consumption of Peripheral Units",
+    "page": 397
+  },
+  {
+    "depth": 2,
+    "title": "31.3.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 400
+  },
+  {
+    "depth": 1,
+    "title": "31.4 ATmega88PA Typical Characteristics",
+    "page": 401
+  },
+  {
+    "depth": 2,
+    "title": "31.4.1 Active Supply Current",
+    "page": 401
+  },
+  {
+    "depth": 2,
+    "title": "31.4.2 Idle Supply Current",
+    "page": 404
+  },
+  {
+    "depth": 2,
+    "title": "31.4.3 ATmega88PA: Supply Current of IO Modules",
+    "page": 407
+  },
+  {
+    "depth": 3,
+    "title": "31.4.3.1 Example",
+    "page": 407
+  },
+  {
+    "depth": 2,
+    "title": "31.4.4 Power-down Supply Current",
+    "page": 408
+  },
+  {
+    "depth": 2,
+    "title": "31.4.5 Power-save Supply Current",
+    "page": 409
+  },
+  {
+    "depth": 2,
+    "title": "31.4.6 Standby Supply Current",
+    "page": 409
+  },
+  {
+    "depth": 2,
+    "title": "31.4.7 Pin Pull-Up",
+    "page": 410
+  },
+  {
+    "depth": 2,
+    "title": "31.4.8 Pin Driver Strength",
+    "page": 413
+  },
+  {
+    "depth": 2,
+    "title": "31.4.9 Pin Threshold and Hysteresis",
+    "page": 415
+  },
+  {
+    "depth": 2,
+    "title": "31.4.10 BOD Threshold",
+    "page": 418
+  },
+  {
+    "depth": 2,
+    "title": "31.4.11 Internal Oscillator Speed",
+    "page": 420
+  },
+  {
+    "depth": 2,
+    "title": "31.4.12 Current Consumption of Peripheral Units",
+    "page": 423
+  },
+  {
+    "depth": 2,
+    "title": "31.4.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 425
+  },
+  {
+    "depth": 1,
+    "title": "31.5 ATmega168A Typical Characteristics",
+    "page": 427
+  },
+  {
+    "depth": 2,
+    "title": "31.5.1 Active Supply Current",
+    "page": 427
+  },
+  {
+    "depth": 2,
+    "title": "31.5.2 Idle Supply Current",
+    "page": 429
+  },
+  {
+    "depth": 2,
+    "title": "31.5.3 ATmega168A Supply Current of IO Modules",
+    "page": 432
+  },
+  {
+    "depth": 3,
+    "title": "31.5.3.1 Example",
+    "page": 432
+  },
+  {
+    "depth": 2,
+    "title": "31.5.4 Power-down Supply Current",
+    "page": 433
+  },
+  {
+    "depth": 2,
+    "title": "31.5.5 Power-save Supply Current",
+    "page": 434
+  },
+  {
+    "depth": 2,
+    "title": "31.5.6 Standby Supply Current",
+    "page": 434
+  },
+  {
+    "depth": 2,
+    "title": "31.5.7 Pin Pull-Up",
+    "page": 435
+  },
+  {
+    "depth": 2,
+    "title": "31.5.8 Pin Driver Strength",
+    "page": 438
+  },
+  {
+    "depth": 2,
+    "title": "31.5.9 Pin Threshold and Hysteresis",
+    "page": 440
+  },
+  {
+    "depth": 2,
+    "title": "31.5.10 BOD Threshold",
+    "page": 443
+  },
+  {
+    "depth": 2,
+    "title": "31.5.11 Internal Oscillator Speed",
+    "page": 445
+  },
+  {
+    "depth": 2,
+    "title": "31.5.12 Current Consumption of Peripheral Units",
+    "page": 447
+  },
+  {
+    "depth": 2,
+    "title": "31.5.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 450
+  },
+  {
+    "depth": 1,
+    "title": "31.6 ATmega168PA Typical Characteristics",
+    "page": 451
+  },
+  {
+    "depth": 2,
+    "title": "31.6.1 Active Supply Current",
+    "page": 451
+  },
+  {
+    "depth": 2,
+    "title": "31.6.2 Idle Supply Current",
+    "page": 454
+  },
+  {
+    "depth": 2,
+    "title": "31.6.3 ATmega168PA Supply Current of IO Modules",
+    "page": 457
+  },
+  {
+    "depth": 3,
+    "title": "31.6.3.1 Example",
+    "page": 457
+  },
+  {
+    "depth": 2,
+    "title": "31.6.4 Power-down Supply Current",
+    "page": 458
+  },
+  {
+    "depth": 2,
+    "title": "31.6.5 Power-save Supply Current",
+    "page": 459
+  },
+  {
+    "depth": 2,
+    "title": "31.6.6 Standby Supply Current",
+    "page": 459
+  },
+  {
+    "depth": 2,
+    "title": "31.6.7 Pin Pull-Up",
+    "page": 460
+  },
+  {
+    "depth": 2,
+    "title": "31.6.8 Pin Driver Strength",
+    "page": 463
+  },
+  {
+    "depth": 2,
+    "title": "31.6.9 Pin Threshold and Hysteresis",
+    "page": 465
+  },
+  {
+    "depth": 2,
+    "title": "31.6.10 BOD Threshold",
+    "page": 468
+  },
+  {
+    "depth": 2,
+    "title": "31.6.11 Internal Oscillator Speed",
+    "page": 470
+  },
+  {
+    "depth": 2,
+    "title": "31.6.12 Current Consumption of Peripheral Units",
+    "page": 473
+  },
+  {
+    "depth": 2,
+    "title": "31.6.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 475
+  },
+  {
+    "depth": 1,
+    "title": "31.7 ATmega328 Typical Characteristics",
+    "page": 477
+  },
+  {
+    "depth": 2,
+    "title": "31.7.1 Active Supply Current",
+    "page": 477
+  },
+  {
+    "depth": 2,
+    "title": "31.7.2 Idle Supply Current",
+    "page": 479
+  },
+  {
+    "depth": 2,
+    "title": "31.7.3 ATmega328 Supply Current of IO Modules",
+    "page": 482
+  },
+  {
+    "depth": 3,
+    "title": "31.7.3.1 Example",
+    "page": 482
+  },
+  {
+    "depth": 2,
+    "title": "31.7.4 Power-down Supply Current",
+    "page": 483
+  },
+  {
+    "depth": 2,
+    "title": "31.7.5 Power-save Supply Current",
+    "page": 484
+  },
+  {
+    "depth": 2,
+    "title": "31.7.6 Standby Supply Current",
+    "page": 484
+  },
+  {
+    "depth": 2,
+    "title": "31.7.7 Pin Pull-Up",
+    "page": 485
+  },
+  {
+    "depth": 2,
+    "title": "31.7.8 Pin Driver Strength",
+    "page": 488
+  },
+  {
+    "depth": 2,
+    "title": "31.7.9 Pin Threshold and Hysteresis",
+    "page": 490
+  },
+  {
+    "depth": 2,
+    "title": "31.7.10 BOD Threshold",
+    "page": 493
+  },
+  {
+    "depth": 2,
+    "title": "31.7.11 Internal Oscillator Speed",
+    "page": 495
+  },
+  {
+    "depth": 2,
+    "title": "31.7.12 Current Consumption of Peripheral Units",
+    "page": 497
+  },
+  {
+    "depth": 2,
+    "title": "31.7.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 500
+  },
+  {
+    "depth": 1,
+    "title": "31.8 ATmega328P Typical Characteristics",
+    "page": 501
+  },
+  {
+    "depth": 2,
+    "title": "31.8.1 Active Supply Current",
+    "page": 501
+  },
+  {
+    "depth": 2,
+    "title": "31.8.2 Idle Supply Current",
+    "page": 504
+  },
+  {
+    "depth": 2,
+    "title": "31.8.3 ATmega328P Supply Current of IO Modules",
+    "page": 506
+  },
+  {
+    "depth": 3,
+    "title": "31.8.3.1 Example",
+    "page": 507
+  },
+  {
+    "depth": 2,
+    "title": "31.8.4 Power-down Supply Current",
+    "page": 507
+  },
+  {
+    "depth": 2,
+    "title": "31.8.5 Power-save Supply Current",
+    "page": 508
+  },
+  {
+    "depth": 2,
+    "title": "31.8.6 Standby Supply Current",
+    "page": 509
+  },
+  {
+    "depth": 2,
+    "title": "31.8.7 Pin Pull-Up",
+    "page": 509
+  },
+  {
+    "depth": 2,
+    "title": "31.8.8 Pin Driver Strength",
+    "page": 512
+  },
+  {
+    "depth": 2,
+    "title": "31.8.9 Pin Threshold and Hysteresis",
+    "page": 514
+  },
+  {
+    "depth": 2,
+    "title": "31.8.10 BOD Threshold",
+    "page": 517
+  },
+  {
+    "depth": 2,
+    "title": "31.8.11 Internal Oscillator Speed",
+    "page": 519
+  },
+  {
+    "depth": 2,
+    "title": "31.8.12 Current Consumption of Peripheral Units",
+    "page": 522
+  },
+  {
+    "depth": 2,
+    "title": "31.8.13 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 524
+  },
+  {
+    "depth": 0,
+    "title": "32. ATmega48PA Typical Characteristics \u2013 (TA = -40\u00b0C to 105\u00b0C)",
+    "page": 526
+  },
+  {
+    "depth": 1,
+    "title": "32.1 Active Supply Current",
+    "page": 526
+  },
+  {
+    "depth": 1,
+    "title": "32.2 Idle Supply Current",
+    "page": 529
+  },
+  {
+    "depth": 1,
+    "title": "32.3 Power-down Supply Current",
+    "page": 531
+  },
+  {
+    "depth": 1,
+    "title": "32.4 Standby Supply Current",
+    "page": 532
+  },
+  {
+    "depth": 1,
+    "title": "32.5 Pin Pull-Up",
+    "page": 533
+  },
+  {
+    "depth": 1,
+    "title": "32.6 Pin Driver Strength",
+    "page": 536
+  },
+  {
+    "depth": 1,
+    "title": "32.7 Pin Threshold and Hysteresis",
+    "page": 538
+  },
+  {
+    "depth": 1,
+    "title": "32.8 BOD Threshold",
+    "page": 541
+  },
+  {
+    "depth": 1,
+    "title": "32.9 Internal Oscillator Speed",
+    "page": 542
+  },
+  {
+    "depth": 1,
+    "title": "32.10 Current Consumption of Peripheral Units",
+    "page": 545
+  },
+  {
+    "depth": 1,
+    "title": "32.11 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 547
+  },
+  {
+    "depth": 0,
+    "title": "33. ATmega88PA Typical Characteristics \u2013 (TA = -40\u00b0C to 105\u00b0C)",
+    "page": 549
+  },
+  {
+    "depth": 1,
+    "title": "33.1 Active Supply Current",
+    "page": 549
+  },
+  {
+    "depth": 1,
+    "title": "33.2 Idle Supply Current",
+    "page": 552
+  },
+  {
+    "depth": 1,
+    "title": "33.3 Power-down Supply Current",
+    "page": 554
+  },
+  {
+    "depth": 1,
+    "title": "33.4 Power-save Supply Current",
+    "page": 555
+  },
+  {
+    "depth": 1,
+    "title": "33.5 Pin Pull-Up",
+    "page": 556
+  },
+  {
+    "depth": 1,
+    "title": "33.6 Pin Driver Strength",
+    "page": 559
+  },
+  {
+    "depth": 1,
+    "title": "33.7 Pin Threshold and Hysteresis",
+    "page": 561
+  },
+  {
+    "depth": 1,
+    "title": "33.8 BOD Threshold",
+    "page": 564
+  },
+  {
+    "depth": 1,
+    "title": "33.9 Internal Oscillator Speed",
+    "page": 565
+  },
+  {
+    "depth": 1,
+    "title": "33.10 Current Consumption of Peripheral Units",
+    "page": 568
+  },
+  {
+    "depth": 1,
+    "title": "33.11 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 570
+  },
+  {
+    "depth": 0,
+    "title": "34. ATmega168PA Typical Characteristics \u2013 (TA = -40\u00b0C to 105\u00b0C)",
+    "page": 572
+  },
+  {
+    "depth": 1,
+    "title": "34.1 Active Supply Current",
+    "page": 572
+  },
+  {
+    "depth": 1,
+    "title": "34.2 Idle Supply Current",
+    "page": 575
+  },
+  {
+    "depth": 1,
+    "title": "34.3 Power-down Supply Current",
+    "page": 577
+  },
+  {
+    "depth": 1,
+    "title": "34.4 Power-save Supply Current",
+    "page": 578
+  },
+  {
+    "depth": 1,
+    "title": "34.5 Standby Supply Current",
+    "page": 579
+  },
+  {
+    "depth": 1,
+    "title": "34.6 Pin Pull-Up",
+    "page": 579
+  },
+  {
+    "depth": 1,
+    "title": "34.7 Pin Driver Strength",
+    "page": 582
+  },
+  {
+    "depth": 1,
+    "title": "34.8 Pin Threshold and Hysteresis",
+    "page": 584
+  },
+  {
+    "depth": 1,
+    "title": "34.9 BOD Threshold",
+    "page": 587
+  },
+  {
+    "depth": 1,
+    "title": "34.10 Internal Oscillator Speed",
+    "page": 590
+  },
+  {
+    "depth": 1,
+    "title": "34.11 Current Consumption of Peripheral Units",
+    "page": 592
+  },
+  {
+    "depth": 1,
+    "title": "34.12 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 595
+  },
+  {
+    "depth": 0,
+    "title": "35. ATmega328P Typical Characteristics \u2013 (TA = -40\u00b0C to 105\u00b0C)",
+    "page": 597
+  },
+  {
+    "depth": 1,
+    "title": "35.1 ATmega328P Active Supply Current",
+    "page": 597
+  },
+  {
+    "depth": 1,
+    "title": "35.2 Idle Supply Current",
+    "page": 600
+  },
+  {
+    "depth": 1,
+    "title": "35.3 Power-down Supply Current",
+    "page": 602
+  },
+  {
+    "depth": 1,
+    "title": "35.4 Power-save Supply Current",
+    "page": 603
+  },
+  {
+    "depth": 1,
+    "title": "35.5 Standby Supply Current",
+    "page": 604
+  },
+  {
+    "depth": 1,
+    "title": "35.6 Pin Pull-Up",
+    "page": 604
+  },
+  {
+    "depth": 1,
+    "title": "35.7 Pin Driver Strength",
+    "page": 607
+  },
+  {
+    "depth": 1,
+    "title": "35.8 Pin Threshold and Hysteresis",
+    "page": 609
+  },
+  {
+    "depth": 1,
+    "title": "35.9 BOD Threshold",
+    "page": 612
+  },
+  {
+    "depth": 1,
+    "title": "35.10 Internal Oscillator Speed",
+    "page": 614
+  },
+  {
+    "depth": 1,
+    "title": "35.11 Current Consumption of Peripheral Units",
+    "page": 617
+  },
+  {
+    "depth": 1,
+    "title": "35.12 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 619
+  },
+  {
+    "depth": 0,
+    "title": "36. Register Summary",
+    "page": 621
+  },
+  {
+    "depth": 0,
+    "title": "37. Instruction Set Summary",
+    "page": 625
+  },
+  {
+    "depth": 0,
+    "title": "38. Ordering Information",
+    "page": 628
+  },
+  {
+    "depth": 1,
+    "title": "38.1 ATmega48A",
+    "page": 628
+  },
+  {
+    "depth": 1,
+    "title": "38.2 ATmega48PA",
+    "page": 629
+  },
+  {
+    "depth": 1,
+    "title": "38.3 ATmega88A",
+    "page": 630
+  },
+  {
+    "depth": 1,
+    "title": "38.4 ATmega88PA",
+    "page": 631
+  },
+  {
+    "depth": 1,
+    "title": "38.5 ATmega168A",
+    "page": 632
+  },
+  {
+    "depth": 1,
+    "title": "38.6 ATmega168PA",
+    "page": 633
+  },
+  {
+    "depth": 1,
+    "title": "38.7 ATmega328",
+    "page": 634
+  },
+  {
+    "depth": 1,
+    "title": "38.8 ATmega328P",
+    "page": 635
+  },
+  {
+    "depth": 0,
+    "title": "39. Packaging Information",
+    "page": 636
+  },
+  {
+    "depth": 1,
+    "title": "39.1 32A",
+    "page": 636
+  },
+  {
+    "depth": 1,
+    "title": "39.2 28M1",
+    "page": 638
+  },
+  {
+    "depth": 1,
+    "title": "39.3 32M1-A",
+    "page": 641
+  },
+  {
+    "depth": 1,
+    "title": "39.4 28P3",
+    "page": 644
+  },
+  {
+    "depth": 0,
+    "title": "40. Errata",
+    "page": 645
+  },
+  {
+    "depth": 0,
+    "title": "41. Datasheet Revision History",
+    "page": 646
+  },
+  {
+    "depth": 1,
+    "title": "41.1 Rev. B \u2013 09/2020",
+    "page": 646
+  },
+  {
+    "depth": 1,
+    "title": "41.2 Rev. A \u2013 10/2018",
+    "page": 646
+  },
+  {
+    "depth": 1,
+    "title": "41.3 Rev. 8271J \u2013 11/2015",
+    "page": 646
+  },
+  {
+    "depth": 1,
+    "title": "41.4 Rev. 8271I \u2013 10/2014",
+    "page": 646
+  },
+  {
+    "depth": 1,
+    "title": "41.5 Rev. 8271H \u2013 08/2014",
+    "page": 647
+  },
+  {
+    "depth": 1,
+    "title": "41.6 Rev. 8271G \u2013 02/2013",
+    "page": 647
+  },
+  {
+    "depth": 1,
+    "title": "41.7 Rev. 8271F \u2013 08/2012",
+    "page": 647
+  },
+  {
+    "depth": 1,
+    "title": "41.8 Rev. 8271E \u2013 07/2012",
+    "page": 647
+  },
+  {
+    "depth": 1,
+    "title": "41.9 Rev. 8271D \u2013 05/11",
+    "page": 648
+  },
+  {
+    "depth": 1,
+    "title": "41.10 Rev. 8271C \u2013 08/10",
+    "page": 648
+  },
+  {
+    "depth": 1,
+    "title": "41.11 Rev. 8271B \u2013 04/10",
+    "page": 648
+  },
+  {
+    "depth": 1,
+    "title": "41.12 Rev. 8271A \u2013 12/09",
+    "page": 649
+  },
+  {
+    "depth": 0,
+    "title": "Development Support",
+    "page": 650
+  },
+  {
+    "depth": 0,
+    "title": "The Microchip WebSite",
+    "page": 651
+  },
+  {
+    "depth": 0,
+    "title": "Customer Change Notification Service",
+    "page": 651
+  },
+  {
+    "depth": 0,
+    "title": "Customer Support",
+    "page": 651
+  },
+  {
+    "depth": 1,
+    "title": "Information contained in this publication is provided for the sole purpose of designing with and using Microchip products. Information regarding device applications and the like is provided only for your convenience and may be superseded by updates. ...",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "THIS INFORMATION IS PROVIDED BY MICROCHIP \"AS IS\". MICROCHIP MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND WHETHER EXPRESS OR IMPLIED, WRITTEN OR ORAL, STATUTORY OR OTHERWISE, RELATED TO THE INFORMATION INCLUDING BUT NOT LIMITED TO ANY IMPLIED W...",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE INFORMATION OR ITS USE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF TH...",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "Trademarks",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "\u00a9 2020, Microchip Technology Incorporated, All Rights Reserved.",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "ISBN: ISBN: 978-1-5224-6294-1",
+    "page": 652
+  },
+  {
+    "depth": 1,
+    "title": "AMERICAS",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Corporate Office",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Atlanta",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Austin, TX",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Boston",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Chicago",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Dallas",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Detroit",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Houston, TX",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Indianapolis",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Los Angeles",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Raleigh, NC",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "New York, NY",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "San Jose, CA",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Canada - Toronto",
+    "page": 653
+  },
+  {
+    "depth": 1,
+    "title": "ASIA/PACIFIC",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Australia - Sydney",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Beijing",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Chengdu",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Chongqing",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Dongguan",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Guangzhou",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Hangzhou",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Hong Kong SAR",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Nanjing",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Qingdao",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Shanghai",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Shenyang",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Shenzhen",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Suzhou",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Wuhan",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Xian",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Xiamen",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "China - Zhuhai",
+    "page": 653
+  },
+  {
+    "depth": 1,
+    "title": "ASIA/PACIFIC",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "India - Bangalore",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "India - New Delhi",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "India - Pune",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Japan - Osaka",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Japan - Tokyo",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Korea - Daegu",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Korea - Seoul",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Malaysia - Kuala Lumpur",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Malaysia - Penang",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Philippines - Manila",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Singapore",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Taiwan - Hsin Chu",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Taiwan - Kaohsiung",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Taiwan - Taipei",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Thailand - Bangkok",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "Vietnam - Ho Chi Minh",
+    "page": 653
+  },
+  {
+    "depth": 2,
+    "title": "EUROPE",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Austria - Wels",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Denmark - Copenhagen",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Finland - Espoo",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "France - Paris",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Garching",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Haan",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Heilbronn",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Karlsruhe",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Munich",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Germany - Rosenheim",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Israel - Ra\u2019anana",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Italy - Milan",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Italy - Padova",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Netherlands - Drunen",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Norway - Trondheim",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Poland - Warsaw",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Romania - Bucharest",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Spain - Madrid",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Sweden - Gothenberg",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "Sweden - Stockholm",
+    "page": 653
+  },
+  {
+    "depth": 3,
+    "title": "UK - Wokingham",
+    "page": 653
+  },
+  {
+    "depth": 0,
+    "title": "Worldwide Sales and Service",
+    "page": 653
+  }
+]

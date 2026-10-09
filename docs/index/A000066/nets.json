@@ -1,0 +1,2660 @@
+{
+  "+5V": [
+    {
+      "refdes": "P+1",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "P+4",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "P+5",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "RN4",
+      "gate": "C",
+      "pin": "1",
+      "pad": "3",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "RN4",
+      "gate": "D",
+      "pin": "1",
+      "pad": "4",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "P+7",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "RN2",
+      "gate": "B",
+      "pin": "1",
+      "pad": "2",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "C",
+      "pin": "1",
+      "pad": "3",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "P+9",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "C1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "U5",
+      "gate": "P",
+      "pin": "V+",
+      "pad": "8",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "P+8",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "PC2",
+      "gate": "G$1",
+      "pin": "+",
+      "pad": "+",
+      "deviceset": "CPOL-EU",
+      "value": "47u"
+    },
+    {
+      "refdes": "U1",
+      "gate": "G$1",
+      "pin": "OUT@1",
+      "pad": "2",
+      "deviceset": "MC33269ST*",
+      "value": "NCP1117ST50T3G"
+    },
+    {
+      "refdes": "U1",
+      "gate": "G$1",
+      "pin": "OUT",
+      "pad": "4",
+      "deviceset": "MC33269ST*",
+      "value": "NCP1117ST50T3G"
+    },
+    {
+      "refdes": "C2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "TP_5V",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "TP_5V1",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "P+6",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "VCC",
+      "pad": "4",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "C7",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "AVCC",
+      "pad": "32",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN1",
+      "gate": "C",
+      "pin": "1",
+      "pad": "3",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "P+11",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "D3",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "DIODE-",
+      "value": "CD1206-S01575"
+    },
+    {
+      "refdes": "P+10",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "T1",
+      "gate": "A",
+      "pin": "S",
+      "pad": "2",
+      "deviceset": "PMOSSOT23",
+      "value": "FDN340P"
+    },
+    {
+      "refdes": "U2",
+      "gate": "G$1",
+      "pin": "IN",
+      "pad": "1",
+      "deviceset": "LP2985-XXDBVR",
+      "value": "LP2985-33DBVR"
+    },
+    {
+      "refdes": "U2",
+      "gate": "G$1",
+      "pin": "ON/!OFF",
+      "pad": "3",
+      "deviceset": "LP2985-XXDBVR",
+      "value": "LP2985-33DBVR"
+    },
+    {
+      "refdes": "P+2",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "RN1",
+      "gate": "D",
+      "pin": "2",
+      "pad": "5",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "D2",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "DIODE-",
+      "value": "CD1206-S01575"
+    },
+    {
+      "refdes": "P+3",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    },
+    {
+      "refdes": "L2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "0715_CV201210-100K",
+      "value": "10uH"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "VCC",
+      "pad": "7",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "C6",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "P+12",
+      "gate": "1",
+      "pin": "+5V",
+      "pad": "",
+      "deviceset": "+5V",
+      "value": ""
+    }
+  ],
+  "GND": [
+    {
+      "refdes": "GND1",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "GND2",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "GND",
+      "pad": "8",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "AGND",
+      "pad": "22",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "C6",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "C10",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "C2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "GND7",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "PC2",
+      "gate": "G$1",
+      "pin": "-",
+      "pad": "-",
+      "deviceset": "CPOL-EU",
+      "value": "47u"
+    },
+    {
+      "refdes": "GND10",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND9",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "PC1",
+      "gate": "G$1",
+      "pin": "-",
+      "pad": "-",
+      "deviceset": "CPOL-EU",
+      "value": "47u"
+    },
+    {
+      "refdes": "GND5",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "7",
+      "pad": "7",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "7",
+      "pad": "7",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "GND14",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "ON",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "LED",
+      "value": "GREEN"
+    },
+    {
+      "refdes": "X1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "POWERSUPPLY_DC21MM",
+      "value": ""
+    },
+    {
+      "refdes": "GND19",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "X1",
+      "gate": "G$1",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "POWERSUPPLY_DC21MM",
+      "value": ""
+    },
+    {
+      "refdes": "GND12",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "RESET",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "TS42",
+      "value": "TS42031-160R-TR-7260"
+    },
+    {
+      "refdes": "RESET",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "TS42",
+      "value": "TS42031-160R-TR-7260"
+    },
+    {
+      "refdes": "GND11",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "U1",
+      "gate": "G$1",
+      "pin": "GND/ADJ",
+      "pad": "1",
+      "deviceset": "MC33269ST*",
+      "value": "NCP1117ST50T3G"
+    },
+    {
+      "refdes": "C4",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "GND13",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND16",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "C7",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "L",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "GND17",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND18",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "C1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "U5",
+      "gate": "P",
+      "pin": "V-",
+      "pad": "4",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "GND21",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "C3",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "1u"
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "GND22",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "GND",
+      "pad": "3",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "PAD",
+      "pad": "33",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "GND23",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GROUND",
+      "gate": "1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "SJ",
+      "value": ""
+    },
+    {
+      "refdes": "GND4",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "U2",
+      "gate": "G$1",
+      "pin": "GND",
+      "pad": "2",
+      "deviceset": "LP2985-XXDBVR",
+      "value": "LP2985-33DBVR"
+    },
+    {
+      "refdes": "RN1",
+      "gate": "B",
+      "pin": "2",
+      "pad": "7",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "GND20",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "C9",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "22p"
+    },
+    {
+      "refdes": "C11",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "22p"
+    },
+    {
+      "refdes": "GND8",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND3",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "Y2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "RESONATOR",
+      "value": "CSTCE16M0V53-R0 16MHZ"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "D",
+      "pin": "2",
+      "pad": "5",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "GND15",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND_TP",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "GND6",
+      "gate": "1",
+      "pin": "GND",
+      "pad": "",
+      "deviceset": "GND",
+      "value": ""
+    },
+    {
+      "refdes": "GND_TP1",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AREF": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "AREF",
+      "pad": "21",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "8",
+      "pad": "8",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "C4",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "TP_AREF",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "RESET": [
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "RESET",
+      "pad": "1",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "C5",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "RESET-EN",
+      "gate": "1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "SJ",
+      "value": ""
+    },
+    {
+      "refdes": "RESET-EN",
+      "gate": "1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "SJ",
+      "value": ""
+    },
+    {
+      "refdes": "RN1",
+      "gate": "D",
+      "pin": "1",
+      "pad": "4",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "RESET",
+      "gate": "G$1",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "TS42",
+      "value": "TS42031-160R-TR-7260"
+    },
+    {
+      "refdes": "RESET",
+      "gate": "G$1",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "TS42",
+      "value": "TS42031-160R-TR-7260"
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "D2",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "DIODE-",
+      "value": "CD1206-S01575"
+    },
+    {
+      "refdes": "TP_RESET",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "VIN": [
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "8",
+      "pad": "8",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "U1",
+      "gate": "G$1",
+      "pin": "IN",
+      "pad": "3",
+      "deviceset": "MC33269ST*",
+      "value": "NCP1117ST50T3G"
+    },
+    {
+      "refdes": "PC1",
+      "gate": "G$1",
+      "pin": "+",
+      "pad": "+",
+      "deviceset": "CPOL-EU",
+      "value": "47u"
+    },
+    {
+      "refdes": "D1",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "DIODE-",
+      "value": "M7"
+    },
+    {
+      "refdes": "TP_VIN",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "RN1",
+      "gate": "A",
+      "pin": "2",
+      "pad": "8",
+      "deviceset": "4R-N",
+      "value": "10K"
+    }
+  ],
+  "M8RXD": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(TXD1/INT3)PD3",
+      "pad": "9",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN4",
+      "gate": "B",
+      "pin": "2",
+      "pad": "7",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_RX",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "M8TXD": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(RXD1/AIN1/INT2)PD2",
+      "pad": "8",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN4",
+      "gate": "A",
+      "pin": "2",
+      "pad": "8",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_TX",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "SCK": [
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(SCK)PB5",
+      "pad": "19",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_13",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "U5",
+      "gate": "B",
+      "pin": "+IN",
+      "pad": "5",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    }
+  ],
+  "N$3": [
+    {
+      "refdes": "ON",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "LED",
+      "value": "GREEN"
+    },
+    {
+      "refdes": "RN4",
+      "gate": "C",
+      "pin": "2",
+      "pad": "6",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "RN4",
+      "gate": "D",
+      "pin": "2",
+      "pad": "5",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_ONL",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "N$35": [
+    {
+      "refdes": "RX",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "B",
+      "pin": "2",
+      "pad": "7",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_RXL",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "N$36": [
+    {
+      "refdes": "TX",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "C",
+      "pin": "2",
+      "pad": "6",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_TXL",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "PWRIN": [
+    {
+      "refdes": "D1",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "DIODE-",
+      "value": "M7"
+    },
+    {
+      "refdes": "X1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "POWERSUPPLY_DC21MM",
+      "value": ""
+    },
+    {
+      "refdes": "TP_PWRIN",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "D-": [
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "Z2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "VARISTOR",
+      "value": "CG0603MLC-05E"
+    },
+    {
+      "refdes": "RN3",
+      "gate": "A",
+      "pin": "2",
+      "pad": "8",
+      "deviceset": "4R-N",
+      "value": "22R"
+    },
+    {
+      "refdes": "TP_D-",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "D+": [
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "Z1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "VARISTOR",
+      "value": "CG0603MLC-05E"
+    },
+    {
+      "refdes": "RN3",
+      "gate": "D",
+      "pin": "2",
+      "pad": "5",
+      "deviceset": "4R-N",
+      "value": "22R"
+    },
+    {
+      "refdes": "TP_D+",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "+3V3": [
+    {
+      "refdes": "C3",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "1u"
+    },
+    {
+      "refdes": "U2",
+      "gate": "G$1",
+      "pin": "OUT",
+      "pad": "5",
+      "deviceset": "LP2985-XXDBVR",
+      "value": "LP2985-33DBVR"
+    },
+    {
+      "refdes": "TP_3V3",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "U5",
+      "gate": "A",
+      "pin": "-IN",
+      "pad": "2",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "POWER",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    }
+  ],
+  "MISO": [
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(MISO)PB4",
+      "pad": "18",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "TP_12",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "MOSI": [
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "ICSP",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(MOSI)PB3",
+      "pad": "17",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_11",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "SS": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(SS)PB2",
+      "pad": "16",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "TP_10",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "DTR": [
+    {
+      "refdes": "C5",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(CTS/HWB/AIN6/TO/INT7)PD7",
+      "pad": "13",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "D",
+      "pin": "1",
+      "pad": "4",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_DTR",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "GATE_CMD": [
+    {
+      "refdes": "T1",
+      "gate": "A",
+      "pin": "G",
+      "pad": "3",
+      "deviceset": "PMOSSOT23",
+      "value": "FDN340P"
+    },
+    {
+      "refdes": "U5",
+      "gate": "A",
+      "pin": "OUT",
+      "pad": "1",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "TP_GATE",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "CMP": [
+    {
+      "refdes": "RN1",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "RN1",
+      "gate": "B",
+      "pin": "1",
+      "pad": "2",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "U5",
+      "gate": "A",
+      "pin": "+IN",
+      "pad": "3",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "TP_CMP",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "USBVCC": [
+    {
+      "refdes": "F1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "L-EU",
+      "value": "MF-MSMF050-2 500mA"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "UVCC",
+      "pad": "31",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "TP_USBVCC",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "T1",
+      "gate": "A",
+      "pin": "D",
+      "pad": "1",
+      "deviceset": "PMOSSOT23",
+      "value": "FDN340P"
+    }
+  ],
+  "XTAL2": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "XTAL2",
+      "pad": "10",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "R2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "R-EU_",
+      "value": "1M"
+    },
+    {
+      "refdes": "Y2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "RESONATOR",
+      "value": "CSTCE16M0V53-R0 16MHZ"
+    },
+    {
+      "refdes": "TP_XT2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "XTAL1": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "XTAL1",
+      "pad": "9",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "R2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "R-EU_",
+      "value": "1M"
+    },
+    {
+      "refdes": "Y2",
+      "gate": "G$1",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "RESONATOR",
+      "value": "CSTCE16M0V53-R0 16MHZ"
+    },
+    {
+      "refdes": "TP_XT1",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "TP_VUCAP": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "UCAP",
+      "pad": "27",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "C8",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "1u"
+    },
+    {
+      "refdes": "TP_VUCAP",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "RD-": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "D-",
+      "pad": "30",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN3",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "4R-N",
+      "value": "22R"
+    }
+  ],
+  "RD+": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "D+",
+      "pad": "29",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "RN3",
+      "gate": "D",
+      "pin": "1",
+      "pad": "4",
+      "deviceset": "4R-N",
+      "value": "22R"
+    }
+  ],
+  "RESET2": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "RESET(PC1/DW)",
+      "pad": "24",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "RN1",
+      "gate": "C",
+      "pin": "2",
+      "pad": "6",
+      "deviceset": "4R-N",
+      "value": "10K"
+    },
+    {
+      "refdes": "D3",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "DIODE-",
+      "value": "CD1206-S01575"
+    },
+    {
+      "refdes": "TP_RESET2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "MISO2": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(PD0/MISO/PCINT3)PB3",
+      "pad": "17",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "TP_MISO2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "MOSI2": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(PDI/MOSI/PCINT2)PB2",
+      "pad": "16",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "TP_MOSI2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "SCK2": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(SCLK/PCINT1)PB1",
+      "pad": "15",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "ICSP1",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-2X3",
+      "value": "3x2 M"
+    },
+    {
+      "refdes": "TP_SCK2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "USHIELD": [
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "P$1",
+      "pad": "P$1",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "P$2",
+      "pad": "P$2",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "Z2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "VARISTOR",
+      "value": "CG0603MLC-05E"
+    },
+    {
+      "refdes": "Z1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "VARISTOR",
+      "value": "CG0603MLC-05E"
+    },
+    {
+      "refdes": "L1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "WE-CBF",
+      "value": "BLM21"
+    },
+    {
+      "refdes": "TP_USH",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "UGND": [
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "UGND",
+      "pad": "28",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "GROUND",
+      "gate": "1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "SJ",
+      "value": ""
+    },
+    {
+      "refdes": "L1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "WE-CBF",
+      "value": "BLM21"
+    },
+    {
+      "refdes": "C8",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "1u"
+    },
+    {
+      "refdes": "TP_UGND",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "XUSB": [
+    {
+      "refdes": "X2",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PN61729",
+      "value": "USB-B_TH"
+    },
+    {
+      "refdes": "F1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "L-EU",
+      "value": "MF-MSMF050-2 500mA"
+    },
+    {
+      "refdes": "TP_XUSB",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "XT2": [
+    {
+      "refdes": "C11",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "22p"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "XTAL2(PC0)",
+      "pad": "2",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "R1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "R-EU_",
+      "value": "1M"
+    },
+    {
+      "refdes": "Y1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "XTAL/S",
+      "value": "16MHz"
+    },
+    {
+      "refdes": "TP_XT4",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "XT1": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "XTAL1",
+      "pad": "1",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "R1",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "R-EU_",
+      "value": "1M"
+    },
+    {
+      "refdes": "C9",
+      "gate": "G$1",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "C-EU",
+      "value": "22p"
+    },
+    {
+      "refdes": "Y1",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "XTAL/S",
+      "value": "16MHz"
+    },
+    {
+      "refdes": "TP_XT3",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "RXLED": [
+    {
+      "refdes": "RX",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(INT5/AIN3)PD4",
+      "pad": "10",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    }
+  ],
+  "TXLED": [
+    {
+      "refdes": "TX",
+      "gate": "G$1",
+      "pin": "C",
+      "pad": "C",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(XCK/AIN4/PCINT12)PD5",
+      "pad": "11",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    }
+  ],
+  "AD0": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC0)PC0)",
+      "pad": "23",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A0",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AD1": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC1)PC1",
+      "pad": "24",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A1",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AD2": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC2)PC2",
+      "pad": "25",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AD3": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC3)PC3",
+      "pad": "26",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A3",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AD4/SDA": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC4)PC4",
+      "pad": "27",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A4",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "9",
+      "pad": "9",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "TP_SDA",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AD5/SCL": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ADC5)PC5",
+      "pad": "28",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "AD",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-1X6",
+      "value": "6x1F-H8.5"
+    },
+    {
+      "refdes": "TP_A5",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "10",
+      "pad": "10",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "TP_SCL",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO2": [
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(INT0)PD2",
+      "pad": "4",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_2",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO1": [
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(TXD)PD1",
+      "pad": "3",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "RN4",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_1",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO0": [
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(RXD)PD0",
+      "pad": "2",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "RN4",
+      "gate": "B",
+      "pin": "1",
+      "pad": "2",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_0",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO3": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(INT1)PD3",
+      "pad": "5",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "TP_3",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO4": [
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "5",
+      "pad": "5",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(T0)PD4",
+      "pad": "6",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_4",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO5": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(T1)PD5",
+      "pad": "11",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "6",
+      "pad": "6",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "TP_5",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO6": [
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "7",
+      "pad": "7",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(AIN0)PD6",
+      "pad": "12",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_6",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO7": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(AIN1)PD7",
+      "pad": "13",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOL",
+      "gate": "A",
+      "pin": "8",
+      "pad": "8",
+      "deviceset": "PINHD-1X8",
+      "value": "8x1F-H8.5"
+    },
+    {
+      "refdes": "TP_7",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO8": [
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(ICP)PB0",
+      "pad": "14",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "TP_8",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "IO9": [
+    {
+      "refdes": "IOH",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-1X10_ARD",
+      "value": "10x1F-H8.5"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "(OC1)PB1",
+      "pad": "15",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "TP_9",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "N$1": [
+    {
+      "refdes": "L",
+      "gate": "G$1",
+      "pin": "A",
+      "pad": "A",
+      "deviceset": "LED",
+      "value": "YELLOW"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_LL",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "PB4": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(T1/PCINT4)PB4",
+      "pad": "18",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "JP2",
+      "gate": "A",
+      "pin": "1",
+      "pad": "1",
+      "deviceset": "PINHD-2X2",
+      "value": "2x2 M - NM"
+    },
+    {
+      "refdes": "TP_PB4",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "PB5": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(PCINT5)PB5",
+      "pad": "19",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "JP2",
+      "gate": "A",
+      "pin": "3",
+      "pad": "3",
+      "deviceset": "PINHD-2X2",
+      "value": "2x2 M - NM"
+    },
+    {
+      "refdes": "TP_PB5",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "PB6": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(PCINT6)PB6",
+      "pad": "20",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "JP2",
+      "gate": "A",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "PINHD-2X2",
+      "value": "2x2 M - NM"
+    },
+    {
+      "refdes": "TP_PB6",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "PB7": [
+    {
+      "refdes": "U3",
+      "gate": "G$1",
+      "pin": "(PCINT7/OC0A/OC1C)PB7",
+      "pad": "21",
+      "deviceset": "ATMEGA16U2-",
+      "value": "ATMEGA16U2-MU(R)"
+    },
+    {
+      "refdes": "JP2",
+      "gate": "A",
+      "pin": "4",
+      "pad": "4",
+      "deviceset": "PINHD-2X2",
+      "value": "2x2 M - NM"
+    },
+    {
+      "refdes": "TP_PB7",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "L13": [
+    {
+      "refdes": "U5",
+      "gate": "B",
+      "pin": "OUT",
+      "pad": "7",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "U5",
+      "gate": "B",
+      "pin": "-IN",
+      "pad": "6",
+      "deviceset": "LMV358?*",
+      "value": "LMV358IDGKR"
+    },
+    {
+      "refdes": "RN2",
+      "gate": "A",
+      "pin": "2",
+      "pad": "8",
+      "deviceset": "4R-N",
+      "value": "1K"
+    },
+    {
+      "refdes": "TP_LCMD",
+      "gate": "G$1",
+      "pin": "TESTP",
+      "pad": "X",
+      "deviceset": "TP_SP",
+      "value": ""
+    }
+  ],
+  "AVCC": [
+    {
+      "refdes": "C10",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "C-EU",
+      "value": "100n"
+    },
+    {
+      "refdes": "ZU4",
+      "gate": "G$1",
+      "pin": "AVCC",
+      "pad": "20",
+      "deviceset": "ATMEGA328P-",
+      "value": ""
+    },
+    {
+      "refdes": "L2",
+      "gate": "G$1",
+      "pin": "2",
+      "pad": "2",
+      "deviceset": "0715_CV201210-100K",
+      "value": "10uH"
+    }
+  ]
+}

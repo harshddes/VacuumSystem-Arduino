@@ -1,0 +1,2492 @@
+[
+  {
+    "depth": 0,
+    "title": "Features",
+    "page": 1
+  },
+  {
+    "depth": 0,
+    "title": "1. Pin Configurations",
+    "page": 2
+  },
+  {
+    "depth": 1,
+    "title": "1.1 Disclaimer",
+    "page": 2
+  },
+  {
+    "depth": 0,
+    "title": "2. Overview",
+    "page": 3
+  },
+  {
+    "depth": 1,
+    "title": "2.1 Block Diagram",
+    "page": 3
+  },
+  {
+    "depth": 1,
+    "title": "2.2 Pin Descriptions",
+    "page": 4
+  },
+  {
+    "depth": 2,
+    "title": "2.2.1 VCC",
+    "page": 4
+  },
+  {
+    "depth": 2,
+    "title": "2.2.2 GND",
+    "page": 4
+  },
+  {
+    "depth": 2,
+    "title": "2.2.3 AVCC",
+    "page": 4
+  },
+  {
+    "depth": 2,
+    "title": "2.2.4 Port B (PB7..PB0)",
+    "page": 4
+  },
+  {
+    "depth": 2,
+    "title": "2.2.5 Port C (PC7..PC0)",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.6 Port D (PD7..PD0)",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.7 D-",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.8 D+",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.9 UGND",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.10 UVCC",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.11 UCAP",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.12 RESET/PC1/dW",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.13 XTAL1",
+    "page": 5
+  },
+  {
+    "depth": 2,
+    "title": "2.2.14 XTAL2/PC0",
+    "page": 5
+  },
+  {
+    "depth": 0,
+    "title": "3. Resources",
+    "page": 6
+  },
+  {
+    "depth": 0,
+    "title": "4. Code Examples",
+    "page": 6
+  },
+  {
+    "depth": 0,
+    "title": "5. Data Retention",
+    "page": 6
+  },
+  {
+    "depth": 0,
+    "title": "6. AVR CPU Core",
+    "page": 7
+  },
+  {
+    "depth": 1,
+    "title": "6.1 Introduction",
+    "page": 7
+  },
+  {
+    "depth": 1,
+    "title": "6.2 Architectural Overview",
+    "page": 7
+  },
+  {
+    "depth": 1,
+    "title": "6.3 ALU \u2013 Arithmetic Logic Unit",
+    "page": 8
+  },
+  {
+    "depth": 1,
+    "title": "6.4 Status Register",
+    "page": 8
+  },
+  {
+    "depth": 2,
+    "title": "6.4.1 SREG \u2013 Status Register",
+    "page": 9
+  },
+  {
+    "depth": 1,
+    "title": "6.5 General Purpose Register File",
+    "page": 10
+  },
+  {
+    "depth": 2,
+    "title": "6.5.1 The X-register, Y-register, and Z-register",
+    "page": 10
+  },
+  {
+    "depth": 1,
+    "title": "6.6 Stack Pointer",
+    "page": 11
+  },
+  {
+    "depth": 2,
+    "title": "6.6.1 SPH and SPL \u2013 Stack Pointer High and Low Register",
+    "page": 12
+  },
+  {
+    "depth": 1,
+    "title": "6.7 Instruction Execution Timing",
+    "page": 12
+  },
+  {
+    "depth": 1,
+    "title": "6.8 Reset and Interrupt Handling",
+    "page": 13
+  },
+  {
+    "depth": 2,
+    "title": "6.8.1 Interrupt Response Time",
+    "page": 15
+  },
+  {
+    "depth": 0,
+    "title": "7. AVR Memories",
+    "page": 16
+  },
+  {
+    "depth": 1,
+    "title": "7.1 In-System Reprogrammable Flash Program Memory",
+    "page": 16
+  },
+  {
+    "depth": 1,
+    "title": "7.2 SRAM Data Memory",
+    "page": 17
+  },
+  {
+    "depth": 2,
+    "title": "7.2.1 Data Memory Access Times",
+    "page": 18
+  },
+  {
+    "depth": 1,
+    "title": "7.3 EEPROM Data Memory",
+    "page": 18
+  },
+  {
+    "depth": 2,
+    "title": "7.3.1 EEPROM Read/Write Access",
+    "page": 19
+  },
+  {
+    "depth": 2,
+    "title": "7.3.2 Preventing EEPROM Corruption",
+    "page": 19
+  },
+  {
+    "depth": 1,
+    "title": "7.4 I/O Memory",
+    "page": 19
+  },
+  {
+    "depth": 2,
+    "title": "7.4.1 General Purpose I/O Registers",
+    "page": 20
+  },
+  {
+    "depth": 1,
+    "title": "7.5 Register Description",
+    "page": 20
+  },
+  {
+    "depth": 2,
+    "title": "7.5.1 EEARH and EEARL \u2013 The EEPROM Address Register",
+    "page": 20
+  },
+  {
+    "depth": 2,
+    "title": "7.5.2 EEDR \u2013 The EEPROM Data Register",
+    "page": 20
+  },
+  {
+    "depth": 2,
+    "title": "7.5.3 EECR \u2013 The EEPROM Control Register",
+    "page": 21
+  },
+  {
+    "depth": 2,
+    "title": "7.5.4 GPIOR2 \u2013 General Purpose I/O Register 2",
+    "page": 24
+  },
+  {
+    "depth": 2,
+    "title": "7.5.5 GPIOR1 \u2013 General Purpose I/O Register 1",
+    "page": 24
+  },
+  {
+    "depth": 2,
+    "title": "7.5.6 GPIOR0 \u2013 General Purpose I/O Register 0",
+    "page": 25
+  },
+  {
+    "depth": 0,
+    "title": "8. System Clock and Clock Options",
+    "page": 26
+  },
+  {
+    "depth": 1,
+    "title": "8.1 Clock Systems and their Distribution",
+    "page": 26
+  },
+  {
+    "depth": 2,
+    "title": "8.1.1 CPU Clock \u2013 clkCPU",
+    "page": 26
+  },
+  {
+    "depth": 2,
+    "title": "8.1.2 I/O Clock \u2013 clkI/O",
+    "page": 26
+  },
+  {
+    "depth": 2,
+    "title": "8.1.3 Flash Clock \u2013 clkFLASH",
+    "page": 26
+  },
+  {
+    "depth": 2,
+    "title": "8.1.4 USB Clock \u2013 clkUSB",
+    "page": 27
+  },
+  {
+    "depth": 1,
+    "title": "8.2 Clock Switch",
+    "page": 27
+  },
+  {
+    "depth": 2,
+    "title": "8.2.1 Exemple of use",
+    "page": 27
+  },
+  {
+    "depth": 2,
+    "title": "8.2.2 Clock switch Algorythm",
+    "page": 28
+  },
+  {
+    "depth": 3,
+    "title": "8.2.2.1 Swith from external clock to RC clock",
+    "page": 28
+  },
+  {
+    "depth": 3,
+    "title": "8.2.2.2 Switch from RC clock to external clock",
+    "page": 28
+  },
+  {
+    "depth": 1,
+    "title": "8.3 Clock Sources",
+    "page": 29
+  },
+  {
+    "depth": 2,
+    "title": "8.3.1 Default Clock Source",
+    "page": 29
+  },
+  {
+    "depth": 2,
+    "title": "8.3.2 Clock Startup Sequence",
+    "page": 29
+  },
+  {
+    "depth": 1,
+    "title": "8.4 Low Power Crystal Oscillator",
+    "page": 30
+  },
+  {
+    "depth": 1,
+    "title": "8.5 Full Swing Crystal Oscillator",
+    "page": 32
+  },
+  {
+    "depth": 1,
+    "title": "8.6 Calibrated Internal RC Oscillator",
+    "page": 33
+  },
+  {
+    "depth": 1,
+    "title": "8.7 External Clock",
+    "page": 35
+  },
+  {
+    "depth": 1,
+    "title": "8.8 Clock Output Buffer",
+    "page": 35
+  },
+  {
+    "depth": 1,
+    "title": "8.9 System Clock Prescaler",
+    "page": 35
+  },
+  {
+    "depth": 1,
+    "title": "8.10 PLL",
+    "page": 36
+  },
+  {
+    "depth": 2,
+    "title": "8.10.1 Internal PLL for USB interface",
+    "page": 36
+  },
+  {
+    "depth": 1,
+    "title": "8.11 Register Description",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "8.11.1 CLKSEL0 \u2013 Clock Selection Register 0",
+    "page": 37
+  },
+  {
+    "depth": 2,
+    "title": "8.11.2 CLKSEL1 \u2013 Clock Selection Register 1",
+    "page": 38
+  },
+  {
+    "depth": 2,
+    "title": "8.11.3 CLKSTA \u2013 Clock Status Register",
+    "page": 38
+  },
+  {
+    "depth": 2,
+    "title": "8.11.4 OSCCAL \u2013 Oscillator Calibration Register",
+    "page": 38
+  },
+  {
+    "depth": 2,
+    "title": "8.11.5 CLKPR \u2013 Clock Prescale Register",
+    "page": 39
+  },
+  {
+    "depth": 2,
+    "title": "8.11.6 PLLCSR \u2013 PLL Control and Status Register",
+    "page": 40
+  },
+  {
+    "depth": 0,
+    "title": "9. Power Management and Sleep Modes",
+    "page": 42
+  },
+  {
+    "depth": 1,
+    "title": "9.1 Overview",
+    "page": 42
+  },
+  {
+    "depth": 1,
+    "title": "9.2 Sleep Modes",
+    "page": 42
+  },
+  {
+    "depth": 1,
+    "title": "9.3 Idle Mode",
+    "page": 42
+  },
+  {
+    "depth": 1,
+    "title": "9.4 Power-down Mode",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.5 Power-save Mode",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.6 Standby Mode",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.7 Extended Standby Mode",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.8 Power Reduction Register",
+    "page": 43
+  },
+  {
+    "depth": 1,
+    "title": "9.9 Minimizing Power Consumption",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.1 Analog Comparator",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.2 Brown-out Detector",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.3 Internal Voltage Reference",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.4 Watchdog Timer",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.5 Port Pins",
+    "page": 44
+  },
+  {
+    "depth": 2,
+    "title": "9.9.6 On-chip Debug System",
+    "page": 45
+  },
+  {
+    "depth": 1,
+    "title": "9.10 Register Description",
+    "page": 45
+  },
+  {
+    "depth": 2,
+    "title": "9.10.1 SMCR \u2013 Sleep Mode Control Register",
+    "page": 45
+  },
+  {
+    "depth": 2,
+    "title": "9.10.2 PRR0 \u2013 Power Reduction Register 0",
+    "page": 46
+  },
+  {
+    "depth": 2,
+    "title": "9.10.3 PRR1 \u2013 Power Reduction Register 1",
+    "page": 46
+  },
+  {
+    "depth": 0,
+    "title": "10. System Control and Reset",
+    "page": 47
+  },
+  {
+    "depth": 1,
+    "title": "10.1 Resetting the AVR",
+    "page": 47
+  },
+  {
+    "depth": 1,
+    "title": "10.2 Reset Sources",
+    "page": 47
+  },
+  {
+    "depth": 2,
+    "title": "10.2.1 Power-on Reset",
+    "page": 48
+  },
+  {
+    "depth": 2,
+    "title": "10.2.2 External Reset",
+    "page": 49
+  },
+  {
+    "depth": 2,
+    "title": "10.2.3 Brown-out Detection",
+    "page": 50
+  },
+  {
+    "depth": 2,
+    "title": "10.2.4 Watchdog Reset",
+    "page": 50
+  },
+  {
+    "depth": 2,
+    "title": "10.2.5 USB Reset",
+    "page": 50
+  },
+  {
+    "depth": 1,
+    "title": "10.3 Internal Voltage Reference",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.3.1 Voltage Reference Enable Signals and Start-up Time",
+    "page": 51
+  },
+  {
+    "depth": 1,
+    "title": "10.4 Watchdog Timer",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.4.1 Features",
+    "page": 51
+  },
+  {
+    "depth": 2,
+    "title": "10.4.2 Overview",
+    "page": 51
+  },
+  {
+    "depth": 1,
+    "title": "10.5 Register Description",
+    "page": 55
+  },
+  {
+    "depth": 2,
+    "title": "10.5.1 MCUSR \u2013 MCU Status Register",
+    "page": 55
+  },
+  {
+    "depth": 2,
+    "title": "10.5.2 WDTCSR \u2013 Watchdog Timer Control Register",
+    "page": 56
+  },
+  {
+    "depth": 2,
+    "title": "10.5.3 WDTCKD \u2013 Watchdog Timer Clock Divider Register",
+    "page": 57
+  },
+  {
+    "depth": 0,
+    "title": "11. Interrupts",
+    "page": 64
+  },
+  {
+    "depth": 1,
+    "title": "11.1 Overview",
+    "page": 64
+  },
+  {
+    "depth": 1,
+    "title": "11.2 Interrupt Vectors in ATmega8U2/16U2/32U2",
+    "page": 64
+  },
+  {
+    "depth": 2,
+    "title": "11.2.1 Moving Interrupts Between Application and Boot Space",
+    "page": 65
+  },
+  {
+    "depth": 1,
+    "title": "11.3 Register Description",
+    "page": 65
+  },
+  {
+    "depth": 2,
+    "title": "11.3.1 MCUCR \u2013 MCU Control Register",
+    "page": 65
+  },
+  {
+    "depth": 0,
+    "title": "12. I/O-Ports",
+    "page": 67
+  },
+  {
+    "depth": 1,
+    "title": "12.1 Overview",
+    "page": 67
+  },
+  {
+    "depth": 1,
+    "title": "12.2 Ports as General Digital I/O",
+    "page": 68
+  },
+  {
+    "depth": 2,
+    "title": "12.2.1 Configuring the Pin",
+    "page": 68
+  },
+  {
+    "depth": 2,
+    "title": "12.2.2 Toggling the Pin",
+    "page": 69
+  },
+  {
+    "depth": 2,
+    "title": "12.2.3 Switching Between Input and Output",
+    "page": 69
+  },
+  {
+    "depth": 2,
+    "title": "12.2.4 Reading the Pin Value",
+    "page": 69
+  },
+  {
+    "depth": 2,
+    "title": "12.2.5 Digital Input Enable and Sleep Modes",
+    "page": 71
+  },
+  {
+    "depth": 2,
+    "title": "12.2.6 Unconnected Pins",
+    "page": 72
+  },
+  {
+    "depth": 1,
+    "title": "12.3 Alternate Port Functions",
+    "page": 72
+  },
+  {
+    "depth": 2,
+    "title": "12.3.1 Alternate Functions of Port B",
+    "page": 74
+  },
+  {
+    "depth": 2,
+    "title": "12.3.2 Alternate Functions of Port C",
+    "page": 77
+  },
+  {
+    "depth": 2,
+    "title": "12.3.3 Alternate Functions of Port D",
+    "page": 79
+  },
+  {
+    "depth": 1,
+    "title": "12.4 Register Description for I/O-Ports",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.1 MCUCR \u2013 MCU Control Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.2 PORTB \u2013 Port B Data Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.3 DDRB \u2013 Port B Data Direction Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.4 PINB \u2013 Port B Input Pins Address",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.5 PORTC \u2013 Port C Data Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.6 DDRC \u2013 Port C Data Direction Register",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.7 PINC \u2013 Port C Input Pins Address",
+    "page": 82
+  },
+  {
+    "depth": 2,
+    "title": "12.4.8 PORTD \u2013 Port D Data Register",
+    "page": 83
+  },
+  {
+    "depth": 2,
+    "title": "12.4.9 DDRD \u2013 Port D Data Direction Register",
+    "page": 83
+  },
+  {
+    "depth": 2,
+    "title": "12.4.10 PIND \u2013 Port D Input Pins Address",
+    "page": 83
+  },
+  {
+    "depth": 0,
+    "title": "13. External Interrupts",
+    "page": 84
+  },
+  {
+    "depth": 1,
+    "title": "13.1 Overview",
+    "page": 84
+  },
+  {
+    "depth": 1,
+    "title": "13.2 Register Description",
+    "page": 84
+  },
+  {
+    "depth": 2,
+    "title": "13.2.1 EICRA \u2013 External Interrupt Control Register A",
+    "page": 84
+  },
+  {
+    "depth": 2,
+    "title": "13.2.2 EICRB \u2013 External Interrupt Control Register B",
+    "page": 85
+  },
+  {
+    "depth": 2,
+    "title": "13.2.3 EIMSK \u2013 External Interrupt Mask Register",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "13.2.4 EIFR \u2013 External Interrupt Flag Register",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "13.2.5 PCICR \u2013 Pin Change Interrupt Control Register",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "13.2.6 PCIFR \u2013 Pin Change Interrupt Flag Register",
+    "page": 86
+  },
+  {
+    "depth": 2,
+    "title": "13.2.7 PCMSK0 \u2013 Pin Change Mask Register 0",
+    "page": 87
+  },
+  {
+    "depth": 2,
+    "title": "13.2.8 PCMSK1 \u2013 Pin Change Mask Register 1",
+    "page": 87
+  },
+  {
+    "depth": 0,
+    "title": "14. Timer/Counter0 and Timer/Counter1 Prescalers",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.1 Overview",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.2 Internal Clock Source",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.3 Prescaler Reset",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.4 External Clock Source",
+    "page": 88
+  },
+  {
+    "depth": 1,
+    "title": "14.5 Register Description",
+    "page": 89
+  },
+  {
+    "depth": 2,
+    "title": "14.5.1 GTCCR \u2013 General Timer/Counter Control Register",
+    "page": 89
+  },
+  {
+    "depth": 0,
+    "title": "15. 8-bit Timer/Counter0 with PWM",
+    "page": 91
+  },
+  {
+    "depth": 1,
+    "title": "15.1 Features",
+    "page": 91
+  },
+  {
+    "depth": 1,
+    "title": "15.2 Overview",
+    "page": 91
+  },
+  {
+    "depth": 2,
+    "title": "15.2.1 Registers",
+    "page": 91
+  },
+  {
+    "depth": 2,
+    "title": "15.2.2 Definitions",
+    "page": 92
+  },
+  {
+    "depth": 1,
+    "title": "15.3 Timer/Counter Clock Sources",
+    "page": 92
+  },
+  {
+    "depth": 1,
+    "title": "15.4 Counter Unit",
+    "page": 92
+  },
+  {
+    "depth": 1,
+    "title": "15.5 Output Compare Unit",
+    "page": 93
+  },
+  {
+    "depth": 2,
+    "title": "15.5.1 Force Output Compare",
+    "page": 94
+  },
+  {
+    "depth": 2,
+    "title": "15.5.2 Compare Match Blocking by TCNT0 Write",
+    "page": 94
+  },
+  {
+    "depth": 2,
+    "title": "15.5.3 Using the Output Compare Unit",
+    "page": 94
+  },
+  {
+    "depth": 1,
+    "title": "15.6 Compare Match Output Unit",
+    "page": 95
+  },
+  {
+    "depth": 2,
+    "title": "15.6.1 Compare Output Mode and Waveform Generation",
+    "page": 96
+  },
+  {
+    "depth": 1,
+    "title": "15.7 Modes of Operation",
+    "page": 96
+  },
+  {
+    "depth": 2,
+    "title": "15.7.1 Normal Mode",
+    "page": 96
+  },
+  {
+    "depth": 2,
+    "title": "15.7.2 Clear Timer on Compare Match (CTC) Mode",
+    "page": 96
+  },
+  {
+    "depth": 2,
+    "title": "15.7.3 Fast PWM Mode",
+    "page": 97
+  },
+  {
+    "depth": 2,
+    "title": "15.7.4 Phase Correct PWM Mode",
+    "page": 99
+  },
+  {
+    "depth": 1,
+    "title": "15.8 Timer/Counter Timing Diagrams",
+    "page": 100
+  },
+  {
+    "depth": 1,
+    "title": "15.9 Register Description",
+    "page": 102
+  },
+  {
+    "depth": 2,
+    "title": "15.9.1 TCCR0A \u2013 Timer/Counter Control Register A",
+    "page": 102
+  },
+  {
+    "depth": 2,
+    "title": "15.9.2 TCCR0B \u2013 Timer/Counter Control Register B",
+    "page": 105
+  },
+  {
+    "depth": 2,
+    "title": "15.9.3 TCNT0 \u2013 Timer/Counter Register",
+    "page": 106
+  },
+  {
+    "depth": 2,
+    "title": "15.9.4 OCR0A \u2013 Output Compare Register A",
+    "page": 106
+  },
+  {
+    "depth": 2,
+    "title": "15.9.5 OCR0B \u2013 Output Compare Register B",
+    "page": 106
+  },
+  {
+    "depth": 2,
+    "title": "15.9.6 TIMSK0 \u2013 Timer/Counter Interrupt Mask Register",
+    "page": 106
+  },
+  {
+    "depth": 2,
+    "title": "15.9.7 TIFR0 \u2013 Timer/Counter 0 Interrupt Flag Register",
+    "page": 107
+  },
+  {
+    "depth": 0,
+    "title": "16. 16-bit Timer/Counter 1 with PWM",
+    "page": 108
+  },
+  {
+    "depth": 1,
+    "title": "16.1 Features",
+    "page": 108
+  },
+  {
+    "depth": 1,
+    "title": "16.2 Overview",
+    "page": 108
+  },
+  {
+    "depth": 2,
+    "title": "16.2.1 Registers",
+    "page": 109
+  },
+  {
+    "depth": 2,
+    "title": "16.2.2 Definitions",
+    "page": 110
+  },
+  {
+    "depth": 1,
+    "title": "16.3 Accessing 16-bit Registers",
+    "page": 110
+  },
+  {
+    "depth": 2,
+    "title": "16.3.1 Reusing the Temporary High Byte Register",
+    "page": 113
+  },
+  {
+    "depth": 1,
+    "title": "16.4 Timer/Counter Clock Sources",
+    "page": 113
+  },
+  {
+    "depth": 1,
+    "title": "16.5 Counter Unit",
+    "page": 114
+  },
+  {
+    "depth": 1,
+    "title": "16.6 Input Capture Unit",
+    "page": 115
+  },
+  {
+    "depth": 2,
+    "title": "16.6.1 Input Capture Trigger Source",
+    "page": 116
+  },
+  {
+    "depth": 2,
+    "title": "16.6.2 Noise Canceler",
+    "page": 116
+  },
+  {
+    "depth": 2,
+    "title": "16.6.3 Using the Input Capture Unit",
+    "page": 116
+  },
+  {
+    "depth": 1,
+    "title": "16.7 Output Compare Units",
+    "page": 117
+  },
+  {
+    "depth": 2,
+    "title": "16.7.1 Force Output Compare",
+    "page": 118
+  },
+  {
+    "depth": 2,
+    "title": "16.7.2 Compare Match Blocking by TCNTn Write",
+    "page": 118
+  },
+  {
+    "depth": 2,
+    "title": "16.7.3 Using the Output Compare Unit",
+    "page": 118
+  },
+  {
+    "depth": 1,
+    "title": "16.8 Compare Match Output Unit",
+    "page": 119
+  },
+  {
+    "depth": 2,
+    "title": "16.8.1 Compare Output Mode and Waveform Generation",
+    "page": 119
+  },
+  {
+    "depth": 1,
+    "title": "16.9 Modes of Operation",
+    "page": 120
+  },
+  {
+    "depth": 2,
+    "title": "16.9.1 Normal Mode",
+    "page": 120
+  },
+  {
+    "depth": 2,
+    "title": "16.9.2 Clear Timer on Compare Match (CTC) Mode",
+    "page": 120
+  },
+  {
+    "depth": 2,
+    "title": "16.9.3 Fast PWM Mode",
+    "page": 121
+  },
+  {
+    "depth": 2,
+    "title": "16.9.4 Phase Correct PWM Mode",
+    "page": 123
+  },
+  {
+    "depth": 2,
+    "title": "16.9.5 Phase and Frequency Correct PWM Mode",
+    "page": 125
+  },
+  {
+    "depth": 1,
+    "title": "16.10 Timer/Counter Timing Diagrams",
+    "page": 127
+  },
+  {
+    "depth": 1,
+    "title": "16.11 Register Description",
+    "page": 129
+  },
+  {
+    "depth": 2,
+    "title": "16.11.1 TCCR1A \u2013 Timer/Counter1 Control Register A",
+    "page": 129
+  },
+  {
+    "depth": 2,
+    "title": "16.11.2 TCCR1B \u2013 Timer/Counter1 Control Register B",
+    "page": 133
+  },
+  {
+    "depth": 2,
+    "title": "16.11.3 TCCR1C \u2013 Timer/Counter1 Control Register C",
+    "page": 134
+  },
+  {
+    "depth": 2,
+    "title": "16.11.4 TCNT1H and TCNT1L \u2013 Timer/Counter1",
+    "page": 134
+  },
+  {
+    "depth": 2,
+    "title": "16.11.5 OCR1AH and OCR1AL \u2013 Output Compare Register 1 A",
+    "page": 135
+  },
+  {
+    "depth": 2,
+    "title": "16.11.6 OCR1BH and OCR1BL \u2013 Output Compare Register 1 B",
+    "page": 135
+  },
+  {
+    "depth": 2,
+    "title": "16.11.7 OCR1CH and OCR1CL \u2013 Output Compare Register 1 C",
+    "page": 135
+  },
+  {
+    "depth": 2,
+    "title": "16.11.8 ICR1H and ICR1L \u2013 Input Capture Register 1",
+    "page": 135
+  },
+  {
+    "depth": 2,
+    "title": "16.11.9 TIMSK1 \u2013 Timer/Counter1 Interrupt Mask Register",
+    "page": 135
+  },
+  {
+    "depth": 2,
+    "title": "16.11.10 TIFR1 \u2013 Timer/Counter1 Interrupt Flag Register",
+    "page": 136
+  },
+  {
+    "depth": 0,
+    "title": "17. SPI \u2013 Serial Peripheral Interface",
+    "page": 138
+  },
+  {
+    "depth": 1,
+    "title": "17.1 Features",
+    "page": 138
+  },
+  {
+    "depth": 1,
+    "title": "17.2 Overview",
+    "page": 138
+  },
+  {
+    "depth": 1,
+    "title": "17.3 SS Pin Functionality",
+    "page": 142
+  },
+  {
+    "depth": 2,
+    "title": "17.3.1 Slave Mode",
+    "page": 142
+  },
+  {
+    "depth": 2,
+    "title": "17.3.2 Master Mode",
+    "page": 143
+  },
+  {
+    "depth": 1,
+    "title": "17.4 Data Modes",
+    "page": 143
+  },
+  {
+    "depth": 1,
+    "title": "17.5 Register Description",
+    "page": 145
+  },
+  {
+    "depth": 2,
+    "title": "17.5.1 SPCR \u2013 SPI Control Register",
+    "page": 145
+  },
+  {
+    "depth": 2,
+    "title": "17.5.2 SPSR \u2013 SPI Status Register",
+    "page": 146
+  },
+  {
+    "depth": 2,
+    "title": "17.5.3 SPDR \u2013 SPI Data Register",
+    "page": 147
+  },
+  {
+    "depth": 0,
+    "title": "18. USART",
+    "page": 148
+  },
+  {
+    "depth": 1,
+    "title": "18.1 Features",
+    "page": 148
+  },
+  {
+    "depth": 1,
+    "title": "18.2 Overview",
+    "page": 148
+  },
+  {
+    "depth": 1,
+    "title": "18.3 Clock Generation",
+    "page": 149
+  },
+  {
+    "depth": 2,
+    "title": "18.3.1 Internal Clock Generation \u2013 The Baud Rate Generator",
+    "page": 150
+  },
+  {
+    "depth": 2,
+    "title": "18.3.2 Double Speed Operation (U2Xn)",
+    "page": 151
+  },
+  {
+    "depth": 2,
+    "title": "18.3.3 External Clock",
+    "page": 152
+  },
+  {
+    "depth": 2,
+    "title": "18.3.4 Synchronous Clock Operation",
+    "page": 152
+  },
+  {
+    "depth": 1,
+    "title": "18.4 Frame Formats",
+    "page": 152
+  },
+  {
+    "depth": 2,
+    "title": "18.4.1 Parity Bit Calculation",
+    "page": 153
+  },
+  {
+    "depth": 1,
+    "title": "18.5 USART Initialization",
+    "page": 154
+  },
+  {
+    "depth": 1,
+    "title": "18.6 Data Transmission \u2013 The USART Transmitter",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.6.1 Sending Frames with 5 to 8 Data Bit",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.6.2 Sending Frames with 9 Data Bit",
+    "page": 155
+  },
+  {
+    "depth": 2,
+    "title": "18.6.3 Transmitter Flags and Interrupts",
+    "page": 156
+  },
+  {
+    "depth": 2,
+    "title": "18.6.4 Parity Generator",
+    "page": 157
+  },
+  {
+    "depth": 2,
+    "title": "18.6.5 Disabling the Transmitter",
+    "page": 157
+  },
+  {
+    "depth": 1,
+    "title": "18.7 Data Reception \u2013 The USART Receiver",
+    "page": 157
+  },
+  {
+    "depth": 2,
+    "title": "18.7.1 Receiving Frames with 5 to 8 Data Bits",
+    "page": 157
+  },
+  {
+    "depth": 2,
+    "title": "18.7.2 Receiving Frames with 9 Data Bits",
+    "page": 158
+  },
+  {
+    "depth": 2,
+    "title": "18.7.3 Receive Compete Flag and Interrupt",
+    "page": 160
+  },
+  {
+    "depth": 2,
+    "title": "18.7.4 Receiver Error Flags",
+    "page": 160
+  },
+  {
+    "depth": 2,
+    "title": "18.7.5 Parity Checker",
+    "page": 160
+  },
+  {
+    "depth": 2,
+    "title": "18.7.6 Disabling the Receiver",
+    "page": 161
+  },
+  {
+    "depth": 2,
+    "title": "18.7.7 Flushing the Receive Buffer",
+    "page": 161
+  },
+  {
+    "depth": 1,
+    "title": "18.8 Asynchronous Data Reception",
+    "page": 161
+  },
+  {
+    "depth": 2,
+    "title": "18.8.1 Asynchronous Clock Recovery",
+    "page": 161
+  },
+  {
+    "depth": 2,
+    "title": "18.8.2 Asynchronous Data Recovery",
+    "page": 162
+  },
+  {
+    "depth": 2,
+    "title": "18.8.3 Asynchronous Operational Range",
+    "page": 163
+  },
+  {
+    "depth": 1,
+    "title": "18.9 Multi-processor Communication Mode",
+    "page": 164
+  },
+  {
+    "depth": 2,
+    "title": "18.9.1 Using MPCMn",
+    "page": 165
+  },
+  {
+    "depth": 1,
+    "title": "18.10 Hardware Flow Control",
+    "page": 165
+  },
+  {
+    "depth": 2,
+    "title": "18.10.1 Receiver Flow Control",
+    "page": 165
+  },
+  {
+    "depth": 2,
+    "title": "18.10.2 Transmission Flow Control",
+    "page": 166
+  },
+  {
+    "depth": 1,
+    "title": "18.11 Register Description",
+    "page": 167
+  },
+  {
+    "depth": 2,
+    "title": "18.11.1 UDRn \u2013 USART I/O Data Register n",
+    "page": 167
+  },
+  {
+    "depth": 2,
+    "title": "18.11.2 UCSRnA \u2013 USART Control and Status Register A",
+    "page": 167
+  },
+  {
+    "depth": 2,
+    "title": "18.11.3 UCSRnB \u2013 USART Control and Status Register n B",
+    "page": 168
+  },
+  {
+    "depth": 2,
+    "title": "18.11.4 UCSRnC \u2013 USART Control and Status Register n C",
+    "page": 169
+  },
+  {
+    "depth": 2,
+    "title": "18.11.5 UCSRnD \u2013 USART Control and Status Register n D",
+    "page": 171
+  },
+  {
+    "depth": 2,
+    "title": "18.11.6 UBRRnL and UBRRnH \u2013 USART Baud Rate Registers",
+    "page": 171
+  },
+  {
+    "depth": 1,
+    "title": "18.12 Examples of Baud Rate Setting",
+    "page": 171
+  },
+  {
+    "depth": 0,
+    "title": "19. USART in SPI Mode",
+    "page": 176
+  },
+  {
+    "depth": 1,
+    "title": "19.1 Features",
+    "page": 176
+  },
+  {
+    "depth": 1,
+    "title": "19.2 Overview",
+    "page": 176
+  },
+  {
+    "depth": 1,
+    "title": "19.3 Clock Generation",
+    "page": 176
+  },
+  {
+    "depth": 1,
+    "title": "19.4 SPI Data Modes and Timing",
+    "page": 177
+  },
+  {
+    "depth": 1,
+    "title": "19.5 Frame Formats",
+    "page": 178
+  },
+  {
+    "depth": 2,
+    "title": "19.5.1 USART MSPIM Initialization",
+    "page": 178
+  },
+  {
+    "depth": 1,
+    "title": "19.6 Data Transfer",
+    "page": 179
+  },
+  {
+    "depth": 2,
+    "title": "19.6.1 Transmitter and Receiver Flags and Interrupts",
+    "page": 181
+  },
+  {
+    "depth": 2,
+    "title": "19.6.2 Disabling the Transmitter or Receiver",
+    "page": 181
+  },
+  {
+    "depth": 1,
+    "title": "19.7 Register Description",
+    "page": 181
+  },
+  {
+    "depth": 2,
+    "title": "19.7.1 UDRn \u2013 USART MSPIM I/O Data Register",
+    "page": 181
+  },
+  {
+    "depth": 2,
+    "title": "19.7.2 UCSRnA \u2013 USART MSPIM Control and Status Register n A",
+    "page": 181
+  },
+  {
+    "depth": 2,
+    "title": "19.7.3 UCSRnB \u2013 USART MSPIM Control and Status Register n B",
+    "page": 182
+  },
+  {
+    "depth": 2,
+    "title": "19.7.4 UCSRnC \u2013 USART MSPIM Control and Status Register n C",
+    "page": 183
+  },
+  {
+    "depth": 2,
+    "title": "19.7.5 UBRRnL and UBRRnH \u2013 USART MSPIM Baud Rate Registers",
+    "page": 183
+  },
+  {
+    "depth": 1,
+    "title": "19.8 AVR USART MSPIM vs. AVR SPI",
+    "page": 183
+  },
+  {
+    "depth": 0,
+    "title": "20. USB Controller",
+    "page": 185
+  },
+  {
+    "depth": 1,
+    "title": "20.1 Features",
+    "page": 185
+  },
+  {
+    "depth": 1,
+    "title": "20.2 Overview",
+    "page": 185
+  },
+  {
+    "depth": 1,
+    "title": "20.3 USB Module Powering Options",
+    "page": 186
+  },
+  {
+    "depth": 2,
+    "title": "20.3.1 Bus Powered device",
+    "page": 186
+  },
+  {
+    "depth": 2,
+    "title": "20.3.2 Self Powered device",
+    "page": 187
+  },
+  {
+    "depth": 2,
+    "title": "20.3.3 Design guidelines",
+    "page": 189
+  },
+  {
+    "depth": 1,
+    "title": "20.4 General Operating Modes",
+    "page": 189
+  },
+  {
+    "depth": 2,
+    "title": "20.4.1 Introduction",
+    "page": 189
+  },
+  {
+    "depth": 2,
+    "title": "20.4.2 Power-on and reset",
+    "page": 189
+  },
+  {
+    "depth": 2,
+    "title": "20.4.3 Interrupts",
+    "page": 190
+  },
+  {
+    "depth": 1,
+    "title": "20.5 Power modes",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.5.1 Idle mode",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.5.2 Power-down",
+    "page": 191
+  },
+  {
+    "depth": 2,
+    "title": "20.5.3 Freeze clock",
+    "page": 192
+  },
+  {
+    "depth": 1,
+    "title": "20.6 Memory management",
+    "page": 192
+  },
+  {
+    "depth": 1,
+    "title": "20.7 PAD suspend",
+    "page": 193
+  },
+  {
+    "depth": 1,
+    "title": "20.8 D+/D- Read/write",
+    "page": 194
+  },
+  {
+    "depth": 1,
+    "title": "20.9 USB Software Operating modes",
+    "page": 194
+  },
+  {
+    "depth": 1,
+    "title": "20.10 Registers Description",
+    "page": 195
+  },
+  {
+    "depth": 2,
+    "title": "20.10.1 USBCON \u2013 USB General Control Registers",
+    "page": 195
+  },
+  {
+    "depth": 2,
+    "title": "20.10.2 UPOE \u2013 USB Software Output Enable register",
+    "page": 195
+  },
+  {
+    "depth": 2,
+    "title": "20.10.3 REGCR \u2013 Regulator Control Register",
+    "page": 196
+  },
+  {
+    "depth": 0,
+    "title": "21. USB Device Operating modes",
+    "page": 197
+  },
+  {
+    "depth": 1,
+    "title": "21.1 Overview",
+    "page": 197
+  },
+  {
+    "depth": 1,
+    "title": "21.2 Power-on and reset",
+    "page": 197
+  },
+  {
+    "depth": 1,
+    "title": "21.3 Endpoint reset",
+    "page": 197
+  },
+  {
+    "depth": 1,
+    "title": "21.4 USB reset",
+    "page": 198
+  },
+  {
+    "depth": 1,
+    "title": "21.5 Endpoint selection",
+    "page": 198
+  },
+  {
+    "depth": 1,
+    "title": "21.6 Endpoint activation",
+    "page": 198
+  },
+  {
+    "depth": 1,
+    "title": "21.7 Address Setup",
+    "page": 199
+  },
+  {
+    "depth": 1,
+    "title": "21.8 Suspend, Wake-up and Resume",
+    "page": 200
+  },
+  {
+    "depth": 1,
+    "title": "21.9 Detach",
+    "page": 200
+  },
+  {
+    "depth": 1,
+    "title": "21.10 Remote Wake-up",
+    "page": 201
+  },
+  {
+    "depth": 1,
+    "title": "21.11 STALL request",
+    "page": 201
+  },
+  {
+    "depth": 2,
+    "title": "21.11.1 Special consideration for Control Endpoints",
+    "page": 201
+  },
+  {
+    "depth": 2,
+    "title": "21.11.2 STALL handshake and Retry mechanism",
+    "page": 202
+  },
+  {
+    "depth": 1,
+    "title": "21.12 CONTROL endpoint management",
+    "page": 202
+  },
+  {
+    "depth": 2,
+    "title": "21.12.1 Control Write",
+    "page": 202
+  },
+  {
+    "depth": 2,
+    "title": "21.12.2 Control Read",
+    "page": 203
+  },
+  {
+    "depth": 1,
+    "title": "21.13 OUT endpoint management",
+    "page": 203
+  },
+  {
+    "depth": 2,
+    "title": "21.13.1 Overview",
+    "page": 203
+  },
+  {
+    "depth": 3,
+    "title": "21.13.1.1 \u201cManual\u201d mode",
+    "page": 204
+  },
+  {
+    "depth": 2,
+    "title": "21.13.2 Detailed description",
+    "page": 204
+  },
+  {
+    "depth": 1,
+    "title": "21.14 IN endpoint management",
+    "page": 205
+  },
+  {
+    "depth": 2,
+    "title": "21.14.1 Overview",
+    "page": 205
+  },
+  {
+    "depth": 3,
+    "title": "21.14.1.1 \u201cManual\u201d mode",
+    "page": 205
+  },
+  {
+    "depth": 2,
+    "title": "21.14.2 Detailed description",
+    "page": 206
+  },
+  {
+    "depth": 3,
+    "title": "21.14.2.1 Abort",
+    "page": 206
+  },
+  {
+    "depth": 1,
+    "title": "21.15 Isochronous mode",
+    "page": 207
+  },
+  {
+    "depth": 2,
+    "title": "21.15.1 Underflow",
+    "page": 207
+  },
+  {
+    "depth": 2,
+    "title": "21.15.2 CRC Error",
+    "page": 207
+  },
+  {
+    "depth": 1,
+    "title": "21.16 Overflow",
+    "page": 207
+  },
+  {
+    "depth": 1,
+    "title": "21.17 Interrupts",
+    "page": 208
+  },
+  {
+    "depth": 1,
+    "title": "21.18 Register Description",
+    "page": 209
+  },
+  {
+    "depth": 2,
+    "title": "21.18.1 UDCON \u2013 USB Device Control Registers",
+    "page": 209
+  },
+  {
+    "depth": 2,
+    "title": "21.18.2 UDINT \u2013 USB Device Interrupt Register",
+    "page": 210
+  },
+  {
+    "depth": 2,
+    "title": "21.18.3 UDIEN \u2013 USB Device Interrupt Enable Register",
+    "page": 211
+  },
+  {
+    "depth": 2,
+    "title": "21.18.4 UDADDR \u2013 USB Device Address Register",
+    "page": 212
+  },
+  {
+    "depth": 2,
+    "title": "21.18.5 UDFNUMH \u2013 USB Device Frame Number High Register",
+    "page": 213
+  },
+  {
+    "depth": 2,
+    "title": "21.18.6 UDFNUML \u2013 USB Device Frame Number Low Register",
+    "page": 213
+  },
+  {
+    "depth": 2,
+    "title": "21.18.7 UDMFN \u2013 USB Device Micro Frame Number",
+    "page": 213
+  },
+  {
+    "depth": 2,
+    "title": "21.18.8 UENUM \u2013 USB Endpoint Number Register",
+    "page": 214
+  },
+  {
+    "depth": 2,
+    "title": "21.18.9 UERST \u2013 USB Endpoint Reset Register",
+    "page": 214
+  },
+  {
+    "depth": 2,
+    "title": "21.18.10 UECONX \u2013 USB Endpoint Control Register",
+    "page": 214
+  },
+  {
+    "depth": 2,
+    "title": "21.18.11 UECFG0X \u2013 USB Endpoint Configuration 0 Register",
+    "page": 215
+  },
+  {
+    "depth": 2,
+    "title": "21.18.12 UECFG1X \u2013 USB Endpoint Configuration 1 Register",
+    "page": 216
+  },
+  {
+    "depth": 2,
+    "title": "21.18.13 UESTA0X \u2013 USB Endpoint Status 0 Register",
+    "page": 217
+  },
+  {
+    "depth": 2,
+    "title": "21.18.14 UESTA1X \u2013 USB Endpoint Status 1 Register",
+    "page": 218
+  },
+  {
+    "depth": 2,
+    "title": "21.18.15 UEINTX \u2013 USB Endpoint Interrupt Register",
+    "page": 219
+  },
+  {
+    "depth": 2,
+    "title": "21.18.16 UEIENX \u2013 USB Endpoint Interrupt Enable Register",
+    "page": 220
+  },
+  {
+    "depth": 2,
+    "title": "21.18.17 UEDATX \u2013 USB Data Endpoint Register",
+    "page": 221
+  },
+  {
+    "depth": 2,
+    "title": "21.18.18 UEBCLX \u2013 USB Endpoint Byte Count Register",
+    "page": 221
+  },
+  {
+    "depth": 2,
+    "title": "21.18.19 UEINT \u2013 USB Endpoint Number interrupt Register",
+    "page": 222
+  },
+  {
+    "depth": 0,
+    "title": "22. Analog Comparator",
+    "page": 223
+  },
+  {
+    "depth": 1,
+    "title": "22.1 Overview",
+    "page": 223
+  },
+  {
+    "depth": 1,
+    "title": "22.2 Register Description",
+    "page": 224
+  },
+  {
+    "depth": 2,
+    "title": "22.2.1 ACSR \u2013 Analog Comparator Control and Status Register",
+    "page": 224
+  },
+  {
+    "depth": 2,
+    "title": "22.2.2 ACMUX \u2013 Analog Comparator Input Multiplexer",
+    "page": 225
+  },
+  {
+    "depth": 2,
+    "title": "22.2.3 DIDR1 \u2013 Digital Input Disable Register 1",
+    "page": 225
+  },
+  {
+    "depth": 0,
+    "title": "23. Boot Loader Support \u2013 Read-While-Write Self-Programming",
+    "page": 226
+  },
+  {
+    "depth": 1,
+    "title": "23.1 Features",
+    "page": 226
+  },
+  {
+    "depth": 1,
+    "title": "23.2 Overivew",
+    "page": 226
+  },
+  {
+    "depth": 1,
+    "title": "23.3 Application and Boot Loader Flash Sections",
+    "page": 226
+  },
+  {
+    "depth": 2,
+    "title": "23.3.1 Application Section",
+    "page": 226
+  },
+  {
+    "depth": 2,
+    "title": "23.3.2 BLS \u2013 Boot Loader Section",
+    "page": 226
+  },
+  {
+    "depth": 1,
+    "title": "23.4 Read-While-Write and No Read-While-Write Flash Sections",
+    "page": 227
+  },
+  {
+    "depth": 2,
+    "title": "23.4.1 RWW \u2013 Read-While-Write Section",
+    "page": 227
+  },
+  {
+    "depth": 2,
+    "title": "23.4.2 NRWW \u2013 No Read-While-Write Section",
+    "page": 227
+  },
+  {
+    "depth": 1,
+    "title": "23.5 Boot Loader Lock Bits",
+    "page": 229
+  },
+  {
+    "depth": 1,
+    "title": "23.6 Entering the Boot Loader Program",
+    "page": 230
+  },
+  {
+    "depth": 2,
+    "title": "23.6.1 Regular application conditions.",
+    "page": 230
+  },
+  {
+    "depth": 2,
+    "title": "23.6.2 Boot Reset Fuse",
+    "page": 230
+  },
+  {
+    "depth": 2,
+    "title": "23.6.3 External Hardware conditions",
+    "page": 231
+  },
+  {
+    "depth": 1,
+    "title": "23.7 Addressing the Flash During Self-Programming",
+    "page": 232
+  },
+  {
+    "depth": 1,
+    "title": "23.8 Self-Programming the Flash",
+    "page": 233
+  },
+  {
+    "depth": 2,
+    "title": "23.8.1 Performing Page Erase by SPM",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.2 Filling the Temporary Buffer (Page Loading)",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.3 Performing a Page Write",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.4 Using the SPM Interrupt",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.5 Consideration While Updating BLS",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.6 Prevent Reading the RWW Section During Self-Programming",
+    "page": 234
+  },
+  {
+    "depth": 2,
+    "title": "23.8.7 Setting the Boot Loader Lock Bits by SPM",
+    "page": 235
+  },
+  {
+    "depth": 2,
+    "title": "23.8.8 EEPROM Write Prevents Writing to SPMCSR",
+    "page": 235
+  },
+  {
+    "depth": 2,
+    "title": "23.8.9 Reading the Fuse and Lock Bits from Software",
+    "page": 235
+  },
+  {
+    "depth": 2,
+    "title": "23.8.10 Reading the Signature Row from Software",
+    "page": 236
+  },
+  {
+    "depth": 2,
+    "title": "23.8.11 Preventing Flash Corruption",
+    "page": 236
+  },
+  {
+    "depth": 2,
+    "title": "23.8.12 Programming Time for Flash when Using SPM",
+    "page": 237
+  },
+  {
+    "depth": 2,
+    "title": "23.8.13 Simple Assembly Code Example for a Boot Loader",
+    "page": 237
+  },
+  {
+    "depth": 2,
+    "title": "23.8.14 ATmega8U2 Boot Loader Parameters",
+    "page": 239
+  },
+  {
+    "depth": 2,
+    "title": "23.8.15 ATmega16U2 Boot Loader Parameters",
+    "page": 240
+  },
+  {
+    "depth": 2,
+    "title": "23.8.16 ATmega32U2 Boot Loader Parameters",
+    "page": 241
+  },
+  {
+    "depth": 1,
+    "title": "23.9 Register Description",
+    "page": 242
+  },
+  {
+    "depth": 2,
+    "title": "23.9.1 SPMCSR \u2013 Store Program Memory Control and Status Register",
+    "page": 242
+  },
+  {
+    "depth": 0,
+    "title": "24. debugWIRE On-chip Debug System",
+    "page": 244
+  },
+  {
+    "depth": 1,
+    "title": "24.1 Features",
+    "page": 244
+  },
+  {
+    "depth": 1,
+    "title": "24.2 Overview",
+    "page": 244
+  },
+  {
+    "depth": 1,
+    "title": "24.3 Physical Interface",
+    "page": 244
+  },
+  {
+    "depth": 1,
+    "title": "24.4 Software Break Points",
+    "page": 245
+  },
+  {
+    "depth": 1,
+    "title": "24.5 Limitations of debugWIRE",
+    "page": 245
+  },
+  {
+    "depth": 1,
+    "title": "24.6 Register Description",
+    "page": 245
+  },
+  {
+    "depth": 2,
+    "title": "24.6.1 DWDR \u2013 debugWire Data Register",
+    "page": 245
+  },
+  {
+    "depth": 0,
+    "title": "25. Memory Programming",
+    "page": 246
+  },
+  {
+    "depth": 1,
+    "title": "25.1 Program And Data Memory Lock Bits",
+    "page": 246
+  },
+  {
+    "depth": 1,
+    "title": "25.2 Fuse Bits",
+    "page": 247
+  },
+  {
+    "depth": 2,
+    "title": "25.2.1 Latching of Fuses",
+    "page": 249
+  },
+  {
+    "depth": 1,
+    "title": "25.3 Signature Bytes",
+    "page": 249
+  },
+  {
+    "depth": 1,
+    "title": "25.4 Calibration Byte",
+    "page": 249
+  },
+  {
+    "depth": 1,
+    "title": "25.5 Page Size",
+    "page": 249
+  },
+  {
+    "depth": 1,
+    "title": "25.6 Parallel Programming Parameters, Pin Mapping, and Commands",
+    "page": 250
+  },
+  {
+    "depth": 2,
+    "title": "25.6.1 Signal Names",
+    "page": 250
+  },
+  {
+    "depth": 1,
+    "title": "25.7 Parallel Programming",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "25.7.1 Enter Programming Mode",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "25.7.2 Considerations for Efficient Programming",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "25.7.3 Chip Erase",
+    "page": 252
+  },
+  {
+    "depth": 2,
+    "title": "25.7.4 Programming the Flash",
+    "page": 253
+  },
+  {
+    "depth": 2,
+    "title": "25.7.5 Programming the EEPROM",
+    "page": 255
+  },
+  {
+    "depth": 2,
+    "title": "25.7.6 Reading the Flash",
+    "page": 256
+  },
+  {
+    "depth": 2,
+    "title": "25.7.7 Reading the EEPROM",
+    "page": 256
+  },
+  {
+    "depth": 2,
+    "title": "25.7.8 Programming the Fuse Low Bits",
+    "page": 256
+  },
+  {
+    "depth": 2,
+    "title": "25.7.9 Programming the Fuse High Bits",
+    "page": 257
+  },
+  {
+    "depth": 2,
+    "title": "25.7.10 Programming the Extended Fuse Bits",
+    "page": 257
+  },
+  {
+    "depth": 2,
+    "title": "25.7.11 Programming the Lock Bits",
+    "page": 257
+  },
+  {
+    "depth": 2,
+    "title": "25.7.12 Reading the Fuse and Lock Bits",
+    "page": 258
+  },
+  {
+    "depth": 2,
+    "title": "25.7.13 Reading the Signature Bytes",
+    "page": 258
+  },
+  {
+    "depth": 2,
+    "title": "25.7.14 Reading the Calibration Byte",
+    "page": 258
+  },
+  {
+    "depth": 1,
+    "title": "25.8 Serial Downloading",
+    "page": 259
+  },
+  {
+    "depth": 1,
+    "title": "25.9 Serial Programming Pin Mapping",
+    "page": 259
+  },
+  {
+    "depth": 2,
+    "title": "25.9.1 Serial Programming Algorithm",
+    "page": 260
+  },
+  {
+    "depth": 2,
+    "title": "25.9.2 Serial Programming Characteristics",
+    "page": 263
+  },
+  {
+    "depth": 0,
+    "title": "26. Electrical Characteristics",
+    "page": 264
+  },
+  {
+    "depth": 1,
+    "title": "26.1 Absolute Maximum Ratings*",
+    "page": 264
+  },
+  {
+    "depth": 1,
+    "title": "26.2 DC Characteristics",
+    "page": 264
+  },
+  {
+    "depth": 1,
+    "title": "26.3 Speed Grades",
+    "page": 266
+  },
+  {
+    "depth": 1,
+    "title": "26.4 Clock Characteristics",
+    "page": 266
+  },
+  {
+    "depth": 2,
+    "title": "26.4.1 Calibrated Internal RC Oscillator Accuracy",
+    "page": 266
+  },
+  {
+    "depth": 2,
+    "title": "26.4.2 External Clock Drive Waveforms",
+    "page": 266
+  },
+  {
+    "depth": 2,
+    "title": "26.4.3 External Clock Drive",
+    "page": 267
+  },
+  {
+    "depth": 1,
+    "title": "26.5 System and Reset Characteristics",
+    "page": 267
+  },
+  {
+    "depth": 1,
+    "title": "26.6 External Interrupts Characteristics",
+    "page": 268
+  },
+  {
+    "depth": 1,
+    "title": "26.7 SPI Timing Characteristics",
+    "page": 269
+  },
+  {
+    "depth": 1,
+    "title": "26.8 Hardware Boot EntranceTiming Characteristics",
+    "page": 270
+  },
+  {
+    "depth": 1,
+    "title": "26.9 Parallel Programming Characteristics",
+    "page": 270
+  },
+  {
+    "depth": 0,
+    "title": "27. Typical Characteristics",
+    "page": 273
+  },
+  {
+    "depth": 1,
+    "title": "27.1 Active Supply Current",
+    "page": 273
+  },
+  {
+    "depth": 1,
+    "title": "27.2 Idle Supply Current",
+    "page": 274
+  },
+  {
+    "depth": 1,
+    "title": "27.3 Power-down Supply Current",
+    "page": 275
+  },
+  {
+    "depth": 1,
+    "title": "27.4 Pin Pull-Up",
+    "page": 277
+  },
+  {
+    "depth": 1,
+    "title": "27.5 Pin Driver Strength",
+    "page": 278
+  },
+  {
+    "depth": 1,
+    "title": "27.6 Pin Threshold and Hysteresis",
+    "page": 280
+  },
+  {
+    "depth": 1,
+    "title": "27.7 BOD Threshold",
+    "page": 281
+  },
+  {
+    "depth": 1,
+    "title": "27.8 Internal Oscilllator Speed",
+    "page": 283
+  },
+  {
+    "depth": 1,
+    "title": "27.9 Current Consumption of Peripheral Units",
+    "page": 286
+  },
+  {
+    "depth": 1,
+    "title": "27.10 Current Consumption in Reset and Reset Pulsewidth",
+    "page": 287
+  },
+  {
+    "depth": 0,
+    "title": "28. Register Summary",
+    "page": 288
+  },
+  {
+    "depth": 0,
+    "title": "29. Instruction Set Summary",
+    "page": 292
+  },
+  {
+    "depth": 0,
+    "title": "30. Ordering Information",
+    "page": 294
+  },
+  {
+    "depth": 1,
+    "title": "30.1 ATmega8U2",
+    "page": 294
+  },
+  {
+    "depth": 1,
+    "title": "30.2 ATmega16U2",
+    "page": 295
+  },
+  {
+    "depth": 1,
+    "title": "30.3 ATmega32U2",
+    "page": 296
+  },
+  {
+    "depth": 0,
+    "title": "31. Packaging Information",
+    "page": 297
+  },
+  {
+    "depth": 1,
+    "title": "31.1 QFN32",
+    "page": 297
+  },
+  {
+    "depth": 1,
+    "title": "31.2 TQFP32",
+    "page": 298
+  },
+  {
+    "depth": 0,
+    "title": "32. Errata",
+    "page": 299
+  },
+  {
+    "depth": 1,
+    "title": "32.1 Errata ATmega8U2",
+    "page": 299
+  },
+  {
+    "depth": 2,
+    "title": "32.1.1 rev. A and rev B",
+    "page": 299
+  },
+  {
+    "depth": 1,
+    "title": "32.2 Errata ATmega16U2",
+    "page": 299
+  },
+  {
+    "depth": 2,
+    "title": "32.2.1 rev. A and rev B",
+    "page": 299
+  },
+  {
+    "depth": 1,
+    "title": "32.3 Errata ATmega32U2",
+    "page": 299
+  },
+  {
+    "depth": 2,
+    "title": "32.3.1 rev. C",
+    "page": 299
+  },
+  {
+    "depth": 2,
+    "title": "32.3.2 rev. A and rev B",
+    "page": 300
+  },
+  {
+    "depth": 0,
+    "title": "33. Datasheet Revision History",
+    "page": 301
+  },
+  {
+    "depth": 1,
+    "title": "33.1 Rev.7799E \u2013 09/12",
+    "page": 301
+  },
+  {
+    "depth": 1,
+    "title": "33.2 Rev. 7799D \u2013 11/10",
+    "page": 301
+  },
+  {
+    "depth": 1,
+    "title": "33.3 Rev. 7799C \u2013 12/09",
+    "page": 301
+  },
+  {
+    "depth": 1,
+    "title": "33.4 Rev. 7799B \u2013 06/09",
+    "page": 301
+  },
+  {
+    "depth": 1,
+    "title": "33.5 Rev. 7799A \u2013 03/09",
+    "page": 302
+  },
+  {
+    "depth": 0,
+    "title": "Table of Contents",
+    "page": 303
+  }
+]
