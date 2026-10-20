@@ -4,9 +4,9 @@
 
 Build the LED demonstration first. It needs **3 LEDs, 3 × 470 Ω resistors, 3 momentary buttons and 20 male-to-male jumper wires**, plus your Uno, breadboard, USB data cable and laptop. Have 40 jumpers available if buying a pack; the extras cover split ground rails and replacements.
 
-1. Follow [the Phase 1 wiring and upload guide](02-phase1-breadboard.md).
+1. Follow [the desk wiring](02-wires.md).
 2. Open [phase1_led_demo.ino](firmware/phase1_led_demo/phase1_led_demo.ino) in Arduino IDE.
-3. Perform the [Phase 1 acceptance tests](06-verification.md). Record actual results in [the test log](verification/test-log.csv).
+3. Perform the [desk tests](06-tests.md). Record actual results in [the test log](verification/test-log.csv).
 
 The buttons request cryo opening, vent opening and re-arm. Seven removable ground jumpers pretend to be sensors. LEDs show accepted requests. **This sketch controls LEDs only. It is not firmware for operating the chamber.**
 
@@ -24,15 +24,15 @@ Inventory and identifying connectors are preparation, not a sixth build phase. A
 
 ## Documents
 
-- [01 — Development plan, requirements and engineering V](01-development-plan.md)
-- [02 — Phase 1: exact wiring, 20-wire count and upload steps](02-phase1-breadboard.md)
-- [03 — Hornet pressure interface and readout](03-pressure-interface.md)
-- [04 — Valves, switches, drivers and pneumatic services](04-valves-and-pneumatics.md)
-- [05 — Interlocks, control modes and final sequence design](05-controller-design.md)
-- [06 — Verification and acceptance](06-verification.md)
-- [07 — Equipment and required services](07-equipment-and-services.md)
-- [08 — Information needed before field wiring](08-open-items.md)
-- [Procurement: buy now versus later](procurement/BOM.md), [editable workbook](procurement/maize-uno-bom.xlsx)
+- [01 — the plan](01-plan.md)
+- [02 — the wires](02-wires.md)
+- [03 — the gauge](03-gauge.md)
+- [04 — the valves](04-valves.md)
+- [05 — the rules](05-rules.md)
+- [06 — the tests](06-tests.md)
+- [07 — the machines](07-machines.md)
+- [08 — still unknown](08-unknowns.md)
+- [shopping list](procurement/shopping-list.md), [spreadsheet](procurement/maize-uno-bom.xlsx)
 - [Schematics and editable drawing instructions](schematics/README.md)
 - [Sources and supplied laboratory guides](references/README.md)
 - [Host software tests](tests/README.md), [verification record](verification/host-test-results.txt)

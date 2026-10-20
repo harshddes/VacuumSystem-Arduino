@@ -2,9 +2,9 @@
 
 Open `phase1_led_demo.ino` in Arduino IDE with `bench_logic.h` beside it. Select Arduino Uno and upload. No additional Arduino libraries are required. Serial status is 9600 baud.
 
-Use [the exact wiring guide](../../02-phase1-breadboard.md). Inputs are true when connected to GND. Outputs A0–A2 each need a series 470 Ω resistor and an LED.
+Use [the wires guide](../../02-wires.md), with this board's two moves: the vent-closed wire is on D12 and the pressure-valid wire is on D13. D5, D6, and D11 are unused. Inputs are true when connected to GND. Outputs A0–A2 each need a series 470 Ω resistor and an LED.
 
-Startup is disarmed. RE-ARM must first be released, then newly pressed with both request buttons released. Hold a request to light its permitted output; release to turn it off. A conflicting request or loss of an active permission disarms. Restoring a sensor cannot reopen an output without the appropriate fresh request/re-arm action.
+There is no start-over button. The vent lamp follows the vent button while the cryo button is off. The cryo lamp follows the cryo button while the vent button is off. Both buttons on turns both door lamps off and the fault lamp on. A button that is already on still counts.
 
 `bench_logic.h` contains the decision logic. The sketch handles contact filtering and nonblocking status printing. The tests in `../../tests/` cover the core on a host compiler and perform a host-stub syntax check of the sketch.
 

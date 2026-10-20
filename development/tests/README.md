@@ -12,7 +12,7 @@ The core checks **519 scenarios**: every combination of seven fake sensor flags 
 
 The separate syntax check compiles the sketch with `arduino_stub.h`. Stubs are test-only and are never part of an Arduino upload. This check does not emulate the processor, serial buffer or electrical inputs. It is not an AVR target build.
 
-For target compilation, use Arduino IDE Verify/Upload with board **Arduino Uno**, then perform [physical acceptance tests](../06-verification.md). An optional Arduino CLI command, when that tool is installed, is:
+For target compilation, use Arduino IDE Verify/Upload with board **Arduino Uno**, then perform [the desk tests](../06-tests.md). An optional Arduino CLI command, when that tool is installed, is:
 
 ```bash
 arduino-cli compile --fqbn arduino:avr:uno development/firmware/phase1_led_demo

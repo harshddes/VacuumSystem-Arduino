@@ -1,0 +1,586 @@
+==== Analog to Digital conversion in Arduino - GeeksforGeeks
+https://www.geeksforgeeks.org/electronics-engineering/analog-to-digital-conversion-in-arduino/
+In this article, we will learn about the working of analog input in Arduino Uno R3. Also, learn how to read and write analog data using Arduino Uno R3. Arduino: It is an open-source electronics platform. It consists ATmega328P 8-bit Microcontroller. It can be able to read inputs from different sensors & we can send instructions to the microcontroller in the Arduino. It provides Arduino IDE to
+
+==== How to Use the ADC on Arduino: Wiring, Code, and Calibration
+https://electricalflux.com/mcu-general/arduino-uno-r4-adc-wiring-code-calibration-guide
+Learn how to use the ADC on Arduino Uno R4. This tutorial covers analog pin wiring, 14-bit resolution code, noise filtering, and precise calibration.
+
+==== Using Arduino Analog Pins As Digital Output Input Pins
+https://deepbluembedded.com/arduino-analog-pins-as-digital-output-input
+Skip to content
+
+[STM32](https://deepbluembedded.com/stm32-arm-programming-tutorials/) [ESP32](https://deepbluembedded.com/esp32-programming-tutorials/) [ARDUINO](https://deepbluembedded.com/arduino-tutorials/) [PIC](https://deepbluembedded.com/pic-programming-tutorials/) [Electronics](https://deepbluembedded.com/electronics/)
+
+Arduino Analog Pins As Digital Output Input Pins
+
+# Using Arduino Analog Pins As Digital Output Input Pins
+
+July 26, 2025 April 26, 2023 by [Khaled Magdy](https://deepbluembedded.com/author/khaled-magdy/ "View all posts by Khaled Magdy")
+
+In this tutorial, you’ll learn **How To Use Arduino Analog Pins As Digital Pins** for digital output and input applications. Just like the Arduino general-purpose input output pins (0 to 13). We’ll implement a couple of code examples to test the usage of Arduino analog pins as digital pins for output and input use cases. Without further ado, let’s get right into it!
+
+## Table of Contents
+
+1. Arduino Analog Pins
+2.
+Using Arduino Analog Pins As Digital Pins
+3. Arduino Analog Pins Digital Output
+4. Arduino Analog Pins Digital Input
+5. Wrap Up
+
+* * *
+
+## **Arduino Analog Pins**
+
+The Arduino UNO has 6 analog input pins labeled from A0 to A5 as shown in the figure below. Those pins can be used with analog peripherals in the Arduino microcontroller such as: ADC (A/D Converter) and the Analog Comparator.
+
+The Analog input pins can also be used as general-purpose digital IO pins as we’ll see hereafter in this tutorial.
+
+* * *
+
+## **Using Arduino Analog Pins As Digital Pins**
+
+Arduino Uno has a total of 14 GPIO pins, out of which 6 pins (from A0 to A5) are analog pins. The question is **can we use Arduino analog pins as digital output pins?** The answer is **YES** , and here is how to do it.
+
+First of all, the ADC is a valuable resource in any microcontroller. Under certain circumstances, you’d sacrifice the analog input channels just to get extra digital IO pins.
+Sometimes an external IO expander would be a better solution instead of sacrificing the ADC analog input channels.
+
+But let’s say you’ve made your decision and you need to have an extra digital pin or two. And the analog input pins are the only hope you’ve got. Here is how you’d go about implementing this.
+
+Just deal with the analog input pins (A0 – A5) as if they’re normal digital IO pins. This means you first need to call the pinMode ( ) function to set the pin mode to INPUT . And then you can call the digitalRead ( ) function to get the pin state HIGH or LOW .
+
+Similarly, you can set an analog pin to be a digital output pin using the pinMode ( ) function. And then you can call the digitalWrite ( ) function to control its output digital state and drive it HIGH or LOW .
+
+Also Read
+
+[Arduino pinMode Function & Arduino INPUT_PULLUP Explained](https://deepbluembedded.com/arduino-pinmode-function-input-pullup-pulldown/)
+[Arduino pinMode Function & INPUT\_PULLUP / PULLDOWN](https://deepbluembedded.com/arduino-pinmode-function-input-pullup-pulldown/)
+
+This article will give more in-depth information about the Arduino pinMode ( ) function, INPUT\_PULLUP, INPUT\_PULLDOWN modes, pin floating state, and how to implement internal or external pull-up
+
+* * *
+
+## **Arduino Analog Pins Digital Output**
+
+To use Arduino analog pin as a digital output pin, you need first to call the pinMode ( ) function to set the pin mode to be OUTPUT . Then you can easily set the digital pin state using the digitalWrite ( ) function as you’d do for any digital pin. And here is an example code that shows you how to do it.
+
+### Arduino Analog Pin Digital Output Example
+
+Here I’m using the A0 pin as an output pin and toggling its state from HIGH to LOW every 1 second.
+
+```
+void setup() {
+   pinMode(A0, OUTPUT);
+}
+void loop() {
+   digitalWrite(A0, HIGH);
+   delay(1000);
+   digitalWrite(A0, LOW);
+   delay(1000);
+}
+```
+
+* * *
+## **Arduino Analog Pins Digital Input**
+
+To use Arduino analog pin as a digital input pin, you need first to call the pinMode ( ) function to set the pin mode to be INPUT . Then you can easily get the digital pin state using the digitalRead ( ) function as you’d do for any digital pin. And here is an example code that shows you how to do it.
+
+### Arduino Analog Pin Digital Input Example
+
+Note that the A0 pin is assumed to be externally pulled up to Vcc with a **10kΩ** resistor.
+
+```
+void setup() {
+  pinMode(A0, INPUT);
+}
+ 
+void loop() {
+  if(digitalRead(A0) == LOW)
+  {
+     // Button Is Pressed
+  }
+  else // If Pin A0 State == HIGH
+  {
+     // Button Is Released
+  }
+}
+```
+
+❕ Note
+
+Leaving an input pin in a floating state can result in the digitalRead ( ) function returning always HIGH, always LOW, or even a randomly changing value HIGH or LOW. Check the [**Arduino pinMode
+Tutorial**](https://deepbluembedded.com/arduino-pinmode-function-input-pullup-pulldown/) for more information on this.
+
+* * *
+
+**Parts List**
+
+Here is the full components list for all parts that you’d need in order to perform the practical LABs mentioned here in this article and for the whole Arduino Programming series of tutorials found here on DeepBlueMbedded. Please, note that those are affiliate links and we’ll receive a small commission on your purchase at no additional cost to you, and it’d definitely support our work.
+
+[Arduino Course Kit List](https://www.amazon.com/shop/deepbluembedded/list/1HTCD77Q43SNG?ref_=cm_sw_r_cp_ud_aipsflist_aipsfdeepbluembedded_GJ0DQ9YAJBQFPDHHB7PM)
+
+* * *
+
+## **Wrap Up**
+
+To conclude this tutorial, we can say that Arduino analog pins can easily be used as digital IO pins for output and input operations. You simply need to set the mode using the pinMode ( ) function and you’re good to go for using digitalRead ( ) and digitalWrite ( ) functions depending on your need.
+If you’re just getting started with Arduino, you need to check out the [**Arduino Getting Started [Ultimate Guide]**](https://deepbluembedded.com/arduino-getting-started-beginners-guide/) here.
+
+And follow this **[Arduino Series of Tutorials](https://deepbluembedded.com/arduino-tutorials/)** to learn more about Arduino Programming.
+
+Also Read
+
+[Getting Started With Arduino Programming For Beginners](https://deepbluembedded.com/arduino-getting-started-beginners-guide/)
+
+[Getting Started With Arduino [Ultimate Guide]](https://deepbluembedded.com/arduino-getting-started-beginners-guide/)
+
+This is the ultimate guide for getting started with Arduino for beginners. It’ll help you learn the Arduino fundamentals for Hardware & Software and understand the basics required to accelerate your learning journey with Arduino Programming.
+
+* * *
+
+**FAQ & Answers**
+
+**Can you use Arduino analog pin as digital?**
+
+Yes, Arduino analog pins can be used as digital pins.
+Just deal with the analog input pins (A0 – A5) as normal digital IO pins.  
+This means you first need to call the `pinMode()` function to set the pin mode to `INPUT` . And then you can call the `digitalRead()` function to get the pin state `HIGH` or `LOW` .  
+Similarly, you can set an analog pin to be a digital output pin using the `pinMode()` function. And then you can call the `digitalWrite()` function to control its output digital state and drive it `HIGH` or `LOW` .
+
+**Can you use analog pins for LCD in Arduino?**
+
+Yes, you can use analog pins for LCD control. Just set the correct pinMode for each pin you need to use and use the pins (A0 to A5) as you’d do with any other Arduino digital pin.
+
+**Why do we use analog pins of Arduino as digital?**
+
+We don’t normally use Arduino’s analog pins as digital IO pins because it’s a waste of a very valuable resource which is the ADC channels.
+However, under certain circumstances, someone may sacrifice an analog input pin just to get an extra digital IO pin. Instead, an external IO expander can be used if more than 6 digital pins are needed.
+
+### _Related_
+
+Share This Page With Your Network!
+
+[](https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fdeepbluembedded.com%2Farduino-analog-pins-as-digital-output-input%2F&linkname=Using%20Arduino%20Analog%20Pins%20As%20Digital%20Output%20Input%20Pins "Facebook") [](https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fdeepbluembedded.com%2Farduino-analog-pins-as-digital-output-input%2F&linkname=Using%20Arduino%20Analog%20Pins%20As%20Digital%20Output%20Input%20Pins "LinkedIn") [](https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fdeepbluembedded.com%2Farduino-analog-pins-as-digital-output-input%2F&linkname=Using%20Arduino%20Analog%20Pins%20As%20Digital%20Output%20Input%20Pins "Twitter") [](https://www.addtoany.com/add_to/reddit?
+
+...
+
+You Also Get Occasional FREE Coupon Codes For Courses & Other Stuff!
+
+Type your email…
+
+Subscribe
+
+Categories [Arduino](https://deepbluembedded.com/embedded-systems/embedded-tutorials/arduino/) , [Embedded Systems](https://deepbluembedded.com/embedded-systems/) , [Embedded Tutorials](https://deepbluembedded.com/embedded-systems/embedded-tutorials/) Tags [Arduino Misc](https://deepbluembedded.com/tag/arduino-misc/)
+
+[Arduino digitalread() Digital Input Tutorial](https://deepbluembedded.com/arduino-digitalread-digital-input-pins-tutorial/)
+
+[Arduino Port Manipulation (Registers Access) Tutorial & Examples](https://deepbluembedded.com/arduino-port-manipulation-registers-example/)
+
+Photo of author
+
+**Author**
+
+**[Khaled Magdy](https://deepbluembedded.com/about/)**
+
+[](https://www.youtube.com/@khaledmagdy/videos) [](https://www.youtube.com/@DeepBlueMbedded/videos) [](https://www.linkedin.com/in/khaled-magdy-/) [](https://www.facebook.com/khaled.elrawy.359/)
+
+==== LDO & Voltage Regulators | NCP1117
+https://www.onsemi.com/products/standard-products/ldo-voltage-regulators/ncp1117
+LDO & Voltage Regulators | NCP1117
+The NCP1117 series are low dropout (LDO) positive linear voltage regulators. This series contains eight fixed output voltages of 1.5 ・ 5.0 V, and 12 V that
+
+==== analogRead() | Arduino Documentation
+https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/
+An Arduino UNO, for example, contains a multichannel, 10-bit analog to digital converter (ADC). This means that it will map input voltages between 0 and the operating voltage (+5 VDC) into integer values between 0 and 1023.
+
+==== Analog Input Pins | Arduino Documentation
+https://docs.arduino.cc/learn/microcontrollers/analog-input/
+A description of the analog input pins on an Arduino chip (ATmega8, ATmega168, ATmega328P, or ATmega1280). A/D Converter The ATmega controllers used for the Arduino contain an onboard 6-channel (8 channels on the Mini and Nano, 16 on the Mega) analog-to-digital (A/D) converter. The converter has 10-bit resolution, returning integers from 0 to 1023. While the main function of the analog pins
+
+==== Schneider Electric ZBE101 Contact Block – SuperBreakers
+https://superbreakers.com/products/schneider-electric-zbe101-contact-block
+1. Home
+2. Motor Control
+3. Contact Blocks
+4. Schneider Electric ZBE101
+  Free Shipping Over $99
+Schneider Electric ZBE101 Contact Block
+Schneider Electric ZBE101
+Contact Block
+4.9 out of 5 stars, (19 Reviews) Read reviews.
+Brand Schneider Electric
+SKU ZBE101
+4.9 out of 5 stars, (19 Reviews) Read reviews.
+4.9 out of 5 stars, (19 Reviews) Read reviews.
+Select Item Condition
+Earn 8 SuperPoints Create an account or log in at checkout to earn these estimated points.
+Core Specs
+See full specs
+Amperage 10
+Series ZBE
+Mounting Style Front
+Bulk Pricing
+Send your parts list for a volume quote.
+Request Pricing
+Schneider Electric ZBE101 Contact Block
+New
+$8.99 In Stock In Stock
+Quantity
+− +
+Add to Cart
+Description Specifications SuperClub Warranties Shipping Reviews ★ 4.9 (19)
+Description
+Schneider Electric ZBE101 Contact Block
+The Schneider Electric ZBE101 is a contact block with a current rating of 10 Amps and a voltage rating of 600VAC. It has a contact configuration of 1NO. The ZBE101 has a screw clamp terminal connection and it is used for ZB4 or ZB5 operators.
+Specifications
+* Contact Configuration | 1NO
+* Terminal Connection | Screw Clamp
+* For Use With | ZB4 or ZB5 Operators
+* Mounting Type | Front
+* Amperage | 10 A
+* Voltage | 600VAC
+* Action | Momentary
+* Approval | UL, CSA, IEC, JIS, CCC, DNV, GOST, LROS, BV
+* Standards | RoHS, REACh
+* Temperature Rating | -40 to 70 °C
+* Series | ZBE
+* Brand | Schneider Electric
+* Color | Black
+* MPN | ZBE101
+* UPC | 00785901355632
+* GTIN | 785901355632
+
+==== ZBE101
+https://kentstore.com/zbe101
+%20%7C%20Kent%20Electrical%20Supply&url=https%3A%2F%2Fkentstore.com%2Fzbe101%2F "Twitter")
+- [Pinterest](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fkentstore.com%2Fzbe101%2F&description=Square%20D%20%2F%20Telemecanique%20ZBE101%20Contact%20Block%20%E2%80%94%201%20N.O.%20%7C%20Kent%20Electrical%20Supply "Pinterest")
+
+- [Overview](#tab-description)
+- [Reviews](#tab-reviews)
+
+### Product Description
+
+## Square D / Telemecanique ZBE101 Contact Block — 1 N.O.
+
+The **Square D / Telemecanique ZBE101** is a single, 1 normally open (N.O.) front-mount contact block for the Schneider Electric Harmony XB4 and XB5 range of 22mm pushbuttons, selector switches, and pilot devices. Silver alloy contacts, 10-million cycle mechanical durability, and screw clamp terminals make it a reliable choice for start circuits, PLC input signals, interlocking, and status indication in industrial control panels and operator stations.
+**Ordering note:** The ZBE101 is compatible with **XB4 and XB5 series 22mm operators only**. It is not compatible with the XB2 series — the equivalent contact block for XB2 operators is the **ZB2-BE101**. Check your operator body part number before ordering. Call 1-800-222-5129 if unsure.
+
+### Quick Specifications
+
+- **Contact Configuration:** 1 Normally Open (1 N.O.)
+- **Compatible Series:** Harmony XB4 and XB5 — 22mm operators
+- **Mounting Type:** Front mounting
+- **Contacts Material:** Silver alloy (Ag/Ni)
+- **Thermal Current \[Ith]:** 10A (free air, conforming to IEC 60947-5-1)
+- **Rated Insulation Voltage \[Ui]:** 600V (pollution degree 3, conforming to IEC 60947-1)
+- **Impulse Withstand Voltage \[Uimp]:** 6 kV (conforming to IEC 60947-1)
+- **IP Rating:** IP20 conforming to IEC 60529
+- **Contact Operation:** Slow-break
+- **Mechanical Durability:** 10,000,000 cycles
+- **Operating Temperature:** −40…70°C (storage and operation)
+- **Terminal Type:** Screw clamp
+
+...
+
+What is the difference between the ZBE101 and the ZB2-BE101?
+
+These are two different contact blocks for two different Telemecanique pushbutton series. The **ZBE101** is for **XB4 and XB5 series 22mm operators** (the current Harmony range). The **ZB2-BE101** is for **XB2 series operators** (an older, smaller format). Both are 1 N.O. contact blocks and look similar, but they are not interchangeable. Check the part number on your pushbutton body — if it begins with XB4 or XB5, you need the ZBE101. If it begins with XB2, you need the ZB2-BE101.
+
+What is the rated operational current of the ZBE101?
+
+The ZBE101 has a conventional free air thermal current \[Ith] of 10A. However, the rated operational current \[Ie] depends on circuit type and voltage: for AC-15 circuits it is 6A at 120V, 3A at 240V, and 1.2A at 600V. For DC-13 circuits it is 0.55A at 125V, 0.27A at 250V, and 0.1A at 600V. See the full rated current table above.
+Always size protection and wiring to the \[Ie] figure for your specific voltage and circuit type, not the \[Ith] thermal current.
+
+Which pushbuttons and operator bodies is the ZBE101 compatible with?
+
+The ZBE101 is compatible with all operators in the Schneider Electric / Telemecanique Harmony XB4 and XB5 22mm range, including flush pushbuttons (XB4BA, XB5AA), extended pushbuttons (XB4BC, XB5AC), 2-position and 3-position selector switches (XB4BD, XB5AD), and mushroom head pushbuttons (XB4BT, XB5AT). See the compatibility table above for a full list. If your operator part number is not listed, call us at 1-800-222-5129 to confirm before ordering.
+
+Can I fit more than one contact block to a single pushbutton?
+
+Yes — XB4 and XB5 operators support stacking of multiple contact blocks in sequence on the front of the operator body. This allows you to combine N.O. and N.C.
+contacts (for example, pairing a ZBE101 with a ZBE102) on a single pushbutton for applications requiring multiple switching outputs. The maximum number of blocks that can be stacked depends on the operator type — refer to the electrical composition codes in the Schneider Electric Harmony XB4/XB5 catalogue for your specific combination.
+
+What does "1 N.O." mean, and when do I need N.C. instead?
+
+N.O. (normally open) means the contact circuit is **open** (no current flows) when the pushbutton is at rest, and **closes** (current flows) when the button is pressed. This is the standard configuration for start circuits and PLC run signals. N.C. (normally closed) is the opposite — the circuit is closed at rest and opens when pressed, which is standard for stop circuits and safety interlocks. If you need a 1 N.C. contact block for the same XB4/XB5 series, see the **ZBE102**.
+
+Does the ZBE101 carry marine or international certifications?
+
+...
+
+[Write a Review](https://kentstore.com/zbe101/)
+
+## Write a Review
+
+×
+
+![ZBE101 Schneider Electric contact block dimensions diagram](https://cdn11.bigcommerce.com/s-83bhjx/images/stencil/300x395/products/14750/22125/zbe101__43649.1773974336.gif?c=2 "ZBE101 Schneider Electric contact block dimensions diagram")
+
+###### Square D, Telemecanique
+
+##### ZBE101
+
+Rating \* Select Rating 1 star (worst) 2 stars 3 stars (average) 4 stars 5 stars (best)
+
+Name
+
+Email \*
+
+Review Subject \*
+
+Comments \*
+
+  
+
+×
+
+×
+
+OK
+
+```json
+{
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "ZBE101",
+        "sku": "ZBE101",
+        
+        
+        "url" : "https://kentstore.com/zbe101/",
+        "brand": {
+            "@type": "Brand",
+            "url": "https://kentstore.com/brands/square-d-telemecanique/",
+            "name": "Square D, Telemecanique"
+        },
+        "description": "Square D / Telemecanique ZBE101 Contact Block &amp;mdash; 1 N.O.
+The Square D / Telemecanique ZBE101 is a single, 1 normally open (N.O.) front-mount contact block for the Schneider Electric Harmony XB4 and XB5 range of 22mm pushbuttons, selector switches, and pilot devices. Silver alloy contacts, 10-million cycle mechanical durability, and screw clamp terminals make it a reliable choice for start circuits, PLC input signals, interlocking, and status indication in industrial control panels and operator stations.
+
+Ordering note:  The ZBE101 is compatible with XB4 and XB5 series 22mm operators only. It is not compatible with the XB2 series &amp;mdash; the equivalent contact block for XB2 operators is the ZB2-BE101. Check your operator body part number before ordering. Call 1-800-222-5129 if unsure.
+
+
+Quick Specifications
+
+Contact Configuration: 1 Normally Open (1 N.O.)
+Compatible Series: Harmony XB4 and XB5 &amp;mdash; 22mm operators
+Mounting Type: Front mounting
+Contacts Material: Silver alloy (Ag/Ni)
+
+...
+
+Broad Certification Coverage: Carries UL, CSA, CCC, DNV, BV, LROS, and GOST certifications &amp;mdash; suitable for panel builds requiring marine (DNV, BV, LROS), North American (UL, CSA), Chinese (CCC), and Russian (GOST) compliance.
+18-Month Schneider Electric Warranty: Backed by the manufacturer&amp;rsquo;s contractual warranty.
+
+
+Stock Item &amp;ndash; Order before 4:00 PM EST for Same-Day Shipping. Sold as individual units.
+
+Frequently Asked Questions
+
+
+What is the difference between the ZBE101 and the ZB2-BE101?
+These are two different contact blocks for two different Telemecanique pushbutton series. The ZBE101 is for XB4 and XB5 series 22mm operators (the current Harmony range). The ZB2-BE101 is for XB2 series operators (an older, smaller format). Both are 1 N.O. contact blocks and look similar, but they are not interchangeable. Check the part number on your pushbutton body &amp;mdash; if it begins with XB4 or XB5, you need the ZBE101.
+If it begins with XB2, you need the ZB2-BE101.
+
+
+What is the rated operational current of the ZBE101?
+The ZBE101 has a conventional free air thermal current [Ith] of 10A. However, the rated operational current [Ie] depends on circuit type and voltage: for AC-15 circuits it is 6A at 120V, 3A at 240V, and 1.2A at 600V. For DC-13 circuits it is 0.55A at 125V, 0.27A at 250V, and 0.1A at 600V. See the full rated current table above. Always size protection and wiring to the [Ie] figure for your specific voltage and circuit type, not the [Ith] thermal current.
+
+
+Which pushbuttons and operator bodies is the ZBE101 compatible with?
+The ZBE101 is compatible with all operators in the Schneider Electric / Telemecanique Harmony XB4 and XB5 22mm range, including flush pushbuttons (XB4BA, XB5AA), extended pushbuttons (XB4BC, XB5AC), 2-position and 3-position selector switches (XB4BD, XB5AD), and mushroom head pushbuttons (XB4BT, XB5AT). See the compatibility table above for a full list.
+If your operator part number is not listed, call us at 1-800-222-5129 to confirm before ordering.
+
+
+Can I fit more than one contact block to a single pushbutton?
+Yes &amp;mdash; XB4 and XB5 operators support stacking of multiple contact blocks in sequence on the front of the operator body. This allows you to combine N.O. and N.C. contacts (for example, pairing a ZBE101 with a ZBE102) on a single pushbutton for applications requiring multiple switching outputs. The maximum number of blocks that can be stacked depends on the operator type &amp;mdash; refer to the electrical composition codes in the Schneider Electric Harmony XB4/XB5 catalogue for your specific combination.
+
+
+What does &quot;1 N.O.&quot; mean, and when do I need N.C. instead?
+N.O. (normally open) means the contact circuit is open (no current flows) when the pushbutton is at rest, and closes (current flows) when the button is pressed. This is the standard configuration for start circuits and PLC run signals. N.C.
+
+==== Schneider Electric ZBE101 | Contact Block for Head 1 Normally Open Slow Break | Rexel UK
+https://www.rexel.co.uk/uki/p/2500069487
+To view pricing, availability, and special offering, click the button below and log in.
+
+Login Or Create Account
+
+__
+
+Contact our Customer Support Team for assistance on this product
+
+**Available Lengths**
+
+__
+
+__ EA
+
+Min: 1 EA
+
+View Alternative __
+
+__ Add to Cart
+
+__ Add to Cart
+
+__ Item already in cart
+
+__
+
+Contact our Customer Support Team for assistance on this product
+
+__ Add to Cart
+
+_check_ The item was successfully added to cart
+
+Contact Block for Head 1 Normally Open Slow Break
+
+Contact Block for Head 1 Normally Open Slow Break
+
+Go to Shopping Cart Continue Shopping _star\_border_ Add to Job List Sign In
+
+[Digital Deals](https://www.rexel.co.uk/uki/offers)
+
+__ __ __
+
+* Technical Specs
+* Product Details
+* Technical Docs
+* Products frequently purchased together
+
+### Technical Documents
+
+Technical Documents 
+
+Product Documents
+
+__
+
+Technical Data Sheet
+
+[](https://asset.eezybridge.com/ad7e7626-8f4a-4edb-b78d-9ca040e321dd/1483544)
+
+__
+
+Manual
+
+...
+
+Current Product
+
+Contact Block for Head 1 Normally Open Slow Break
+
+Schneider Electric
+
+Contact Block for Head 1 Normally Open Slow Break
+
+Error while fetching price from ERP!
+
+__
+
+Selected Select
+
+Body Fixing Collar Pillar For Contact Blocks
+
+Schneider Electric
+
+Body Fixing Collar Pillar For Contact Blocks
+
+Error while fetching price from ERP!
+
+Qty: 1
+
+__
+
+Selected Select
+
+Body Fixing Collar For Contact Blocks
+
+Schneider Electric
+
+Body Fixing Collar For Contact Blocks
+
+Error while fetching price from ERP!
+
+Qty: 1
+
+* * *
+
+Add 3 Items to Cart
+
+## Technical Specifications
+
+__
+
+* * *
+
+## Technical Specifications
+
+|##### Auxiliary contact block |
+| --- | --- |
+|Number of contacts as normally closed contact |0 |
+|Rated operation current Ie at AC-15, 230 V |3 A |
+|Number of fault-signal switches |0 |
+
+| |
+| --- | --- |
+|Number of contacts as change-over contact |0 |
+|Number of contacts as normally open contact |1 |
+
+**Share this product**
+
+Enter email addressses
+
+Include a message _(optional)_
+Please check the checkbox below to move along
+
+Send Email
+
+* * *
+
+* * *
+
+F-Gas (Fluorinated gases) government regulations specify that a limited number of products can be sold in the European Union that contain F-gases which have been linked to climate change.
+
+We encourage you to find products that meet your needs and do not contain these gases.
+
+Subscribe to our newsletter for exclusive offers
+
+E-Mail Address
+
+Go
+
+Terms of Use
+
+| Privacy Policy
+
+| Security
+
+| [International Sites open\_in\_new](https://www.rexel.com/en/countries-and-banners/)
+
+| Manage Cookies
+
+A Rexel Group Company  
+
+[](http://www.rexel.com)
+
+**Cookies Management**
+
+Back
+
+If the cookie is deactivated it will no longer be applied to your user.More details found here in Data protection
+
+## Cookie preferences
+
+  
+
+Certain cookies imply a transfer of your data to the US. By clicking on “Accept all”, you also agree in accordance with
+
+==== ZBE101 SCHNEIDER ELECTRIC, Contact Block, 10 A, 600 V, 1 Pole, ZB4 Series, Screw, SPST-NO | Newark Electronics
+https://www.newark.com/schneider-electric/zbe101/contact-block-1no-6a-screw-clamp/dp/17C7051
+... switches/switch-components/switch-contact-blocks/prl/results?brand=schneider-electric)
+
+Manufacturer Part No ZBE101
+
+Newark Part No. 17C7051
+
+Product Range [ZBE ... c/switches-relays/switches/switch-components/switch-contact-blocks/prl/results?pr

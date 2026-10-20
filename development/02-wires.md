@@ -66,7 +66,7 @@ See [the Phase 1 electrical schematic](schematics/phase1-uno.svg). This is a con
 4. Open Serial Monitor at **9600 baud**. Allow at least 100 ms for contacts to settle.
 5. Initially only DISARMED / REJECTED lights. Press and release RE-ARM. That LED goes off if no request is active.
 6. Hold CRYO REQUEST: cryo LED lights. Release: it goes off. Hold VENT REQUEST: vent LED lights when all its fake permissions are true. Release: it goes off.
-7. Complete [Phase 1 tests](06-verification.md), including unplugging a permission while the corresponding LED is on.
+7. Complete [the desk tests](06-tests.md), including unplugging a permission while the corresponding LED is on.
 
 Use the separate D11 RE-ARM button, not the Uno board's hardware RESET button. Board RESET restarts the sketch in the disarmed state.
 

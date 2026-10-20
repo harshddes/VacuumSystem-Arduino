@@ -13,7 +13,7 @@ You already have the Uno, breadboard and laptop. Confirm that the USB cable carr
 | Momentary buttons | 3 | [Adafruit 1119, 10-pack](https://www.adafruit.com/product/1119) | $2.50 |
 | Male-to-male jumpers, about 150 mm | **20**; 40 suggested on hand | [Adafruit 1957, two 20-packs](https://www.adafruit.com/product/1957) | $3.90 optional |
 
-**$8.20 for the three component packs; $12.10 if you also buy 40 jumpers.** These listed prices were rechecked on 2026-10-09. Borrow a multimeter. One continuous ground rail is assumed; a split rail needs a bridge wire. See [the exact 20-wire connections](../02-phase1-breadboard.md).
+**$8.20 for the three component packs; $12.10 if you also buy 40 jumpers.** These listed prices were rechecked on 2026-10-09. Borrow a multimeter. One continuous ground rail is assumed; a split rail needs a bridge wire. See [the wires](../02-wires.md).
 
 You are buying spare components in packs, not building 25 channels. No relay board, valve supply or screen is needed to run the supplied sketch.
 

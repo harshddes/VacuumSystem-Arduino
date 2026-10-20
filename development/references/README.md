@@ -24,7 +24,7 @@ Manufacturer documents govern the particular component revision. Reported model 
 | [Adafruit 6318](https://www.adafruit.com/product/6318) | Conditional DC solenoid driver; continuous rating must suit actual coil |
 | [Lesker pneumatic angle-valve family](https://www.lesker.com/newweb/valves/pneumaticangle.cfm) | Candidate only; exact part/feedback/pilot specifications required before purchase |
 
-Procurement links and price-check dates are in [BOM.md](../procurement/BOM.md) and the workbook. Historical quotes are not stock promises.
+Procurement links and price-check dates are in [the shopping list](../procurement/shopping-list.md) and the workbook. Historical quotes are not stock promises.
 
 ## Supplied laboratory guides
 

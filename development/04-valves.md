@@ -4,7 +4,7 @@ Revision 2026-10-09 • Exact installed large-gate model and terminal assignment
 
 ## Identify what moves the valve
 
-Earlier photographs suggest a large gate with a cylindrical pneumatic actuator, C/O fittings and loose position-related wires. The small handwheel angle valves are manual. These observations do not establish the large gate's model, coil rating or feedback wiring. See [open items](08-open-items.md) before buying a pilot or attaching a driver.
+Earlier photographs suggest a large gate with a cylindrical pneumatic actuator, C/O fittings and loose position-related wires. The small handwheel angle valves are manual. These observations do not establish the large gate's model, coil rating or feedback wiring. See [still unknown](08-unknowns.md) before buying a pilot or attaching a driver.
 
 | Actuation type | What the controller needs | Critical distinction |
 |---|---|---|
