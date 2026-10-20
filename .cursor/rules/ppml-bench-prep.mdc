@@ -1,0 +1,42 @@
+---
+description: PPML Uno hardware arrival, KiCad interconnects and bench development
+alwaysApply: true
+---
+
+Use `development/bench-prep/README.md` as the current arrival-day entrypoint.
+Read the relevant files before changing connections. This repository's older
+Phase 1 wiring and recently simplified direct-pin sketch are different baselines.
+
+- User reports Uno D5, D6 and D7 faulty. Leave them disconnected. An MCP23017
+  adds digital I/O but does not establish the health of the remaining Uno.
+- Known bench wiring is in `development/bench-prep/design.json`, its generated
+  wire schedule, and the matching native KiCad schematic. References are local
+  to each separate project. Match physical silkscreen, not box orientation.
+- Stage 1 loopback uses only Uno USB 5V/GND/A4/A5 and DFR0627 T/R loops.
+  Remove loopbacks before the separate RS485 logic harness. No Uno Serial1
+  exists on this Uno R3; use the DFR0627 library for that extra UART.
+- Stage 2 GPIO input board 5346 is 0x21; optional 6318 remains 0x20 with V+
+  and all load terminals unconnected. MCP A7/B7 are not changing inputs.
+- Uno A0/A1/A2 drive only resistor/LED branches. Expander A0/A1/A2 are distinct
+  digital pins, not Uno analog pins. Never map them using plain digitalRead(5).
+- All bench sensor contacts are simulated. Do not connect powered field
+  sensors, gauge analog outputs, 24V terminals, coils, pumps or pilots to them.
+- Field terminals, Hornet firmware/protocol, coil ratings, pneumatic failure
+  behavior and pressure limits must come from matched OEM sources/measurements.
+  Preserve unresolved items in `06-field-holds.md`; never guess to finish a task.
+- Reconcile design.json, pin map, firmware, native schematics, wire schedule
+  and checks for a connection change. Generator overwrites generated files.
+- Use `tools/validate_package.py --kicad` after changes. Inspect native renders.
+  Passive interface symbols are not simulation models or electrical qualification.
+- Keep bench-only scope explicit. No physical PASS unless actually measured.
+- Use small standalone controller firmware; laptop/UI requests cannot bypass
+  permissions. Preserve existing lab machine interlocks and qualified close paths.
+- Cursor may guide GUI actions and edit files/run CLI when locally available.
+  Do not claim desktop control, hardware access or a plugin that is not present.
+- Teach one action at a time with its reason and expected observation. Prefer
+  the supplied project over making a beginner manually place every symbol.
+
+Primary GUI, CLI, component and library sources are indexed in
+`development/bench-prep/resources/source-register.json`. Read only the section
+needed for the current action; do not ingest whole manuals as a substitute for
+checking the actual terminal map.

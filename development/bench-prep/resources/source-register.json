@@ -1,0 +1,137 @@
+{
+  "checked": "2026-10-20",
+  "sources": [
+    {
+      "id": "ARDUINO",
+      "title": "Uno R3 official full pinout",
+      "url": "https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf",
+      "use": "A4 SDA, A5 SCL; connector labels; no Serial1 on Uno R3",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DFR0627",
+      "title": "DFR0627 module pinout",
+      "url": "https://wiki.dfrobot.com/dfr0627/",
+      "use": "D/C/+/- and T/R terminal meanings",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DFR0627-LOOP",
+      "title": "DFR0627 loopback example",
+      "url": "https://wiki.dfrobot.com/dfr0627/docs/20909",
+      "use": "DIP setting and same-port transmit/receive loopback",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DFR0627-API",
+      "title": "DFR0627 reference",
+      "url": "https://wiki.dfrobot.com/dfr0627/docs/20907",
+      "use": "Addressing and API; multiple scanner responses",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DFR0845",
+      "title": "DFR0845 module pinout",
+      "url": "https://wiki.dfrobot.com/dfr0845/",
+      "use": "Logic/bus supply and terminal distinctions",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DFR0845-USE",
+      "title": "DFR0845 use notes",
+      "url": "https://wiki.dfrobot.com/dfr0845/docs/17971",
+      "use": "No hot plugging; generic Serial1 example is not an Uno R3 sketch",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "MCP5346",
+      "title": "Adafruit 5346 pinouts",
+      "url": "https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/pinouts",
+      "use": "Address +1 and A7/B7 input warning",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "MCP5346-ARDUINO",
+      "title": "Adafruit Arduino example",
+      "url": "https://learn.adafruit.com/adafruit-mcp23017-i2c-gpio-expander/arduino",
+      "use": "Library and Uno logic wiring",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DRIVER6318",
+      "title": "Adafruit 6318 pinouts",
+      "url": "https://learn.adafruit.com/adafruit-i2c-to-8-channel-solenoid-driver/pinouts",
+      "use": "Default 0x20; Vcc versus V+; common ground",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "MOSFET5648",
+      "title": "Adafruit 5648 product",
+      "url": "https://www.adafruit.com/product/5648",
+      "use": "Spare single-channel driver; not required in these stages",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DE9",
+      "title": "Adafruit 3123 male DE-9 breakout",
+      "url": "https://www.adafruit.com/product/3123",
+      "use": "Connector adapter only; field pin mapping still pending",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "KICAD-START",
+      "title": "KiCad Getting Started 9.0",
+      "url": "https://docs.kicad.org/9.0/en/getting_started_in_kicad/getting_started_in_kicad.html",
+      "use": "Project, schematic and PCB distinctions",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "KICAD-GUI",
+      "title": "KiCad Schematic Editor 9.0",
+      "url": "https://docs.kicad.org/9.0/en/eeschema/eeschema.html",
+      "use": "GUI, hotkeys, wiring, labels, ERC and plotting",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "KICAD-CLI",
+      "title": "KiCad CLI 9.0",
+      "url": "https://docs.kicad.org/9.0/en/cli/cli.html",
+      "use": "Netlist/SVG exports and optional ERC in supported versions",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "KICAD-FORMAT",
+      "title": "KiCad schematic file format",
+      "url": "https://dev-docs.kicad.org/en/file-formats/sexpr-schematic/",
+      "use": "Native generated schematic structure",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "CURSOR",
+      "title": "Cursor project rules",
+      "url": "https://cursor.com/docs/rules",
+      "use": "Persistent repository context; .mdc frontmatter",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "HORNET-REFERENCE",
+      "title": "IGM402 manual 000861-115",
+      "url": "https://www.instrutechinc.com/media/127/download/IGM402%20User%20Manual%20Archived%20000861-115.pdf?v=1",
+      "use": "Applies to firmware 1769-108; field harness not released",
+      "evidence": "official manufacturer/developer source"
+    },
+    {
+      "id": "DESIGN",
+      "title": "Project design choice",
+      "url": "../design.json",
+      "use": "Input assignments and staged boundaries are project choices, not manufacturer-assigned signal roles",
+      "evidence": "project design"
+    }
+  ],
+  "dfrobot_1_0_2_blobs": {
+    "src/DFRobot_IICSerial.h": "06e94d3ea355ae776a91b9f1a953bbdf1f8b069d",
+    "src/DFRobot_IICSerial.cpp": "ffc53a12d72ee74c5409328ed80e9d47dff5fffc",
+    "library.properties": "a4fb7beb7e72f501f9cfee30a8cb067b1ea455ac",
+    "LICENSE": "79f310082f4253cee659e29e2d888ada0024ba25"
+  }
+}

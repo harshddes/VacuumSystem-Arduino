@@ -1,5 +1,7 @@
 # Phase 1 — build this now
 
+> **Legacy direct-pin baseline:** this page assumes working D5/D6/D7 and the original re-arm sketch. The current board has reported failures on those pins, and the later simplified direct-pin sketch has different behavior. For the ordered expander, use the complete [2026-10-20 bench package](bench-prep/README.md), its own drawing, pin map and matching sketch. Do not wire this legacy table to that new firmware.
+
 Revision 2026-10-09 • Arduino Uno R3 • USB-powered buttons and LEDs only
 
 ## Parts on the desk
@@ -77,3 +79,4 @@ They show accepted requests, **not measured valve position**. Your jumpers do no
 Hold-to-request operation is intentional in this exercise. A denied request is not queued: restoring a jumper while holding the button will not open its LED. Release and make a fresh request. Loss of a required permission during an accepted request or simultaneous requests disarms the system; release both requests, press/release RE-ARM, then make a new request.
 
 The 30 ms debounce is for desk contacts. It is not a validated chamber fault-response time. The code has no actual pressure parser, coil driver, valve travel timer, temperature readout or independent hardware shutdown. Those belong to the later phases.
+

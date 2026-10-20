@@ -1,0 +1,11 @@
+board,terminal,library_index,signal,control,active_state
+Adafruit 5346 MCP23017 at 0x21,A0,0,CRYO_REQUEST,button,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A1,1,VENT_REQUEST,button,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A2,2,CRYO_CLOSED,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A3,3,VENT_CLOSED,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A4,4,PRESSURE_VALID,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A5,5,PRESSURE_LOW,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,A6,6,CRYO_READY,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,B0,8,OTHER_PATHS_CLOSED,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,B1,9,FILAMENT_OFF,jumper,grounded=true
+Adafruit 5346 MCP23017 at 0x21,B2,10,REARM,button,grounded=true

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Adafruit_BusIO-1.17.4.zip",
+    "sha256": "c7bab1b6c6eee64b50964c8e149b795719a01f1d9dfcdcef170b35daa696349b",
+    "bytes": 31084
+  },
+  {
+    "file": "Adafruit_MCP23017_Arduino_Library-2.3.2.zip",
+    "sha256": "23c1bddae8b0c184b9e297885ef615a3da060ca39c56c9292372aafb6b441da6",
+    "bytes": 15427
+  },
+  {
+    "file": "DFRobot_IICSerial-1.0.2.zip",
+    "sha256": "f3a953352da090d8e2c906777285325754bba4a7f6f18da0c3866916dac10eb3",
+    "bytes": 9700
+  }
+]

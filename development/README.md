@@ -1,5 +1,7 @@
 # MAIZE / test-stand valve controller — start here
 
+> **Hardware-arrival update, 2026-10-20:** start with [the KiCad / Cursor bench package](bench-prep/README.md). It contains fixed wiring, native KiCad projects and matching diagnostic firmware for the ordered modules. The user reports Uno D5/D6/D7 faulty. The older direct-pin sketch and the 2026-10-09 wiring guide below are different bench baselines; do not mix them with the new expander drawing.
+
 **Revision: 2026-10-09. Board: Arduino Uno R3. Current build: Phase 1.**
 
 Build the LED demonstration first. It needs **3 LEDs, 3 × 470 Ω resistors, 3 momentary buttons and 20 male-to-male jumper wires**, plus your Uno, breadboard, USB data cable and laptop. Have 40 jumpers available if buying a pack; the extras cover split ground rails and replacements.
@@ -44,3 +46,4 @@ This is the finalized **development baseline**, not an as-built wiring release. 
 The existing repository [Uno references](../docs/README.md) and `pin567_check/` exercise are preserved. This folder supersedes older Nano-based proposals for this project. Start here if older messages disagree with these pin assignments or phases.
 
 This controller requests valve motion and reads equipment readiness. Pump and cryogenic compressor operation stays with the existing equipment controls. Their location in another room does not remove the need for readiness feedback.
+

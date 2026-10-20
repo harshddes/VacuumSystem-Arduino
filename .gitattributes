@@ -1,0 +1,2 @@
+# Preserve the manufacturer's source byte-for-byte, including its original whitespace.
+development/bench-prep/resources/vendor/** whitespace=-blank-at-eol,-blank-at-eof

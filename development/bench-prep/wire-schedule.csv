@@ -1,0 +1,53 @@
+wire_id,stage,net,from_ref,from_terminal,to_ref,to_terminal,instruction,source_id
+L-01,day1-loopback,USB_5V,U1,5V,U2,+ (I2C),,ARDUINO;DFR0627
+L-02,day1-loopback,LOGIC_GND,U1,GND,U2,- (I2C),,ARDUINO;DFR0627
+L-03,day1-loopback,I2C_SDA,U1,A4 / SDA,U2,D / SDA,,ARDUINO;DFR0627
+L-04,day1-loopback,I2C_SCL,U1,A5 / SCL,U2,C / SCL,,ARDUINO;DFR0627
+L-05,day1-loopback,UART1_LOOP,U2,UART1 T,U2,UART1 R,Only for loopback; remove before RS485 connection.,DFR0627-LOOP
+L-06,day1-loopback,UART2_LOOP,U2,UART2 T,U2,UART2 R,Only for loopback; remove before changing this port.,DFR0627-LOOP
+R-01,day1-rs485-logic,USB_5V,U1,5V,U2,+ (I2C),,ARDUINO;DFR0627
+R-02,day1-rs485-logic,USB_5V,U1,5V,U3,+ (Gravity logic),,ARDUINO;DFR0627
+R-03,day1-rs485-logic,LOGIC_GND,U1,GND,U2,- (I2C),,ARDUINO;DFR0627
+R-04,day1-rs485-logic,LOGIC_GND,U1,GND,U3,- (Gravity logic),,ARDUINO;DFR0627
+R-05,day1-rs485-logic,I2C_SDA,U1,A4 / SDA,U2,D / SDA,,ARDUINO;DFR0627
+R-06,day1-rs485-logic,I2C_SCL,U1,A5 / SCL,U2,C / SCL,,ARDUINO;DFR0627
+R-07,day1-rs485-logic,UART1_TX,U2,UART1 T,U3,R / logic RX,Remove UART1 loopback first. Transmit goes to receive.,DFR0627;DFR0845
+R-08,day1-rs485-logic,UART1_RX,U2,UART1 R,U3,T / logic TX,Receive comes from transmit.,DFR0627;DFR0845
+G-01,day2-gpio-bench,USB_5V,U1,5V,U2,VIN / 5V,"U2 D0 is the address pin, not Uno D0. Alternative: close only the +1 solder jumper instead of using this address wire.",ARDUINO;MCP5346;DRIVER6318
+G-02,day2-gpio-bench,USB_5V,U1,5V,U2,D0 (address +1),"U2 D0 is the address pin, not Uno D0. Alternative: close only the +1 solder jumper instead of using this address wire.",ARDUINO;MCP5346;DRIVER6318
+G-03,day2-gpio-bench,USB_5V,U1,5V,U3,Vcc / logic 5V,"U2 D0 is the address pin, not Uno D0. Alternative: close only the +1 solder jumper instead of using this address wire.",ARDUINO;MCP5346;DRIVER6318
+G-04,day2-gpio-bench,LOGIC_GND,U1,GND,U2,GND,,ARDUINO;MCP5346;DRIVER6318
+G-05,day2-gpio-bench,LOGIC_GND,U1,GND,U3,GND (common),,ARDUINO;MCP5346;DRIVER6318
+G-06,day2-gpio-bench,LOGIC_GND,U1,GND,SW1,2,,ARDUINO;MCP5346;DRIVER6318
+G-07,day2-gpio-bench,LOGIC_GND,U1,GND,SW2,2,,ARDUINO;MCP5346;DRIVER6318
+G-08,day2-gpio-bench,LOGIC_GND,U1,GND,SW3,2,,ARDUINO;MCP5346;DRIVER6318
+G-09,day2-gpio-bench,LOGIC_GND,U1,GND,SW4,2,,ARDUINO;MCP5346;DRIVER6318
+G-10,day2-gpio-bench,LOGIC_GND,U1,GND,SW5,2,,ARDUINO;MCP5346;DRIVER6318
+G-11,day2-gpio-bench,LOGIC_GND,U1,GND,SW6,2,,ARDUINO;MCP5346;DRIVER6318
+G-12,day2-gpio-bench,LOGIC_GND,U1,GND,SW7,2,,ARDUINO;MCP5346;DRIVER6318
+G-13,day2-gpio-bench,LOGIC_GND,U1,GND,SW8,2,,ARDUINO;MCP5346;DRIVER6318
+G-14,day2-gpio-bench,LOGIC_GND,U1,GND,SW9,2,,ARDUINO;MCP5346;DRIVER6318
+G-15,day2-gpio-bench,LOGIC_GND,U1,GND,SW10,2,,ARDUINO;MCP5346;DRIVER6318
+G-16,day2-gpio-bench,LOGIC_GND,U1,GND,D1,K,,ARDUINO;MCP5346;DRIVER6318
+G-17,day2-gpio-bench,LOGIC_GND,U1,GND,D2,K,,ARDUINO;MCP5346;DRIVER6318
+G-18,day2-gpio-bench,LOGIC_GND,U1,GND,D3,K,,ARDUINO;MCP5346;DRIVER6318
+G-19,day2-gpio-bench,I2C_SDA,U1,A4 / SDA,U2,SDA,,ARDUINO;MCP5346;DRIVER6318
+G-20,day2-gpio-bench,I2C_SDA,U1,A4 / SDA,U3,SDA,,ARDUINO;MCP5346;DRIVER6318
+G-21,day2-gpio-bench,I2C_SCL,U1,A5 / SCL,U2,SCL,,ARDUINO;MCP5346;DRIVER6318
+G-22,day2-gpio-bench,I2C_SCL,U1,A5 / SCL,U3,SCL,,ARDUINO;MCP5346;DRIVER6318
+G-23,day2-gpio-bench,B_CRYO_REQUEST,U2,A0 / CRYO_REQUEST,SW1,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-24,day2-gpio-bench,B_VENT_REQUEST,U2,A1 / VENT_REQUEST,SW2,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-25,day2-gpio-bench,B_CRYO_CLOSED,U2,A2 / CRYO_CLOSED,SW3,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-26,day2-gpio-bench,B_VENT_CLOSED,U2,A3 / VENT_CLOSED,SW4,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-27,day2-gpio-bench,B_PRESSURE_VALID,U2,A4 / PRESSURE_VALID,SW5,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-28,day2-gpio-bench,B_PRESSURE_LOW,U2,A5 / PRESSURE_LOW,SW6,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-29,day2-gpio-bench,B_CRYO_READY,U2,A6 / CRYO_READY,SW7,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-30,day2-gpio-bench,B_OTHER_PATHS_CLOSED,U2,B0 / OTHER_PATHS_CLOSED,SW8,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-31,day2-gpio-bench,B_FILAMENT_OFF,U2,B1 / FILAMENT_OFF,SW9,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-32,day2-gpio-bench,B_REARM,U2,B2 / REARM,SW10,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-33,day2-gpio-bench,LED_CRYO,U1,A0 (Uno LED),R1,1,,DESIGN
+G-34,day2-gpio-bench,LED_CRYO_A,R1,2,D1,A,One series 470 ohm resistor per LED.,DESIGN
+G-35,day2-gpio-bench,LED_VENT,U1,A1 (Uno LED),R2,1,,DESIGN
+G-36,day2-gpio-bench,LED_VENT_A,R2,2,D2,A,One series 470 ohm resistor per LED.,DESIGN
+G-37,day2-gpio-bench,LED_FAULT,U1,A2 (Uno LED),R3,1,,DESIGN
+G-38,day2-gpio-bench,LED_FAULT_A,R3,2,D3,A,One series 470 ohm resistor per LED.,DESIGN

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "filename": "day2-gpio-bench.kicad_pro",
+    "version": 1
+  },
+  "text_variables": {
+    "BUILD_SCOPE": "BENCH_ONLY"
+  },
+  "schematic": {}
+}

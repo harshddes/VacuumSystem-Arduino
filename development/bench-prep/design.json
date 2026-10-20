@@ -1,0 +1,1562 @@
+{
+  "revision": "2026-10-20",
+  "scope": "BENCH ONLY; NOT FIELD WIRING",
+  "failed_uno_pins": [
+    "D5",
+    "D6",
+    "D7"
+  ],
+  "input_map": [
+    {
+      "terminal": "A0",
+      "library_index": 0,
+      "signal": "CRYO_REQUEST",
+      "control": "button"
+    },
+    {
+      "terminal": "A1",
+      "library_index": 1,
+      "signal": "VENT_REQUEST",
+      "control": "button"
+    },
+    {
+      "terminal": "A2",
+      "library_index": 2,
+      "signal": "CRYO_CLOSED",
+      "control": "jumper"
+    },
+    {
+      "terminal": "A3",
+      "library_index": 3,
+      "signal": "VENT_CLOSED",
+      "control": "jumper"
+    },
+    {
+      "terminal": "A4",
+      "library_index": 4,
+      "signal": "PRESSURE_VALID",
+      "control": "jumper"
+    },
+    {
+      "terminal": "A5",
+      "library_index": 5,
+      "signal": "PRESSURE_LOW",
+      "control": "jumper"
+    },
+    {
+      "terminal": "A6",
+      "library_index": 6,
+      "signal": "CRYO_READY",
+      "control": "jumper"
+    },
+    {
+      "terminal": "B0",
+      "library_index": 8,
+      "signal": "OTHER_PATHS_CLOSED",
+      "control": "jumper"
+    },
+    {
+      "terminal": "B1",
+      "library_index": 9,
+      "signal": "FILAMENT_OFF",
+      "control": "jumper"
+    },
+    {
+      "terminal": "B2",
+      "library_index": 10,
+      "signal": "REARM",
+      "control": "button"
+    }
+  ],
+  "stages": [
+    {
+      "id": "day1-loopback",
+      "prefix": "L",
+      "title": "Day 1 - UART loopback",
+      "components": [
+        {
+          "ref": "U1",
+          "value": "Arduino UNO R3 - USB only",
+          "x": 49.53,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "5V",
+              "name": "5V",
+              "side": "R",
+              "dy": -15.24
+            },
+            {
+              "id": "GND",
+              "name": "GND",
+              "side": "R",
+              "dy": -5.08
+            },
+            {
+              "id": "A4",
+              "name": "A4 / SDA",
+              "side": "R",
+              "dy": 5.08
+            },
+            {
+              "id": "A5",
+              "name": "A5 / SCL",
+              "side": "R",
+              "dy": 15.24
+            }
+          ],
+          "kind": "U1_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        },
+        {
+          "ref": "U2",
+          "value": "DFR0627 - DIP A1=A0=1",
+          "x": 160.02,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "PLUS",
+              "name": "+ (I2C)",
+              "side": "L",
+              "dy": -15.24
+            },
+            {
+              "id": "MINUS",
+              "name": "- (I2C)",
+              "side": "L",
+              "dy": -5.08
+            },
+            {
+              "id": "SDA",
+              "name": "D / SDA",
+              "side": "L",
+              "dy": 5.08
+            },
+            {
+              "id": "SCL",
+              "name": "C / SCL",
+              "side": "L",
+              "dy": 15.24
+            },
+            {
+              "id": "T1",
+              "name": "UART1 T",
+              "side": "R",
+              "dy": -15.24
+            },
+            {
+              "id": "R1",
+              "name": "UART1 R",
+              "side": "R",
+              "dy": -5.08
+            },
+            {
+              "id": "T2",
+              "name": "UART2 T",
+              "side": "R",
+              "dy": 5.08
+            },
+            {
+              "id": "R2",
+              "name": "UART2 R",
+              "side": "R",
+              "dy": 15.24
+            }
+          ],
+          "kind": "U2_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        }
+      ],
+      "nets": [
+        {
+          "name": "USB_5V",
+          "ends": [
+            [
+              "U1",
+              "5V"
+            ],
+            [
+              "U2",
+              "PLUS"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "LOGIC_GND",
+          "ends": [
+            [
+              "U1",
+              "GND"
+            ],
+            [
+              "U2",
+              "MINUS"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "I2C_SDA",
+          "ends": [
+            [
+              "U1",
+              "A4"
+            ],
+            [
+              "U2",
+              "SDA"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "I2C_SCL",
+          "ends": [
+            [
+              "U1",
+              "A5"
+            ],
+            [
+              "U2",
+              "SCL"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "UART1_LOOP",
+          "ends": [
+            [
+              "U2",
+              "T1"
+            ],
+            [
+              "U2",
+              "R1"
+            ]
+          ],
+          "source": "DFR0627-LOOP",
+          "note": "Only for loopback; remove before RS485 connection."
+        },
+        {
+          "name": "UART2_LOOP",
+          "ends": [
+            [
+              "U2",
+              "T2"
+            ],
+            [
+              "U2",
+              "R2"
+            ]
+          ],
+          "source": "DFR0627-LOOP",
+          "note": "Only for loopback; remove before changing this port."
+        }
+      ],
+      "notes": [
+        "Connect six leads: four Uno/module connections and two same-port T-to-R jumpers.",
+        "These are TTL UART loopbacks. Do not connect an RS485 A terminal to B as a loopback.",
+        "Use firmware/uart_loopback; Serial Monitor 115200. Both channels must echo the exact frame.",
+        "D5, D6, D7, all other Uno pins, all field equipment, and DFR0845 remain disconnected."
+      ]
+    },
+    {
+      "id": "day1-rs485-logic",
+      "prefix": "R",
+      "title": "Day 1 - RS485 logic connection only",
+      "components": [
+        {
+          "ref": "U1",
+          "value": "Arduino UNO R3 - USB only",
+          "x": 44.45,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "5V",
+              "name": "5V",
+              "side": "R",
+              "dy": -15.24
+            },
+            {
+              "id": "GND",
+              "name": "GND",
+              "side": "R",
+              "dy": -5.08
+            },
+            {
+              "id": "A4",
+              "name": "A4 / SDA",
+              "side": "R",
+              "dy": 5.08
+            },
+            {
+              "id": "A5",
+              "name": "A5 / SCL",
+              "side": "R",
+              "dy": 15.24
+            }
+          ],
+          "kind": "U1_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        },
+        {
+          "ref": "U2",
+          "value": "DFR0627 - DIP A1=A0=1",
+          "x": 154.94,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "PLUS",
+              "name": "+ (I2C)",
+              "side": "L",
+              "dy": -15.24
+            },
+            {
+              "id": "MINUS",
+              "name": "- (I2C)",
+              "side": "L",
+              "dy": -5.08
+            },
+            {
+              "id": "SDA",
+              "name": "D / SDA",
+              "side": "L",
+              "dy": 5.08
+            },
+            {
+              "id": "SCL",
+              "name": "C / SCL",
+              "side": "L",
+              "dy": 15.24
+            },
+            {
+              "id": "T1",
+              "name": "UART1 T",
+              "side": "R",
+              "dy": -15.24
+            },
+            {
+              "id": "R1",
+              "name": "UART1 R",
+              "side": "R",
+              "dy": -5.08
+            },
+            {
+              "id": "T2",
+              "name": "UART2 T",
+              "side": "R",
+              "dy": 5.08
+            },
+            {
+              "id": "R2",
+              "name": "UART2 R",
+              "side": "R",
+              "dy": 15.24
+            }
+          ],
+          "kind": "U2_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        },
+        {
+          "ref": "U3",
+          "value": "DFR0845 - isolated RS485",
+          "x": 270.51,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "PLUS",
+              "name": "+ (Gravity logic)",
+              "side": "L",
+              "dy": -15.24
+            },
+            {
+              "id": "MINUS",
+              "name": "- (Gravity logic)",
+              "side": "L",
+              "dy": -5.08
+            },
+            {
+              "id": "R",
+              "name": "R / logic RX",
+              "side": "L",
+              "dy": 5.08
+            },
+            {
+              "id": "T",
+              "name": "T / logic TX",
+              "side": "L",
+              "dy": 15.24
+            },
+            {
+              "id": "BUS12",
+              "name": "12V (RS485 OUT)",
+              "side": "R",
+              "dy": -15.24
+            },
+            {
+              "id": "BUSGND",
+              "name": "GND (RS485 side)",
+              "side": "R",
+              "dy": -5.08
+            },
+            {
+              "id": "A",
+              "name": "A (RS485)",
+              "side": "R",
+              "dy": 5.08
+            },
+            {
+              "id": "B",
+              "name": "B (RS485)",
+              "side": "R",
+              "dy": 15.24
+            },
+            {
+              "id": "EXT12",
+              "name": "12V-IN +",
+              "side": "R",
+              "dy": 25.4
+            },
+            {
+              "id": "EXTGND",
+              "name": "12V-IN GND",
+              "side": "R",
+              "dy": 35.56
+            }
+          ],
+          "kind": "U3_Interface",
+          "prefix": "U",
+          "half_width": 22.86
+        }
+      ],
+      "nets": [
+        {
+          "name": "USB_5V",
+          "ends": [
+            [
+              "U1",
+              "5V"
+            ],
+            [
+              "U2",
+              "PLUS"
+            ],
+            [
+              "U3",
+              "PLUS"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "LOGIC_GND",
+          "ends": [
+            [
+              "U1",
+              "GND"
+            ],
+            [
+              "U2",
+              "MINUS"
+            ],
+            [
+              "U3",
+              "MINUS"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "I2C_SDA",
+          "ends": [
+            [
+              "U1",
+              "A4"
+            ],
+            [
+              "U2",
+              "SDA"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "I2C_SCL",
+          "ends": [
+            [
+              "U1",
+              "A5"
+            ],
+            [
+              "U2",
+              "SCL"
+            ]
+          ],
+          "source": "ARDUINO;DFR0627",
+          "note": ""
+        },
+        {
+          "name": "UART1_TX",
+          "ends": [
+            [
+              "U2",
+              "T1"
+            ],
+            [
+              "U3",
+              "R"
+            ]
+          ],
+          "source": "DFR0627;DFR0845",
+          "note": "Remove UART1 loopback first. Transmit goes to receive."
+        },
+        {
+          "name": "UART1_RX",
+          "ends": [
+            [
+              "U2",
+              "R1"
+            ],
+            [
+              "U3",
+              "T"
+            ]
+          ],
+          "source": "DFR0627;DFR0845",
+          "note": "Receive comes from transmit."
+        }
+      ],
+      "notes": [
+        "Remove BOTH loopback jumpers before assembling this drawing. UART2 is unused.",
+        "No field endpoint is connected. This stage alone does not prove RS485 data communication.",
+        "All RS485-side terminals and both 12V-IN terminals stay unconnected in this drawing.",
+        "Keep isolated bus-side ground distinct from LOGIC_GND. Do not power the Hornet from the 12V output.",
+        "STOP before connecting Hornet: match its firmware/manual, power path, cable pinout and bus polarity."
+      ]
+    },
+    {
+      "id": "day2-gpio-bench",
+      "prefix": "G",
+      "title": "Day 2 - GPIO interlock simulation, LEDs only",
+      "components": [
+        {
+          "ref": "U1",
+          "value": "Arduino UNO R3 - USB only",
+          "x": 44.45,
+          "y": 95.25,
+          "pins": [
+            {
+              "id": "5V",
+              "name": "5V",
+              "side": "R",
+              "dy": -30.48
+            },
+            {
+              "id": "GND",
+              "name": "GND",
+              "side": "R",
+              "dy": -20.32
+            },
+            {
+              "id": "A4",
+              "name": "A4 / SDA",
+              "side": "R",
+              "dy": -10.16
+            },
+            {
+              "id": "A5",
+              "name": "A5 / SCL",
+              "side": "R",
+              "dy": 0.0
+            },
+            {
+              "id": "A0",
+              "name": "A0 (Uno LED)",
+              "side": "R",
+              "dy": 10.16
+            },
+            {
+              "id": "A1",
+              "name": "A1 (Uno LED)",
+              "side": "R",
+              "dy": 20.32
+            },
+            {
+              "id": "A2",
+              "name": "A2 (Uno LED)",
+              "side": "R",
+              "dy": 30.48
+            }
+          ],
+          "kind": "U1_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        },
+        {
+          "ref": "U2",
+          "value": "Adafruit 5346 - MCP 0x21",
+          "x": 160.02,
+          "y": 90.17,
+          "pins": [
+            {
+              "id": "VIN",
+              "name": "VIN / 5V",
+              "side": "L",
+              "dy": -20.32
+            },
+            {
+              "id": "GND",
+              "name": "GND",
+              "side": "L",
+              "dy": -10.16
+            },
+            {
+              "id": "SDA",
+              "name": "SDA",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "SCL",
+              "name": "SCL",
+              "side": "L",
+              "dy": 10.16
+            },
+            {
+              "id": "ADDR0",
+              "name": "D0 (address +1)",
+              "side": "L",
+              "dy": 20.32
+            },
+            {
+              "id": "ADDR1",
+              "name": "D1 (address +2)",
+              "side": "L",
+              "dy": 30.48
+            },
+            {
+              "id": "ADDR2",
+              "name": "D2 (address +4)",
+              "side": "L",
+              "dy": 39.37
+            },
+            {
+              "id": "A0",
+              "name": "A0 / CRYO_REQUEST",
+              "side": "R",
+              "dy": -44.45
+            },
+            {
+              "id": "A1",
+              "name": "A1 / VENT_REQUEST",
+              "side": "R",
+              "dy": -31.75
+            },
+            {
+              "id": "A2",
+              "name": "A2 / CRYO_CLOSED",
+              "side": "R",
+              "dy": -19.05
+            },
+            {
+              "id": "A3",
+              "name": "A3 / VENT_CLOSED",
+              "side": "R",
+              "dy": -6.35
+            },
+            {
+              "id": "A4",
+              "name": "A4 / PRESSURE_VALID",
+              "side": "R",
+              "dy": 6.35
+            },
+            {
+              "id": "A5",
+              "name": "A5 / PRESSURE_LOW",
+              "side": "R",
+              "dy": 19.05
+            },
+            {
+              "id": "A6",
+              "name": "A6 / CRYO_READY",
+              "side": "R",
+              "dy": 31.75
+            },
+            {
+              "id": "B0",
+              "name": "B0 / OTHER_PATHS_CLOSED",
+              "side": "R",
+              "dy": 44.45
+            },
+            {
+              "id": "B1",
+              "name": "B1 / FILAMENT_OFF",
+              "side": "R",
+              "dy": 57.15
+            },
+            {
+              "id": "B2",
+              "name": "B2 / REARM",
+              "side": "R",
+              "dy": 69.85
+            }
+          ],
+          "kind": "U2_Interface",
+          "prefix": "U",
+          "half_width": 25.4
+        },
+        {
+          "ref": "U3",
+          "value": "Adafruit 6318 - MCP 0x20",
+          "x": 350.52,
+          "y": 95.25,
+          "pins": [
+            {
+              "id": "VCC",
+              "name": "Vcc / logic 5V",
+              "side": "L",
+              "dy": -20.32
+            },
+            {
+              "id": "GND",
+              "name": "GND (common)",
+              "side": "L",
+              "dy": -10.16
+            },
+            {
+              "id": "SDA",
+              "name": "SDA",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "SCL",
+              "name": "SCL",
+              "side": "L",
+              "dy": 10.16
+            },
+            {
+              "id": "VLOAD",
+              "name": "V+ / coil supply",
+              "side": "R",
+              "dy": -30.48
+            },
+            {
+              "id": "OUT0",
+              "name": "OUT 0",
+              "side": "R",
+              "dy": -20.32
+            },
+            {
+              "id": "OUT1",
+              "name": "OUT 1",
+              "side": "R",
+              "dy": -10.16
+            },
+            {
+              "id": "OUT2",
+              "name": "OUT 2",
+              "side": "R",
+              "dy": 0.0
+            },
+            {
+              "id": "OUT3",
+              "name": "OUT 3",
+              "side": "R",
+              "dy": 10.16
+            },
+            {
+              "id": "OUT4",
+              "name": "OUT 4",
+              "side": "R",
+              "dy": 20.32
+            },
+            {
+              "id": "OUT5",
+              "name": "OUT 5",
+              "side": "R",
+              "dy": 30.48
+            },
+            {
+              "id": "OUT6",
+              "name": "OUT 6",
+              "side": "R",
+              "dy": 39.37
+            },
+            {
+              "id": "OUT7",
+              "name": "OUT 7",
+              "side": "R",
+              "dy": 49.53
+            }
+          ],
+          "kind": "U3_Interface",
+          "prefix": "U",
+          "half_width": 17.78
+        },
+        {
+          "ref": "SW1",
+          "value": "BTN CRYO_REQUEST",
+          "x": 265.43,
+          "y": 45.72,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW1_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW2",
+          "value": "BTN VENT_REQUEST",
+          "x": 265.43,
+          "y": 58.42,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW2_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW3",
+          "value": "SIM CRYO_CLOSED",
+          "x": 265.43,
+          "y": 71.12,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW3_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW4",
+          "value": "SIM VENT_CLOSED",
+          "x": 265.43,
+          "y": 83.82,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW4_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW5",
+          "value": "SIM PRESSURE_VALID",
+          "x": 265.43,
+          "y": 96.52,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW5_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW6",
+          "value": "SIM PRESSURE_LOW",
+          "x": 265.43,
+          "y": 109.22,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW6_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW7",
+          "value": "SIM CRYO_READY",
+          "x": 265.43,
+          "y": 121.92,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW7_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW8",
+          "value": "SIM OTHER_PATHS_CLOSED",
+          "x": 265.43,
+          "y": 134.62,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW8_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW9",
+          "value": "SIM FILAMENT_OFF",
+          "x": 265.43,
+          "y": 147.32,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW9_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "SW10",
+          "value": "BTN REARM",
+          "x": 265.43,
+          "y": 160.02,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "SW10_Interface",
+          "prefix": "SW",
+          "half_width": 7.62
+        },
+        {
+          "ref": "R1",
+          "value": "470 ohm",
+          "x": 95.25,
+          "y": 204.47,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "R1_Interface",
+          "prefix": "R",
+          "half_width": 5.08
+        },
+        {
+          "ref": "D1",
+          "value": "LED CRYO",
+          "x": 160.02,
+          "y": 204.47,
+          "pins": [
+            {
+              "id": "A",
+              "name": "A",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "K",
+              "name": "K",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "D1_Interface",
+          "prefix": "D",
+          "half_width": 7.62
+        },
+        {
+          "ref": "R2",
+          "value": "470 ohm",
+          "x": 95.25,
+          "y": 219.71,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "R2_Interface",
+          "prefix": "R",
+          "half_width": 5.08
+        },
+        {
+          "ref": "D2",
+          "value": "LED VENT",
+          "x": 160.02,
+          "y": 219.71,
+          "pins": [
+            {
+              "id": "A",
+              "name": "A",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "K",
+              "name": "K",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "D2_Interface",
+          "prefix": "D",
+          "half_width": 7.62
+        },
+        {
+          "ref": "R3",
+          "value": "470 ohm",
+          "x": 95.25,
+          "y": 234.95,
+          "pins": [
+            {
+              "id": "1",
+              "name": "1",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "2",
+              "name": "2",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "R3_Interface",
+          "prefix": "R",
+          "half_width": 5.08
+        },
+        {
+          "ref": "D3",
+          "value": "LED FAULT",
+          "x": 160.02,
+          "y": 234.95,
+          "pins": [
+            {
+              "id": "A",
+              "name": "A",
+              "side": "L",
+              "dy": 0.0
+            },
+            {
+              "id": "K",
+              "name": "K",
+              "side": "R",
+              "dy": 0.0
+            }
+          ],
+          "kind": "D3_Interface",
+          "prefix": "D",
+          "half_width": 7.62
+        }
+      ],
+      "nets": [
+        {
+          "name": "USB_5V",
+          "ends": [
+            [
+              "U1",
+              "5V"
+            ],
+            [
+              "U2",
+              "VIN"
+            ],
+            [
+              "U2",
+              "ADDR0"
+            ],
+            [
+              "U3",
+              "VCC"
+            ]
+          ],
+          "source": "ARDUINO;MCP5346;DRIVER6318",
+          "note": "U2 D0 is the address pin, not Uno D0. Alternative: close only the +1 solder jumper instead of using this address wire."
+        },
+        {
+          "name": "LOGIC_GND",
+          "ends": [
+            [
+              "U1",
+              "GND"
+            ],
+            [
+              "U2",
+              "GND"
+            ],
+            [
+              "U3",
+              "GND"
+            ],
+            [
+              "SW1",
+              "2"
+            ],
+            [
+              "SW2",
+              "2"
+            ],
+            [
+              "SW3",
+              "2"
+            ],
+            [
+              "SW4",
+              "2"
+            ],
+            [
+              "SW5",
+              "2"
+            ],
+            [
+              "SW6",
+              "2"
+            ],
+            [
+              "SW7",
+              "2"
+            ],
+            [
+              "SW8",
+              "2"
+            ],
+            [
+              "SW9",
+              "2"
+            ],
+            [
+              "SW10",
+              "2"
+            ],
+            [
+              "D1",
+              "K"
+            ],
+            [
+              "D2",
+              "K"
+            ],
+            [
+              "D3",
+              "K"
+            ]
+          ],
+          "source": "ARDUINO;MCP5346;DRIVER6318",
+          "note": ""
+        },
+        {
+          "name": "I2C_SDA",
+          "ends": [
+            [
+              "U1",
+              "A4"
+            ],
+            [
+              "U2",
+              "SDA"
+            ],
+            [
+              "U3",
+              "SDA"
+            ]
+          ],
+          "source": "ARDUINO;MCP5346;DRIVER6318",
+          "note": ""
+        },
+        {
+          "name": "I2C_SCL",
+          "ends": [
+            [
+              "U1",
+              "A5"
+            ],
+            [
+              "U2",
+              "SCL"
+            ],
+            [
+              "U3",
+              "SCL"
+            ]
+          ],
+          "source": "ARDUINO;MCP5346;DRIVER6318",
+          "note": ""
+        },
+        {
+          "name": "B_CRYO_REQUEST",
+          "ends": [
+            [
+              "U2",
+              "A0"
+            ],
+            [
+              "SW1",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_VENT_REQUEST",
+          "ends": [
+            [
+              "U2",
+              "A1"
+            ],
+            [
+              "SW2",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_CRYO_CLOSED",
+          "ends": [
+            [
+              "U2",
+              "A2"
+            ],
+            [
+              "SW3",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_VENT_CLOSED",
+          "ends": [
+            [
+              "U2",
+              "A3"
+            ],
+            [
+              "SW4",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_PRESSURE_VALID",
+          "ends": [
+            [
+              "U2",
+              "A4"
+            ],
+            [
+              "SW5",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_PRESSURE_LOW",
+          "ends": [
+            [
+              "U2",
+              "A5"
+            ],
+            [
+              "SW6",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_CRYO_READY",
+          "ends": [
+            [
+              "U2",
+              "A6"
+            ],
+            [
+              "SW7",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_OTHER_PATHS_CLOSED",
+          "ends": [
+            [
+              "U2",
+              "B0"
+            ],
+            [
+              "SW8",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_FILAMENT_OFF",
+          "ends": [
+            [
+              "U2",
+              "B1"
+            ],
+            [
+              "SW9",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "B_REARM",
+          "ends": [
+            [
+              "U2",
+              "B2"
+            ],
+            [
+              "SW10",
+              "1"
+            ]
+          ],
+          "source": "DESIGN;MCP5346",
+          "note": "BENCH simulation only. Grounded = true. Powered field signals are not allowed."
+        },
+        {
+          "name": "LED_CRYO",
+          "ends": [
+            [
+              "U1",
+              "A0"
+            ],
+            [
+              "R1",
+              "1"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": ""
+        },
+        {
+          "name": "LED_CRYO_A",
+          "ends": [
+            [
+              "R1",
+              "2"
+            ],
+            [
+              "D1",
+              "A"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": "One series 470 ohm resistor per LED."
+        },
+        {
+          "name": "LED_VENT",
+          "ends": [
+            [
+              "U1",
+              "A1"
+            ],
+            [
+              "R2",
+              "1"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": ""
+        },
+        {
+          "name": "LED_VENT_A",
+          "ends": [
+            [
+              "R2",
+              "2"
+            ],
+            [
+              "D2",
+              "A"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": "One series 470 ohm resistor per LED."
+        },
+        {
+          "name": "LED_FAULT",
+          "ends": [
+            [
+              "U1",
+              "A2"
+            ],
+            [
+              "R3",
+              "1"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": ""
+        },
+        {
+          "name": "LED_FAULT_A",
+          "ends": [
+            [
+              "R3",
+              "2"
+            ],
+            [
+              "D3",
+              "A"
+            ]
+          ],
+          "source": "DESIGN",
+          "note": "One series 470 ohm resistor per LED."
+        }
+      ],
+      "notes_y": 250,
+      "notes": [
+        "Use firmware/gpio_interlock_bench. Do not use the old direct-pin sketch with this wiring.",
+        "U2 A0-A6 and B0-B2 are DIGITAL inputs; these are not Uno analog pins. A7/B7 are unused.",
+        "U3 is optional logic-only inventory at 0x20. Its V+ and ALL coil outputs remain disconnected.",
+        "All other module terminals are unused. Physical layout follows silkscreen, not symbol placement."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "filename": "day1-rs485-logic.kicad_pro",
+    "version": 1
+  },
+  "text_variables": {
+    "BUILD_SCOPE": "BENCH_ONLY"
+  },
+  "schematic": {}
+}

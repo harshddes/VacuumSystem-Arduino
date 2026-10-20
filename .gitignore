@@ -12,3 +12,9 @@ build/
 # Editor
 .vscode/
 .idea/
+
+__pycache__/
+*.pyc
+*.kicad_prl
+~*.lck
+*-backups/
