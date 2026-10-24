@@ -2,6 +2,8 @@
 
 Revision 2026-10-09 • Uno R3 • Five build phases
 
+> For current completion status and implementation decisions, read [the project roadmap](00-project-status.md). Phase 1 now uses [the expander bench package](bench-prep/README.md), its matching sketches and 115200-baud monitor settings. The older direct-pin wiring and 9600-baud exercise below are separate learning material.
+
 ## System boundary
 
 The subsystem reads operator requests, chamber pressure, valve positions and equipment-ready signals. It permits valve motion, reports pressure and faults, and eventually runs sequences. It does not replace pump motor controllers, cryopump regeneration controls or existing laboratory interlocks.

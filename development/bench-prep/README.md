@@ -1,6 +1,8 @@
 # Start here: hardware-arrival bench package
 
-Revision 2026-10-20. Arduino Uno R3. User reports D5, D6 and D7 faulty.
+Revision 2026-10-23. Arduino Uno R3. User reports D5, D6 and D7 faulty.
+
+Read [the project status and implementation roadmap](../00-project-status.md) for the complete development plan and the boundary between these bench drawings and the unfinished installed controller.
 
 **This package provides fixed wiring for three bench setups. It does not release chamber, Hornet or solenoid-coil field wiring.**
 
@@ -18,7 +20,7 @@ Do not start by drawing an entire vacuum system in KiCad. Open the supplied elec
 | Day 1: add DFR0845 logic wiring | [day1-rs485-logic.kicad_pro](kicad/day1-rs485-logic/day1-rs485-logic.kicad_pro) | No automatic instrument commands supplied | Logic harness preparation; a second endpoint is needed to prove RS485 |
 | Day 2: Adafruit input expander | [day2-gpio-bench.kicad_pro](kicad/day2-gpio-bench/day2-gpio-bench.kicad_pro) | [gpio_interlock_bench.ino](firmware/gpio_interlock_bench/gpio_interlock_bench.ino) | Simulated permissions, re-arm and faults with LED outputs |
 
-Expected arrival dates reported by user: DigiKey 2026-10-21; Adafruit 2026-10-22. Arrival is not treated as delivery confirmation.
+The user now reports all ordered electronics received. Inspection and physical acceptance tests are still required; receipt is not a PASS result.
 
 ## Read this before wiring
 
@@ -40,7 +42,7 @@ Expected arrival dates reported by user: DigiKey 2026-10-21; Adafruit 2026-10-22
 | Adafruit 6318 | Expander plus eight DC load switches | Optional logic-only wiring; no coil outputs released |
 | Adafruit 5648 | One separate DC load switch | Park as spare; no wire in these setups |
 | Adafruit 3123 | Exposes male DE-9 pins on screw terminals | Park until Hornet interface is verified |
-| Perma-Proto 1609 | Soldered carrier for a later secured assembly | Not needed for bench tests; invoice shows zero shipped |
+| Perma-Proto 1609 | Soldered carrier for a later secured assembly | Not needed for bench tests; all ordered items now reported received |
 
 ## File roles and limits
 

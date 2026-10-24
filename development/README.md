@@ -1,16 +1,14 @@
 # MAIZE / test-stand valve controller — start here
 
-> **Hardware-arrival update, 2026-10-20:** start with [the KiCad / Cursor bench package](bench-prep/README.md). It contains fixed wiring, native KiCad projects and matching diagnostic firmware for the ordered modules. The user reports Uno D5/D6/D7 faulty. The older direct-pin sketch and the 2026-10-09 wiring guide below are different bench baselines; do not mix them with the new expander drawing.
+> **Current status and decisions:** read [the project status and implementation roadmap](00-project-status.md). All ordered electronics are now reported received. The completed KiCad work covers three bench setups; the full installed-system schematic, field interfaces and operational firmware remain in development.
 
-**Revision: 2026-10-09. Board: Arduino Uno R3. Current build: Phase 1.**
+**Current build: Phase 1, Arduino Uno R3 with the expander bench package.** User reports Uno D5/D6/D7 faulty; leave them disconnected.
 
-Build the LED demonstration first. It needs **3 LEDs, 3 × 470 Ω resistors, 3 momentary buttons and 20 male-to-male jumper wires**, plus your Uno, breadboard, USB data cable and laptop. Have 40 jumpers available if buying a pack; the extras cover split ground rails and replacements.
+1. Start with [the bench package](bench-prep/README.md) and its [module checklist](bench-prep/01-arrival-checklist.md).
+2. Build the selected setup using its matching native KiCad drawing, wire IDs and diagnostic sketch.
+3. Perform [the bench checks](bench-prep/04-tests.md) and record actual results in [the physical test log](bench-prep/verification/physical-test-log.csv).
 
-1. Follow [the desk wiring](02-wires.md).
-2. Open [phase1_led_demo.ino](firmware/phase1_led_demo/phase1_led_demo.ino) in Arduino IDE.
-3. Perform the [desk tests](06-tests.md). Record actual results in [the test log](verification/test-log.csv).
-
-The buttons request cryo opening, vent opening and re-arm. Seven removable ground jumpers pretend to be sensors. LEDs show accepted requests. **This sketch controls LEDs only. It is not firmware for operating the chamber.**
+The new package uses simulated sensor contacts and LED outputs. It does not release wiring to the Hornet, pilot coils or chamber. The older `02-wires.md` and direct-pin sketch are separate learning baselines; do not combine them with the expander drawing.
 
 ## The complete development path
 

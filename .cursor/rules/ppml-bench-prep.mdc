@@ -3,7 +3,11 @@ description: PPML Uno hardware arrival, KiCad interconnects and bench developmen
 alwaysApply: true
 ---
 
-Use `development/bench-prep/README.md` as the current arrival-day entrypoint.
+Read `development/00-project-status.md` for the current plan, maturity and open work.
+All ordered electronics are reported received; that does not establish a physical PASS.
+Use `development/bench-prep/README.md` for the current bench setup.
+The full field schematic/controller remains in development. A custom PCB is optional;
+the current recommendation is a qualified, enclosed modular assembly.
 Read the relevant files before changing connections. This repository's older
 Phase 1 wiring and recently simplified direct-pin sketch are different baselines.
 

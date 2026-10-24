@@ -6,14 +6,17 @@ Cursor is useful here as a local coding/documentation assistant. It receives con
 
 1. Open the actual repository folder in Cursor. Pull the new commit after preserving local changes. Avoid a second untracked copy of the project.
 2. Ensure the project rule `.cursor/rules/ppml-bench-prep.mdc` is present and enabled. It supplies constraints and points to the current package; it does not load every manual into every chat.
-3. Open `development/bench-prep/README.md`, `02-kicad-first-use.md`, `03-connections.md`, and the relevant firmware file as context. Use the file-mention picker to attach them when necessary; Cursor UI details vary by version.
+3. Read `development/00-project-status.md` for current decisions and remaining work. Open `development/bench-prep/README.md`, `02-kicad-first-use.md`, `03-connections.md`, and the relevant firmware file as context. Use the file-mention picker to attach them when necessary; Cursor UI details vary by version.
 4. Launch KiCad normally. You operate its GUI; Cursor can tell you the next action or edit the project sources and run `kicad-cli` when available locally. Do not assume a desktop automation capability exists.
 5. Close a schematic in KiCad before letting Cursor regenerate that file, then reopen it. Avoid simultaneous GUI/file-generator edits.
 
 ## Paste this as your first message
 
 ```text
-Continue this PPML project from development/bench-prep/README.md.
+Continue this PPML project from development/00-project-status.md,
+then development/bench-prep/README.md. All ordered electronics have arrived;
+physical tests are not recorded yet. The full field schematic/controller
+is still in development, and a custom PCB is optional.
 First read .cursor/rules/ppml-bench-prep.mdc, design.json, 02-kicad-first-use.md,
 03-connections.md, 04-tests.md and verification/software-validation.md.
 I am a KiCad beginner. My Uno D5/D6/D7 are unavailable.
