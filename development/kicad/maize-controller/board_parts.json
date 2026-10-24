@@ -1,0 +1,4066 @@
+[
+  {
+    "ref": "J1",
+    "value": "J_LOGIC",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+9V_RAW"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "F1",
+    "value": "500mA",
+    "lib_id": "Device:Fuse",
+    "footprint": "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+9V_RAW"
+      },
+      {
+        "num": "2",
+        "net": "+9V_SW"
+      }
+    ]
+  },
+  {
+    "ref": "D1",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+9V"
+      },
+      {
+        "num": "2",
+        "net": "+9V_SW"
+      }
+    ]
+  },
+  {
+    "ref": "C1",
+    "value": "10uF/25V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+9V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "U1",
+    "value": "AMS1117-5.0",
+    "lib_id": "Regulator_Linear:AMS1117-5.0",
+    "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      },
+      {
+        "num": "3",
+        "net": "+9V"
+      }
+    ]
+  },
+  {
+    "ref": "C2",
+    "value": "22uF/16V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C3",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R1",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "LED_5V"
+      }
+    ]
+  },
+  {
+    "ref": "D2",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_5V"
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "value": "J_COIL24",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_RAW"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "F2",
+    "value": "3A",
+    "lib_id": "Device:Fuse",
+    "footprint": "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_RAW"
+      },
+      {
+        "num": "2",
+        "net": "+24V_FUSED"
+      }
+    ]
+  },
+  {
+    "ref": "F3",
+    "value": "2A",
+    "lib_id": "Device:Fuse",
+    "footprint": "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Inline_P20.00x5.00mm_D1.05mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "+24V_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R2",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SENSE_24V"
+      }
+    ]
+  },
+  {
+    "ref": "R3",
+    "value": "15k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SENSE_24V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D3",
+    "value": "5.1V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SENSE_24V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R4",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "SENSE_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R5",
+    "value": "15k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SENSE_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D4",
+    "value": "5.1V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SENSE_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R6",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "LED_OPEN_A"
+      }
+    ]
+  },
+  {
+    "ref": "D5",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_OPEN_A"
+      }
+    ]
+  },
+  {
+    "ref": "U2",
+    "value": "AMS1117-3.3",
+    "lib_id": "Regulator_Linear:AMS1117-3.3",
+    "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "+3V3"
+      },
+      {
+        "num": "3",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "C4",
+    "value": "10uF/16V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C5",
+    "value": "22uF/10V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C6",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "U3",
+    "value": "TPS3823-33",
+    "lib_id": "Power_Supervisor:TPS3823-xxDBV",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_OK"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "STOP_NODE"
+      },
+      {
+        "num": "4",
+        "net": "WDI"
+      },
+      {
+        "num": "5",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "C7",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R7",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "STOP_NODE"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R8",
+    "value": "1k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WDI_UNO"
+      },
+      {
+        "num": "2",
+        "net": "WDI"
+      }
+    ]
+  },
+  {
+    "ref": "D6",
+    "value": "1N4148",
+    "lib_id": "Diode:1N4148",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_RAW"
+      },
+      {
+        "num": "2",
+        "net": "MODE_MAN"
+      }
+    ]
+  },
+  {
+    "ref": "D7",
+    "value": "1N4148",
+    "lib_id": "Diode:1N4148",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_RAW"
+      },
+      {
+        "num": "2",
+        "net": "MODE_AUTO"
+      }
+    ]
+  },
+  {
+    "ref": "R9",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_SW"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R10",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "MODE_MAN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R11",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "MODE_AUTO"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "K1",
+    "value": "G5LE-1-DC24",
+    "lib_id": "Relay:G5LE-1",
+    "footprint": "Relay_THT:Relay_SPDT_Omron-G5LE-1",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "3",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "4",
+        "net": ""
+      },
+      {
+        "num": "5",
+        "net": "KOPEN_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "D8",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "KOPEN_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "Q1",
+    "value": "2N7002",
+    "lib_id": "Transistor_FET:2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_GATE"
+      },
+      {
+        "num": "2",
+        "net": "KOPEN_MID"
+      },
+      {
+        "num": "3",
+        "net": "KOPEN_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "Q2",
+    "value": "2N7002",
+    "lib_id": "Transistor_FET:2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "KOPEN_MID"
+      }
+    ]
+  },
+  {
+    "ref": "R12",
+    "value": "1k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_SW"
+      },
+      {
+        "num": "2",
+        "net": "ENABLE_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "R13",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R14",
+    "value": "1k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_OK"
+      },
+      {
+        "num": "2",
+        "net": "WD_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "R15",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D9",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ENABLE_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D10",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "K2",
+    "value": "G5LE-1-DC24",
+    "lib_id": "Relay:G5LE-1",
+    "footprint": "Relay_THT:Relay_SPDT_Omron-G5LE-1",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_BUS"
+      },
+      {
+        "num": "3",
+        "net": ""
+      },
+      {
+        "num": "4",
+        "net": "GND"
+      },
+      {
+        "num": "5",
+        "net": "KFORCE_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "D11",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "KFORCE_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "Q3",
+    "value": "2N7002",
+    "lib_id": "Transistor_FET:2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "pads": [
+      {
+        "num": "1",
+        "net": "FORCE_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "KFORCE_LOW"
+      }
+    ]
+  },
+  {
+    "ref": "R16",
+    "value": "1k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_OK"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_GATE"
+      }
+    ]
+  },
+  {
+    "ref": "R17",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "FORCE_GATE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C8",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "UNO_5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C9",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "UNO_3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "J3",
+    "value": "J_UNO_PWR",
+    "lib_id": "Connector_Generic:Conn_01x08",
+    "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": ""
+      },
+      {
+        "num": "2",
+        "net": ""
+      },
+      {
+        "num": "3",
+        "net": ""
+      },
+      {
+        "num": "4",
+        "net": "UNO_3V3"
+      },
+      {
+        "num": "5",
+        "net": "UNO_5V"
+      },
+      {
+        "num": "6",
+        "net": "GND"
+      },
+      {
+        "num": "7",
+        "net": "GND"
+      },
+      {
+        "num": "8",
+        "net": "+9V"
+      }
+    ]
+  },
+  {
+    "ref": "J4",
+    "value": "J_UNO_ANALOG",
+    "lib_id": "Connector_Generic:Conn_01x06",
+    "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SENSE_24V"
+      },
+      {
+        "num": "2",
+        "net": "SENSE_OPEN"
+      },
+      {
+        "num": "3",
+        "net": ""
+      },
+      {
+        "num": "4",
+        "net": ""
+      },
+      {
+        "num": "5",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "6",
+        "net": "SCL_5V"
+      }
+    ]
+  },
+  {
+    "ref": "J5",
+    "value": "J_UNO_D0",
+    "lib_id": "Connector_Generic:Conn_01x08",
+    "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": ""
+      },
+      {
+        "num": "2",
+        "net": ""
+      },
+      {
+        "num": "3",
+        "net": "INT_IN"
+      },
+      {
+        "num": "4",
+        "net": "UART_IRQ"
+      },
+      {
+        "num": "5",
+        "net": "WDI_UNO"
+      },
+      {
+        "num": "6",
+        "net": "CRYO_REQ"
+      },
+      {
+        "num": "7",
+        "net": "ROUGH_REQ"
+      },
+      {
+        "num": "8",
+        "net": "VENT_REQ"
+      }
+    ]
+  },
+  {
+    "ref": "J6",
+    "value": "J_UNO_D8",
+    "lib_id": "Connector_Generic:Conn_01x10",
+    "footprint": "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ARM_BTN"
+      },
+      {
+        "num": "2",
+        "net": "STOP_NODE"
+      },
+      {
+        "num": "3",
+        "net": "START_BTN"
+      },
+      {
+        "num": "4",
+        "net": "MODE_MAN"
+      },
+      {
+        "num": "5",
+        "net": "MODE_AUTO"
+      },
+      {
+        "num": "6",
+        "net": ""
+      },
+      {
+        "num": "7",
+        "net": "GND"
+      },
+      {
+        "num": "8",
+        "net": ""
+      },
+      {
+        "num": "9",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "10",
+        "net": "SCL_5V"
+      }
+    ]
+  },
+  {
+    "ref": "J7",
+    "value": "J_PANEL",
+    "lib_id": "Connector_Generic:Conn_01x10",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-10-5.08_1x10_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      },
+      {
+        "num": "3",
+        "net": "KEY_OK"
+      },
+      {
+        "num": "4",
+        "net": "MODE_MAN"
+      },
+      {
+        "num": "5",
+        "net": "MODE_AUTO"
+      },
+      {
+        "num": "6",
+        "net": "ENABLE_RAW"
+      },
+      {
+        "num": "7",
+        "net": "ENABLE_SW"
+      },
+      {
+        "num": "8",
+        "net": "STOP_NODE"
+      },
+      {
+        "num": "9",
+        "net": "CRYO_REQ"
+      },
+      {
+        "num": "10",
+        "net": "ROUGH_REQ"
+      }
+    ]
+  },
+  {
+    "ref": "J8",
+    "value": "J_PANEL_B",
+    "lib_id": "Connector_Generic:Conn_01x04",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "VENT_REQ"
+      },
+      {
+        "num": "2",
+        "net": "ARM_BTN"
+      },
+      {
+        "num": "3",
+        "net": "START_BTN"
+      },
+      {
+        "num": "4",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R18",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "CRYO_REQ"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R19",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ROUGH_REQ"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R20",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "VENT_REQ"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R21",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "ARM_BTN"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R22",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "START_BTN"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J9",
+    "value": "J_DISPLAY",
+    "lib_id": "Connector_Generic:Conn_01x04",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      },
+      {
+        "num": "3",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "4",
+        "net": "SCL_5V"
+      }
+    ]
+  },
+  {
+    "ref": "Q4",
+    "value": "BSS138",
+    "lib_id": "Transistor_FET:BSS138",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "SDA_3V3"
+      },
+      {
+        "num": "3",
+        "net": "SDA_5V"
+      }
+    ]
+  },
+  {
+    "ref": "R23",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R24",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SDA_3V3"
+      },
+      {
+        "num": "2",
+        "net": "+3V3"
+      }
+    ]
+  },
+  {
+    "ref": "Q5",
+    "value": "BSS138",
+    "lib_id": "Transistor_FET:BSS138",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "SCL_3V3"
+      },
+      {
+        "num": "3",
+        "net": "SCL_5V"
+      }
+    ]
+  },
+  {
+    "ref": "R25",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SCL_5V"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R26",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SCL_3V3"
+      },
+      {
+        "num": "2",
+        "net": "+3V3"
+      }
+    ]
+  },
+  {
+    "ref": "U4",
+    "value": "MCP23017_OUT_0x20",
+    "lib_id": "Interface_Expansion:MCP23017x-x-SP",
+    "footprint": "Package_DIP:DIP-28_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_SPARE0"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_SPARE1"
+      },
+      {
+        "num": "3",
+        "net": ""
+      },
+      {
+        "num": "4",
+        "net": ""
+      },
+      {
+        "num": "5",
+        "net": ""
+      },
+      {
+        "num": "6",
+        "net": ""
+      },
+      {
+        "num": "7",
+        "net": ""
+      },
+      {
+        "num": "8",
+        "net": "GPIO_LED_SEQ"
+      },
+      {
+        "num": "9",
+        "net": "+5V"
+      },
+      {
+        "num": "10",
+        "net": "GND"
+      },
+      {
+        "num": "11",
+        "net": ""
+      },
+      {
+        "num": "12",
+        "net": "SCL_5V"
+      },
+      {
+        "num": "13",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "14",
+        "net": ""
+      },
+      {
+        "num": "15",
+        "net": "GND"
+      },
+      {
+        "num": "16",
+        "net": "GND"
+      },
+      {
+        "num": "17",
+        "net": "GND"
+      },
+      {
+        "num": "18",
+        "net": "WD_OK"
+      },
+      {
+        "num": "19",
+        "net": "OUT_INT"
+      },
+      {
+        "num": "20",
+        "net": "OUT_INT"
+      },
+      {
+        "num": "21",
+        "net": "GPIO_CRYO_OPEN"
+      },
+      {
+        "num": "22",
+        "net": "GPIO_CRYO_CLOSE"
+      },
+      {
+        "num": "23",
+        "net": "GPIO_ROUGH_OPEN"
+      },
+      {
+        "num": "24",
+        "net": "GPIO_ROUGH_CLOSE"
+      },
+      {
+        "num": "25",
+        "net": "GPIO_VENT_OPEN"
+      },
+      {
+        "num": "26",
+        "net": "GPIO_VENT_CLOSE"
+      },
+      {
+        "num": "27",
+        "net": "GPIO_LED_FAULT"
+      },
+      {
+        "num": "28",
+        "net": "GPIO_LED_ARMED"
+      }
+    ]
+  },
+  {
+    "ref": "C10",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R27",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OUT_INT"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "U5",
+    "value": "MCP23017_IN_0x21",
+    "lib_id": "Interface_Expansion:MCP23017x-x-SP",
+    "footprint": "Package_DIP:DIP-28_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_PS101"
+      },
+      {
+        "num": "2",
+        "net": "IN_P102"
+      },
+      {
+        "num": "3",
+        "net": "IN_IGOFF"
+      },
+      {
+        "num": "4",
+        "net": "IN_SPARE_A"
+      },
+      {
+        "num": "5",
+        "net": "IN_SPARE_B"
+      },
+      {
+        "num": "6",
+        "net": ""
+      },
+      {
+        "num": "7",
+        "net": ""
+      },
+      {
+        "num": "8",
+        "net": ""
+      },
+      {
+        "num": "9",
+        "net": "+5V"
+      },
+      {
+        "num": "10",
+        "net": "GND"
+      },
+      {
+        "num": "11",
+        "net": ""
+      },
+      {
+        "num": "12",
+        "net": "SCL_5V"
+      },
+      {
+        "num": "13",
+        "net": "SDA_5V"
+      },
+      {
+        "num": "14",
+        "net": ""
+      },
+      {
+        "num": "15",
+        "net": "+5V"
+      },
+      {
+        "num": "16",
+        "net": "GND"
+      },
+      {
+        "num": "17",
+        "net": "GND"
+      },
+      {
+        "num": "18",
+        "net": "WD_OK"
+      },
+      {
+        "num": "19",
+        "net": "INT_IN"
+      },
+      {
+        "num": "20",
+        "net": "INT_IN"
+      },
+      {
+        "num": "21",
+        "net": "IN_ZS101C"
+      },
+      {
+        "num": "22",
+        "net": "IN_ZS101O"
+      },
+      {
+        "num": "23",
+        "net": "IN_ZS102C"
+      },
+      {
+        "num": "24",
+        "net": "IN_ZS102O"
+      },
+      {
+        "num": "25",
+        "net": "IN_ZS103C"
+      },
+      {
+        "num": "26",
+        "net": "IN_ZS103O"
+      },
+      {
+        "num": "27",
+        "net": "IN_TI101"
+      },
+      {
+        "num": "28",
+        "net": ""
+      }
+    ]
+  },
+  {
+    "ref": "C11",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R28",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "INT_IN"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "R29",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_LED_FAULT"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_FAULT_LED"
+      }
+    ]
+  },
+  {
+    "ref": "D12",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_FAULT_LED"
+      }
+    ]
+  },
+  {
+    "ref": "R30",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_LED_ARMED"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_ARMED_LED"
+      }
+    ]
+  },
+  {
+    "ref": "D13",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_ARMED_LED"
+      }
+    ]
+  },
+  {
+    "ref": "R31",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_LED_SEQ"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_SEQ_LED"
+      }
+    ]
+  },
+  {
+    "ref": "D14",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_LED_SEQ_LED"
+      }
+    ]
+  },
+  {
+    "ref": "R32",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_SPARE0"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_SPARE0_LED"
+      }
+    ]
+  },
+  {
+    "ref": "D15",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_SPARE0_LED"
+      }
+    ]
+  },
+  {
+    "ref": "R33",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_SPARE1"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_SPARE1_LED"
+      }
+    ]
+  },
+  {
+    "ref": "D16",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "GPIO_SPARE1_LED"
+      }
+    ]
+  },
+  {
+    "ref": "U6",
+    "value": "SC16IS752IPW",
+    "lib_id": "Interface_UART:SC16IS752IPW",
+    "footprint": "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": ""
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "UART_TX"
+      },
+      {
+        "num": "4",
+        "net": "UART_RX"
+      },
+      {
+        "num": "5",
+        "net": "UART_RESET"
+      },
+      {
+        "num": "6",
+        "net": "XTAL1"
+      },
+      {
+        "num": "7",
+        "net": "XTAL2"
+      },
+      {
+        "num": "8",
+        "net": "+3V3"
+      },
+      {
+        "num": "9",
+        "net": "+3V3"
+      },
+      {
+        "num": "10",
+        "net": "+3V3"
+      },
+      {
+        "num": "11",
+        "net": "+3V3"
+      },
+      {
+        "num": "12",
+        "net": ""
+      },
+      {
+        "num": "13",
+        "net": "SCL_3V3"
+      },
+      {
+        "num": "14",
+        "net": "SDA_3V3"
+      },
+      {
+        "num": "15",
+        "net": "UART_IRQ"
+      },
+      {
+        "num": "16",
+        "net": "GND"
+      },
+      {
+        "num": "17",
+        "net": ""
+      },
+      {
+        "num": "18",
+        "net": "RS485_DE"
+      },
+      {
+        "num": "19",
+        "net": ""
+      },
+      {
+        "num": "20",
+        "net": ""
+      },
+      {
+        "num": "21",
+        "net": ""
+      },
+      {
+        "num": "22",
+        "net": "GND"
+      },
+      {
+        "num": "23",
+        "net": ""
+      },
+      {
+        "num": "24",
+        "net": "GND"
+      },
+      {
+        "num": "25",
+        "net": ""
+      },
+      {
+        "num": "26",
+        "net": ""
+      },
+      {
+        "num": "27",
+        "net": ""
+      },
+      {
+        "num": "28",
+        "net": ""
+      }
+    ]
+  },
+  {
+    "ref": "C12",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R34",
+    "value": "1k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "UART_IRQ"
+      },
+      {
+        "num": "2",
+        "net": "+3V3"
+      }
+    ]
+  },
+  {
+    "ref": "D17",
+    "value": "1N4148",
+    "lib_id": "Diode:1N4148",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "WD_OK"
+      },
+      {
+        "num": "2",
+        "net": "UART_RESET"
+      }
+    ]
+  },
+  {
+    "ref": "R35",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "UART_RESET"
+      },
+      {
+        "num": "2",
+        "net": "+3V3"
+      }
+    ]
+  },
+  {
+    "ref": "Y1",
+    "value": "1.8432MHz",
+    "lib_id": "Device:Crystal",
+    "footprint": "Crystal:Crystal_HC49-U_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "XTAL1"
+      },
+      {
+        "num": "2",
+        "net": "XTAL2"
+      }
+    ]
+  },
+  {
+    "ref": "C13",
+    "value": "22p",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "XTAL1"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C14",
+    "value": "22p",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "XTAL2"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R36",
+    "value": "1M",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "XTAL1"
+      },
+      {
+        "num": "2",
+        "net": "XTAL2"
+      }
+    ]
+  },
+  {
+    "ref": "R37",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "RS485_DE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "U7",
+    "value": "ISO3082DW",
+    "lib_id": "Interface_UART:ISO3082DW",
+    "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "UART_RX"
+      },
+      {
+        "num": "4",
+        "net": "RS485_DE"
+      },
+      {
+        "num": "5",
+        "net": "RS485_DE"
+      },
+      {
+        "num": "6",
+        "net": "UART_TX"
+      },
+      {
+        "num": "7",
+        "net": "GND"
+      },
+      {
+        "num": "8",
+        "net": "GND"
+      },
+      {
+        "num": "9",
+        "net": "GND_ISO"
+      },
+      {
+        "num": "10",
+        "net": "GND_ISO"
+      },
+      {
+        "num": "11",
+        "net": ""
+      },
+      {
+        "num": "12",
+        "net": "BUS_A"
+      },
+      {
+        "num": "13",
+        "net": "BUS_B"
+      },
+      {
+        "num": "14",
+        "net": ""
+      },
+      {
+        "num": "15",
+        "net": "GND_ISO"
+      },
+      {
+        "num": "16",
+        "net": "+5V_ISO"
+      }
+    ]
+  },
+  {
+    "ref": "C15",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+3V3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "U8",
+    "value": "CRE1S0505SC",
+    "lib_id": "Converter_DCDC_Isolated:CRE1S0505SC",
+    "footprint": "Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      },
+      {
+        "num": "3",
+        "net": "GND_ISO"
+      },
+      {
+        "num": "4",
+        "net": "+5V_ISO"
+      }
+    ]
+  },
+  {
+    "ref": "C16",
+    "value": "10uF/16V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C17",
+    "value": "10uF/16V",
+    "lib_id": "Device:C_Polarized",
+    "footprint": "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V_ISO"
+      },
+      {
+        "num": "2",
+        "net": "GND_ISO"
+      }
+    ]
+  },
+  {
+    "ref": "C18",
+    "value": "100n",
+    "lib_id": "Device:C",
+    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V_ISO"
+      },
+      {
+        "num": "2",
+        "net": "GND_ISO"
+      }
+    ]
+  },
+  {
+    "ref": "R38",
+    "value": "680",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+5V_ISO"
+      },
+      {
+        "num": "2",
+        "net": "BUS_A"
+      }
+    ]
+  },
+  {
+    "ref": "R39",
+    "value": "680",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "BUS_B"
+      },
+      {
+        "num": "2",
+        "net": "GND_ISO"
+      }
+    ]
+  },
+  {
+    "ref": "JP1",
+    "value": "TERM_120_FIT_TO_ENABLE",
+    "lib_id": "Jumper:Jumper_2_Open",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "BUS_A"
+      },
+      {
+        "num": "2",
+        "net": "TERM_MID"
+      }
+    ]
+  },
+  {
+    "ref": "R40",
+    "value": "120",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "TERM_MID"
+      },
+      {
+        "num": "2",
+        "net": "BUS_B"
+      }
+    ]
+  },
+  {
+    "ref": "J10",
+    "value": "J_HORNET",
+    "lib_id": "Connector:DE9_Pins",
+    "footprint": "Connector_Dsub:DSUB-9_Pins_Vertical_P2.77x2.84mm_MountingHoles",
+    "pads": [
+      {
+        "num": "1",
+        "net": "HORNET_RLY_1"
+      },
+      {
+        "num": "2",
+        "net": ""
+      },
+      {
+        "num": "3",
+        "net": ""
+      },
+      {
+        "num": "4",
+        "net": "GND_ISO"
+      },
+      {
+        "num": "5",
+        "net": "HORNET_RLY_5"
+      },
+      {
+        "num": "6",
+        "net": "BUS_B"
+      },
+      {
+        "num": "7",
+        "net": "HORNET_RLY_7"
+      },
+      {
+        "num": "8",
+        "net": ""
+      },
+      {
+        "num": "9",
+        "net": "BUS_A"
+      }
+    ]
+  },
+  {
+    "ref": "J11",
+    "value": "J_HORNET_RELAY_UNCOMMITTED",
+    "lib_id": "Connector_Generic:Conn_01x03",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "HORNET_RLY_1"
+      },
+      {
+        "num": "2",
+        "net": "HORNET_RLY_5"
+      },
+      {
+        "num": "3",
+        "net": "HORNET_RLY_7"
+      }
+    ]
+  },
+  {
+    "ref": "U9",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_0"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS101C"
+      }
+    ]
+  },
+  {
+    "ref": "R41",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_0"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_0"
+      }
+    ]
+  },
+  {
+    "ref": "R42",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS101C"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J12",
+    "value": "J_ZS101C",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_0"
+      }
+    ]
+  },
+  {
+    "ref": "U10",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_1"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS101O"
+      }
+    ]
+  },
+  {
+    "ref": "R43",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_1"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_1"
+      }
+    ]
+  },
+  {
+    "ref": "R44",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS101O"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J13",
+    "value": "J_ZS101O",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_1"
+      }
+    ]
+  },
+  {
+    "ref": "U11",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_2"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS102C"
+      }
+    ]
+  },
+  {
+    "ref": "R45",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_2"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_2"
+      }
+    ]
+  },
+  {
+    "ref": "R46",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS102C"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J14",
+    "value": "J_ZS102C",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_2"
+      }
+    ]
+  },
+  {
+    "ref": "U12",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_3"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS102O"
+      }
+    ]
+  },
+  {
+    "ref": "R47",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_3"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_3"
+      }
+    ]
+  },
+  {
+    "ref": "R48",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS102O"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J15",
+    "value": "J_ZS102O",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_3"
+      }
+    ]
+  },
+  {
+    "ref": "U13",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_4"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS103C"
+      }
+    ]
+  },
+  {
+    "ref": "R49",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_4"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_4"
+      }
+    ]
+  },
+  {
+    "ref": "R50",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS103C"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J16",
+    "value": "J_ZS103C",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_4"
+      }
+    ]
+  },
+  {
+    "ref": "U14",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_5"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_ZS103O"
+      }
+    ]
+  },
+  {
+    "ref": "R51",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_5"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_5"
+      }
+    ]
+  },
+  {
+    "ref": "R52",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_ZS103O"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J17",
+    "value": "J_ZS103O",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_5"
+      }
+    ]
+  },
+  {
+    "ref": "U15",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_6"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_TI101"
+      }
+    ]
+  },
+  {
+    "ref": "R53",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_6"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_6"
+      }
+    ]
+  },
+  {
+    "ref": "R54",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_TI101"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J18",
+    "value": "J_TI101",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_6"
+      }
+    ]
+  },
+  {
+    "ref": "U16",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_7"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_PS101"
+      }
+    ]
+  },
+  {
+    "ref": "R55",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_7"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_7"
+      }
+    ]
+  },
+  {
+    "ref": "R56",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_PS101"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J19",
+    "value": "J_PS101",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_7"
+      }
+    ]
+  },
+  {
+    "ref": "U17",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_8"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_P102"
+      }
+    ]
+  },
+  {
+    "ref": "R57",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_8"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_8"
+      }
+    ]
+  },
+  {
+    "ref": "R58",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_P102"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J20",
+    "value": "J_P102",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_8"
+      }
+    ]
+  },
+  {
+    "ref": "U18",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_9"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_IGOFF"
+      }
+    ]
+  },
+  {
+    "ref": "R59",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_9"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_9"
+      }
+    ]
+  },
+  {
+    "ref": "R60",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_IGOFF"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J21",
+    "value": "J_IGOFF",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_9"
+      }
+    ]
+  },
+  {
+    "ref": "U19",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_10"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_SPARE_A"
+      }
+    ]
+  },
+  {
+    "ref": "R61",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_10"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_10"
+      }
+    ]
+  },
+  {
+    "ref": "R62",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_SPARE_A"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J22",
+    "value": "J_SPARE_A",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_10"
+      }
+    ]
+  },
+  {
+    "ref": "U20",
+    "value": "PC817",
+    "lib_id": "Isolator:PC817",
+    "footprint": "Package_DIP:DIP-4_W7.62mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "OPTO_A_11"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      },
+      {
+        "num": "4",
+        "net": "IN_SPARE_B"
+      }
+    ]
+  },
+  {
+    "ref": "R63",
+    "value": "4.7k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "SIG_11"
+      },
+      {
+        "num": "2",
+        "net": "OPTO_A_11"
+      }
+    ]
+  },
+  {
+    "ref": "R64",
+    "value": "10k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "IN_SPARE_B"
+      },
+      {
+        "num": "2",
+        "net": "+5V"
+      }
+    ]
+  },
+  {
+    "ref": "J23",
+    "value": "J_SPARE_B",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_FUSED"
+      },
+      {
+        "num": "2",
+        "net": "SIG_11"
+      }
+    ]
+  },
+  {
+    "ref": "Q6",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_OPEN"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R65",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_CRYO_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GATE_CRYO_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R66",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D18",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D19",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R67",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_CRYO_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "LED_CRYO_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "D20",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_CRYO_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "J24",
+    "value": "J_CRYO_OPEN",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "Q7",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_CLOSE"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R68",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GATE_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R69",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D21",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D22",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R70",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "LED_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D23",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "J25",
+    "value": "J_CRYO_CLOSE",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "JP2",
+    "value": "FORCE_CRYO_CLOSE",
+    "lib_id": "Jumper:Jumper_2_Open",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "DRAIN_CRYO_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D24",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "FORCE_BUS"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_CRYO_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "Q8",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_OPEN"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R71",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_ROUGH_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GATE_ROUGH_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R72",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D25",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D26",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R73",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_ROUGH_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "LED_ROUGH_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "D27",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_ROUGH_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "J26",
+    "value": "J_ROUGH_OPEN",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "Q9",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_CLOSE"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R74",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GATE_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R75",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D28",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D29",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R76",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "LED_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D30",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "J27",
+    "value": "J_ROUGH_CLOSE",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "JP3",
+    "value": "FORCE_ROUGH_CLOSE",
+    "lib_id": "Jumper:Jumper_2_Open",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "DRAIN_ROUGH_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D31",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "FORCE_BUS"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_ROUGH_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "Q10",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_OPEN"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R77",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_VENT_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GATE_VENT_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R78",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D32",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D33",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "R79",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_VENT_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "LED_VENT_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "D34",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_VENT_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "J28",
+    "value": "J_VENT_OPEN",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_OPEN"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_OPEN"
+      }
+    ]
+  },
+  {
+    "ref": "Q11",
+    "value": "IRLZ44N",
+    "lib_id": "Transistor_FET:IRLZ44N",
+    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_CLOSE"
+      },
+      {
+        "num": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R80",
+    "value": "100",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GATE_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R81",
+    "value": "100k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D35",
+    "value": "12V",
+    "lib_id": "Device:D_Zener",
+    "footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GATE_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D36",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "R82",
+    "value": "2.2k",
+    "lib_id": "Device:R",
+    "footprint": "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GPIO_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "LED_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D37",
+    "value": "LED",
+    "lib_id": "Device:LED",
+    "footprint": "LED_THT:LED_D5.0mm",
+    "pads": [
+      {
+        "num": "1",
+        "net": "GND"
+      },
+      {
+        "num": "2",
+        "net": "LED_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "J29",
+    "value": "J_VENT_CLOSE",
+    "lib_id": "Connector_Generic:Conn_01x02",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "+24V_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "DRAIN_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "JP4",
+    "value": "FORCE_VENT_CLOSE",
+    "lib_id": "Jumper:Jumper_2_Open",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "pads": [
+      {
+        "num": "1",
+        "net": "DRAIN_VENT_CLOSE"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_VENT_CLOSE"
+      }
+    ]
+  },
+  {
+    "ref": "D38",
+    "value": "1N4007",
+    "lib_id": "Diode:1N4007",
+    "footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+    "pads": [
+      {
+        "num": "1",
+        "net": "FORCE_BUS"
+      },
+      {
+        "num": "2",
+        "net": "FORCE_MID_VENT_CLOSE"
+      }
+    ]
+  }
+]
