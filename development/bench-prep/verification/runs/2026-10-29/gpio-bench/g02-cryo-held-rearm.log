@@ -1,0 +1,5 @@
+﻿# G02 cryo held, Schneider re-arm flipped, button still held
+# date: 2026-10-29 13:05:55
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0111111110 armed=0 cryo=0 vent=0
+# A0=1 request held. B4=0 re-arm open again after the flip. armed stayed 0. cryo stayed 0.
+# Operator reported the cryo lamp stayed off.

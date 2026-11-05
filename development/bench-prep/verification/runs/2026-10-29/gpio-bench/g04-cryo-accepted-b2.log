@@ -1,0 +1,3 @@
+﻿# cryo held while armed, B2 re-arm
+# date: 2026-10-29
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B2=1011111110 armed=1 cryo=1 vent=0

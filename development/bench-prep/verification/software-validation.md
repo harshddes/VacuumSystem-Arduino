@@ -13,7 +13,7 @@ Revision 2026-10-20. Repository base reviewed: `c6d7e8271d9b1f431d9ebfd1639af97e
 | Existing bench permission core | PASS: 519 scenarios |
 | Actual new GPIO sketch with simulated time/pins/bus | PASS: startup, deliberate re-arm, mapping, denied requests, conflict, permission loss, bus loss and reconnect |
 | Arduino Uno AVR compile/link: UART loopback | PASS: 7,568 bytes flash; 603 bytes global RAM |
-| Arduino Uno AVR compile/link: GPIO interlock bench | PASS: 9,334 bytes flash; 520 bytes global RAM |
+| Arduino Uno AVR compile/link: GPIO interlock bench | PASS: 10,224 bytes flash; 563 bytes global RAM after Phase 3 D8/reed print |
 
 Target build: Arduino CLI 1.2.2, `arduino:avr:uno`, Arduino AVR Boards 1.8.6. Libraries: DFRobot_IICSerial 1.0.2; Adafruit MCP23017 Arduino Library 2.3.2; Adafruit BusIO 1.17.4. Arduino core Wire/SPI used where needed. Global RAM reports exclude stack/runtime needs and do not establish capacity for all future phases.
 

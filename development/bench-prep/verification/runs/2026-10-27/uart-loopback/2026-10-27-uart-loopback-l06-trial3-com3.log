@@ -1,0 +1,26 @@
+﻿# uart_loopback L06 trial 3: operator called this the last power pull and asked to skip the rest
+# date: 2026-10-27
+# port: COM3 115200 8N1, DTR left off
+# sketch commit: 5ed3207
+# trial 2 ended near pass=30 at 16:12:12. A continued run would be far above pass=20.
+# five-trial L06 is not complete if this is only trial 3
+16:15:22.799 UART1 PASS
+16:15:22.825 UART2 PASS
+16:15:22.828 cumulative pass=32 fail=0
+16:15:24.860 UART1 PASS
+16:15:24.892 UART2 PASS
+16:15:24.897 cumulative pass=34 fail=0
+16:15:26.928 UART1 PASS
+16:15:26.961 UART2 PASS
+16:15:26.966 cumulative pass=36 fail=0
+16:15:28.997 UART1 PASS
+16:15:29.030 UART2 PASS
+16:15:29.034 cumulative pass=38 fail=0
+16:15:31.064 UART1 PASS
+16:15:31.098 UART2 PASS
+16:15:31.103 cumulative pass=40 fail=0
+16:15:33.133 UART1 PASS
+# summary: joined a running board. No boot banner, so this open did not restart it.
+# first tally: pass=32 fail=0 at 16:15:22. About half a minute awake.
+# trial 2 was pass=30 at 16:12:12. Left running, the score would have been near 210. pass=32 is a fresh start.
+# both ports PASS, fail stayed 0. Operator then stopped the power-pull series. Trials 4 and 5 were not run.

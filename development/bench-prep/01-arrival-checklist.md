@@ -21,7 +21,7 @@ All ordered electronics are now reported received. The checklist order still app
 - Upload `uart_loopback`. Serial Monitor **115200**, both module UARTs **9600**. Require repeated UART1 PASS and UART2 PASS. Record 20 successful cycles and five power-up trials; these are bench acceptance targets, not a reliability certification.
 - With power removed, remove only UART1's loopback and repeat the test. UART1 must report FAIL while UART2 can still PASS. Restore the wiring unpowered and verify recovery.
 - Only after the loopback passes, power down and change to `day1-rs485-logic`: remove both loops and fit R-01 through R-08. Do not leave T1/R1 shorted while connecting the adapter.
-- DFR0845 bus terminals remain disconnected unless the additional Hornet/second-endpoint prerequisites in `06-field-holds.md` are satisfied. Do not use the UART loopback firmware with this harness.
+- DFR0845 bus terminals remain disconnected unless the additional Hornet/second-endpoint prerequisites in `06-field-holds.md` are satisfied. The one read-only trial, when started, follows only [07-hornet-read-trial.md](07-hornet-read-trial.md). Do not use the UART loopback firmware with this harness.
 
 ## Setup 2: separate Adafruit input/LED bench
 
@@ -31,3 +31,10 @@ All ordered electronics are now reported received. The checklist order still app
 - The optional 6318 can share 5V, GND, SDA and SCL at default **0x20**. Leave its V+ supply terminal and all eight load outputs unconnected. It is not needed for the input test to pass.
 - Upload `gpio_interlock_bench`, Serial Monitor **115200**, and execute the acceptance table.
 - Park the 5648, DE-9 breakouts and Perma-Proto. No additional board must be connected just because it arrived.
+
+## Setup 3: one cryo gate
+
+- Follow only [08-gate-position.md](08-gate-position.md). USB unplugged while the wires go on. Air at or below 80 psig. Do not move the speed-controller screws.
+- Meter both reed pairs before they land. A closed pair that ohms as a dead short stays off 5346 B4.
+- Land the open pair on 5346 A4 to logic ground. Land the closed pair on B4 only if it opens and closes. Uno 5V/GND/D8 to the module DC+/DC−/IN with the H/L jumper on H. Module COM/NO in the 24 V Humphrey loop. Diode on the Humphrey coil. 24 V negative stays off Uno ground. No extra transistor. The 6318 is not in this circuit.
+- Upload `gpio_interlock_bench`. Do not type `o` until P01 has been read. A2 stays the simulated closed jumper. OPEN false is never treated as closed.

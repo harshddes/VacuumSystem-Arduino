@@ -1,0 +1,4 @@
+﻿# arm on B2
+# date: 2026-10-29
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B2=0011111110 armed=1 cryo=0 vent=0
+# B2 is open again after the arm edge. Fault lamp commanded off.

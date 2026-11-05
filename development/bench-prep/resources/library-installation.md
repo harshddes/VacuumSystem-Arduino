@@ -5,6 +5,7 @@ Use Arduino IDE's **Sketch > Include Library > Add .ZIP Library**. Choose each Z
 | Sketch | Required library ZIPs |
 |---|---|
 | `uart_loopback` | `DFRobot_IICSerial-1.0.2.zip` |
+| `hornet_read_trial` | `DFRobot_IICSerial-1.0.2.zip` |
 | `gpio_interlock_bench` | `Adafruit_MCP23017_Arduino_Library-2.3.2.zip` and `Adafruit_BusIO-1.17.4.zip` |
 
 The ZIPs are in this directory. Wire and SPI come with the **Arduino AVR Boards 1.8.6** core used for validation. Both sketches target **Arduino Uno / arduino:avr:uno**. They do not use Uno D5/D6/D7 and do not require LabVIEW.

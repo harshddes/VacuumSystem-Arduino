@@ -33,7 +33,7 @@ Manual mode uses the same permissions as auto mode. If manual operation must sti
 
 Before selecting a driver, record coil AC/DC voltage, current, duty rating, number of coils, suppression, pilot normal state and any close-coil requirement. Driver ratings must cover continuous current and heating, not only a marketing peak rating. Match flyback suppression to a DC coil and required release time; AC coils require a different scheme.
 
-Adafruit **6318, eight-channel I²C solenoid driver**, is a candidate for compatible 3–24 V DC loads. Its extra GPIO may reduce the need for a separate expander. It is **not selected for the actual gate yet**. Neither its outputs nor a generic I²C expander are protected 24 V position inputs.
+Adafruit **6318, eight-channel I²C solenoid driver**, is a candidate for compatible 3–24 V DC loads. Its extra GPIO may reduce the need for a separate expander. Phase 3 does **not** use it. The cryo-gate trial uses a 5 V relay module: Uno D8 to **IN**, jumper on **H**, Humphrey 24 V on **COM**/**NO**. Wiring is in [bench-prep/08-gate-position.md](bench-prep/08-gate-position.md). Neither the 6318 nor a generic I²C expander is a protected 24 V position input. The reeds are 5 V pull-ups on 5346 A4 and B4.
 
 Provide suitably rated input isolation/conditioning for each field sensor type. Dry contacts, sourcing sensors, sinking sensors and open collectors require different wiring. Read OPEN and CLOSED feedback independently where available; inconsistent states must be detected. Secure terminal blocks, labeled cables, strain relief, appropriate fusing and an enclosure replace loose breadboard field connections before a real-valve trial.
 

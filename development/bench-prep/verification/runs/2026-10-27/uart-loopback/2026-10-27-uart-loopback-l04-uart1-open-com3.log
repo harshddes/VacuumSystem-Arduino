@@ -1,0 +1,42 @@
+﻿# uart_loopback L04 attempt: UART1 loop should be open, UART2 loop restored
+# date: 2026-10-27
+# port: COM3 115200 8N1
+# board: USB VID_2341 PID_0043 serial 5583833383235121B1D0 (Arduino Uno)
+# sketch: development/bench-prep/firmware/uart_loopback/uart_loopback.ino
+# commit: 5ed3207
+# method: operator said the UART1 loop is now the open one; DTR reset; read 22s
+# expected: UART1 FAIL, UART2 PASS
+16:04:35.351 BENCH ONLY: both UART T/R loops fitted, no RS485 adapter
+16:04:35.389 USB 115200; module UARTs 9600. Testing every 2 seconds.
+16:04:35.701 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:35.735 UART2 PASS
+16:04:35.735 cumulative pass=1 fail=1
+16:04:38.053 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:38.081 UART2 PASS
+16:04:38.085 cumulative pass=2 fail=2
+16:04:40.400 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:40.428 UART2 PASS
+16:04:40.431 cumulative pass=3 fail=3
+16:04:42.748 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:42.780 UART2 PASS
+16:04:42.781 cumulative pass=4 fail=4
+16:04:45.096 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:45.127 UART2 PASS
+16:04:45.129 cumulative pass=5 fail=5
+16:04:47.443 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:47.477 UART2 PASS
+16:04:47.478 cumulative pass=6 fail=6
+16:04:49.791 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:49.823 UART2 PASS
+16:04:49.823 cumulative pass=7 fail=7
+16:04:52.142 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:52.172 UART2 PASS
+16:04:52.175 cumulative pass=8 fail=8
+16:04:54.489 UART1 FAIL - inspect power, DIP and same-port T/R loop
+16:04:54.519 UART2 PASS
+16:04:54.523 cumulative pass=9 fail=9
+16:04:56.837 UART1 FAIL - inspect power, DIP and same-port T/R loop
+# summary: 9 complete rounds. Every round was UART1 FAIL and UART2 PASS. Last line is round 10 UART1 FAIL; the port closed before UART2 printed.
+# cumulative at 16:04:54 was pass=9 fail=9. No INIT FAIL.
+# This is the written L04 pattern.
+# The boot line "both UART T/R loops fitted" is a fixed sentence. It does not inspect the jumpers.

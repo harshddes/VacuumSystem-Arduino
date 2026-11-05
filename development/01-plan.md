@@ -43,7 +43,7 @@ Design downward: operator needs → requirements above → system interfaces →
 | 4 | Completed chamber piping survey, actuated roughing and vent paths, filament-off proof, pump-ready inputs, manual request controls | Every path is covered; vent exclusion and close priority verified using physical positions |
 | 5 | Sequence state machine, watchdog/output-enable design, secured enclosure, fused supplies, standalone controls/readout, final acceptance record | Pumpdown and vent complete unattended within the validated envelope; faults and restarts require deliberate recovery |
 
-Do not attach real coils to the Phase 1 sketch. Phase 3 introduces different firmware and field wiring after the interfaces are known. Phase 5 can reuse the Phase 3/4 wiring if enough I/O, status signals and independent inhibition were designed in from the start.
+Do not attach real coils to the Phase 1 lamp sketch. Phase 3 wiring is in [bench-prep/08-gate-position.md](bench-prep/08-gate-position.md). Phase 5 can reuse the Phase 3/4 wiring if enough I/O, status signals and independent inhibition were designed in from the start.
 
 ## Module boundaries to keep hardware reusable
 

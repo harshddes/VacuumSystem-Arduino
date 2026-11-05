@@ -1,0 +1,11 @@
+﻿# hornet H03 one send, boot BINARY READ IG
+# date: 2026-11-02
+# port: COM3 115200, DTR open only, no extra USB key
+# wires left as operator stated: UART1, screws 6/9/4
+# no filament-on, no degas
+HORNET READ ONLY. No filament. No degas. No valve.
+USB 115200. UART1 19200 8N1. Boot: BINARY READ IG cmd 0x02
+BIN IG TX 21 01 02 00 00 00 00 00 B7
+RX n=0 NONE
+IDLE. USB r=same IG, c=CG1 binary, a=ASCII RDCG1
+

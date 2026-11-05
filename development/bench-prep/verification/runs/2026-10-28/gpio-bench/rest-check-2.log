@@ -1,0 +1,8 @@
+﻿# gpio rest check after operator said wiring was finished
+# date: 2026-10-28
+# port: COM3 115200, DTR left off, no restart
+# sketch commit: 5ed3207
+# needed: 0011111110
+# read:   0011011111
+# A4 still open. B2 still grounded.
+inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0011011111 armed=0 cryo=0 vent=0

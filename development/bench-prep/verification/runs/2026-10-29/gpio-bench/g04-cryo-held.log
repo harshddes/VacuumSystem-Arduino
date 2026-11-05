@@ -1,0 +1,4 @@
+﻿# G04 cryo accepted while held
+# date: 2026-10-29
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=1011111111 armed=1 cryo=1 vent=0
+# A0=1 and cryo output=1. Release not captured yet. B4 still 1.

@@ -1,0 +1,29 @@
+﻿# uart_loopback L06 trial 2: listen after a USB power pull, DTR left off
+# date: 2026-10-27
+# port: COM3 115200 8N1
+# sketch commit: 5ed3207
+# trial 1 ended near pass=42 at 16:09:54. A continued run would be far above that.
+# a boot banner as the first line means this open restarted the board and the trial does not count
+16:12:01.627 UART1 PASS
+16:12:01.651 UART2 PASS
+16:12:01.655 cumulative pass=20 fail=0
+16:12:03.686 UART1 PASS
+16:12:03.719 UART2 PASS
+16:12:03.722 cumulative pass=22 fail=0
+16:12:05.755 UART1 PASS
+16:12:05.787 UART2 PASS
+16:12:05.791 cumulative pass=24 fail=0
+16:12:07.822 UART1 PASS
+16:12:07.855 UART2 PASS
+16:12:07.859 cumulative pass=26 fail=0
+16:12:09.891 UART1 PASS
+16:12:09.925 UART2 PASS
+16:12:09.928 cumulative pass=28 fail=0
+16:12:11.959 UART1 PASS
+16:12:11.992 UART2 PASS
+16:12:11.996 cumulative pass=30 fail=0
+16:12:14.028 UART1 PASS
+# summary: joined a running board. No boot banner, so this open did not restart it.
+# first tally: pass=20 fail=0 at 16:12:01. About 20 seconds awake.
+# trial 1 was pass=42 at 16:09:54. Left running, the score would have been near 160 by 16:12:01. pass=20 is a fresh start.
+# 6 complete rounds while listening, both ports PASS, fail stayed 0. L06 trial 2 of 5.

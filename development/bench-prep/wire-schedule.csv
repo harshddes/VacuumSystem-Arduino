@@ -39,7 +39,7 @@ G-23,day2-gpio-bench,B_CRYO_REQUEST,U2,A0 / CRYO_REQUEST,SW1,1,BENCH simulation 
 G-24,day2-gpio-bench,B_VENT_REQUEST,U2,A1 / VENT_REQUEST,SW2,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
 G-25,day2-gpio-bench,B_CRYO_CLOSED,U2,A2 / CRYO_CLOSED,SW3,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
 G-26,day2-gpio-bench,B_VENT_CLOSED,U2,A3 / VENT_CLOSED,SW4,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
-G-27,day2-gpio-bench,B_PRESSURE_VALID,U2,A4 / PRESSURE_VALID,SW5,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
+G-27,day2-gpio-bench,B_PRESSURE_VALID,U2,B5 / PRESSURE_VALID,SW5,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
 G-28,day2-gpio-bench,B_PRESSURE_LOW,U2,A5 / PRESSURE_LOW,SW6,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
 G-29,day2-gpio-bench,B_CRYO_READY,U2,A6 / CRYO_READY,SW7,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346
 G-30,day2-gpio-bench,B_OTHER_PATHS_CLOSED,U2,B0 / OTHER_PATHS_CLOSED,SW8,1,BENCH simulation only. Grounded = true. Powered field signals are not allowed.,DESIGN;MCP5346

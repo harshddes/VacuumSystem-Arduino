@@ -8,7 +8,7 @@
 2. Build the selected setup using its matching native KiCad drawing, wire IDs and diagnostic sketch.
 3. Perform [the bench checks](bench-prep/04-tests.md) and record actual results in [the physical test log](bench-prep/verification/physical-test-log.csv).
 
-The new package uses simulated sensor contacts and LED outputs. It does not release wiring to the Hornet, pilot coils or chamber. The older `02-wires.md` and direct-pin sketch are separate learning baselines; do not combine them with the expander drawing.
+The three KiCad drawings use simulated sensor contacts and LED outputs. The Hornet read-only trial is [bench-prep/07-hornet-read-trial.md](bench-prep/07-hornet-read-trial.md). The Phase 3 gate circuit is [bench-prep/08-gate-position.md](bench-prep/08-gate-position.md). Neither is a released field harness. The older `02-wires.md` and direct-pin sketch are separate learning baselines; do not combine them with the expander drawing.
 
 ## The complete development path
 

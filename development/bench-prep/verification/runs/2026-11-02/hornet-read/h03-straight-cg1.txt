@@ -1,0 +1,11 @@
+﻿# Hornet read after straight T-to-T and R-to-R. TX light had stayed lit on the flood.
+# date: 2026-11-02
+# c = binary READ CG1, a = ASCII RDCG1 only if binary came back empty
+# no filament, no degas
+HORNET READ ONLY. No HORNET READ ONLY. No filament. No degas. No valve.
+USB 115200. UART1 19200 8N1. Idle until a key.
+IDLE. USB c=CG1 binary, r=IG binary, a=ASCII RDCG1
+BIN CG1 TX 21 01 03 00 00 00 00 00 F1
+RX n=9 *<01><03><00><7F>-HD#
+HEX 2A 01 03 00 7F 2D 48 44 23
+

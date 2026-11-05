@@ -1,0 +1,4 @@
+﻿# lamps-always-on report
+# date: 2026-10-29 13:10 local read
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+# B4 stayed 0. Program commands only the fault lamp on.

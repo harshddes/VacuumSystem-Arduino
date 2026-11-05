@@ -1,0 +1,11 @@
+﻿# hornet H03 ASCII #01RDCG1
+# date: 2026-10-29
+# port: COM3 115200, DTR restart
+# sketch: hornet_read_trial, HEAD 5ed3207 uncommitted local
+# command sent by sketch: #01RDCG1 CR
+15:50:32.436 HORNET READ ONLY. No
+15:50:34.096 HORNET READ ONLY. No filament. No degas. No valve.
+15:50:34.096 USB 115200. UART1 19200 8N1. One ASCII ask: #01RDCG1 CR
+15:50:34.625 TX #01RDCG1\r
+15:50:36.633 RX n=0 NONE
+15:50:36.633 IDLE. USB r repeats the same ask only.

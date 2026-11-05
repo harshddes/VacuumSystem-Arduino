@@ -1,20 +1,35 @@
-test_id,date,operator,firmware_commit,wiring_revision,observation,measurement,status
+﻿test_id,date,operator,firmware_commit,wiring_revision,observation,measurement,status
 L01,,,,,,,NOT TESTED
-L02,,,,,,,NOT TESTED
-L03,,,,,,,NOT TESTED
-L04,,,,,,,NOT TESTED
-L05,,,,,,,NOT TESTED
-L06,,,,,,,NOT TESTED
-R01,,,,,,,NOT TESTED
-G01,,,,,,,NOT TESTED
-G02,,,,,,,NOT TESTED
-G03,,,,,,,NOT TESTED
-G04,,,,,,,NOT TESTED
+L02,2026-10-27,operator-reported meter,5ed3207,"red probe on DFR0627 + (I2C), black probe on - (I2C), USB powering the Uno","Positive 4.987 V. Polarity matches + above -. Near 5 V from the Uno supply pin.","+4.987 V DC",PASS
+L03,2026-10-27,COM3 serial capture,5ed3207,"day1-loopback claimed; desk not visually checked","26 complete rounds. UART1 PASS and UART2 PASS every round. fail stayed 0. No INIT FAIL. Window closed during round 27 after UART1 PASS.","cumulative pass=52 fail=0 at 15:55:18 local. Log: verification/runs/2026-10-27/uart-loopback/2026-10-27-uart-loopback-com3.log. Core arduino:avr 1.8.8.",PASS
+L04,2026-10-27,COM3 serial capture,5ed3207,"UART2 loop restored; UART1 loop open","9 rounds of UART1 FAIL and UART2 PASS. Fail count climbed. No whole-board pass. Earlier UART2-open run is in verification/runs/2026-10-27/uart-loopback/2026-10-27-uart-loopback-l04-com3.log.","cumulative pass=9 fail=9 at 16:04:54 local. Log: verification/runs/2026-10-27/uart-loopback/2026-10-27-uart-loopback-l04-uart1-open-com3.log",PASS
+L05,2026-10-27,COM3 serial capture,5ed3207,"UART1 loop restored after L04","10 rounds. UART1 PASS and UART2 PASS every round. fail stayed 0. Recovery after the open-loop check.","cumulative pass=20 fail=0 at 16:07:50 local. Log: verification/runs/2026-10-27/uart-loopback/2026-10-27-uart-loopback-l05-com3.log",PASS
+L06,2026-10-27,COM3 serial capture,5ed3207,"three USB power pulls measured; operator skipped the last two","Trials 1-3 each joined a fresh start with both ports PASS and fail at 0. Operator stopped the series after trial 3. Trials 4 and 5 were not run, so the five-pull target is not met.","trial 3: pass=32 fail=0 at 16:15:22 local. Log: verification/runs/2026-10-27/uart-loopback/2026-10-27-uart-loopback-l06-trial3-com3.log",3/5 SKIPPED
+R01,2026-10-27,operator-reported inspection,5ed3207,"day1-rs485-logic as reported; USB stayed unplugged; loopback sketch not run","Operator confirmed both loop jumpers off, UART1 T to DFR0845 R, UART1 R to DFR0845 T, and A/B/bus ground/12V output/both 12V-IN screws empty. This is a wire inspection. No RS485 reply was tested.","visual confirmation only",PASS
+G01,2026-10-29,COM3 serial capture,5ed3207,"B5 grounded, B4 open, white ground strip out of the signal rows","Restart came up online at 0x21. Inputs stayed 0011111110. cryo=0 vent=0 armed=0, so the fault lamp is commanded on. The lamps were not looked at.","inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 from 13:00:26 to 13:00:31. Log: verification/runs/2026-10-29/gpio-bench/g01-startup.log",SERIAL PASS
+G02,2026-10-29,COM3 serial capture plus operator lamp report,5ed3207,"cryo button held, Schneider re-arm flipped and returned, button still held","Request stayed held (A0=1). Re-arm was open again after the flip (B4=0). armed stayed 0. cryo stayed 0. Operator saw the cryo lamp stay off.","inputs 0111111110 armed=0 cryo=0 vent=0 at 13:05:55. Log: verification/runs/2026-10-29/gpio-bench/g02-cryo-held-rearm.log",PASS
+G03,2026-10-29,COM3 serial capture,5ed3207,"re-arm moved back to expander B2 where the Schneider switch is wired","Switch on B2 armed the board. B2 is open again. armed=1 cryo=0 vent=0, so the fault lamp is commanded off. Lamps were not looked at.","inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B2=0011111110 armed=1 cryo=0 vent=0. Log: verification/runs/2026-10-29/gpio-bench/g03-b2-armed.log",SERIAL PASS
+G04,2026-10-29,COM3 serial capture,5ed3207,"armed on B2; cryo held then later released","Held: A0=1 cryo=1 vent=0 armed=1. Later rest in the critical log: A0=0 cryo=0 vent=0 armed stayed 1.","hold log g04-cryo-accepted-b2.log; rest in critical-sequence.log from 14:09:46",PASS
 G05,,,,,,,NOT TESTED
-G06,,,,,,,NOT TESTED
-G07,,,,,,,NOT TESTED
+G06,2026-10-29,COM3 serial capture,5ed3207,"B5 removed while disarmed, cryo pressed, B5 restored","B5 went to 0 at 14:12:23. Cryo press at 14:12:30 stayed cryo=0 and armed=0. B5 restored at 14:12:45 stayed cryo=0 and armed=0 until a separate re-arm at 14:12:54.","Log: verification/runs/2026-10-29/gpio-bench/critical-sequence-2.log",PASS
+G07,2026-10-29,COM3 serial capture,5ed3207,"vent button held while armed, then released","14:12:02 A1=1 vent=1 armed=1 cryo=0. 14:12:04 vent released, vent=0, armed stayed 1.","Log: verification/runs/2026-10-29/gpio-bench/critical-sequence-2.log",PASS
 G08,,,,,,,NOT TESTED
-G09,,,,,,,NOT TESTED
+G09,2026-10-29,COM3 serial capture,5ed3207,"both request buttons held, then released","14:12:10 A0=1 and A1=1. armed=0 cryo=0 vent=0. Releasing both left the board disarmed.","Log: verification/runs/2026-10-29/gpio-bench/critical-sequence-2.log",PASS
 G10,,,,,,,NOT TESTED
 G11,,,,,,,NOT TESTED
 G12,,,,,,,NOT TESTED
+H01,,,,,,,NOT TESTED
+H02,,,,,,,NOT TESTED
+H03,2026-10-29,COM3 serial capture,5ed3207,"operator then set FORMAT BINARY; 6/9 already swapped","ASCII none. After swap, ASCII none. Binary READ IG 21 01 02 ... B7 none. Binary READ CG1 21 01 03 ... F1 none. Extra serial chip came up every time. Filament-on was not sent.","binary log: verification/runs/2026-10-29/hornet-read/h03-binary-ig.txt at 16:14:17. Prior: h03-rdcg1.txt, h03-rdcg1-ab-swap.txt",NO REPLY
+H03,2026-11-02,COM3 serial capture,5ed3207,"UART1 and screws 6/9/4 left as the operator stated","One boot BINARY READ IG only. No extra USB key. Extra serial chip came up. No reply bytes. TX and RX lights were not visible from the laptop.","RX n=0 NONE. Log: verification/runs/2026-11-02/hornet-read/h03-bin-ig-one-send.txt",NO REPLY
+TX1,2026-11-02,COM3 serial capture plus operator eyes,5ed3207,"dfr0845_tx_flood idle until USB g; operator was told to remove the Hornet RS485 plug first","FLOOD START then FLOOD STOP. UART1 was told to hold 0x00 for 8 seconds. Operator: both lights on the RS485 board stayed off the whole time.","Log: verification/runs/2026-11-02/hornet-read/tx-flood.txt",TX LIGHT DARK
+E01,2026-11-02,COM3 serial capture,5ed3207,"UART1 T jumpered to UART1 R. UART2 open. RS485 board T and R wires lifted and left open. Hornet plug out.","Five rounds after restart: UART1 PASS every round. UART2 FAIL every round, which is the empty port.","Log: verification/runs/2026-11-02/hornet-read/uart1-echo.txt",UART1 PASS
+TX2,2026-11-02,COM3 serial capture plus operator eyes,5ed3207,"Jumper removed. RS485 T wire on UART1 T. RS485 R wire on UART1 R.","Operator saw TX blinking on the echo sketch, then during the eight-second shout the TX light stayed lit.","Log: verification/runs/2026-11-02/hornet-read/tx-flood-straight.txt",TX LIGHT LIT
+H03,2026-11-02,COM3 serial capture,5ed3207,"Straight T-to-T and R-to-R. Hornet RS485 plug seated by the operator. FORMAT last set to BINARY.","Binary READ CG1 returned 9 bytes: 2A 01 03 00 7F 2D 48 44 23. CRC over the first 8 bytes is 23. Units byte 0. The four data bytes as a little-endian number are 800.7. Operator confirmed the Hornet screen matches. No filament command.","Log: verification/runs/2026-11-02/hornet-read/h03-straight-cg1.txt",REPLY
+H04,2026-11-02,COM3 serial capture,5ed3207,"Operator removed the RS485 plug and left the Analog power cable in. USB reconnected on COM3.","One binary READ CG1. TX frame sent. RX n=0 NONE. No leftover pressure.","Log: verification/runs/2026-11-02/hornet-read/h04-unplug.txt",PASS
+P01,2026-11-04,COM3 serial capture,uncommitted,"gpio_interlock_bench uploaded; no USB o; operator reports 24 V supply not connected","MCP online at 0x21. Eight lines of OPEN=0 CLOSED=0 POS=UNKNOWN D8=0. Closed reed left off B4. Operator cannot see the plate; it is inside the casing. Operator infers closed because the 24 V supply is off. That inference is not a position measurement.","Log: verification/runs/2026-11-04/gate/p01-d8-low.txt",SERIAL ONLY
+P02,2026-11-04,COM3 serial capture,uncommitted,"Operator had turned 24 V and air on. One USB o, then x about 2 s later. Plate not visible. Closed reed still off B4. psig not measured.","Before the pulse, with D8=0, OPEN=1. During D8=1, OPEN fell to 0. After COIL OFF, OPEN returned to 1 and D8 stayed 0. CLOSED stayed 0 the whole time.","Log: verification/runs/2026-11-04/gate/p02-short-pulse.txt",REED CHANGED
+P03,2026-11-04,COM3 serial capture,uncommitted,"Hold-close sketch uploaded. One USB c after MCP online. No release sent. Air and 24 V were already on. A4 was still labeled open at this time.","Coil held on. The wired reed released. Later corrected: that reed is the closed mark, so this command left the closed position.","Log: verification/runs/2026-11-04/gate/close-hold-3.txt",LEFT CLOSED MARK
+P04,2026-11-04,COM3 serial capture,uncommitted,"A4 corrected to the closed reed. One USB o after MCP online. Air and 24 V already on. Open reed still not landed.","Before o: CLOSED=1 D8=0. After OPEN HOLD: CLOSED=0 D8=1 for five lines. OPEN stayed 0 because B4 is empty.","Log: verification/runs/2026-11-04/gate/open-hold.txt",LEFT CLOSED MARK
+P05,2026-11-04,COM3 serial capture,uncommitted,"Operator landed the open reed on 5346 B4. No coil command.","Four lines of OPEN=1 CLOSED=0 POS=OPEN D8=0. B4 bit is grounded. A4 is not.",READ ONLY
+P06,2026-11-04,COM3 serial capture,uncommitted,"B4 open reed ignored because it stays 1. Two open-then-close cycles with air and 24 V already on. Ended with the coil released.","Each open command made CLOSED=0 in 0.79 s and 0.78 s. Each release made CLOSED=1 in 6.77 s and 6.77 s. OPEN stayed 1 the whole time. Final line POS=CLOSED D8=0.","Log: verification/runs/2026-11-04/gate/p06-two-cycles.txt",CLOSED REED CYCLED

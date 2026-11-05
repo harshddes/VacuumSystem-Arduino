@@ -1,0 +1,35 @@
+﻿# DFR0627 UART1 T jumpered to UART1 R. UART2 open.
+# DFR0845 T and R wires lifted and left open. Hornet plug out.
+# date: 2026-11-02
+# port: COM3 115200
+# uart_loopback. UART2 FAIL is expected.
+BENCH ONLY: both e-port T/R loop
+cumulative pass=10 fail=10
+loop
+cumulative pass=9 fail=9
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=10 fail=10
+loop
+cumulative pass=9 fail=9
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=10 fail=10
+BENCH ONLY: both UART T/R loops fitted, no RS485 adapter
+USB 115200; module UARTs 9600. Testing every 2 seconds.
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=1 fail=1
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=2 fail=2
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=3 fail=3
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=4 fail=4
+UART1 PASS
+UART2 FAIL - inspect power, DIP and same-port T/R loop
+cumulative pass=5 fail=5
+

@@ -1,0 +1,43 @@
+﻿# uart_loopback L04 capture: UART1 T/R loop removed, UART2 loop left on
+# date: 2026-10-27
+# port: COM3 115200 8N1
+# board: USB VID_2341 PID_0043 serial 5583833383235121B1D0 (Arduino Uno)
+# sketch: development/bench-prep/firmware/uart_loopback/uart_loopback.ino
+# commit: 5ed3207
+# method: operator removed L-05 with USB unplugged, then port opened with DTR reset, read 22s
+# not measured here: supply voltage, DIP switches, loop restored, five USB power cycles
+16:01:13.149 BENCH ONLY: both UART T/R loops fitted, no RS485 adapter
+16:01:13.192 USB 115200; module UARTs 9600. Testing every 2 seconds.
+16:01:13.221 UART1 PASS
+16:01:13.541 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:13.541 cumulative pass=1 fail=1
+16:01:15.572 UART1 PASS
+16:01:15.887 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:15.891 cumulative pass=2 fail=2
+16:01:17.919 UART1 PASS
+16:01:18.235 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:18.238 cumulative pass=3 fail=3
+16:01:20.269 UART1 PASS
+16:01:20.585 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:20.586 cumulative pass=4 fail=4
+16:01:22.617 UART1 PASS
+16:01:22.932 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:22.936 cumulative pass=5 fail=5
+16:01:24.964 UART1 PASS
+16:01:25.283 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:25.283 cumulative pass=6 fail=6
+16:01:27.314 UART1 PASS
+16:01:27.630 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:27.634 cumulative pass=7 fail=7
+16:01:29.662 UART1 PASS
+16:01:29.977 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:29.981 cumulative pass=8 fail=8
+16:01:32.012 UART1 PASS
+16:01:32.328 UART2 FAIL - inspect power, DIP and same-port T/R loop
+16:01:32.328 cumulative pass=9 fail=9
+16:01:34.360 UART1 PASS
+# summary: 9 complete rounds. Every round was UART1 PASS and UART2 FAIL. Last line is round 10 UART1 PASS; the port closed before UART2 printed.
+# cumulative at 16:01:32 was pass=9 fail=9. No INIT FAIL.
+# Operator later confirmed the removed jumper was the UART2 loop. UART2 FAIL matches that wire. UART1 staying PASS also matches.
+# Written L04 removes the UART1 loop instead. This file is the UART2-open run, not a completed L04.
+# The boot line "both UART T/R loops fitted" is a fixed sentence in the sketch. It does not inspect the jumpers.

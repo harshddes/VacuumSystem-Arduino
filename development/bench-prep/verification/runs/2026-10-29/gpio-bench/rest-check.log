@@ -1,0 +1,8 @@
+﻿# gpio rest check
+# date: 2026-10-29
+# port: COM3 115200, DTR left off
+# sketch commit: 5ed3207
+# needed inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110
+# read:   0011011110
+# B4 re-arm is open. B5 pressure is open.
+all A0-A7,B0-B7=0011111111110011 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011011110 armed=0 cryo=0 vent=0

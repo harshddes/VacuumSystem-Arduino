@@ -1,0 +1,27 @@
+﻿# gpio_interlock_bench G01 startup
+# date: 2026-10-28
+# port: COM3 115200 8N1, opened with DTR so the Uno restarted
+# board: USB VID_2341 PID_0043 serial 5583833383235121B1D0
+# sketch: development/bench-prep/firmware/gpio_interlock_bench/gpio_interlock_bench.ino
+# commit: 5ed3207
+# core: arduino:avr 1.8.8
+# expected at rest: inputs 0011111110, armed=0, cryo=0, vent=0, MCP online
+# 1 means that MCP pin is grounded. Order is A0 A1 A2 A3 A4 A5 A6 B0 B1 B2
+# LEDs were not looked at from this computer
+19:19:19.372 BENCH ONLY - MCP 0x21; A7/B7 unused; 6318 loads disconnected
+19:19:20.394 MCP ONLINE. Release requests and REARM, then press REARM.
+19:19:20.401 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:21.377 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:22.376 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:23.375 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:24.375 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:25.378 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:26.379 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:27.377 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:28.380 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:29.379 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+19:19:30.379 inputs A0,A1,A2,A3,A4,A5,A6,B0,B1,B2=0000000111 armed=0 cryo=0 vent=0
+# summary: MCP answered at 0x21. Every line was inputs 0000000111, armed=0, cryo=0, vent=0.
+# A0 and A1 read open. A2 A3 A4 A5 A6 read open. B0 B1 B2 read grounded.
+# Rested setup for the later checks is 0011111110. This capture is not that setup.
+# Fault lamp is commanded on because the program is not armed. The lamps were not looked at.

@@ -1,0 +1,10 @@
+﻿# H04 pulled cable. RS485 plug out. Analog power cable left in.
+# date: 2026-11-02
+# one binary READ CG1 after the fresh boot banner. Silence is the pass.
+# no filament, no degas
+HORNET READ ONLY. No filament. No degas. No valve.
+USB 115200. UART1 19200 8N1. Idle until a key.
+IDLE. USB c=CG1 binary, r=IG binary, a=ASCII RDCG1
+BIN CG1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+

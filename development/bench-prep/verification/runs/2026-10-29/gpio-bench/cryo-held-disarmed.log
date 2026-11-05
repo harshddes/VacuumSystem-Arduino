@@ -1,0 +1,4 @@
+﻿# cryo button held while disarmed
+# date: 2026-10-29
+# inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0111111110 armed=0 cryo=0 vent=0
+# A0 changed 0 to 1. Cryo output stayed 0 because not armed.

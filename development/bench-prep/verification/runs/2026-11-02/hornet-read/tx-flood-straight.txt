@@ -1,0 +1,9 @@
+﻿# DFR0845 TX flood after straight T-to-T and R-to-R
+# date: 2026-11-02
+# operator reported TX light blinking before this run, while uart_loopback was still loaded
+# key g after idle banner. No Hornet frame.
+TX FLOOD IDLE. No filameTX FLOOD IDLE. No filament. No degas. No Hornet frame.
+UART1 19200 ready. Hornet RS485 plug out, then USB g.
+FLOOD START
+FLOOD STOP
+

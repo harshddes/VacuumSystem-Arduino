@@ -21,10 +21,17 @@ Phase 1 wiring and recently simplified direct-pin sketch are different baselines
   exists on this Uno R3; use the DFR0627 library for that extra UART.
 - Stage 2 GPIO input board 5346 is 0x21; optional 6318 remains 0x20 with V+
   and all load terminals unconnected. MCP A7/B7 are not changing inputs.
-- Uno A0/A1/A2 drive only resistor/LED branches. Expander A0/A1/A2 are distinct
-  digital pins, not Uno analog pins. Never map them using plain digitalRead(5).
-- All bench sensor contacts are simulated. Do not connect powered field
-  sensors, gauge analog outputs, 24V terminals, coils, pumps or pilots to them.
+- Uno A0/A1/A2 were Day 2 LED branches. Phase 3 leaves those lamps off the
+  desk. Expander A0/A1/A2 are distinct digital pins, not Uno analog pins.
+  Never map them using plain digitalRead(5).
+- Day 2 bench sensor contacts are simulated. Phase 3 gate wiring follows
+  only `development/bench-prep/08-gate-position.md`: 5346 A4 open reed,
+  B4 closed reed unless that pair is a dead short, Uno D8 to the 5 V
+  relay-module IN with the H/L jumper on H, module NO in the 24 V
+  Humphrey loop, diode on the Humphrey coil. 24 V negative stays off Uno
+  ground. No extra transistor. The 6318 is not in that circuit. Do not
+  connect powered field sensors, gauge analog outputs, extra 24 V
+  terminals, pumps or other pilots outside that page.
 - Field terminals, Hornet firmware/protocol, coil ratings, pneumatic failure
   behavior and pressure limits must come from matched OEM sources/measurements.
   Preserve unresolved items in `06-field-holds.md`; never guess to finish a task.

@@ -32,8 +32,8 @@
       "control": "jumper"
     },
     {
-      "terminal": "A4",
-      "library_index": 4,
+      "terminal": "B5",
+      "library_index": 13,
       "signal": "PRESSURE_VALID",
       "control": "jumper"
     },
@@ -678,8 +678,8 @@
               "dy": -6.35
             },
             {
-              "id": "A4",
-              "name": "A4 / PRESSURE_VALID",
+              "id": "B5",
+              "name": "B5 / PRESSURE_VALID",
               "side": "R",
               "dy": 6.35
             },
@@ -1374,7 +1374,7 @@
           "ends": [
             [
               "U2",
-              "A4"
+              "B5"
             ],
             [
               "SW5",
@@ -1553,7 +1553,7 @@
       "notes_y": 250,
       "notes": [
         "Use firmware/gpio_interlock_bench. Do not use the old direct-pin sketch with this wiring.",
-        "U2 A0-A6 and B0-B2 are DIGITAL inputs; these are not Uno analog pins. A7/B7 are unused.",
+        "U2 inputs are A0-A3, A5, A6, B0, B1, B2, B5. A4 and B4 on this physical board are unused. A7/B7 are unused.",
         "U3 is optional logic-only inventory at 0x20. Its V+ and ALL coil outputs remain disconnected.",
         "All other module terminals are unused. Physical layout follows silkscreen, not symbol placement."
       ]

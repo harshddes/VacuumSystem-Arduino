@@ -1,0 +1,45 @@
+﻿# uart_loopback L05: both T/R loops should be restored
+# date: 2026-10-27
+# port: COM3 115200 8N1
+# board: USB VID_2341 PID_0043 serial 5583833383235121B1D0 (Arduino Uno)
+# sketch: development/bench-prep/firmware/uart_loopback/uart_loopback.ino
+# commit: 5ed3207
+# method: operator said the UART1 loop is back; DTR reset; read 22s
+# expected: UART1 PASS and UART2 PASS, fail stays 0
+16:07:31.287 BENCH ONLY: both UART T/R loops fitted, no RS485 adapter
+16:07:31.328 USB 115200; module UARTs 9600. Testing every 2 seconds.
+16:07:31.357 UART1 PASS
+16:07:31.390 UART2 PASS
+16:07:31.394 cumulative pass=2 fail=0
+16:07:33.426 UART1 PASS
+16:07:33.459 UART2 PASS
+16:07:33.463 cumulative pass=4 fail=0
+16:07:35.494 UART1 PASS
+16:07:35.526 UART2 PASS
+16:07:35.531 cumulative pass=6 fail=0
+16:07:37.562 UART1 PASS
+16:07:37.595 UART2 PASS
+16:07:37.599 cumulative pass=8 fail=0
+16:07:39.631 UART1 PASS
+16:07:39.664 UART2 PASS
+16:07:39.668 cumulative pass=10 fail=0
+16:07:41.699 UART1 PASS
+16:07:41.732 UART2 PASS
+16:07:41.736 cumulative pass=12 fail=0
+16:07:43.767 UART1 PASS
+16:07:43.800 UART2 PASS
+16:07:43.804 cumulative pass=14 fail=0
+16:07:45.836 UART1 PASS
+16:07:45.869 UART2 PASS
+16:07:45.873 cumulative pass=16 fail=0
+16:07:47.904 UART1 PASS
+16:07:47.938 UART2 PASS
+16:07:47.941 cumulative pass=18 fail=0
+16:07:49.973 UART1 PASS
+16:07:50.006 UART2 PASS
+16:07:50.010 cumulative pass=20 fail=0
+16:07:52.041 UART1 PASS
+# summary: 10 complete rounds. UART1 PASS and UART2 PASS every round. fail stayed 0. No INIT FAIL.
+# cumulative at 16:07:50 was pass=20 fail=0.
+# Round 11 UART2 was not captured; the port closed after UART1 PASS.
+# The boot line "both UART T/R loops fitted" is a fixed sentence. It does not inspect the jumpers. The PASS lines do.

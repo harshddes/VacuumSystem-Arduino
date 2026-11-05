@@ -47,7 +47,7 @@ def main():
     demand(rs['UART1_RX']=={('U2','R1'),('U3','T')},'TTL receive must come from adapter transmit')
     used=set().union(*rs.values())
     demand(not any(('U3',p) in used for p in ['BUS12','BUSGND','A','B','EXT12','EXTGND']),'unreleased bus wiring present')
-    reference=[('A0',0,'CRYO_REQUEST'),('A1',1,'VENT_REQUEST'),('A2',2,'CRYO_CLOSED'),('A3',3,'VENT_CLOSED'),('A4',4,'PRESSURE_VALID'),('A5',5,'PRESSURE_LOW'),('A6',6,'CRYO_READY'),('B0',8,'OTHER_PATHS_CLOSED'),('B1',9,'FILAMENT_OFF'),('B2',10,'REARM')]
+    reference=[('A0',0,'CRYO_REQUEST'),('A1',1,'VENT_REQUEST'),('A2',2,'CRYO_CLOSED'),('A3',3,'VENT_CLOSED'),('B5',13,'PRESSURE_VALID'),('A5',5,'PRESSURE_LOW'),('A6',6,'CRYO_READY'),('B0',8,'OTHER_PATHS_CLOSED'),('B1',9,'FILAMENT_OFF'),('B2',10,'REARM')]
     demand([(r['terminal'],r['library_index'],r['signal']) for r in data['input_map']]==reference,'input map drift')
     gpio=expected(stages['day2-gpio-bench'])
     for i,(p,_,name) in enumerate(reference,1):

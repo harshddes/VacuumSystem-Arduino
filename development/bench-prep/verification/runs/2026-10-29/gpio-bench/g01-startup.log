@@ -1,0 +1,15 @@
+﻿# gpio G01 startup after B5 grounded and B4 open
+# date: 2026-10-29
+# port: COM3 115200, DTR restart
+# sketch commit: 5ed3207
+# needed rest line: inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110
+# lamps were not looked at
+13:00:23.780 BENCH ONLY - MCP 0x21; A7/B7 unused; 6318 loads disconnected
+13:00:25.209 MCP ONLINE. Release requests and REARM, then press REARM.
+13:00:26.222 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:26.230 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:27.205 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:28.204 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:29.203 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:30.207 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0
+13:00:31.206 all A0-A7,B0-B7=0011111111110111 inputs A0,A1,A2,A3,B5,A5,A6,B0,B1,B4=0011111110 armed=0 cryo=0 vent=0

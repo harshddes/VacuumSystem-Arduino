@@ -1,0 +1,120 @@
+﻿# uart_loopback serial capture
+# date: 2026-10-27
+# port: COM3 115200 8N1
+# board: USB VID_2341 PID_0043 serial 5583833383235121B1D0 (Arduino Uno)
+# sketch: development/bench-prep/firmware/uart_loopback/uart_loopback.ino
+# commit: 5ed3207
+# core: arduino:avr 1.8.8 (checklist names 1.8.6)
+# library: DFRobot_IICSerial 1.0.2
+# method: upload, then open the port with DTR so the Uno restarts, then read 55s
+# not measured here: supply voltage, DIP switches, removed-loop trial, five USB power cycles
+15:54:26.184 BENCH ONLY: both UART T/R loops fitted, no RS485 adapter
+15:54:26.225 USB 115200; module UARTs 9600. Testing every 2 seconds.
+15:54:26.255 UART1 PASS
+15:54:26.287 UART2 PASS
+15:54:26.291 cumulative pass=2 fail=0
+15:54:27.815 <no line for 1.5s>
+15:54:28.323 UART1 PASS
+15:54:28.356 UART2 PASS
+15:54:28.360 cumulative pass=4 fail=0
+15:54:29.862 <no line for 1.5s>
+15:54:30.392 UART1 PASS
+15:54:30.424 UART2 PASS
+15:54:30.428 cumulative pass=6 fail=0
+15:54:31.944 <no line for 1.5s>
+15:54:32.460 UART1 PASS
+15:54:32.492 UART2 PASS
+15:54:32.496 cumulative pass=8 fail=0
+15:54:34.005 <no line for 1.5s>
+15:54:34.528 UART1 PASS
+15:54:34.561 UART2 PASS
+15:54:34.564 cumulative pass=10 fail=0
+15:54:36.075 <no line for 1.5s>
+15:54:36.596 UART1 PASS
+15:54:36.629 UART2 PASS
+15:54:36.633 cumulative pass=12 fail=0
+15:54:38.143 <no line for 1.5s>
+15:54:38.666 UART1 PASS
+15:54:38.699 UART2 PASS
+15:54:38.702 cumulative pass=14 fail=0
+15:54:40.205 <no line for 1.5s>
+15:54:40.734 UART1 PASS
+15:54:40.767 UART2 PASS
+15:54:40.772 cumulative pass=16 fail=0
+15:54:42.286 <no line for 1.5s>
+15:54:42.802 UART1 PASS
+15:54:42.834 UART2 PASS
+15:54:42.839 cumulative pass=18 fail=0
+15:54:44.342 <no line for 1.5s>
+15:54:44.869 UART1 PASS
+15:54:44.903 UART2 PASS
+15:54:44.906 cumulative pass=20 fail=0
+15:54:46.409 <no line for 1.5s>
+15:54:46.938 UART1 PASS
+15:54:46.971 UART2 PASS
+15:54:46.974 cumulative pass=22 fail=0
+15:54:48.484 <no line for 1.5s>
+15:54:49.006 UART1 PASS
+15:54:49.040 UART2 PASS
+15:54:49.043 cumulative pass=24 fail=0
+15:54:50.561 <no line for 1.5s>
+15:54:51.075 UART1 PASS
+15:54:51.108 UART2 PASS
+15:54:51.113 cumulative pass=26 fail=0
+15:54:52.626 <no line for 1.5s>
+15:54:53.144 UART1 PASS
+15:54:53.177 UART2 PASS
+15:54:53.181 cumulative pass=28 fail=0
+15:54:54.695 <no line for 1.5s>
+15:54:55.212 UART1 PASS
+15:54:55.244 UART2 PASS
+15:54:55.249 cumulative pass=30 fail=0
+15:54:56.757 <no line for 1.5s>
+15:54:57.280 UART1 PASS
+15:54:57.313 UART2 PASS
+15:54:57.316 cumulative pass=32 fail=0
+15:54:58.831 <no line for 1.5s>
+15:54:59.349 UART1 PASS
+15:54:59.382 UART2 PASS
+15:54:59.386 cumulative pass=34 fail=0
+15:55:00.888 <no line for 1.5s>
+15:55:01.417 UART1 PASS
+15:55:01.451 UART2 PASS
+15:55:01.454 cumulative pass=36 fail=0
+15:55:02.956 <no line for 1.5s>
+15:55:03.486 UART1 PASS
+15:55:03.518 UART2 PASS
+15:55:03.522 cumulative pass=38 fail=0
+15:55:05.023 <no line for 1.5s>
+15:55:05.555 UART1 PASS
+15:55:05.587 UART2 PASS
+15:55:05.591 cumulative pass=40 fail=0
+15:55:07.099 <no line for 1.5s>
+15:55:07.622 UART1 PASS
+15:55:07.654 UART2 PASS
+15:55:07.659 cumulative pass=42 fail=0
+15:55:09.160 <no line for 1.5s>
+15:55:09.691 UART1 PASS
+15:55:09.723 UART2 PASS
+15:55:09.727 cumulative pass=44 fail=0
+15:55:11.238 <no line for 1.5s>
+15:55:11.759 UART1 PASS
+15:55:11.791 UART2 PASS
+15:55:11.796 cumulative pass=46 fail=0
+15:55:13.311 <no line for 1.5s>
+15:55:13.827 UART1 PASS
+15:55:13.860 UART2 PASS
+15:55:13.863 cumulative pass=48 fail=0
+15:55:15.369 <no line for 1.5s>
+15:55:15.896 UART1 PASS
+15:55:15.928 UART2 PASS
+15:55:15.933 cumulative pass=50 fail=0
+15:55:17.441 <no line for 1.5s>
+15:55:17.964 UART1 PASS
+15:55:17.996 UART2 PASS
+15:55:18.000 cumulative pass=52 fail=0
+15:55:19.504 <no line for 1.5s>
+15:55:20.032 UART1 PASS
+# summary: 26 complete rounds, UART1 PASS and UART2 PASS, cumulative pass=52 fail=0. No FAIL and no INIT FAIL in this file.
+# lines marked "<no line for 1.5s>" are the reader waiting out the sketch's 2 second pause. They are not board silence.
+# round 27 UART2 line was not captured; the port closed after UART1 PASS.

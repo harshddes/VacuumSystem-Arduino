@@ -1,0 +1,11 @@
+﻿# DFR0845 TX flood, UART1 0x00 for 8 seconds
+# date: 2026-11-02
+# port: COM3 115200
+# key g sent after idle banner
+# no Hornet frame, no filament, no degas
+# operator was asked to have the RS485 plug out and to watch the TX light
+TX FLOOD IDLE. No filament. No degas. No Hornet frame.
+UART1 19200 ready. Hornet RS485 plug out, then USB g.
+FLOOD START
+FLOOD STOP
+
