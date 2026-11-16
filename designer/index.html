@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b2d">
+<meta name="description" content="Vacuum-system design workspace for MAIZE: editable plumbing, electrical interfaces, preliminary sizing, and interlock review.">
+<title>Vacuum System · Engineering Workbench</title>
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./core.js"></script>
+<script defer src="./data.js"></script>
+<script defer src="./app.js"></script>
+</head>
+<body>
+<div class="shell">
+<aside class="rail">
+<a class="brand" href="https://propellant-workbench.bonzodes.chatgpt.site/"><span class="brand-icon">W<span>↗</span></span><span>ENGINEERING<br><b>Workbench</b></span></a>
+<div class="rail-label">PROJECT ENVIRONMENT</div>
+<a class="workspace-link" href="https://propellant-workbench.bonzodes.chatgpt.site/"><span>◎</span> Propellant feed</a>
+<a class="workspace-link active" href="#schematic"><span>◉</span> Vacuum system <small>MAIZE</small></a>
+<div class="rail-rule"></div>
+<div class="rail-label">VACUUM WORKSPACE</div>
+<nav id="navigation" aria-label="Vacuum workspace">
+<button class="nav active" data-page="schematic"><span>▦</span> System designer</button>
+<button class="nav" data-page="sizing"><span>∿</span> Flow &amp; pump sizing</button>
+<button class="nav" data-page="interlocks"><span>◇</span> Interlock simulator</button>
+<button class="nav" data-page="connections"><span>⌁</span> Connections &amp; I/O</button>
+<button class="nav" data-page="review"><span>☑</span> Design review</button>
+<button class="nav" data-page="sources"><span>↗</span> Sources &amp; evidence</button>
+</nav>
+<div class="rail-bottom"><span class="dot"></span> DESIGN ENVIRONMENT<br><small>Local project storage · no hardware link</small><a href="https://github.com/harshddes/VacuumSystem-Arduino" target="_blank" rel="noopener">View GitHub repository ↗</a></div>
+</aside>
+<main>
+<header class="topbar"><div class="breadcrumbs">WORKBENCH <span>/</span> VACUUM SYSTEM</div><div class="top-actions"><span id="save-status">Saved on this browser</span><button id="import-project" class="button subtle">Import project</button><button id="export-project" class="button dark">Export project ↗</button></div></header>
+<section class="heading"><div><div class="eyebrow">MAIZE · ARDUINO VACUUM CONTROL</div><h1 id="page-title">Vacuum system designer<span>.</span></h1><p id="page-subtitle">Build the gas path. Trace the control chain. Keep every assumption visible.</p></div><div class="revision"><span class="tag amber">CONCEPT / BENCH</span><small>Repository snapshot · 16 Nov 2026</small></div></section>
+<div class="context-bar"><span class="context-icon">i</span><p>Separate design workspace. Plumbing is conceptual; electrical connections follow the pinned bench records. Simulated commands never reach the Arduino.</p><button id="scope-review" class="text-button">View evidence →</button></div>
+
+<section id="page-schematic" class="page">
+<div class="designer-bar"><div class="segmented" role="group" aria-label="Drawing"><button id="view-process" class="selected">Vacuum &amp; pneumatics</button><button id="view-electrical">Electrical &amp; control</button></div><div class="toolbar"><button id="undo" class="button subtle">Undo</button><button id="zoom-out" class="icon-button" aria-label="Zoom out">−</button><span id="zoom-label">100%</span><button id="zoom-in" class="icon-button" aria-label="Zoom in">+</button><button id="fit" class="button subtle">Fit</button><button id="export-svg" class="button subtle">Export SVG</button></div></div>
+<div class="designer-layout">
+<aside class="panel library-panel"><div class="panel-heading"><h2>Component library</h2><span id="library-count"></span></div><label class="search"><span class="sr-only">Search components</span><input id="component-search" placeholder="Search pumps, boards, valves…"></label><div id="library"></div></aside>
+<div class="canvas-panel"><div class="canvas-meta"><span id="drawing-label">01 / VACUUM &amp; PNEUMATICS</span><span id="drawing-count"></span></div><div id="canvas-wrap" class="canvas-wrap"><svg id="drawing" viewBox="0 0 1550 1250" role="img" aria-label="Editable vacuum schematic"></svg></div><div class="canvas-footer"><span>Drag components · select two matching ports to connect · arrow keys move selected component</span><button id="cancel-connection" class="text-button" hidden>Cancel connection</button></div><div id="legend" class="legend"></div></div>
+<aside class="panel inspector-panel"><div class="panel-heading"><h2>Inspector</h2><span>↗</span></div><div id="inspector"></div></aside>
+</div>
+<div class="bottom-strip"><div><b id="component-total">0</b><span>COMPONENTS</span></div><div><b id="connection-total">0</b><span>CONNECTIONS</span></div><div><b>03</b><span>SERVICE DOMAINS</span></div><p id="graph-status"></p><button id="reset-drawing" class="text-button">Restore this drawing</button></div>
+</section>
+
+<section id="page-sizing" class="page" hidden><div class="two-column"><div class="panel padded"><div class="panel-heading"><h2>Design inputs</h2><span class="tag">PRELIMINARY</span></div><p class="muted">Values remain blank until supplied. Calculations describe the straight-line path entered here; they are not extracted from canvas geometry.</p><div id="sizing-inputs" class="form-grid"></div><button id="example-inputs" class="button subtle">Load labelled N₂ example</button></div><div><div id="sizing-results" class="metric-grid"></div><div class="panel padded"><h2>Model &amp; assumptions</h2><div class="formula">1 / S<sub>eff</sub> = 1 / S<sub>pump</sub> + 1 / C<sub>tube</sub> + 1 / C<sub>valve</sub></div><p>C<sub>tube</sub> ≈ 12.1 d³/L √(28.97/M) √(T/293.15), with d and L in cm and C in L/s. Long, straight tube and molecular flow only. Blank valve conductance omits that loss.</p><p>Q = Ṽ<sub>std</sub>p<sub>std</sub>T/T<sub>std</sub> + Q<sub>leak</sub> + Q<sub>outgas</sub>; P<sub>eq</sub> = Q/S<sub>eff</sub>. SCCM reference: 0 °C and 1 atm.</p><p>t = V/S<sub>eff</sub> ln[(P₀ − P<sub>eq</sub>)/(Pₜ − P<sub>eq</sub>)]. Constant pumping speed and fixed gas load. Apply only across a compatible molecular-flow interval.</p><div id="sizing-notes"></div><a href="https://content.leybold.com/migration/en/knowledge/how-to-calculate-conductance-values" target="_blank" rel="noopener">Conductance reference · Leybold ↗</a></div></div></div></section>
+
+<section id="page-interlocks" class="page" hidden><div class="two-column"><div class="panel padded"><div class="panel-heading"><h2>Inject a simulated condition</h2><span class="tag blue">SIMULATOR ONLY</span></div><p class="muted">This demonstrates a proposed complete gate-permission policy. Current bench firmware accepts o/c/x without these full protections.</p><div id="sim-controls"></div><div class="form-grid"><label>Simulated chamber pressure (Torr)<input id="sim-pressure" type="number" min="0" step="any" placeholder="Enter simulated value"></label><label>Reviewed opening limit (Torr)<input id="sim-limit" type="number" min="0" step="any" placeholder="Unresolved"></label></div><div class="sim-actions"><button id="sim-arm" class="button subtle">Re-arm simulation</button><button id="sim-open" class="button dark">Request open</button><button id="sim-close" class="button subtle">Release / close</button><button id="sim-trip" class="button danger">Inject trip</button></div><button id="sim-reset" class="text-button">Reset all simulated conditions</button></div><div><div class="panel padded"><h2>Command ≠ position</h2><div class="state-cards"><div><span>COIL COMMAND</span><strong id="sim-command">RELEASED</strong></div><div><span>CLOSED REED</span><strong id="sim-position">UNKNOWN</strong></div></div><p id="sim-message"></p><div id="sim-permissions"></div><p class="note">With one closed reed, the only supported positions are CLOSED, NOT_CLOSED, and UNKNOWN. De-energizing a pilot does not prove safe closure during air loss.</p></div><div class="panel padded" style="margin-top:16px"><h2>Event history</h2><ol id="sim-log" class="event-log"></ol></div></div></div></section>
+
+<section id="page-connections" class="page" hidden><div class="panel padded"><div class="panel-heading"><div><h2>Current bench interfaces</h2><p class="muted">Pinned to repository commit <code>3f1b864</code>. Values describe records, not physical acceptance.</p></div><button id="export-wires" class="button subtle">Export connection CSV</button></div><div class="notice amber">Historical conflict: latest Hornet prose wiring and older Mermaid/wire-schedule rows disagree. The table uses the newer prose and leaves the discrepancy open for review.</div><div class="table-scroll"><table><thead><tr><th>Connection</th><th>From</th><th>To</th><th>Meaning / boundary</th></tr></thead><tbody id="wire-table"></tbody></table></div></div><div class="two-column" style="margin-top:16px"><div class="panel padded"><h2>Gate I/O and states</h2><div id="io-table"></div></div><div class="panel padded"><h2>Service boundaries</h2><ul><li>Logic 5 V and logic GND: Uno, module logic and closed reed.</li><li>Field 24 V: isolated relay contacts and Humphrey coil; return stays separate from Uno GND in the current circuit.</li><li>RS485 bus reference: DFR0845 isolated side to Hornet pin 4, separate from logic GND.</li><li>Actuation air, N₂ chamber vent, and CTI helium refrigeration are distinct services.</li></ul><p class="note">Power distribution, field fusing, full panel harness, cryo readiness, mains/cooling and independent shutdown are not released by the bench records.</p></div></div></section>
+
+<section id="page-review" class="page" hidden><div class="review-top"><div class="panel padded"><h2>Design readiness</h2><strong class="large-number" id="review-count"></strong><p class="muted">Open evidence items. Checking a local review item records your review; it does not qualify equipment.</p></div><div class="panel padded"><h2>Validation scope</h2><p>Typed ports catch service-domain mistakes, missing endpoints and unconnected components. They do not prove pneumatic behavior, electrical ratings, vacuum performance, or installed-system safety.</p><button id="print-review" class="button subtle">Print design report / PDF</button></div></div><div class="two-column"><div class="panel padded"><h2>Evidence checklist</h2><div id="review-checklist"></div></div><div class="panel padded"><h2>Bill of materials</h2><p class="muted">Counts follow both drawings; process instruments and their electrical representations are cross-references, not automatically reconciled purchase quantities.</p><button id="export-bom" class="button subtle">Export symbol inventory CSV</button><div id="bom-table"></div></div></div></section>
+
+<section id="page-sources" class="page" hidden><div class="panel padded"><h2>Engineering basis</h2><p>NASA and CERN inform the architecture: survey the plant, separate device and supervisory layers, define permissions and prove failure behavior. Manufacturer guidance supports the preliminary vacuum equations. This is a project design tool, with no organizational approval implied.</p><div id="sources" class="sources"></div></div></section>
+<footer>VACUUM SYSTEM WORKBENCH <span>Concept drawings · Bench evidence · Independent review</span><a href="#sources">Source basis ↗</a></footer>
+</main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="project-file" accept=".json,application/json" hidden>
+<input type="file" id="csv-file" accept=".csv,text/csv" hidden>
+<noscript>This designer requires JavaScript. Hardware control is not provided.</noscript>
+</body>
+</html>
