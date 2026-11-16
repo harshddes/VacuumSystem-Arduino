@@ -1,0 +1,76 @@
+2026-11-06. Two Hornet boxes reported daisy-chained. Read-only.
+Sketch hornet_two_read. UART1 19200 8N1. BINARY READ CG1 only, then one ASCII #02RDCG1.
+No filament, no degas. D8 forced LOW before the scan and again when gpio_interlock_bench was restored.
+
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 2 TX 21 02 03 00 00 00 00 00 16
+RX n=0 NONE
+ADDR 3 TX 21 03 03 00 00 00 00 00 4B
+RX n=0 NONE
+ASCII TX #02RDCG1
+RX n=0 NONE
+
+The gate sketch, before this scan, was also printing blank CG1 and CG2 for address 1.
+That address-1 frame is the same frame that previously returned a checksum-valid reply.
+
+Second pass, after the operator swapped the A and B wires so pin 6 lands on A
+and pin 9 lands on B. Address 3 was removed. Same frames. Still no bytes.
+
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 2 TX 21 02 03 00 00 00 00 00 16
+RX n=0 NONE
+ADDR 2 TX 21 02 03 00 00 00 00 00 16
+RX n=0 NONE
+ASCII TX #02RDCG1
+RX n=0 NONE
+
+Third pass. Binary only. Confirmed pin 6 to A and pin 9 to B. Two addresses.
+
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 1 TX 21 01 03 00 00 00 00 00 F1
+RX n=0 NONE
+ADDR 2 TX 21 02 03 00 00 00 00 00 16
+RX n=0 NONE
+ADDR 2 TX 21 02 03 00 00 00 00 00 16
+RX n=0 NONE
+
+Fourth pass. Second Hornet RS485 plug removed. One box left on the pair.
+Binary READ CG1, addresses 1 through 8. Every address returned zero bytes,
+including address 1.
+
+Fifth pass. Operator asked for another read of the remaining box.
+Binary READ CG1, addresses 1 through 8. Every address returned zero bytes.
+
+Sixth pass. Clean rebuild and full flash write of the same reader.
+Operator ground is the RS485 isolated GND, not the 12V ground.
+Addresses 1 through 8 still returned zero bytes. The Uno does not store A/B.
+
+Seventh pass. Operator said the T/R pair is proper. Same binary reader.
+Address 1 frame 21 01 03 00 00 00 00 00 F1 returned zero bytes.
+Addresses 2 through 8 also returned zero bytes.
+
+Eighth pass. Gate sketch already polling. No new upload. D8=0.
+HORNET CG1=9.133E+00 CG2=1.051E+03, repeated. One box is answering again.
+CG2 near 1.05E+03 is the empty convection channel on that same box.
+Operator then reported the working landings: Hornet pin 6 on DFR0845 B,
+Hornet pin 9 on DFR0845 A.
+
+Ninth pass. Both plugs on the pair. Binary READ CG1, address 1 twice, address 2 twice.
+ADDR 1 first: 2A 01 03 00 C7 A9 9B 45 BE, checksum expected 7D, float about 4981, rejected.
+ADDR 1 second: 8 garbage bytes, checksum failed.
+ADDR 2: zero bytes both times.
+Both boxes are still address 1. Address 2 is empty.
+
+Tenth pass. After the new box address was changed.
+ADDR 1 twice: 2A 01 03 00 BB 27 12 41 36, checksum OK, 9.135 Torr.
+ADDR 2 twice: 2A 02 03 00 00 80 89 44 4D, checksum OK, 1100 Torr exactly.
+1100 is above atmosphere, so it is an overrange or empty-channel flag, not a chamber pressure.

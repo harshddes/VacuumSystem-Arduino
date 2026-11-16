@@ -1,0 +1,78 @@
+{
+  "search_id": "search_54ee646d2b4df15b298b7b391661c2ac",
+  "session_id": "session_54ee646d2b4df15b298b7b391661c2ac",
+  "status": "ok",
+  "results": [
+    {
+      "url": "https://www.lesker.com/newweb/gauges/pdf/manuals/kjl4500%20intruction%20manual.pdf",
+      "title": "Ionization Gauge Controller Instruction Manual",
+      "publish_date": "2004-12-06",
+      "excerpts": [
+        "Accessories: Recorder Output 0-10V; Logarithmic, 1 V/decade Setpoint Outputs SPDT relay output; 3 Amp @ 115 VAC\n\n\\- 2 -\n\n## KJL4500 INSTALLATION\n\n### Thermocouple Installation\n\n...\n\nPlug the other end of the cable into the ion gauge connector on the back of the KJL4500. Also connect the BNC plug into the ion collector connector next to the ion gauge connector.\n\n...\n\nThe main display will be reading the TC1 gauge or if no tube is connected you will see 5 dashes. Press the ION Switch on the front panel, the ion indicator will light. Wait a few seconds for the controller to display the pressure. To turn off the ion gauge, press the switch again. The controller may automatically start the ion gauge tube.\n\n...\n\nThe KJL4500 has four process control setpoints. They are activated by the vacuum pressure. To display or adjust the setpoints, press the Select Switch to the desired setpoint.\n\n...\n\nThe recorder output of the KJL4500 is a 0 to 10 VDC signal accessible through the accessory connector. Pin 10 is the positive DC signal and Pin 12 is ground.\n\n...\n\n5\\.0 x 10 \\-6 = 6.50 VDC\n\n\\- 8 -\n\n### Remote Operation (RS-232 Interface)\n\nThe KJL4500 Ion Gauge Controller has a full functioning remote computer port. All aspects of the KJL4500 can be controlled via the RS-232 interface by sending simple commands to the controller. Any computer or terminal with a serial RS-232 port can be connected to the KJL4500. If the controller is connected when the power is turned on the software version name will be sent to the computer. The RS-232 interface uses a standard 9 pin serial port.\n\n...\n\nVoltage of Logic 1 -12 VDC 9 NC\n\nTable 1 Table 2\n\n\\- 9 -\n\n### Software Commands\n\nAll commands must terminate with a <CR> The controller will echo back the characters received (unless disabled). Standard ASCII is used \u201cn, nn, nn.n\u201d refer to a numerical value \u201cm.m\u201d refer to a mantissa value \u201cee\u201d refer to an exponent\n\nCOMMAND RESPONSE DESCRIPTION\n\n=X <prog V xx> Reset Program\n\n...\n\nThe KJL4500 Ion Gauge Controller has provisions for two thermocouple tubes. Thermocouple 1 is for use in monitoring the vacuum system pressure and is displayed on a bargraph located on the front panel of the controller."
+      ]
+    },
+    {
+      "url": "https://www.bridgetronic.com/products/68617",
+      "title": "\n    Kurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n \u2013 Bridge Tronic Global",
+      "publish_date": null,
+      "excerpts": [
+        "* About\n* Equipment\n  \n    + Buy\n    + Sell\n    + BTG Inventory\n* Services\n* Engineering\n  \n    + [BTG Engineering](https://engineering.bridgetronic.com/)\n\n...\n\nSkip to product content\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\n# Kurt J Lesker KJL 4500 Multiple Ion Gauge Controller\n\nAsset #: 68617\n\n**Make:** Kurt J Lesker\n\n**Model:** KJL 4500\n\n**Last Confirm Date:** January 19, 2023\n\n[Inquire](mailto:sales@bridgetronic.com?subject=Kurt J Lesker KJL 4500 Inquiry&body=Hello- I'm interested in the following Kurt J Lesker KJL 4500 Multiple Ion Gauge Controller \\(asset # 68617\\) that is listed on your website. Can you provide more information?)\n\nProduct Details\n\nKurt J Lesker KJL 4500 Multiple Ion Gauge Controller  \n\\- With working oil diffusion pump with a valve that bolts onto/seals the top of the pump\n\n* * *\n\n##### Inquire\n\nName\n\nEmail\n\nPhone (optional)\n\nEquipment Name\n\nEquipment ID\n\nMessage\n\nSUBMIT\n\n## Recommended Products\n\n* * *\n\n## Equipment Sourcing:\n\n### Unmatched Expertise in Global Procurement\n\n[See More of Our Equipment](https://www.bridgetronic.com/collections/all?sort_by=created-descending)\n\n* * *\n\nAt Bridge Tronic Global, we leverage our extensive network and industry expertise to source high-quality semiconductor manufacturing equipment from\n\n...\n\n## Refurbishment: Restoring Excellence, Maximizing Value\n\nAt Bridge Tronic Global, our refurbishment services breathe new life into used semiconductor manufacturing equipment, ensuring peak performance at a fraction of the cost. Our expert technicians meticulously restore equipment from leading brands like KLA and Hitachi, applying rigorous testing and quality control measures.\n\n...\n\nLet us be your trusted partner in driving efficiency and growth.\n\nReach Out Now\n\nBridge Tronic Global"
+      ]
+    },
+    {
+      "url": "https://www.lesker.com/newweb/gauges/pdf/manuals/kjlc%20300%20series%20manual%20v102%20050415.pdf",
+      "title": "Gauge with Integrated Controller & Display User's Manual",
+      "publish_date": "2006-05-26",
+      "excerpts": [
+        "In addition, a built-in display provides a convenient user interface for setup and operation of the vacuum gauge. This manual applies to KJLC 300 series modules.\n\n...\n\nPIN NUMBER PIN DESCRIPTION\n1 RS485 (A)\n2 RS485 (B)\n3 Power Input (11-30Vdc)\n4 Power Ground\n5 Analog Output 1 (Non-linear GP Compatible, or Log-Linear 1-8V)\n6 Analog Ground\n7 RS232 Out\n8 RS232\n\n...\n\noffset is equal to 0.) Note that Address must be used even in RS232 commands. [Factory default = 1 ] SET ADDR OFFSET This is the upper nibble of the one byte RS485 address. (e.g.\n\n...\n\nLesker Company page 9\nSET BAUD This sets the baud rate for the RS485 and the RS232. The baud rate can be set to many other values through the serial interface command set.\n\n...\n\nCommand Protocol Summary Note: This protocol was designed to be 100% compatible with the Helix / Granville-Phillips Mini-Convectron \u00ae . COMMAND BRIEF DESCRIPTION COMMAND SYNTAX RESPONSE\nREAD Read the current pressure in Torr #xxRD (eg: #01RD) *xx_y.yyEzyy (eg: *01_7.60E+02)\nSET ADDR OFFSET Set the communications (RS485) address offset (upper nibble) *\n\n...\n\nSET BAUD RATE Set the communications baud rate for RS485 and RS232.* #xxSByyyyy (eg: #01SB19200) *xx_PROGM_OK\nSET NO PARITY Set the communications to NO parity, 8 bits for the RS485 and RS232.*\n#xxSPN (eg: #01SPN) *xx_PROGM_OK\nSET ODD PARITY Set the communications to ODD parity, 7 bits for the RS485 and RS232.*\n#xxSPO (eg: #01SPO) *xx_PROGM_OK\nSET EVEN PARITY Set the communications to EVEN parity, 7 bits for the RS485/ RS232.*\n#xxSPE (eg: #01SPE) *xx_PROGM_OK\nRESET Reset the device as if power was cycled.\n\n...\n\nSince each gauge tube and module calibration is different, the gauge cannot be replaced in the field.\n\n...\n\nto 1000 Torr of N2, roughly in the shape of an \"S\" curve, as shown at right. GP adopted the same output curve for most of their Mini-Convectron \u00ae modules and controllers with non-linear output\n\n...\n\nKJLC convection gauges (and most other thermal gauges) are normally calibrated using nitrogen. When a gas other than N2 is used, correction must be made for the difference in thermal conductivity,"
+      ]
+    },
+    {
+      "url": "https://w.yorkscientific.com/store/product/Kurt-90133848-Refurbished.php",
+      "title": "Kurt 90133848 Kurt Lesker Kjl 4500 Bayard-alpert Type Hot ...",
+      "publish_date": null,
+      "excerpts": [
+        "Kurt 90133848 Manufacturer : Kurt Part Number : 90133848 Product Description : Kurt Lesker Kjl 4500 Bayard-alpert Type Hot Filiment Ion Gauge Controller Condition : Refurbished Quantity : 2 in stock Price :"
+      ]
+    },
+    {
+      "url": "https://www.bidspotter.com/en-us/auction-catalogues/tiger-asset-intelligent/catalogue-id-bscti10086/lot-481a7e49-7d19-4d2d-9e0d-b1b2010ae347",
+      "title": "Lot of 2 Kurt J Lester Company Ion Gauge Controller",
+      "publish_date": null,
+      "excerpts": [
+        "Lot of 2 Kurt J Lester Company Ion Gauge Controller, Model KJL 4500, Serial Number T451 / U42, Power 120 Volts / 50/60Hz / 1 Phase, Weight 30 Lbs., Dimensions 13 In. x 10 In. x 8 In., Condition Fair, UID # 5007922"
+      ]
+    },
+    {
+      "url": "https://www.ntc-tech.com/products/kurt-j-lesker-kjl-4500-ionization-guage-controller-pair",
+      "title": "Kurt J Lesker KJL 4500 Ionization Guage Controller (PAIR)",
+      "publish_date": null,
+      "excerpts": [
+        "Used Kurt J Lesker KJL 4500 Ionization Guage Controller (PAIR). Model KJL4500. Guaranteed with 30-day warranty."
+      ]
+    },
+    {
+      "url": "https://www.lesker.com/newweb/gauges/pdf/manuals/kjlc_300_series_manual_v120.pdf",
+      "title": "Instruction Manual                                                                                                             CVM201 Super Bee",
+      "publish_date": "2012-07-30",
+      "excerpts": [
+        "PIN NUMBER PIN DESCRIPTION\n1 RS485 DATA B (+) Input/output\n2 RS485 DATA A (-) Input/output\n3 Power Input (11-30 Vdc)\n4 Power Ground\n\n...\n\nthe various functions available. During programming\nProgramming soft-keys\nof the 300, the display will identify what function each key represents.\n\n...\n\nthose values to a number lower than the values of SP1 OFF or SP2 OFF you are trying to set. RS485 ADDR [Factory default = 1] This is the lower nibble of the one byte RS485 device address. Assuming the address offset (RS485 OFFSET) is equal to 0, setting the ADDR to a 5 will make the address be 0x05 in hexadecimal. A 15 will set the ADDR to 0x0F in hexadecimal. Note that the address (ADDR) must be used even when sending RS232 commands RS485 OFFSET [Factory default = 0] This is the upper nibble of the one byte RS485 address. Assuming the address (ADDR) is 0, setting the address offset (RS485 OFFSET) to a 5 will make the address be 0x50 hexadecimal. Setting the ad\n\n...\n\nNon-Linear Output The first Convectron\u00ae gauge controllers produced a non- linear outp\n\n...\n\nurt J. Lesker Company Page 25\n\n8 RS485 / RS232 serial communications\n\n8.1 Device Specific Serial Communication Info\n\nThe standard 300 model provides RS232 / RS485 serial communications. The following information and the RS485 / RS232 command protocol summary listed on the next page should be used to set serial communications with the device.\n1.\n\n...\n\n13 characters long.\n6. xx is the address of the device (00 thru FF).\n7.  is a carriage return.\n8. _ is a space.\n9. The \u2018z\u2019 in the set or read trip point commands is a + or -.\n\n...\n\nwith a \u2018*\u2019 character.\n11. This protocol was designed to be 100% compatible with the Granville-Phillips\u00ae Mini-Convectron\u00ae.\n12. A valid address must be used even in RS232 commands [Factory default = 1].\n\nInstruction Manual 300\n\nKurt J. Lesker Company Page 26\n\n8.2 RS485 / RS232 Command Protocol Summary\n\nCOMMAND BRIEF DESCRIPTION COMMAND SYNTAX RESPONSE\nREAD Read the current pressure in Torr #xxRD (eg: #01RD)\n*xx_y.yyEzyy (eg: *01_7.60E+02)\nSET ADDR OFFSET\nSet the communications (RS485) address offset (upper nibble) (1)\n#xxSAxx (eg: #01SA20)\n*xx_PROGM_OK\nSET SPAN Set the span or atmosphere calibration point\n#xxTSy.yyEzyy (eg: #01TS"
+      ]
+    },
+    {
+      "url": "https://www.lesker.com/newweb/gauges/pdf/manuals/392usermanuallesker.pdf",
+      "title": "Instruction Manual                                                                                                             CVM201 Super Bee",
+      "publish_date": "2013-11-13",
+      "excerpts": [
+        "8.2 RS485 Command Protocol Summary \u2013 BINARY \u2013 Modbus-RTU type with CRC8 ..................................... 56\n8.3 RS485 Serial Communication using ASCII Protocol - Device Specific Serial Communication Info ........... 64\n8.4 RS485 Command Protocol Summa\n\n...\n\nAs pressure inside the vacuum system drops, there are fewer ions created and therefore ion current measured is lower translating to a lower pressure reading. The Kurt J. Lesker Company (KJLC) 392 module provides the basic signal conditioning required to turn a hot cathode ionization vacuum gauge into a complete measuring instrument.\n\n...\n\nserial communications RS485 \u2013 User selectable Modbus RTU style format using KJLC CRC8, or ASCII format protocol; minimum command interval: 50 ms\n\n...\n\nsure has been damaged. Contact KJLC for return authorization and instructions for returning the product to KJLC for evaluation.\n\n...\n\nDigital I/O and analog output. 2. 9-pin D-sub female (DE-9S) connector for RS485 serial communications and ion gauge relay connections.\n392 I/O Interface\n\n...\n\nsupply common connection.\n1\n5\n6\n9\nAnalog I/O 9-pin D-sub male (DE-9P) connector\n\nInstruction Manual 392\n\nKurt J. Lesker Company Page 16\n\n3.3.2.2 RS485 COM / Relay Connector pin-out for 392\n\nWhen using the RS485 serial communications mode of operation, use the 9-pin D-sub (DE-9S) female RS485 COM connector as described below. The same connector is also used for\n\n...\n\n9 RS485 DATA B (+) Input/output\nSetpoint Relay -N.O. 1\nPower Input 2\nNo Connection 3\nPower Ground 4\nSetpoint Relay -N.C. 5\n6 RS-485 Input DATA A (-) 7 Setpoint Relay COM 8 No Connection 9 RS485 Input DATA B (+)\nRS485 COM / IG Setpoint Relay 9-Pin D-sub female (DE-9S) connector\nDo not connect power to both\n\n...\n\nThe power will be received from the PS501A power supply via the ANALOG connector. Use the RS485 COM connector pins for communications and setpoint relay only.\n\n...\n\n- 100UA TRN ON [Factory default = 5.00E-02 TORR ]\n- IG CNTL [Factory default = DIGI/RS485, (Factory default is DIGI or Digital Input, see requirement for\n\n...\n\nIf you set IG CNTL (ion gauge control) to FRONT PANEL , the top-level menu choices change to include easy access for control of IG ON , IG OFF , EMISSION SEL , DEGAS ON and D"
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "name": "sku_search",
+      "count": 1
+    }
+  ],
+  "warnings": []
+}

@@ -108,9 +108,11 @@ can damage it.
 
 | From | To |
 | --- | --- |
-| 3123 screw 6 | DFR0845 screw marked `A` on the isolated screw side |
-| 3123 screw 9 | DFR0845 screw marked `B` on that same side |
+| 3123 screw 6, Hornet DATA A (−) | DFR0845 screw marked `B` |
+| 3123 screw 9, Hornet DATA B (+) | DFR0845 screw marked `A` |
 | 3123 screw 4 | DFR0845 ground printed with the RS485 pair, the screw beside `A` and `B` |
+
+On 2026-11-06 the convection read returned about 9.13 Torr with screw 6 on `B` and screw 9 on `A`. The DFR0845 uses a Mornsun TD541S485H. That chip drives its A pin high and its B pin low for a UART 1, so the screw marked A is the positive side. The Hornet book names pin 6 negative and pin 9 positive. Plus lands on plus, which crosses the printed letters.
 
 Do not use the screw printed as the 12V-in ground. That pair is an unused
 power input. Do not use the extra 3123 screw printed GND. That one is

@@ -35,6 +35,6 @@ All ordered electronics are now reported received. The checklist order still app
 ## Setup 3: one cryo gate
 
 - Follow only [08-gate-position.md](08-gate-position.md). USB unplugged while the wires go on. Air at or below 80 psig. Do not move the speed-controller screws.
-- Meter both reed pairs before they land. A closed pair that ohms as a dead short stays off 5346 B4.
-- Land the open pair on 5346 A4 to logic ground. Land the closed pair on B4 only if it opens and closes. Uno 5V/GND/D8 to the module DC+/DC−/IN with the H/L jumper on H. Module COM/NO in the 24 V Humphrey loop. Diode on the Humphrey coil. 24 V negative stays off Uno ground. No extra transistor. The 6318 is not in this circuit.
-- Upload `gpio_interlock_bench`. Do not type `o` until P01 has been read. A2 stays the simulated closed jumper. OPEN false is never treated as closed.
+- The closed reed signal goes to 5346 B3, and its other wire to logic ground. A4 is empty. The melted open switch stays off the board. B4 has no wire.
+- Uno 5V/GND/D8 to the module DC+/DC−/IN with the H/L jumper on H. Module COM/NO in the 24 V Humphrey loop. Diode on the Humphrey coil. 24 V negative stays off Uno ground. No extra transistor. The 6318 is not in this circuit.
+- Upload `gpio_interlock_bench`. Do not type `o` until P01 has been read. A2 stays the simulated closed jumper. Uno L lights only while the closed reed is made.

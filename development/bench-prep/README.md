@@ -21,7 +21,7 @@ The next desk experiment after the lamp tests is the Hornet read-only trial. Fol
 | Day 1: DFR0627 only | [day1-loopback.kicad_pro](kicad/day1-loopback/day1-loopback.kicad_pro) | [uart_loopback.ino](firmware/uart_loopback/uart_loopback.ino) | Uno I2C plus exact-byte echo through both UARTs |
 | Day 1: add DFR0845 logic wiring | [day1-rs485-logic.kicad_pro](kicad/day1-rs485-logic/day1-rs485-logic.kicad_pro) | No automatic instrument commands supplied | Logic harness preparation; a second endpoint is needed to prove RS485 |
 | Day 2: Adafruit input expander | [day2-gpio-bench.kicad_pro](kicad/day2-gpio-bench/day2-gpio-bench.kicad_pro) | [gpio_interlock_bench.ino](firmware/gpio_interlock_bench/gpio_interlock_bench.ino) | Simulated permissions, re-arm and faults with LED outputs |
-| Phase 3: one cryo gate | No KiCad project yet | Same [gpio_interlock_bench.ino](firmware/gpio_interlock_bench/gpio_interlock_bench.ino); follow [08-gate-position.md](08-gate-position.md) | SG reeds on 5346 A4/B4, D8 to 5 V module IN (jumper H), module NO in the 24 V Humphrey loop |
+| Phase 3: one cryo gate | No KiCad project yet | Same [gpio_interlock_bench.ino](firmware/gpio_interlock_bench/gpio_interlock_bench.ino); follow [08-gate-position.md](08-gate-position.md) | Closed reed on 5346 B3 only. A4 is empty. D8 to 5 V module IN (jumper H), module NO in the 24 V Humphrey loop |
 
 The user now reports all ordered electronics received. Inspection and physical acceptance tests are still required; receipt is not a PASS result.
 

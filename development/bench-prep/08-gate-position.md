@@ -13,8 +13,8 @@ the 5346 data and clock. Hornet and DFR0627 can stay on the bus. 24 V
 negative does not join Uno ground.
 
 Expander A2 may still have the old fake “cryo closed” jumper. Leave it
-or pull it; it is not the real gate. Open false is never treated as
-closed.
+or pull it; it is not the real gate. The only position is the closed
+reed on B3. A4 is empty. The open switch is a melted short. It is not a sensor.
 
 Related pages:
 
@@ -28,7 +28,7 @@ Related pages:
 
 ## What the sheets already say
 
-SG position switches are two-wire, normally open reeds. Each closes only
+The closed-position switch is a two-wire contact. It closes only
 when the cylinder magnet is next to it. Ratings in the HVA / Lesker
 installation manual: 3 W, 0.25 A switching, 100 V DC class. The Lesker
 SG sheet caps the indicator circuit at 28 V DC and 20 mA. A 5 V pull-up
@@ -52,10 +52,9 @@ high means click. 24 V at 0.28 A is inside the contact window. The
 contact table is for a resistive load, so the Humphrey coil still gets a
 diode across it.
 
-A closed reed that ohms as a dead short looks like “valve is closed” all
-the time, including when the gate is open. That pair stays off B4.
-Operator reports the closed switch is not working. **Do not land it on
-B4.** Open-switch false means “not proven open.” It does not mean closed.
+The switch that used to mark open has melted. Its wires are shorted
+together. That pair is not a sensor. Do not land it on any pin. No
+sketch reads it. Position comes only from the closed reed on B3.
 
 ## Parts on the desk
 
@@ -67,29 +66,33 @@ B4.** Open-switch false means “not proven open.” It does not mean closed.
 
 Put the black H/L cap on the two pins next to **H**. Leave **NC** empty.
 
-## Meter the reeds before they land
+## The closed reed is the only switch
 
 USB unplugged. 24 V off. If a pair already has more than 5 V on it from
 an old lamp circuit, lift that circuit first.
 
-1. Find the two wires marked open. Meter ohms. Record the number with
-   the gate as it sits.
-2. Find the two wires marked closed. Meter ohms with the gate as it
-   sits, then again after the gate has been moved if that is already
-   possible by hand or by a prior pilot. If that pair is about 0 ohms
-   both times, it is a stuck short. It stays off B4.
-3. The open pair lands even if the closed pair stays off.
+The wires marked open are a melted short. Leave them off the board.
+5346 A4 and B4 stay empty.
+
+On 2026-11-16 the closed pair still had continuity, and A4 still read
+NOT_CLOSED. Lift that signal wire off A4 and land it on B3.
 
 ## One wiring pass
 
 Wire IDs are in [phase3-wire-schedule.csv](phase3-wire-schedule.csv).
 
-Reed pairs, 5 V only:
+Closed reed, 5 V only:
 
-- Closed reed: one wire to 5346 **A4**, the other to logic ground.
-  Operator corrected this pair on 2026-11-04. It is the closed mark,
-  and it works.
-- Open reed: one wire to 5346 **B4**, the other to logic ground.
+- One wire to 5346 **B3**, the other to logic ground.
+  This pair is the closed mark. It moved off A4 on 2026-11-16.
+- The melted open pair stays off the board. A4 and B4 have no wire.
+
+Gate button. No resistor. The press pops back up; the Uno remembers it.
+
+- One switched leg to 5346 **A0**.
+- The other switched leg to 5346 **GND**, the same ground as the reed.
+
+Uno **L**, next to **D13**, needs no wire. It stays lit while the closed reed is made, and it goes dark when that reed lets go. Vent **A1** and re-arm **B2** stay lamp-game contacts. They do not move this coil.
 
 Relay module and Humphrey coil:
 
@@ -109,29 +112,25 @@ terminal and every 6318 load terminal stay empty. No 2N3904. No NTE159.
 
 ## Sketch
 
-Upload `gpio_interlock_bench`. Serial Monitor **115200**. Boot line:
+Upload `gpio_interlock_bench`. Serial Monitor **115200**, or open the Hornet window. Its gate page sends the same `o` and `c`, and the words change only after the Uno answers. Boot lines:
 
 ```text
-GATE BENCH - MCP 0x21; A4 open reed, B4 closed reed; D8 LOW
+GATE BENCH - MCP 0x21; B3 closed reed only; A4 empty; D8 LOW; L follows closed
+A0 press toggles. USB o forces open. USB c or x releases.
 ```
 
-Each second it prints `OPEN=`, `CLOSED=`, `POS=`, and `D8=`.
+One press of A0 holds the coil on after the finger lifts. The next press drops it and the spring returns. USB `o`, or the gate-page Open button, forces the coil on. USB `c` or `x`, or the gate-page Close button, drops it. The finger and the screen share one memory. The page does not decide on its own. If the expander falls off the bus, that memory clears and D8 stays low. Coming back does not reopen the gate. A press or `o` while the expander is offline is refused.
 
-| OPEN | CLOSED | POS | Meaning |
-| --- | --- | --- | --- |
-| 1 | 0 | OPEN | Magnet at the open switch |
-| 0 | 1 | CLOSED | Magnet at the closed switch |
-| 0 | 0 | UNKNOWN | Neither switch proven |
-| 1 | 1 | FAULT | Impossible pair; do not treat as closed |
+Each second, and on each change, it prints a line the Hornet window reads:
 
-`OPEN=0` is “not proven open.” It is not closed.
+```text
+GATE ASK=OPEN D8=1 REED=CLOSED SRC=BUTTON
+```
 
-Type `o` only after P01. That raises D8 for at most 8 seconds. Type `x`
-to drop it sooner. If the expander is offline, `o` is refused and D8
-stays low.
+ASK is `OPEN` or `RELEASED`. REED is `CLOSED` or `NOT_CLOSED` from the closed reed. SRC is `BUTTON`, `USB`, `BOOT`, or `BUS`. Once a second it also prints `CLOSED=`, `POS=`, `D8=`, and `L=`. `L=1` means the closed reed is made and the Uno L lamp is lit. `POS=` is `CLOSED` or `NOT_CLOSED`.
 
 ## Tests after the wires are in
 
 Follow [04-tests.md](04-tests.md) P01 then P02. Look at the gate while
-the numbers print. Do not type `o` until P01 has been read. Save
+the numbers print. Do not type `o` or press A0 until P01 has been read. Save
 captures under `verification/runs/` with the date of the run.

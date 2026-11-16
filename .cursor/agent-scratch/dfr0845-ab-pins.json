@@ -1,0 +1,39 @@
+{
+  "extract_id": "extract_9394f08f0d7bbf9306622ae0ef8e4c3a",
+  "session_id": "session_9394f08f0d7bbf9306622ae0ef8e4c3a",
+  "status": "ok",
+  "results": [
+    {
+      "url": "https://www.farnell.com/datasheets/3708825.pdf",
+      "title": "farnell.com",
+      "publish_date": null,
+      "excerpts": [
+        "**SKU:DFR0845 (https://www.dfrobot.com.cn/goods-807.html)**\n(https://www.dfrobot.com.cn/goods-\n807.html)\n**Introduction**\nThis **active** , **isolated** RS485 to UART signal transfer module comes with protection circuits such as\npower isolation and TVS. Compatible with most main controllers, it has the characteristics of fast\ncommunication speed, stable and reliable performance, high safety, etc., and can be applied to\nvarious industrial sensors, industrial control equipment or applications that require RS485 signal\n\n...\n\nDFR0845 Gravity: Active Isolated RS485 to UART Signal Converter\n**Gravity-UART**\n**Label**\n**Name**\n**Function description**\n**Label**\n**Name**\n**Function description**\n1\nT\nUART data transmission-TX\n2\nR\nUART data reception-RX\n3\n-\nGND power supply negative\n4\n+\nVCC power supply positive\n**RS485**\n**Label**\n**Name**\n**Function description**\n1\n12V\n12V-2W output, connect to 485 device\n2\nGND\nRS485 side isolated ground, connected to 485 device's GND\n3\nA\nRS485 signal terminal A\n4\nB\nRS485 signal terminal B\n**12V-IN**\n**Label**\n**Name**\n**Function description**\n**Label**\n**Name**\n**Function description**\n1\n12V\n12V external power input\n2\nGND\nExternal power supply GND\n**Tutorial**\nUse Gravity: Active Isolated RS485 to UART Signal Adapter Module () to connect the RS485 device\nand the Arduino Leonardo main control, and test the transceiver function of the device through\n\n...\n\nDFRduino UNO R3 (https://www.dfrobot.com/product-838.html) (or similar) x 1\nDFR0845 Gravity: Active isolation type RS485 to UART signal transfer module () \u00d71\nRS485 device \u00d71\n**Software**\nArduino IDE (https://www.arduino.cc/en/Main/Software)\nSSCOM32 serial port debugging tool\n\n...\n\nDFshopping_car1.png Get **Gravity Active Isolation Type RS485 to UART Signal Transfer**\n**Module** (https://www.dfrobot.com/product-203.html) from DFRobot Store or **DFRobot**\n**Distributor** . (https://www.dfrobot.com/index.php?route=information/distributorslogo)\n**Turn to the Top**"
+      ]
+    },
+    {
+      "url": "https://www.dfrobot.com/product-2392.html",
+      "title": "Active Isolated RS485 to UART Signal Adapter Module - DFRobot\n",
+      "publish_date": "2025-08-27",
+      "excerpts": [
+        "Front of RS485 to UART Signal Adapter with Industry Isolation, green pins and black connector.-DFRobot product sku:DFR0845 image.\nFront of active isolated RS485 to UART adapter module with USB connector and protection circuits.\nFront of active isolated RS485 to UART adapter module with labeled ports and logo.\nFront of active isolated RS485 to UART signal adapter module with green circuit board and two wires.\nFront of green terminal block with RS485 to UART isolation adapter and industry signal isolation module\nFront of active RS485 to UART isolation module with visible pins and text LJ2201\nGravity: Active Isolated RS485 to UART Signal Adapter Module_6\nGravity: Active Isolated RS485 to UART Signal Adapter Module_7\nGravity: Active Isolated RS485 to UART Signal Adapter Module_8\n\n...\n\n# Gravity: Active Isolated RS485 to UART Signal Adapter Module\n$19.90\nSKU: DFR0845\n- +\nVolume Discount\n* **$19.40** 3+ items\n* **$19.00** 5+ items\n* **$18.40** 10+ items\nAn isolated RS485 to UART signal transfer module with power isolation and TVS protection, offering fast, stable communication for industrial sensors and control equipment.\n\n...\n\n## Introduction\nThis active, **isolated RS485 to UART signal transfer module** comes with protection circuits such as power\nisolation and TVS.\nCompatible with most main controllers, it has the characteristics of fast communication speed,\nstable and reliable performance, high safety, etc.\n\n...\n\n## Documents\n* [Product Wiki](https://wiki.dfrobot.com/dfr0845/)"
+      ]
+    },
+    {
+      "url": "https://wiki.dfrobot.com/dfr0845/",
+      "title": "RS485 to UART Signal Adapter Module | Reliable & Safe | DFRobot Wiki",
+      "publish_date": null,
+      "excerpts": [
+        "# Gravity: Active Isolated RS485 to UART Module\nThis active isolated RS485 to UART signal transfer module comes with protection circuits such as power isolation and TVS. Compatible with most main controllers, it has the characteristics of fast communication speed, stable and reliable performance, high safety, etc., and can be applied to various industrial sensors, industrial control equipment or applications that require RS485 signal conversion.\n\n...\n\n[Dimension](https://dfimg.dfrobot.com/wiki/17659/DFR0845_gravity-activate-isolated-rs485-to-uart-module_dimension_V1.0.pdf) [Schematics](https://dfimg.dfrobot.com/wiki/17659/DFR0845_gravity-activate-isolated-rs485-to-uart-module_schematics_V1.0.pdf) [Datasheet](https://dfimg.dfrobot.com/wiki/17659/DFR0845_gravity-activate-isolated-rs485-to-uart-module_datasheet_v1.0.pdf)"
+      ]
+    }
+  ],
+  "errors": [],
+  "usage": [
+    {
+      "name": "sku_extract_excerpts",
+      "count": 3
+    }
+  ],
+  "warnings": []
+}

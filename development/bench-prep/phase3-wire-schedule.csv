@@ -1,8 +1,8 @@
 wire_id,net,from,to,instruction
 P-01,LOGIC_GND,SG closed-reed return,Uno / 5346 GND,5 V reed only. This is the pair that is wired.
-P-02,GATE_CLOSED,SG closed-reed signal,5346 A4,Library index 4. Operator corrected this pair from open to closed on 2026-11-04. Grounded=true.
-P-03,LOGIC_GND,SG open-reed return,Uno / 5346 GND,Same logic ground as the closed reed. Not 24 V negative.
-P-04,GATE_OPEN,SG open-reed signal,5346 B4,Library index 12. Grounded=true. This is the pair that was left off.
+P-02,GATE_CLOSED,SG closed-reed signal,5346 B3,Library index 11. Moved off A4 on 2026-11-16. Grounded=true.
+P-03,NONE,melted open switch,no terminal,Destroyed short. Not a sensor. Do not land it.
+P-04,NONE,5346 A4 and B4,no wire,A4 is not read. B4 stays empty. The melted switch must not land on either.
 P-05,USB_5V,Uno 5V,relay module DC+,Board already has the driver. No extra transistor.
 P-06,LOGIC_GND,Uno GND,relay module DC-,Do not join 24 V negative to this ground.
 P-07,RELAY_CMD,Uno D8,relay module IN,Sketch holds D8 LOW until USB o. Set the H/L jumper on H.

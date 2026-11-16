@@ -58,8 +58,8 @@ Follow only [08-gate-position.md](08-gate-position.md) while wiring. USB unplugg
 
 | ID | Action | Expected observation |
 |---|---|---|
-| P01 | Upload `gpio_interlock_bench`. Do not type `o`. Look at the gate. Read `OPEN=`, `CLOSED=`, `POS=`, and `D8=` | `D8=0`. `POS=` matches the gate you can see. Both true is `FAULT`. `OPEN=0` is not closed. If the closed reed was left off B4, `CLOSED=` stays 0 |
+| P01 | Upload `gpio_interlock_bench`. Do not type `o`. Look at the gate. Read `CLOSED=`, `POS=`, `D8=`, and `L=` | `D8=0`. `POS=` follows the closed reed. `L=1` while that reed is made. The melted open switch is not in this print |
 | P02 | After P01 is sane, type `o` once. Watch the relay, the Humphrey coil, the gate, and the printed bits. Type `c` to release | Relay clicks. Humphrey coil gets 24 V. The closed reed turns off. `c` drops D8 and the spring returns the closed reed |
-| P06 | With air and 24 V on, command open, then release, twice. Ignore B4 | `CLOSED` goes from 1 to 0 in under 1 s, then back to 1 in about 7 s. End with `POS=CLOSED` and `D8=0`. The open reed stays 1 and is not used |
+| P06 | With air and 24 V on, command open, then release, twice | `CLOSED` goes from 1 to 0 in under 1 s, then back to 1 in about 7 s. `L` follows that reed. End with `POS=CLOSED` and `D8=0` |
 
 Record date, operator, sketch commit, wiring revision, observed result and measurements. Do not replace NOT TESTED with PASS because the expected behavior looks plausible.

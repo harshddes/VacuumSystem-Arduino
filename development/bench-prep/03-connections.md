@@ -63,7 +63,7 @@ Start a separate bench setup; remove the two DFRobot modules for this test. Conn
 | B2            | 10            | Re-arm                             | Normally-open button to LOGIC_GND |
 
 
-Inputs use internal pull-ups: grounded=true; open=false. On this physical board, pressure valid is expander **B5** and re-arm is expander **B2**. For the Day 2 lamp bench, expander A4 and B4 stay empty. Phase 3 lands the SG open reed on **A4** and the SG closed reed on **B4**; follow only [08-gate-position.md](08-gate-position.md) for those two wires and for D8. The 5346 **A7 and B7 are not used as inputs**, following the current Adafruit warning about changing inputs on these bits. The sketch holds them as unused LOW outputs with no external wires. A2 stays the simulated cryo-closed jumper and is not reused as the real gate.
+Inputs use internal pull-ups: grounded=true; open=false. On this physical board, pressure valid is expander **B5** and re-arm is expander **B2**. For the Day 2 lamp bench, expander A4, B3, and B4 stay empty. Phase 3 lands only the closed reed on **B3**. A4 is empty and not read. The melted open switch stays off the board, so B4 stays empty. Follow only [08-gate-position.md](08-gate-position.md) for that wire and for D8. The 5346 **A7 and B7 are not used as inputs**, following the current Adafruit warning about changing inputs on these bits. The sketch holds them as unused LOW outputs with no external wires. A2 stays the simulated cryo-closed jumper and is not reused as the real gate.
 
 Uno A0 -> 470 ohm resistor -> cryo LED anode; cathode -> LOGIC_GND.
 
@@ -77,7 +77,7 @@ The complete Day 2 wire IDs G-01 onward are in `wire-schedule.csv`. Same-net con
 
 ## Phase 3: gate reeds, Tongling relay, Humphrey 24 V
 
-This circuit is not in the three KiCad bench drawings. Follow only [08-gate-position.md](08-gate-position.md). Wire IDs P-01 through P-11 are in [phase3-wire-schedule.csv](phase3-wire-schedule.csv). The 5 V board is a module: DC+ / DC− / IN and COM / NO / NC. No extra transistor. H/L jumper on **H**. 24 V negative does not join Uno ground. The 6318 is not in this circuit. A closed reed that ohms as a dead short stays off B4.
+This circuit is not in the three KiCad bench drawings. Follow only [08-gate-position.md](08-gate-position.md). Wire IDs P-01 through P-11 are in [phase3-wire-schedule.csv](phase3-wire-schedule.csv). The 5 V board is a module: DC+ / DC− / IN and COM / NO / NC. No extra transistor. H/L jumper on **H**. 24 V negative does not join Uno ground. The 6318 is not in this circuit. The melted open switch stays off the board. A4 and B4 have no wire. The closed reed signal is on B3.
 
 ## Physical identification rule
 
