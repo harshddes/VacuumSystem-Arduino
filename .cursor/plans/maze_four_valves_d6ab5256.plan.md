@@ -6,7 +6,7 @@ todos:
     content: "Recorded from the user: four Humphrey solenoids, each 120 V 50/60 Hz, 4.5 W, 0-125 psi. About 38 mA each, 150 mA if all four are on."
     status: completed
   - id: pick-driver
-    content: "Buy the ShillehTek 4-channel board (cubes printed SRD-05VDC-SL-C), Littelfuse 0215001.MXP, Littelfuse 01500274Z, and Hammond 1591DBK. IN pins are active-low."
+    content: Buy the ShillehTek 4-channel board (cubes printed SRD-05VDC-SL-C), Littelfuse 0215001.MXP, Littelfuse 01500274Z, and Hammond 1591DBK. IN pins are active-low.
     status: pending
 isProject: false
 ---
