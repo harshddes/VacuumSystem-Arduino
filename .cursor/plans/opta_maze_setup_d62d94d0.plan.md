@@ -1,6 +1,6 @@
 ---
 name: Opta Maze setup
-overview: Replace the Uno-and-5 V-relay Maze box with one Arduino Opta WiFi. Its four built-in relays switch the four 120 V Humphrey coils, its eight 24 V inputs read the reeds, and its RS-485 port is the Hornet path once isolation is confirmed.
+overview: Replace the Uno-and-5 V-relay Maze box with one Arduino Opta WiFi. Its four built-in relays switch the four 120 V Humphrey coils, four of its base inputs read the Cryo and Turbo gate reeds, and its RS-485 port is the Hornet path once isolation is confirmed.
 todos:
   - id: rewrite-maze-plan
     content: Replace the Uno/5 V relay buy and drawings in maze_four_valves_d6ab5256.plan.md with the Opta WiFi screw map, fuse, interlock, and the two holds (reed labels, RS-485 isolation).
@@ -23,7 +23,7 @@ flowchart LR
   supply24 --> reedWet[Reed wetting]
   laptop[Laptop on Ethernet] --> opta
   hornet[Hornet RS485] --> opta
-  reeds[Closed reeds] --> opta
+  reeds[Cryo and Turbo OPEN and CLOSED reeds] --> opta
   wall120[120V hot] --> fuse[1A fuse]
   fuse --> interlock[Lab interlock contact]
   interlock --> coms[Four relay COM terminals]
@@ -38,7 +38,7 @@ Power. Opta wants 12–24 V DC on its supply screws. At 24 V it draws at most 2.
 
 Coils. Four normally-open dry contacts, each rated 10 A at 250 V AC. AC15 (solenoid) rating is 500 VA. Each Maze coil is 120 V, 4.5 W, about 38 mA, so four together are about 0.15 A. The existing 1 A slow fuse, Littelfuse 0215001.MXP in holder 01500274Z, sits in the hot wire ahead of all four COM screws. Each NO screw goes to one coil. The other coil lead returns to neutral. No diode across these AC coils. The sheet says the relays have no short-circuit protection of their own.
 
-Reeds. Eight inputs, I1–I8, accept 0–24 V. The sheet calls a level “off” at or below 4.46 V and “on” at or above 6.6 V. That is a higher bar than a Uno pin and a lower bar than a factory input, which waits until 11 V or 15 V. Input resistance is 8.9 kΩ, so a reed wetting from 24 V draws about 2.7 mA. Four closed reeds use I1–I4. I5–I8 stay spare. A Maze reed gets 24 V only after its own label allows 24 V and that current. The cryo reed’s 28 V / 20 mA note does not speak for the Maze switches.
+Reeds. Eight inputs, I1–I8, accept 0–24 V. The sheet calls a level “off” at or below 4.46 V and “on” at or above 6.6 V. That is a higher bar than a Uno pin and a lower bar than a factory input, which waits until 11 V or 15 V. Input resistance is 8.9 kΩ, so a reed wetting from 24 V draws about 2.7 mA. Only the Cryo and Turbo gates carry reeds, one OPEN and one CLOSED on each. The other two valves have no position switches. The LabVIEW commissioning sketch proposes I1–I4 for these four contacts. The actual contact wiring, the other two valve functions and the relay order are unverified. I5–I8 remain available in that allocation. A Maze reed gets 24 V only after its own label allows 24 V and that current. The cryo reed’s 28 V / 20 mA note does not speak for the Maze switches.
 
 Gauge. Opta WiFi’s RS-485 screws are A(−), B(+), and GND, half duplex, no built-in terminator. The port can carry a custom serial stream, which is what the Hornet already speaks. It is not assumed to be Modbus. The sections read do not say this port is galvanically isolated. The bench path uses the DFR0845 because that board is isolated. Hornet pin 4 does not land on Opta GND until that isolation is confirmed from the sheet or a measurement. Until then the gauge reader stays the isolated bench path, and Opta still owns the valves.
 
@@ -50,7 +50,7 @@ Opta has exactly four relays, and all four are the “on” kind. There is no fi
 
 The lab’s existing interlock contact sits in the 120 V hot, ahead of the fuse-to-COM path. Opta cannot hold a coil on while that contact is open. The steel cabinet bonds to Opta’s functional-earth screw. 24 V negative is not 120 V neutral.
 
-A pulse can still shove a few volts onto a wire. Opta will treat 6.6 V as a real press. The program must not copy the Uno bug, where every new press on one screw flipped the coil. A move finishes only when the matching reed agrees. Pressure remains a picture until a later, separate permission step. No shot sequence lives in this box.
+A pulse can still shove a few volts onto a wire. Opta will treat 6.6 V as a real press. The program must not copy the Uno bug, where every new press on one screw flipped the coil. The Cryo and Turbo gate positions come from their own reed pairs. Closure of either unsensed valve needs independent evidence wherever a sequence requires it. Pressure remains a picture until a later, separate permission step. No shot sequence lives in this box.
 
 More than four AC coils, or more than eight inputs, means one Opta Digital Expansion D1608E (AFX00005): 16 inputs and eight mechanical relays at 6 A, 250 V AC, with its own 24 V feed. The solid-state expansion D1608S is 24 V DC only and cannot switch these coils. Do not buy an expansion for the four valves already counted.
 
