@@ -17,6 +17,20 @@ WORK = Path(tempfile.mkdtemp(prefix="maize-native-"))
 U32 = "uint32"
 VALVES = ["Roughing valve", "Let-up valve", "Turbo gate valve", "Cryo gate valve"]
 REQUESTS = ["Roughing OPEN", "Let-up OPEN", "Turbo OPEN", "Cryo OPEN"]
+PANEL_BUTTONS = {
+    "Arm / Reset": ("003B86C2", "00255783"),
+    "Pumpdown": ("00F5F6F7", "00B1C3D0"),
+    "Vent Start": ("00EDC548", "00AC8219"),
+    "Close / Stop": ("00CC5156", "00892731"),
+}
+OFFLINE_LAMP_COLORS = """color=0x696F71;
+if(shift<4 && state==2) color=0x477895;
+if(shift>=4 && state==1) color=0x389772;
+if(shift>=4 && state==2) color=0xD7A044;
+if(state==3) color=0xBD4247;"""
+LIVE_LAMP_COLORS = """color=0x696F71;
+if(state==1) color=0x129747;
+if(state==2) color=0xD32430;"""
 FAULTS = [
     "Normal", "Pressure signal lost", "Actuator air lost", "Roughing pump not ready",
     "Cryopump not ready", "Turbo not at speed", "Turbo backing lost", "Filament ON",
@@ -135,11 +149,10 @@ def lamp(offline=False):
     shift=d.value("Bit offset",U32,0,1)
     selectors=d.value("Physical selectors",U32,0,2)
     known=d.value("Selector quality",U32,0,3)
+    colors=OFFLINE_LAMP_COLORS if offline else LIVE_LAMP_COLORS
     code="""uInt32 color, state, lever;
 state=(pos >> shift) & 3;
-color=0x696F71;
-if(state==1) color=0x129747;
-if(state==2) color=0xD32430;
+"""+colors+"""
 lever=0;
 if((known >> (shift/2)) & 1) {
   lever=1+((selectors >> (shift/2)) & 1);
@@ -180,14 +193,14 @@ if((known >> (shift/2)) & 1) {
 
 def offline_inputs(d, last):
     buttons=[]
-    for name in [*REQUESTS, "Arm / Reset", "Pumpdown", "Vent sequence", "Close / Stop"]:
+    for name in [*REQUESTS, "Arm / Reset", "Pumpdown", "Vent Start", "Close / Stop"]:
         momentary={"style":"latched"} if name not in REQUESTS else {}
         item=d.add("Control",_name=name,type="bool",value="false",outputs="value:OUT.v",**momentary)
         buttons.append(item.get("uid")+".v")
     values=[d.select(v,d.value("Bit",U32,1<<i),d.value("Clear",U32,0)) for i,v in enumerate(buttons)]
     terms=[(f"b{i}",v) for i,v in enumerate(values)]
     flags=d.node("Formula Node",terms,"flags",text="uInt32 flags;\nflags="+ "+".join(n for n,_ in terms)+";")
-    mode=d.add("Control",_name="Mode",type="uint16{OFF,MANUAL,AUTO}",value="1",outputs="value:OUT.v").get("uid")+".v"
+    mode=d.add("Control",_name="Mode",type="uint16{OFF,MANUAL,AUTO}",value="0",outputs="value:OUT.v").get("uid")+".v"
     fault=d.add("Control",_name="Test condition",type="uint16{"+",".join(FAULTS)+"}",value="0",
                 outputs="value:OUT.v").get("uid")+".v"
     fmt=lambda v:d.node("Number To Decimal String",[("number",v)],"decimal integer string")
@@ -264,6 +277,14 @@ def layout(c,offline=False):
     def place(name,x,y,w,h):
         o=c.fp_info[name][2].find("ddo")
         parts=o.findall("partsList/SL__arrayElement")
+        if offline and o.get("class")=="stdBool" and (name in PANEL_BUTTONS or name in REQUESTS):
+            released,pressed=PANEL_BUTTONS.get(name,("00586067","004A7895"))
+            for part in parts:
+                if part.findtext("partID") in ("21","86"):
+                    for index,state in enumerate(part.findall("table/SL__arrayElement")):
+                        color=pressed if index%2 else released
+                        state.find("FGColor").text=color
+                        state.find("BGColor").text=color
         if o.get("class")=="stdPict":
             width=125 if offline else 195
             o.find("bounds").text=str((0,0,57,width))
@@ -271,10 +292,10 @@ def layout(c,offline=False):
             for p in parts:
                 code=p.findtext("partID")
                 if code in coords:p.find("bounds").text=str(coords[code])
-                if code=="28":p.find("bgColor").text="00E4E3DB"
+                if code=="28":p.find("bgColor").text="00ECF0F2" if offline else "00E4E3DB"
                 if code=="9":
                     p.find("image/ImageResID").text="-239"
-                    p.find("bgColor").text="00E4E3DB"
+                    p.find("bgColor").text="00ECF0F2" if offline else "00E4E3DB"
                 if code=="16":
                     p.find("image/ImageResID").text="-619"
                     p.find("bgColor").text="00E9D77F"
@@ -314,15 +335,23 @@ def layout(c,offline=False):
         ET.SubElement(rec,"bgColor").text=col
         if behind: c.pane_z.append(lab)
         else: c.pane_z.insert(0,lab)
-    strip("",41,18,829,"00E4E3DB",117,True)
-    strip("",160,18,829,"00E4E3DB",118,True)
-    strip("MAIZE     /     OFFLINE SIMULATION" if offline else "MAIZE     /     Vacuum control",7,18,829,"00E8CA70")
-    for name,request,x,y in zip(VALVES,REQUESTS,(48,303,558,606 if offline else 618),(84,84,84,211)):
-        place(name,x+105 if offline else x,y,0,0)
-        if offline:
-            place(request,x,y,0,0)
-    strip("Click a valve request to toggle CLOSED / OPEN" if offline else "Levers follow the physical toggles",190,48,405,"00E4E3DB")
-    strip("OPEN   Red        CLOSED   Green        UNKNOWN   Grey",224,48,405,"00E4E3DB")
+    if offline:
+        strip("MAIZE     /     OFFLINE SIMULATION",7,18,829,"00CADDE9",26)
+        strip("MAINTAINED VALVE REQUESTS",63,18,829,"00CADDE9")
+        strip("Roughing and Let-up show selector requests",105,29,387,"00ECF0F2")
+        strip("Turbo and Cryo show modeled reed feedback",105,450,387,"00ECF0F2")
+        for name,request,x in zip(VALVES,REQUESTS,(33,244,454,665)):
+            place(request,x,99,0,0)
+            place(name,x,146,0,0)
+        strip("MODE AND MOMENTARY CONTROLS",260,18,829,"00CADDE9")
+    else:
+        strip("",41,18,829,"00E4E3DB",117,True)
+        strip("",160,18,829,"00E4E3DB",118,True)
+        strip("MAIZE     /     Vacuum control",7,18,829,"00E8CA70")
+        for name,x,y in zip(VALVES,(48,303,558,618),(84,84,84,211)):
+            place(name,x,y,0,0)
+        strip("Levers follow the physical toggles",190,48,405,"00E4E3DB")
+        strip("OPEN   Red        CLOSED   Green        UNKNOWN   Grey",224,48,405,"00E4E3DB")
     fields=[
         ("Controller link",18,302,395,39),("Operating state",430,302,255,39),
         ("Chamber pressure",18,352,242,39),("Opening outputs",277,352,570,39),
@@ -330,12 +359,13 @@ def layout(c,offline=False):
         ("End session",744,302,0,0)]
     if offline:
         fields=[
-            ("Mode",18,291,156,0),("Arm / Reset",196,291,0,0),("Close / Stop",314,291,0,0),
-            ("Pumpdown",436,291,0,0),("Vent sequence",546,291,0,0),("End session",742,291,0,0),
-            ("Test condition",18,346,250,0),("Operating state",287,346,305,38),
-            ("Chamber pressure",612,346,235,38),("Model status",18,393,250,38),
-            ("Opening outputs",287,393,560,38),
-            ("Active interlocks",18,447,435,185),("Latched faults",470,447,377,185)]
+            ("Mode",18,246,156,0),("Arm / Reset",194,246,0,0),
+            ("Pumpdown",320,246,0,0),("Vent Start",439,246,0,0),
+            ("Close / Stop",570,246,0,0),("End session",742,246,0,0),
+            ("Test condition",18,326,250,0),("Operating state",287,326,305,40),
+            ("Chamber pressure",612,326,235,40),("Model status",18,376,250,40),
+            ("Opening outputs",287,376,560,40),
+            ("Active interlocks",18,432,435,200),("Latched faults",470,432,377,200)]
     for name,x,y,w,h in fields:
         place(name,x,y,w,h)
     c.fp.find("pBounds").text="(46, 0, 735, 895)"
@@ -346,7 +376,8 @@ def layout(c,offline=False):
         coords={"39":(0,878,672,895),"38":(672,0,689,878),"44":(672,878,689,895),"28":(0,0,672,878)}
         k=part.findtext("partID")
         if k in coords:part.find("bounds").text=str(coords[k])
-        if k=="28" and part.find("bgColor") is not None:part.find("bgColor").text="00DFDFD8"
+        if k=="28" and part.find("bgColor") is not None:
+            part.find("bgColor").text="00ECF0F2" if offline else "00DFDFD8"
 
 if __name__=="__main__":
     if sys.argv[1:]==["--offline"]:

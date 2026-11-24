@@ -1,8 +1,9 @@
 """Exercise the shipped model through the same pipe protocol used by the VI."""
 from pathlib import Path
 import subprocess
+import sys
 
-EXE = Path(__file__).with_name("MAIZE.Offline.exe")
+EXE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).with_name("MAIZE.Offline.exe")
 
 
 class Session:
@@ -18,7 +19,8 @@ class Session:
         return row
 
     def arm(self, mode=1):
-        self.scan(mode=mode)
+        for _ in range(9):
+            self.scan(mode=mode)
         row = self.scan(16, mode)
         self.scan(mode=mode)
         return row
@@ -27,6 +29,7 @@ class Session:
 manual = Session()
 first = manual.scan()
 assert first[2:4] == ["MANUAL / Disarmed", "760 simulated Torr"] and int(first[5]) == 85
+assert int(first[7]) & 6 == 0 and manual.scan(16)[2].endswith("Disarmed")
 assert manual.arm()[2].endswith("Armed")
 assert manual.scan(2)[12] == "Let-up OPEN command"
 conflict = manual.scan(3)
@@ -70,4 +73,23 @@ assert pumpdown(signal_loss)[2].endswith("High vacuum")
 disconnected = signal_loss.scan(mode=2, fault=1)
 assert int(disconnected[9]) & (1 << 21) and "command" not in disconnected[12]
 
-print("Offline model verified: manual interlocks, re-arm, automatic pumpdown and vent, gate timeout, pressure loss.")
+panel_loss = Session()
+assert panel_loss.arm()[2].endswith("Armed")
+assert panel_loss.scan(1)[12] == "Roughing OPEN command"
+unavailable = panel_loss.scan(1 | 16, fault=15)
+assert unavailable[2] == "MODE UNAVAILABLE / Fault latched" and unavailable[13:] == ["0", "0"]
+assert int(unavailable[5]) == 80 and "command" not in unavailable[12]
+for _ in range(12):
+    held = panel_loss.scan(16)
+    assert held[2].endswith("Fault latched")
+assert panel_loss.arm()[2].endswith("Disarmed")
+assert panel_loss.arm()[2].endswith("Armed")
+
+stop = Session()
+assert stop.arm()[2].endswith("Armed")
+assert stop.scan(1)[12] == "Roughing OPEN command"
+stopped = stop.scan(1 | 128)
+assert int(stopped[9]) & 1 and stopped[12] == "Roughing request inhibited"
+assert "command" not in stop.scan(1)[12]
+
+print("Offline model verified: startup and recovery, manual interlocks, CLOSE/STOP, automatic pumpdown and vent, gate timeout, pressure and panel input loss.")

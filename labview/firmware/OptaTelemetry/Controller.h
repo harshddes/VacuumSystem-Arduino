@@ -23,14 +23,6 @@ inline uint32_t evaluate(uint32_t attempt,uint32_t pos,uint32_t status,uint32_t 
   #include "PermissionRules.h"
   return alarms;
 }
-inline uint8_t lampOutputs(uint32_t positions) {
-  uint8_t lamps=0;
-  for(unsigned offset=0;offset<8;offset+=2) {
-    unsigned state=(positions>>offset)&3;
-    if(state==1 || state==2) lamps|=state<<offset;
-  }
-  return lamps;
-}
 struct Controller {
   Stage stage=Disarmed;
   Mode previousMode=Invalid;
@@ -77,9 +69,18 @@ struct Controller {
     command=next;
   }
   void tick(const Snapshot& s,bool released) {
+    const bool wasArmed=armed();
     d=Decision();
     d.status=s.basic;
-    d.site=(released?1:0)|(s.ventClosure?2:0)|(s.roughClosure?4:0)|(s.processSafe?16:0);
+    if (!primed && s.validPanel) {
+      for (unsigned i=0; i<2; ++i) {
+        unsensedCloseSince[i]=s.time;
+        settling[i]=true;
+      }
+    }
+    const bool roughClosed=primed && s.roughClosure;
+    const bool ventClosed=primed && s.ventClosure;
+    d.site=(released?1:0)|(ventClosed?2:0)|(roughClosed?4:0)|(s.processSafe?16:0);
     if(s.pressureValid) d.status|=2048;
     updatePressure(s,0,cfg::cryoEnterTorr,cfg::cryoTripTorr,4096,Cryo);
     updatePressure(s,1,cfg::turboEnterTorr,cfg::turboTripTorr,8192,Turbo);
@@ -107,15 +108,15 @@ struct Controller {
           break;
         case Isolating:
           if(!s.pressureValid || uint32_t(s.time-stageSince)>cfg::roughdownMs) d.events|=32;
-          else if(!s.roughClosure && uint32_t(s.time-stageSince)>cfg::travelCloseMs) d.events|=16;
-          else if(s.roughClosure && (s.positions&3)==1 && (d.status&4096)) enter(HighVacuum,s.time);
+          else if(!roughClosed && uint32_t(s.time-stageSince)>cfg::travelCloseMs) d.events|=16;
+          else if(roughClosed && (s.positions&3)==1 && (d.status&4096)) enter(HighVacuum,s.time);
           break;
         case VentPreparation:
           if(!s.pressureValid) d.events|=32;
-          else if(s.roughClosure && (s.positions&243)==81 && (s.basic&64) && s.processSafe)
+          else if(roughClosed && (s.positions&243)==81 && (s.basic&64) && s.processSafe)
             enter(s.torr>=cfg::ventCompleteTorr?VentClosing:Venting,s.time);
           else if(uint32_t(s.time-stageSince)>cfg::travelCloseMs) {
-            if(!s.roughClosure || (s.positions&243)!=81) d.events|=16;
+            if(!roughClosed || (s.positions&243)!=81) d.events|=16;
             else if(uint32_t(s.time-stageSince)>cfg::ventMs) d.events|=32;
           }
           break;
@@ -124,7 +125,7 @@ struct Controller {
           else if(s.torr>=cfg::ventCompleteTorr) enter(VentClosing,s.time);
           break;
         case VentClosing:
-          if(s.ventClosure && (s.positions&12)==4) enter(Armed,s.time);
+          if(ventClosed && (s.positions&12)==4) enter(Armed,s.time);
           else if(uint32_t(s.time-stageSince)>cfg::travelCloseMs) d.events|=16;
           break;
         default: break;
@@ -132,16 +133,21 @@ struct Controller {
     }
     if(s.mode==Manual) d.attempt=s.selectors;
     else if(s.mode==Auto) d.attempt=stage==Roughing?Rough:stage==HighVacuum?Cryo:stage==Venting?Vent:0;
-    // Include physically open paths in transient combination checks.
-    unsigned paths=(d.attempt&13) | ((s.positions&3)==2?Rough:0)
-      | ((s.positions&48)==32?Turbo:0) | ((s.positions&192)==128?Cryo:0);
+    // Count a path until it is closed. This includes the roughing close interval
+    // and gate travel between reed switches during a change of pump path.
+    unsigned paths=((d.attempt | command)&(Rough|Turbo|Cryo)) | (roughClosed?0:Rough)
+      | ((s.positions&48)==16?0:Turbo) | ((s.positions&192)==64?0:Cryo);
     if(paths==0 || (cfg::allowedPumpMasks & (1u<<paths))) d.site|=8;
     d.alarms=evaluate(d.attempt,s.positions,d.status,d.site,d.events);
-    if ((armed() && d.alarms) || (d.alarms & 8192)) { latch|=d.alarms; enter(Fault,s.time); }
+    if (((wasArmed || armed()) && d.alarms) || (d.alarms & 8192)) {
+      latch|=d.alarms;
+      enter(Fault,s.time);
+    }
     if (!latch) silenced=false;
     if (stage==Fault && armEdge) silenced=true;
     if (stage==Fault && !armEdge) latch|=d.alarms;
-    if (armEdge && neutral && !d.alarms && s.positions==85 && (s.mode==Manual || s.mode==Auto)) {
+    if (armEdge && neutral && roughClosed && ventClosed && !d.alarms &&
+        s.positions==85 && (s.mode==Manual || s.mode==Auto)) {
       if(latch) {latch=0; enter(Disarmed,s.time);} // acknowledge, then a separate arm edge
       else enter(Armed,s.time);
     }
