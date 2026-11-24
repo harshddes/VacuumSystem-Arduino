@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 // Replacement cabinet wiring schedule, not a survey of the old rack.
-// Base I1..I8 = 1..8. D1608E I1..I16 = 9..24. Negative reverses polarity.
+// Base I1..I8 = 1..8. D1608S I1..I16 = 9..24. Negative reverses polarity.
 // Authorize a group only after checking the terminals and both physical states.
 namespace installation {
 constexpr bool cryoInputsVerified=false, turboInputsVerified=false;
@@ -13,8 +13,8 @@ constexpr int manual=13, automatic=14, arm=15, stopHealthy=16, pumpStart=17, ven
 constexpr int air=19, roughReady=20, cryoReady=21, filamentOff=22, lab=23, inhibitFeedback=24;
 constexpr int openRelay[4]={1,2,3,4}; // Proposed new wiring in the same faceplate order
 constexpr bool maintainedEnergizeToOpenVerified=false, installationReleased=false;
-// E1 relays are four GREEN/RED pairs in faceplate order.
-constexpr bool valveLampWiringVerified=false;
+// D1608S Q1 switches the red 24 V fault indicator. Green is wired to the control rail.
+constexpr bool faultLampWiringVerified=false;
 // Optional E2 relays 1 and 2 serve a buzzer and a qualified filament-OFF interface.
 constexpr bool autoPathQualified=false, buzzerWiringVerified=false, filamentOffInterfaceQualified=false;
 constexpr uint32_t inputStableMs=0, travelOpenMs=0, travelCloseMs=0;

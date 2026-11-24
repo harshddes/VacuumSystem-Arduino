@@ -4,7 +4,7 @@ Open **MAIZE Vacuum.lvproj** in desktop LabVIEW. Under **My Computer**, open **M
 
 To operate the panel without a board, open the separate [MAIZE Offline project](offline/MAIZE%20Offline.lvproj). Its [offline controls and exercises](offline/README.md) cover manual requests, pumpdown, venting and fault recovery.
 
-The two faceplates follow the supplied rack photograph. Each lever graphic reads its physical manual toggle. Each lamp displays **red for OPEN**, **green for CLOSED**, and **grey for unknown or contradictory position**. Loss of telemetry clears all four indications.
+The live LabVIEW console retains its valve telemetry layout. Each lever reads its physical manual selector. Its four screen indicators show **red for OPEN**, **green for CLOSED**, and **grey for unknown or contradictory position**. Loss of telemetry clears all four indications. See the [replacement faceplate layout](MAIZE_Front_Panel_Opta.svg) for the physical panel and the [offline console](offline/README.md) for the updated operator controls.
 
 | Rack position | Valve | Source of the lamp |
 |---|---|---|
@@ -53,28 +53,35 @@ The physical MANUAL/OFF/AUTO selector chooses the source of requests. A fresh AR
 | Turbo | Let-up closed, approved pump-path combination, fresh chamber pressure within the turbo limits, turbo at speed and backing ready |
 | Cryo | Let-up closed, approved pump-path combination, fresh chamber pressure within the cryo limits and cryopump cold/ready |
 
-Roughing and Let-up use the closed toggle as their closure indication. Before allowing the opposing path to open, the Opta also requires the last opening output to be off and its configured closing interval to have elapsed. Faults involving air, lab enable, coil-feed feedback, selector I/O, contradictory gate feedback or missed travel can inhibit openings. The panel shows current causes separately from latched causes. LabVIEW evaluates the opening rules in **Vacuum permissions.vi** with the same rule source as the controller and reports disagreement if their results differ.
+Roughing and Let-up have selector indications. Their provisional closure condition requires a CLOSE selection, an opening output that is off, and the configured closing interval. The controller waits for the interval at startup and after panel I/O recovery before arming. It counts the Roughing path and any incompletely closed gate when checking a change of pump path. Field release requires validating the closing behavior and closure condition against the actual plumbing. Faults involving air, lab enable, coil-feed feedback, selector I/O, contradictory gate feedback or missed travel can inhibit openings. LabVIEW shows current and latched causes and evaluates the same rules in **Vacuum permissions.vi**.
 
 Automatic pumpdown progresses from roughing to roughing isolation to cryo high vacuum. Automatic vent cancels pump openings, waits for isolation and filament-OFF proof, monitors the vent-complete pressure and then closes Let-up. Both sequences use the same opening rules as manual operation. Pressure units, entry dwell, trip hysteresis, travel limits, sequence deadlines and permitted pump combinations are installation settings. The physical lab inhibit remains independent.
 
 ## Replacement wiring and field release
 
-This is a proposed schedule for the **new** Opta cabinet. The old rack photo establishes the faceplate arrangement. The numbered connections below are assignments for the replacement. Verify field identity, polarity and actuator response against the actual wiring before enabling the corresponding group in [Installation.h](firmware/OptaTelemetry/Installation.h).
+This schedule follows the replacement panel. The controls are four black CLOSE/OPEN valve selectors, a black MANUAL/OFF/AUTO selector, four round action buttons, a green 24 V power indicator and a red 24 V latched fault indicator. The Widgetlords VP-EC-RDU-MINI is the local 20 × 4 character display. Verify field identity, polarity and actuator response before enabling the corresponding group in [Installation.h](firmware/OptaTelemetry/Installation.h).
 
 | Terminals | Assignment |
 |---|---|
 | Opta I1–I4 | Cryo CLOSED, Cryo OPEN, Turbo CLOSED, Turbo OPEN |
 | Opta I5–I7 | Turbo at speed, backing ready, vent process safe |
-| D1608E I1–I4 | Roughing, Let-up, Turbo, Cryo manual OPEN requests |
-| D1608E I5–I10 | MANUAL, AUTO, ARM/RESET, CLOSE/STOP healthy, PUMPDOWN START, VENT START |
-| D1608E I11–I16 | Air OK, roughing ready, cryo ready, filament OFF, lab enable, coil-feed inhibit feedback |
+| D1608S I1–I4 | Roughing, Let-up, Turbo, Cryo manual OPEN requests |
+| D1608S I5–I10 | MANUAL and AUTO mode contacts, blue ARM/RESET, red NC CLOSE/STOP healthy, white PUMPDOWN and yellow VENT START |
+| D1608S I11–I16 | Air OK, roughing ready, cryo ready, filament OFF, lab enable, coil-feed inhibit feedback |
 | Base relays 1–4 | Roughing, Let-up, Turbo and Cryo opening outputs, respectively |
-| D1608E relay pairs 1/2, 3/4, 5/6, 7/8 | Roughing, Let-up, Turbo and Cryo two-color lamps. First output green, second red. Both off for an indeterminate state |
-| Optional second D1608E relays 1 and 2 | Audible fault and qualified filament-OFF request, individually enabled if installed |
+| D1608S Q1 | Switch the external 24 V supply to the red fault lamp when a fault is latched, once the lamp's wiring is verified |
+| Protected 24 V control rail | Green control-power lamp |
+| Opta RS-485 | Hornet gauge. Bench-qualify the LCD addressing, bus isolation and gauge coexistence before adding display writes |
 
-The as-delivered sketch holds actuator commands inhibited. Gate, selector and equipment inputs each have wiring verification settings. Physical lamp outputs can be qualified independently of actuator release. The actuator adapter supports verified maintained, energized-to-open equipment with the established de-energized close response. Field confirmation includes the independent inhibit, input polarity, closing behavior after power or air loss, actual pump routing, qualified pressure/readiness interfaces, limits and travel times.
+The as-delivered sketch holds actuator commands inhibited. The actuator adapter supports verified maintained, energized-to-open equipment with the established de-energized close response. Field confirmation includes the independent inhibit, input polarity, closing behavior after power or air loss, actual pump routing, qualified pressure/readiness interfaces, limits and travel times. The locally mounted LCD still needs its RS-485 write integration and an on-bench check. The Opta owns the opening permits.
 
 The repository gives the operating conditions and keeps the commissioning values open. Its pressure record has unset cryo limits and travel times. The measured single-gate travel and pressure traces in the Uno bench folder describe a separate rig. The replacement firmware leaves numerical process settings unset until MAIZE values are entered. See the [permission rules](../development/05-rules.md), the [configuration record](../development/interfaces/configuration-record.json) and the [bench field record](../development/bench-prep/06-field-holds.md).
+
+### Supply and coil protection
+
+The proposed 120 V Humphrey coil feed uses a supplemental **1 A, 250 VAC, time-delay ceramic 5 × 20 mm fuse** on its line conductor, with the independent lab inhibit in series. Buy one working fuse and one spare plus one holder if the cabinet lacks them. The existing fuse specification is Littelfuse 0215001.MXP. The [0215001.HXP](https://www.tme.com/us/en-us/details/0215001.hxp/fuses-5x20mm-time-lag/littelfuse/) is the same electrical rating in a different package quantity. The planned internal holder is the [01500274Z](https://www.tme.com/us/en-us/details/01500274z/fuseholders-for-cable/littelfuse/). Check coil inrush, wire sizes, available fault current and upstream branch protection against the lab's cabinet drawing.
+
+The [HDR-60-24](https://www.meanwell.com/Upload/PDF/HDR-60/HDR-60-SPEC.PDF) has a separate AC input feed with its own protection sizing. Mean Well specifies 30 A typical cold-start inrush at 115 VAC. Size the 24 V outgoing protection against the installed wiring and loads and verify that a branch fault clears with the supply's current limiting. The NC **CLOSE/STOP** contact goes to the controller as an operating stop. The independent lab inhibit removes the coil feed directly.
 
 ## Ethernet and records
 

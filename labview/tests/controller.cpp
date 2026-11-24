@@ -11,7 +11,7 @@ struct Rack {
     Rack(Mode mode=Manual) {
         s.mode=mode; s.basic=healthy; s.positions=85; s.pressureValid=true;
         s.validPanel=true; s.processSafe=true; s.torr=0.5f;
-        scan(); scan();
+        scan(); scan(installation::travelCloseMs);
     }
     void scan(unsigned increment=10,bool released=true) {
         s.time+=increment;
@@ -27,10 +27,6 @@ struct Rack {
     }
 };
 int main() {
-    for(unsigned packed=0;packed<256;packed++) for(unsigned bit=0;bit<8;bit+=2) {
-        unsigned pos=(packed>>bit)&3;
-        assert(((lampOutputs(packed)>>bit)&3)==(pos==3?0:pos));
-    }
     // Each source condition below independently inhibits the appropriate path.
     unsigned all=healthy|2048|4096|8192,site=31;
     for(unsigned v:{1u,2u,4u,8u}) assert(evaluate(v,85,all,site,0)==0);
@@ -58,6 +54,13 @@ int main() {
     assert(evaluate(Vent,85,all,site&~16,0)&(1u<<28));
     for(unsigned e:{16u,32u,64u,128u,256u}) assert(evaluate(0,85,all,site,e)!=0);
 
+    Rack startup;
+    startup.c=Controller();
+    startup.scan();startup.arm();
+    assert(!startup.c.armed());
+    startup.scan(installation::travelCloseMs);startup.arm();
+    assert(startup.c.armed());
+
     Rack r; r.set(Rough);r.scan();assert(!r.c.command);
     r.arm();assert(!r.c.command); r.set(0);r.scan();r.arm();assert(r.c.stage==Armed);
     r.set(Rough);r.scan();assert(r.c.command==Rough);
@@ -68,6 +71,16 @@ int main() {
     r.s.positions=69;r.scan();assert(r.c.command==Turbo); // travelling
     r.s.positions=101;r.scan();assert(r.c.command==Turbo);
     r.s.basic &= ~1024u;r.scan();assert(!r.c.command && (r.c.latch&(1u<<20)));
+
+    Rack crossPath;crossPath.arm();crossPath.set(Rough);crossPath.scan();
+    assert(crossPath.c.command==Rough);
+    crossPath.set(0);crossPath.scan();
+    crossPath.set(Turbo);crossPath.scan();
+    assert(!crossPath.c.command && (crossPath.c.latch&(1u<<24)));
+    Rack gateTravel;gateTravel.arm();gateTravel.set(Cryo);gateTravel.scan();
+    gateTravel.s.positions=21;gateTravel.set(0);gateTravel.scan();
+    gateTravel.set(Rough);gateTravel.scan();
+    assert(!gateTravel.c.command && (gateTravel.c.latch&(1u<<24)));
     Rack t;t.arm();t.set(Cryo);t.scan();assert(t.c.command==Cryo);
     t.s.positions=21;t.scan(61);assert(t.c.latch&(1u<<25));
     Rack lost;lost.arm();lost.set(Cryo);lost.scan();lost.s.positions=149;lost.scan();

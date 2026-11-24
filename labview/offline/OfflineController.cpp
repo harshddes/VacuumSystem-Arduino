@@ -31,7 +31,7 @@ struct Model {
     Controller control;
     uint32_t now = 0;
     float pressure = atmosphere;
-    unsigned cryoPosition = 1, turboPosition = 1, mode = Manual, previousMode = Invalid, command = 0;
+    unsigned cryoPosition = 1, turboPosition = 1, previousMode = Invalid, command = 0;
     unsigned stage = Disarmed;
 
     // Each operating VI carries its own state between calls. No file, daemon or shared session state.
@@ -67,7 +67,7 @@ struct Model {
         if (control.motion[index] && now-control.motionSince[index] < gateTravelMs) return 0;
         return control.command & valve ? 2 : 1;
     }
-    Snapshot tick(unsigned requests, Condition fault) {
+    Snapshot tick(unsigned requests, Mode mode, Condition fault) {
         now += scanMs;
         if (control.command & Vent) pressure += (atmosphere-pressure)*0.23f;
         if (control.command & Rough) pressure = 0.04f+(pressure-0.04f)*0.78f;
@@ -78,19 +78,22 @@ struct Model {
 
         Snapshot s;
         s.time = now;
-        s.selectors = requests & 15;
-        s.positions = (s.selectors & Rough ? 2 : 1) | (s.selectors & Vent ? 8 : 4);
+        s.validPanel = fault!=PanelInputsLost;
+        if (s.validPanel) {
+            s.selectors = requests & 15;
+            s.positions = (s.selectors & Rough ? 2 : 1) | (s.selectors & Vent ? 8 : 4);
+            s.mode = mode;
+            s.arm = requests & 16;
+            s.pump = requests & 32;
+            s.vent = requests & 64;
+        }
         s.positions |= (fault==TurboConflict ? 3 : turboPosition) << 4;
         s.positions |= (fault==CryoConflict ? 3 : cryoPosition) << 6;
-        s.mode = Mode(mode);
-        s.arm = requests & 16;
-        s.pump = requests & 32;
-        s.vent = requests & 64;
         s.basic = ready & ~missingStatus[fault];
+        if (!s.validPanel) s.basic &= 512u | 1024u; // Only base Opta readiness inputs survive.
         if (requests & 128) s.basic &= ~1u;
-        s.validPanel = fault!=PanelInputsLost;
-        s.roughClosure = !(s.selectors & Rough) && control.closedOutput(0, now);
-        s.ventClosure = !(s.selectors & Vent) && control.closedOutput(1, now);
+        s.roughClosure = (s.positions & 3)==1 && control.closedOutput(0, now);
+        s.ventClosure = (s.positions & 12)==4 && control.closedOutput(1, now);
         s.processSafe = fault!=VentInhibited;
         s.pressureValid = fault!=PressureLost;
         s.torr = pressure;
@@ -105,15 +108,15 @@ int run() {
     unsigned requests, mode, fault;
     if (!(std::cin >> requests >> mode >> fault) || requests > 255 || mode > Auto || fault > PanelInputsLost)
         return 1;
-    unsigned version;
-    if (std::cin >> version) {
-        if (version != 1 || !model.load(std::cin)) return 1;
-    } else if (!std::cin.eof()) return 1;
-    model.mode = mode;
-    auto s = model.tick(requests, Condition(fault));
+    if (!(std::cin >> std::ws).eof()) {
+        unsigned version;
+        if (!(std::cin >> version) || version != 1 || !model.load(std::cin) ||
+            !(std::cin >> std::ws).eof()) return 1;
+    }
+    auto s = model.tick(requests, Mode(mode), Condition(fault));
     const auto& c = model.control;
     const auto& d = c.d;
-    static const char* modes[] = {"OFF","MANUAL","AUTO"};
+    static const char* modes[] = {"OFF","MANUAL","AUTO","MODE UNAVAILABLE"};
     static const char* stages[] = {"Disarmed","Armed","Roughing","Isolating roughing path","High vacuum",
                                    "Preparing to vent","Venting","Closing let-up","Fault latched"};
     static const char* names[] = {"Roughing","Let-up","Turbo","Cryo"};
@@ -132,7 +135,7 @@ int run() {
         first = false;
     }
     if (first) std::cout << "All opening outputs off";
-    std::cout << '|' << unsigned(s.selectors) << "|15\n";
+    std::cout << '|' << unsigned(s.selectors) << '|' << (s.validPanel ? 15 : 0) << '\n';
     return 0;
 }
 

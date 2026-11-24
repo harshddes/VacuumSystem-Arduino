@@ -103,8 +103,10 @@ bool qualifiedInstallation() {
 void readContacts(uint32_t now) {
   uint32_t bits=0, available=255;
   for(int i=0;i<8;i++) if(digitalRead(basePins[i])) bits|=1UL<<i;
-  if(OptaController.getExpansionNum()>=1 && OptaController.getExpansionType(0)==EXPANSION_OPTA_DIGITAL_MEC) {
-    DigitalMechExpansion e=OptaController.getExpansion(0);
+  const auto moduleType=OptaController.getExpansionNum()>=1 ?
+      OptaController.getExpansionType(0) : EXPANSION_NOT_VALID;
+  if(moduleType==EXPANSION_OPTA_DIGITAL_STS || moduleType==EXPANSION_OPTA_DIGITAL_MEC) {
+    DigitalExpansion e(OptaController.getExpansion(0));
     if(e && e.execute(GET_DIGITAL_INPUT)==EXECUTE_OK) {
       available|=0xffff00UL;
       for(int i=0;i<16;i++) if(e.digitalRead(i,false)) bits|=1UL<<(i+8);
@@ -137,24 +139,24 @@ unsigned gate(int closeInput,int openInput) {
   return (active(closeInput)?1:0)|(active(openInput)?2:0);
 }
 bool auxiliaryHealthy=true;
-bool writeModule(unsigned index,uint8_t bits,uint8_t assignedOutputs) {
+bool writeModule(unsigned index,uint8_t type,uint8_t bits,uint8_t assignedOutputs) {
   if(OptaController.getExpansionNum()<=index ||
-      OptaController.getExpansionType(index)!=EXPANSION_OPTA_DIGITAL_MEC) return false;
-  DigitalMechExpansion e=OptaController.getExpansion(index);
+      OptaController.getExpansionType(index)!=type) return false;
+  DigitalExpansion e(OptaController.getExpansion(index));
   if(!e) return false;
   for(unsigned i=0;i<8;i++) if(assignedOutputs&(1u<<i))
     e.digitalWrite(i,(bits&(1u<<i))?HIGH:LOW,false);
   return e.execute(SET_DIGITAL_OUTPUT)==EXECUTE_OK;
 }
 bool writeAuxiliary() {
-  bool lampsOK=!cfg::valveLampWiringVerified || writeModule(0,lampOutputs(field.positions),255);
+  if(cfg::faultLampWiringVerified)
+    writeModule(0,EXPANSION_OPTA_DIGITAL_STS,control.latch?1:0,1);
   uint8_t installed=(cfg::buzzerWiringVerified?1:0)|(cfg::filamentOffInterfaceQualified?2:0);
-  if(!released || !installed) return lampsOK;
+  if(!released || !installed) return true;
   bool requestOff=control.stage==VentPreparation || control.stage==Venting ||
       (field.mode==Manual && (field.selectors&Vent));
   uint8_t bits=(control.latch && !control.silenced?1:0)|(requestOff?2:0);
-  bool equipmentOK=writeModule(1,bits,installed);
-  return lampsOK && equipmentOK;
+  return writeModule(1,EXPANSION_OPTA_DIGITAL_MEC,bits,installed);
 }
 void scan(uint32_t now) {
   readContacts(now);
@@ -229,7 +231,7 @@ void reply() {
 void setup() {
   released=qualifiedInstallation();
   for(int p:basePins) pinMode(p,INPUT);
-  if(released) for(int p:relayPins) { digitalWrite(p,LOW); pinMode(p,OUTPUT); }
+  for(int p:relayPins) { digitalWrite(p,LOW); pinMode(p,OUTPUT); }
   OptaController.begin();
   if(cfg::hornetReadEnabled) { RS485.begin(19200,SERIAL_8N1); RS485.receive(); }
   IPAddress ip(cfg::address[0],cfg::address[1],cfg::address[2],cfg::address[3]);
